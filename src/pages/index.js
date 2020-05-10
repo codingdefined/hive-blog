@@ -10,6 +10,14 @@ import showdown from 'showdown'
 
 const converter = new showdown.Converter({ ghCompatibleHeaderId: true })
 
+const getSrc = function(node) {
+  let srcSet = JSON.parse(node.json_metadata).image;
+  if(srcSet)
+    return srcSet[0];
+  else 
+    return 'noimage.png';
+}
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle =data.site.siteMetadata.title
   const posts = data.allHiveArticle.edges
@@ -35,9 +43,10 @@ const BlogIndex = ({ data, location }) => {
               <small>{node.created}</small>
             </header>
             <section>
-              <p
+              <img className='img-body' srcSet={getSrc(node)}/>
+              <p className='hive-body'
                 dangerouslySetInnerHTML={{
-                  __html: node.body.substring(0,100),
+                  __html: node.body,
                 }}
               />
             </section>
@@ -65,7 +74,8 @@ export const pageQuery = graphql`
           author
           created(formatString: "MMMM DD, YYYY")
           permlink
-          body
+          body,
+          json_metadata
         }
       }
     }
