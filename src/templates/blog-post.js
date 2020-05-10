@@ -5,17 +5,20 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import showdown from 'showdown'
+
+const converter = new showdown.Converter({ ghCompatibleHeaderId: true })
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
+  const post = data.hiveArticle
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={post.title}
+        description={post.body}
       />
       <article>
         <header>
@@ -25,7 +28,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            {post.title}
           </h1>
           <p
             style={{
@@ -34,10 +37,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: converter.makeHtml(post.body) }} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -60,15 +63,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.permlink} rel="prev">
+                ← {previous.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={next.permlink} rel="next">
+                {next.title} →
               </Link>
             )}
           </li>
@@ -81,21 +84,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostQuery($permlink: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-      }
+    hiveArticle(permlink: { eq: $permlink }) {
+      title
+      body
+      created(formatString: "MMMM DD, YYYY")
     }
   }
 `
