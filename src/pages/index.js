@@ -6,10 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import showdown from 'showdown'
-
-const converter = new showdown.Converter({ ghCompatibleHeaderId: true })
-
 const getSrc = function(node) {
   let srcSet = JSON.parse(node.json_metadata).image;
   if(srcSet)

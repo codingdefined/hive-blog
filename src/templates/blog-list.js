@@ -50,7 +50,7 @@ class BlogIndex extends React.Component {
               <small>{node.created}</small>
             </header>
             <section>
-              <img className='img-body' srcSet={this.getSrc(node)}/>
+              <img className='img-body' srcSet={this.getSrc(node)} alt={node.permlink}/>
               <p className='hive-body'
                 dangerouslySetInnerHTML={{
                   __html: node.body,
