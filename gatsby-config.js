@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/hive-blog",
   siteMetadata: {
     title: `My Hive Posts`,
     author: {
@@ -49,7 +50,6 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -11,9 +11,9 @@ class BlogIndex extends React.Component {
   getSrc = function(node) {
     let srcSet = JSON.parse(node.json_metadata).image;
     if(srcSet)
-      return srcSet[0];
+      return 'https://images.hive.blog/640x0/' + srcSet[0];
     else 
-      return 'noimage.png';
+      return '/noimage.png';
   }
 
   render() {
