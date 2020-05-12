@@ -1,0 +1,603 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\67\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/miss-delicious-69-3-tides-at-the-newly-opened-baha-mar-luxury-resort">Miss. Delicious #69 : 3 Tides at the newly opened Baha Mar luxury resort!</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmYRzEy6AfV2VBtMsqxsPfwrnX1VQCKngbFujZRdqAVd34/IMG_9941.jpg" alt="miss-delicious-69-3-tides-at-the-newly-opened-baha-mar-luxury-resort"/><p class="hive-body">### Dear Steemit friends :
+
+![IMG_9941.jpg](https://steemitimages.com/DQmYRzEy6AfV2VBtMsqxsPfwrnX1VQCKngbFujZRdqAVd34/IMG_9941.jpg)
+
+It is easy to visit  Nassau, Bahamas and stay at the Atlantis resort for the entirety of your vacation. After all, Atlantis is reputed to have some of the best facilities on the entire island. No doubt we've spent quite a bit of time exploring what's on offer at Atlantis, and if you've followed me closely, you'll realise that Atlantis is every bit as good as the reviews say. (At least I think so!)
+
+Although I still have a few more blogs about Atlantis (I know, it's hard to believe), today's blog will be based elsewhere. For those of you who might have missed my blogs about Atlantis thus far, here are the links to each:
+
+- [The Dig at the lost city of Atlantis](https://steemit.com/travel/@sweetsssj/travel-with-me-70-the-dig-at-the-lost-city-of-atlantis)
+- [The hidden gem in Atlantis - Marina Village and the Bimini Road Restaurant](https://steemit.com/food/@sweetsssj/miss-delicious-65-the-hidden-gem-in-atlantis-the-marina-village-and-the-bimini-road-restaurant-photos-video)
+- [A look at the Atlantis Casino as a non gambler](https://steemit.com/travel/@sweetsssj/travel-with-me-73-a-look-at-the-atlantis-casino-from-a-non-gambler)
+- [A visit to Dolphin Cay to interact with Sea Lions!](https://steemit.com/travel/@sweetsssj/travel-with-me-74-a-visit-to-dolphin-cay-to-interact-with-sea-lions)
+- [Poseidon's Table - A restasurant worthy of Gods!](https://steemit.com/food/@sweetsssj/miss-delicious-68-poseidon-s-table-a-restaurant-worthy-of-gods)
+- [Saying hello to Sharks, Stingrays, Sawfish at the Predator Lagoon](https://steemit.com/travel/@sweetsssj/travel-with-me-75-saying-hello-to-sharks-stingrays-sawfish-at-the-predator-lagoon-photos-video)
+
+Aside from staying at Atlantis, I had the pleasure of staying a few days at the brand new ***Baha Mar Resort***, a direct competitor to Atlantis which opened in May of this year (2017). 
+
+Mired by controversy, the *Baha Mar* resort has been in development for more than 10 years and hopes to revitalise the tourist industry in Bahamas bringing an additional 315,000 visitors to Bahamas annually as well as contribute $700 Million a year to Bahamas' tourism. 
+
+![BahaMar.png](https://steemitimages.com/DQmVeTV3AebdM4BKF3JFL5R7wjEqRZV3VA69n5YDqeBURqS/BahaMar.png)
+
+As one of the very first paying guests to this resort, I had the pleasure (or not) of experiencing first hand what a $4.2 Billion, 1000 acre development has to offer. 
+
+Although the resort will comprise of three hotel brands - Grand Hyatt, SLS Hotels and Rosewood Hotels & Resorts, only the Grand Hyatt is currently open for guests. Other amenities including 30 luxury retailers, the 18-hole Jack Niclaus Signature Gold Course, and a handful of restaurants are also yet to open. 
+
+In my short stay, I only had access to the Casino, seven of the planned 11 swimming pools and a handful of restaurants. 
+
+Still, an early look at this resort has given me an idea of whether I will be going back to Atlantis the next time I visit, or whether Baha Mar is worth a second look.
+
+
+http://image.ibb.co/f8Lu7v/DSC01982.jpg
+
+At first glance, much like Atlantis, the Baha Mar resort is a real feast to the eyes. A long bridge connecting the main road to the entrance, crosses over a beautiful pool fountain. At the end of it, a cylindrical funnel functions as the landing area, complemented by palm trees showing just how high the walls of this cylinder truly are.
+
+http://image.ibb.co/dadgnv/DSC01977.jpg
+
+The architectural style of Baha Mar draws similarities to Atlantis, yet projects a different flavour of grandeur. Certainly the golden reception, with it's distinctively Asian ornaments bring a different yet welcome style to the building. 
+
+http://image.ibb.co/c5JQEa/DSC01976.jpg
+
+Across the foyer, we see a glimpse of the Casino through the large french windows. Reminding us that this Casino is in fact the largest Casino in Bahamas. 
+
+![DSC02407.JPG](https://steemitimages.com/DQmSAFXQ9fwevFwZBkoB97FbUGR4QPL9Gs7L5pcvJPXDumE/DSC02407.JPG)
+
+Almost like a flip on reality, the other side of the building reveals a tenderness and vulnerability with it's pink colours and humble stature. 
+
+http://image.ibb.co/gwAGLF/DSC02427.jpg
+
+Today's ***Miss. Delicious*** takes us to one of the very first restaurants to open for business at this resort. 
+
+Called ***3 Tides***, this restaurant prides itself as a *seafood-forward Mediterranean all day restaurant*. The executive chef, ***Brent Martin*** infuses Caribbean fish with locally sourced ingredients and turns them into fresh inventive  Bahamian style dishes.
+
+http://image.ibb.co/hgCXSv/IMG_9933.jpg
+
+The restaurant is one level below the ground, so a walk down a lovely spiral staircase takes us into the main dining area. It's a very open space restaurant featuring three open "theatre" kitchens and is decorated with many colourful Bahamian displays of art. 
+
+http://image.ibb.co/buFxua/IMG_8815.jpg
+
+http://image.ibb.co/iCWFfF/IMG_8816.jpg
+
+http://i.imgur.com/h1hdkT2.gif
+
+http://image.ibb.co/cwa5Ea/DSC02445.jpg
+
+http://image.ibb.co/kNS7Sv/DSC02444.jpg
+
+http://i.imgur.com/XeaTzKz.gif
+
+http://image.ibb.co/eYvu7v/DSC02441.jpg
+
+http://image.ibb.co/gQZAfF/DSC02428.jpg
+
+The menu itself is quite a simple wooden like folder.
+
+http://image.ibb.co/mrhz7v/IMG_8821.jpg
+
+And inside, we have just two pages of foods to order from. 
+
+As always, it's about the quality and not quantity and I'm actually quite glad they've chosen to narrow their choice of dishes down to just a few. 
+
+Let's see the dishes I ordered and begin the mouth watering!
+
+http://image.ibb.co/dursSv/IMG_8823.jpg
+
+***The Garden***. *Quinoa Salad + Local Bahamian Field Greens.*
+
+This was a refreshing start to the meal, and a much needed chill down from a really long and hot day. The Quinoa added just enough substance to wake my appetite whilst the Cherry Tomatoes were sufficiently sweet and delicious.
+
+http://image.ibb.co/f9xMLF/IMG_8825.jpg
+
+With some food in the stomach, it was time to indulge in the ***Bahama Mama*** cocktail. I'm not a big drinker, but this was really quite potent. I felt like feinting after my first sip!
+
+http://image.ibb.co/fgBgLF/IMG_8834.jpg
+
+Next up, another meatier Salad, the ***Grilled Spanish Octopus***. I'm usually not a fan of cheese, but the goats cheese used here was really rich, combined with the grilled octopus strips which were both fresh and chewy, I barely noticed that I had eaten two salads in a row!
+
+http://image.ibb.co/cQNXSv/IMG_8824.jpg
+
+http://image.ibb.co/gRYvfF/IMG_9941.jpg
+
+***Sauteed Wild Mushrooms with Thyme***. Continuing our light and healthy dinner, this little pot of Mushrooms tasted quite different from what I was expecting. The mushrooms tasted like what I could only describe as "earthy". It's texture was both chewy and meaty at the same time. The gentle sprinkle of Thyme added a bit of lemony taste which really picked up my appetite for the next dish.
+
+http://image.ibb.co/dKmFfF/IMG_8840.jpg
+
+This is the ***Bahamian Red Snapper Fillet***. Only being in Bahamas for a few days, this was now the 4th time I've indulged in the Bahamian Snapper fish. I can't get enough of the soft melting texture of it's meat.  I believe it is served on a bed of yogurt potato salad which didn't agree with me at all. Besides, it's all about the snapper!
+
+http://image.ibb.co/cdO6nv/IMG_8839.jpg
+
+Every 30 minutes from 8:30pm to 10pm, there is a water fountain show at the main fountain bridge. 
+
+This was no doubt an influence from China as the group who now own the hotel are Chinese. 
+
+The show ran twice during my time at the restaurant, but I didn't leave my seat to go take a look.
+
+Here is a video of the show from my room!
+
+https://youtu.be/F3VoRWbKung
+
+http://image.ibb.co/jba5Ea/DSC01939.jpg
+
+<hr>
+
+And that wraps up our first Miss. Delicious at the Baha Mar resort in Cable Beach Nassau. Aside from being quite empty because of how new it is, I actually quite enjoyed the atmosphere of 3 Tides at Baha Mar. It was also nice to see the water show from my seat at the restaurant as well as in the comfort of my room. 
+
+Certainly a very different kind of royal treatment to expect from the resort, but one that I welcome all the same!
+
+Hope you enjoyed the post, and don't forget to upvote, follow and comment! 
+
+<hr>
+
+在巴哈马的行程中，前半段我选择住在拿骚天堂岛的耶特兰蒂斯酒店，后半段旅程我决定选择个有点与众不同的酒店——***巴哈·玛(BAHA MAR)凯悦酒店***。选择这家酒店有它的特殊性，这是一家2011年开始动工的酒店，由中国建筑工程总公司及中国进出口银行共同合作的酒店度假岑，占地1000英亩，耗资34亿美元，是西半球投资规模最大的酒店项目。但是由于建造途中，开放商和中国合伙人发生了纠纷，最终宣告破产上法庭，酒店一度停工，所以就这样，拖拖拉拉了6年，酒店还没完工。2017年6月，酒店终于开放了部分度假村，作为中国人的我，当然要支持一下这个酒店，所以不顾酒店还在施工，我就选择来这里住了。当然，毕竟是没完工的酒店，难免不少让人失望的地方，之后我会写一篇专门评测酒店的文章，给将要去的朋友，尤其是中国朋友作为参考。
+
+今天我们来到酒店里的创意餐吧，3 Tides享受一下巴哈马美食。酒店一共有40多家餐厅和酒吧，不过现在只开放了部分，估计等这家酒店完全开放的时候，住在这里的游客就要享福了。和亚特兰蒂斯酒店不同，一走进凯悦酒店，暖色系现代的装修，光线非常明亮，尽管是晚上，却被光线魔术般的打成了白天，我很喜欢这门口建筑上的小小细纹路，非常萌萌哒。更可爱的要数酒店里面这个粉色的小洋房，仿佛来到了童话世界。3 Tides餐厅就在这栋楼里。我很喜欢这个由游泳池马克砖组成的logo三，好像跟我脸上的steemit标志logo特别搭配。伴着音乐声，从漂亮的旋转楼梯走下来，就来到了这家餐厅。餐厅最大的亮点要数正中央，3个开放式的厨房拼凑在一起，好像一个喜剧舞台。墙壁上挂着鲜艳多彩的巴哈马艺术作品。
+
+先看看菜单吧，菜单的设计简洁大方，很喜欢这个有木质感的菜单。首先上来的是我在海岛最爱的沙拉，我分别点了2种不同的口味。吃起来都很爽口，味道棒极了。接下来是贴心的服务生精心为我调制的草莓味道鸡尾酒，因为我很喜欢草莓的味道。之后是烤蘑菇，带着点奶油的香味，真是吃的停不下来。最后就是岛上最有名，也只有这个岛上才有的鱼品种，这种鱼的肉是红色的斑纹，特别好看，吃起来味道好鲜美，又很进味。还有这个红红的岛上独有的西红柿真的值得表扬，味道好极了，酸味适中，又很新鲜。因为是晚上，所以我选择坐在室外吃饭，温度正好。在吃饭的同时，在右边广场中央的水池，还有漂亮的3D立体画面和音效的喷泉表演，可以边吃饭，边欣赏喷泉表演和优美的音乐，带着点中国古典音乐的味道，能在遥远的他国异乡巴哈马这种地方，听到熟悉的家乡音乐，真是太惬意太享受了。最后附上我在酒店房间拍到的喷泉画面和视频，每天晚上这家酒店都有3到5场喷泉表演，在非常美国范的巴哈马小岛上，还成为了非常独特的一点。希望大家喜欢我今天分享的美食，之后还有更多有趣的餐厅想和大家分享。</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/how-can-we-make-a-real-sharing-economy-for-vacation-rentals">How Can We Make a Real Sharing Economy for Vacation Rentals</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmcKsn1hgzbDbGtB4opF3VAHMKQUxyC2aLohnSe5ZoN7ES/Screen%20Shot%202017-07-07%20at%2010.36.08%20AM.png" alt="how-can-we-make-a-real-sharing-economy-for-vacation-rentals"/><p class="hive-body">*When Airbnb first launched in 2008, it was this new, innovative model that was disrupting the hotel business. Today, it and many rental sites that have started since, are key players in the hospitality industry. However, none of it would have been possible if the sharing economy, the idea of “renting” out unused assets, wasn’t also becoming more popular, it was quickly becoming the norm.*
+
+![Screen Shot 2017-07-07 at 10.36.08 AM.png](https://steemitimages.com/DQmcKsn1hgzbDbGtB4opF3VAHMKQUxyC2aLohnSe5ZoN7ES/Screen%20Shot%202017-07-07%20at%2010.36.08%20AM.png)
+
+Ten years ago, renting a room in someone’s home or swapping houses for vacation was highly unusual. When going on vacation, most people would rely on traditional hotels and occasionally hostels. Now, it’s the norm. Thanks to the sharing economy and startups like Airbnb, Uber, and Upwork, anyone can make some cash on the side or grow a side-hustle into a full-fledged business.
+
+At [BookingTeam.com](https://bookingteam.com/), we work with our customers to maximize the earning potential of their properties. To survive in the vacation rental business today, property managers and owners need to have a sharing economy mindset.
+
+What is the sharing economy and what are the benefits?
+The sharing economy came about because it offered the ability for people to monetize unused assets. At its core, the sharing economy is about finding the most efficient use of money and resources. It’s about making businesses leaner and working faster and smarter.
+
+### 1. Adopt a zero-waste mindset.
+According to numerous [statistics](https://www.inc.com/laura-montini/infographic/the-sharing-economy-disrupting-life-as-we-know-it.html), people are wasteful. We throw out food and clothes, while others starve. We spend a significant amount of money in repairs, gas, etc. to keep a car on the road when we could share the costs by carpooling. Now, technology has made it possible to decrease the amount of waste we create while also generating a profit.
+
+In the hospitality industry, allows people that have rooms or houses that they don’t use at least part of the year to make a profit. Instead of leaving it empty and still pay for the upkeep, rent it out and make money.  
+
+### 2. Increase productivity.
+Part of the sharing economy concept is finding ways to do more with less. This is especially true when it comes to time.
+
+Time is a commodity, more precious and valuable than money, so how you use your time is key to running a successful business.
+
+If you are managing a vacation rental, it is important to make your business processes as efficient as possible. Repetitive tasks should be automated with technology. For example, [BookingTeam.com](https://bookingteam.com/listings-no-map/) offloads the tedious work of creating listings and answering guest inquiries plus automating dozens of repetitive but important tasks. Our platform shares your listings with the most popular rental sites so that it can reach the highest number of potential guests, while we optimize your pricing and overall performance. 
+
+### 3. Use data and technology.
+The sharing economy wouldn’t have been possible if it weren’t for the advances in data and technology. We can now quantify how much waste we produce, get a better idea of why, and take steps to turn that waste into profit. In vacation rentals, waste is usually those properties that sit vacant for weeks or months.
+
+**Embracing the sharing economy means managing properties with efficiency and zero-waste in mind. By using data and [BookingTeam.com’s](https://bookingteam.com/tips-articles/) platform, property managers, and owners can team up with booking professionals who adjust pricing, promotions, booking dates and other factors to more effectively influence booking conversion rates across all main booking sites, this saves our hosts loads of time so they can focus on excellence in hospitality and happier guests, which is what it is all about!**</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/6ekdlj-colorchallenge-fridayblue">ColorChallenge. FridayBlue</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://pp.userapi.com/c841033/v841033366/7516/m7xmtr73gYs.jpg" alt="6ekdlj-colorchallenge-fridayblue"/><p class="hive-body">__________________________________________________________________________________________________________
+https://pp.userapi.com/c841033/v841033366/7516/m7xmtr73gYs.jpg
+__________________________________________________________________________________________________________
+Dymkovo Settlement in Velikiy Ustyug city in frozen winter.
+At noon in the winter the sun does not rise high and at the expense of low rays appear blue colors.
+_____________________________________________________________________________________
+Canon 5d, EF 28-90 mm</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/daily-steem-stats-report-july-07-2017">Daily Steem Stats Report - July 07, 2017</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmUnqh3SfMmamdZkdYjhzCqgYdBZLpq98X5Pj9PQhq268a/image.png" alt="daily-steem-stats-report-july-07-2017"/><p class="hive-body">Welcome to my Steem Stats Report for Friday, July 07, 2017. All data is coming directly from the Steem blockchain and is based on UTC time.
+
+Only 384 new accounts yesterday. Hopefully we will see a lot of new accounts again as soon as [Hardfork 20](https://steemit.com/steemit/@steemitblog/proposing-hardfork-0-20-0-velocity) kicks in.
+
+ > The focus of Hardfork 20 is on improving the process of account creation and reducing the friction involved in onboarding millions of new users.
+
+*More info: https://steemit.com/steemit/@steemitblog/proposing-hardfork-0-20-0-velocity*
+
+
+## 1. Daily number of Posts (including comments)
+![](https://steemitimages.com/DQmUnqh3SfMmamdZkdYjhzCqgYdBZLpq98X5Pj9PQhq268a/image.png)
+Date | Posts
+--- | ---
+2017-07-06 | 125,120
+2017-07-05 | 118,909
+2017-07-04 | 127,548
+2017-07-03 | 130,600
+2017-07-02 | 125,312
+2017-07-01 | 125,155
+2017-06-30 | 132,993
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 2. Daily number of votes
+![](https://steemitimages.com/DQmUQfrw1Jo72LXEfZJcdwfa6TcHFf53ZBGWeQ8E2bdERBT/image.png)
+Date | Votes
+--- | ---
+2017-07-06 | 281,708
+2017-07-05 | 257,233
+2017-07-04 | 257,299
+2017-07-03 | 246,487
+2017-07-02 | 247,721
+2017-07-01 | 250,895
+2017-06-30 | 279,354
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 3. Posts + Comments per post
+![](https://steemitimages.com/DQmapeHthSB2NaJTm12iRt97hCemWA4A3utz3v2LnwxuxC2/image.png)
+Date | Average # comments
+--- | ---
+2017-07-06 | 3.64
+2017-07-05 | 3.54
+2017-07-04 | 3.42
+2017-07-03 | 3.67
+2017-07-02 | 3.59
+2017-07-01 | 3.63
+2017-06-30 | 3.74
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 4. New accounts created
+![](https://steemitimages.com/DQmfUEmi25pFCQhQwtgUb9jNrfbPnA1iLH1UhStMVoHaZJv/image.png)
+Date | New Accounts
+--- | ---
+2017-07-06 | 384
+2017-07-05 | 544
+2017-07-04 | 1,725
+2017-07-03 | 2,193
+2017-07-02 | 1,281
+2017-07-01 | 2,285
+2017-06-30 | 2,154
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 5. Daily Amount of SBD converted to Steem
+![](https://steemitimages.com/DQmWhJeBUmG9bXYneAKw5zjqqTeDJSfkbFpA9VfYcu2LT7c/image.png)
+Date | Amount in SBD
+--- | ---
+2017-07-06 | 3,386.726 SBD
+2017-07-05 | 3,021.647 SBD
+2017-07-04 | 2,651.597 SBD
+2017-07-03 | 1,727.803 SBD
+2017-07-02 | 1,478.080 SBD
+2017-07-01 | 1,881.572 SBD
+2017-06-30 | 2,139.676 SBD
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 6. Daily Amount of Steem Powered UP
+![](https://steemitimages.com/DQmbyNCRzHBMTLiKwejtiDkDrPpJBPAFRRgj52KfHbbd5Yy/image.png)
+Date | Steem
+--- | ---
+2017-07-06 | 471,046.393 STEEM
+2017-07-05 | 310,811.209 STEEM
+2017-07-04 | 241,093.026 STEEM
+2017-07-03 | 202,945.205 STEEM
+2017-07-02 | 109,791.841 STEEM
+2017-07-01 | 139,861.182 STEEM
+2017-06-30 | 105,888.366 STEEM
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 7. Daily Steem & SBD Transfers
+![](https://steemitimages.com/DQmNnLCMwgAcQxreqhhoArLyDyvZqK2sd3jL3iGxwT4ykXK/image.png)
+Date | Steem | SBD
+--- | --- | ---
+2017-07-06 | 1,030,534.611 STEEM | 177,009.313 SBD
+2017-07-05 | 330,868.659 STEEM | 150,586.456 SBD
+2017-07-04 | 223,179.240 STEEM | 59,275.910 SBD
+2017-07-03 | 387,445.545 STEEM | 47,491.996 SBD
+2017-07-02 | 284,047.110 STEEM | 76,854.236 SBD
+2017-07-01 | 276,112.499 STEEM | 153,190.845 SBD
+2017-06-30 | 212,371.286 STEEM | 55,818.842 SBD
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 8. Steem Price Update
+![](https://steemitimages.com/DQmYCB16PVsKL5gkw4e8H13BDUeRBoadVVjrLEntJ453Z3H/image.png)
+![](https://steemitimages.com/DQmTx3tLJHa3wYWe3XNBm2XR2i4U2EUtqY4YZHH2oVz8sSA/image.png)
+
+---
+<center><sub>¯\\___(ツ)____/¯ *Don't miss out on my next post! Follow me @penguinpablo*</sub></center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/esteem-calling-for-volunteer-translators-15-get-reward-201777t94722421z">eSteem - Calling For Volunteer Translators, #15, Get Reward</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://s5.postimg.org/40r88z62f/esteem_translation_internationalization.png" alt="esteem-calling-for-volunteer-translators-15-get-reward-201777t94722421z"/><p class="hive-body"><center>https://s5.postimg.org/40r88z62f/esteem_translation_internationalization.png</center>
+
+**Thank You** to all contributors for helping with translation of **eSteem** to their own native languages! We are working on eSteem desktop app which will have new look, better usability and scalability also latest development changes from mobile version will be migrated. Stay tuned for next major release of eSteem mobile as well as desktop wallet app.
+
+<hr>
+
+## What's eSteem ?
+ 
+For those who find eSteem related post first time and don't know what eSteem is: It is mobile and desktop application for Steem! eSteem is offering some of the unique features (Bookmarking, Post Drafts, Image upload/capture, Personal Gallery, Notifications, many more) for mobile users! Evolution of [eSteem desktop](https://steemit.com/esteem/@good-karma/esteem-desktop-v2-sneak-preview-as-promised-201755t205645424z) app is under development. 
+ 
+eSteem supports **multi-currency** where you can see post rewards in any currency you like (BTC, USD, EUR, RUB, GBP, JPY, KRW, INR, CNY etc.), **multi-language** (**44+**) where you can use app in [any language](http://translate.esteem.ws) you are familiar with, **multi-account** where you can add more than one account and easily change between accounts, **multi-chain** where you can use both Steem and Golos chains, **multi-notifications** where you can get notification for your multiple accounts for following activities Vote, Follow, Unfollow, Mention, Comment, Reblog, Scheduled post publish, etc!
+ 
+Check out this blog @good-karma for more related posts and latest announcements. 
+
+<hr>
+
+# Translation platform Crowdin
+
+We are using Crowdin to help not only translators and proofreaders, but as well as because of its easy integration with github source code and easy management.
+
+http://translate.esteem.ws
+
+Crowdin offers automatic suggestions which should help translator to be more productive so we save your time as well as ours. Also you can see what's translated, comments on specific phrases, etc.
+
+# Current Status
+
+<center>https://img.esteem.ws//negpp2fbsv.png</center>
+
+If you don't find your language, come join us and help to have eSteem in your own, native language.
+
+Join here: http://translate.esteem.ws
+
+All translation credits are being added in About Page of the app! If your username needs correction or addition, please let us know! These translations and credits are being added to **eSteem** desktop app as well as http://esteem.ws website.
+
+<hr>
+
+### Rewarded
+
+With help of community and voters, we have rewarded selfless/voluntary contribution for **Russian** and **German**, **Greek**, **Polish**, **Spanish**, **Chinese (traditional)**, **Hungarian**, **Bulgarian**, **Chinese simplified**, **Swedish**,  **Indonesian**, **Malay**, **Ukrainian**, **Filipino**, **Croatian**, **Persian** and **Arabic**,  **Italian**, **Czech**, **French**, **Lithuanian**, **Latvian**, **Japanese**, **Netherlands**, **Portuguese**, **Hebrew**, **Finnish**, **Dolan**, **Portuguese Brazil**, **Bosnian**, **Hindi**, **Korean**, **Urdu Pakistan**, **Thai**, **Catalan** community translators!
+
+<center>https://steemitimages.com/DQmRKYuvZtVe41G7eUXXZ3DUa1SGDjwmysecRSt4xapDhjJ/eSteem_translation_Russian_German.png</center>
+<center>https://steemitimages.com/DQmQZngDHsk1eZVuteg5JenLHK1FoCNtpUXJyaTb7NRyYbA/eSteem_translation_Greek_Polish.png</center>
+<center>https://steemitimages.com/DQmVQwq4wckojnCi2DZ8JB5Z3iTq8FuDCCAYhD3oz6QpWLi/eSteem_translation_Spanish_Chinese_tr.png</center>
+<center>https://steemitimages.com/DQmcQo8EaJ6GVqnajGM8AAs7Sx7NJ6vxTypabhDCAd6M6cC/eSteem_translation_Hungarian_Bulgarian.png</center>
+<center>https://steemitimages.com/DQmPNVvrFcQBHWuV2MgUXedjSWMN6RA3n3Njw1kWkfUkhQf/eSteem_translation_Chinese_simpl_Swedish_Indonesian.png</center>
+<center>https://steemitimages.com/DQmRLZqj6GxUc9A1vQgQu4fohmmjYSB3ah9WPkzvgFvTeoc/eSteem_translation_Malay_Ukrainian_Filipino.png</center>
+<center>https://steemitimages.com/DQmPGMv1fo1PAshnB2y43VYRfKf5aGsonFarpis9ggcahqA/eSteem_translation_Croatian_Persian_Arabic_Filipino.png</center>
+<center>https://steemitimages.com/DQmR21uKoAgs7AsSoyqvRbQLeA8BX1bFdiWbJ9RTqqfMF1k/eSteem_translation_contributors_reward_13.png</center>
+<center>https://steemitimages.com/DQmbS6jdiWr5paNvARfpEoC8wxvanepx6MhbWj7q27HpMga/eSteem_translation_contributors_reward_14.png</center>
+
+
+### Giveaway
+
+All rewards from this post goes to new and remaining translation contributors (with extra surprise).
+
+We want to give back to the contributors and people voluntarily acting for the good of many, translating tools, making it easy to use for newcomers and helping to grow different language users as well as attracting other cultures and users around the world! If you don't find your language and want to contribute, please suggest language name in comments and we will add that...
+
+**Note:** few new phrases will be added before next release, be sure to check periodically to not miss updates.
+
+Come join us: http://translate.esteem.ws
+
+
+<hr>
+
+Thank you for reading, collaborating, contributing and supporting,
+@good-karma & @testz
+<hr>
+
+<center><h5>[Vote witness](https://steemit.com/~witnesses) <code>good-karma</code> to support projects</h5></center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/ask-steemit-what-is-your-proudest-moment">Ask Steemit - What is your proudest moment - 让你最自豪的时刻是什么?</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmVoKfLHH8sxPXGCArJ4qeL1Y3LJVQdSJYbsEVKYayjceG/IMG_1617.PNG" alt="ask-steemit-what-is-your-proudest-moment"/><p class="hive-body">Ask Steemit是一个我在英文区开始的帖子。希望中文区的朋友们也能够来参加。
+**这周的问题是： 让你最自豪的时刻是什么？**
+
+***
+
+## Announcing the winner of 10 SBD from the previous week 
+
+The question from the previous week was *"What is an interesting fact about you that very few people know?"* You can read the full post [here](https://steemit.com/asksteemit/@nextgen622/ask-steemit-what-s-an-interesting-fact-about-you-that-very-few-people-know-10-sbd-for-the-best-response)
+  
+### The winning comment this week was from @silverfortune who commented with the following:
+
+**I sliced open a person today.**
+*No, seriously. Cadaver lab, doing dissections on dead people. Today, we mostly removed skin and fat from the back, but also sliced the medial border of the proximal attachment of the trapezius, and peeled it aside to see underneath. Fascinating stuff, but takes some getting used to.*
+
+                   As usual, there were a lot of great answers this week, so please take some time to read through all the great responses.
+      
+ ***
+
+## The question for the Steemit community  today is: What's your proudest moment?
+![IMG_1617.PNG](https://steemitimages.com/DQmVoKfLHH8sxPXGCArJ4qeL1Y3LJVQdSJYbsEVKYayjceG/IMG_1617.PNG)
+*Thanks to @epicdesigns for the Ask Steemit logo*
+
+Thanks to @snooway for suggesting the question. As a result, @snooway will also be my guest judge this week
+
+Please include your answers in the comments below. I will be awarding 10 SBD to the best response.
+
+To qualify, you must upvote and resteem this post.
+
+***
+
+Follow me @nextgen622 for weekly Ask Steemit posts</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-8-mount-abu-rajasthan">Beautiful India #8 - Mount Abu, Rajasthan</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmamHdsS7biYwYRNMYWPukb375qTsZ6Fwq1GpiouAdobH7/IMG_20170304_153321830.jpg" alt="beautiful-india-8-mount-abu-rajasthan"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get more beautiful pictures of India.
+
+**View From Highest Point in Mount Abu**
+
+![IMG_20170304_153321830.jpg](https://steemitimages.com/DQmamHdsS7biYwYRNMYWPukb375qTsZ6Fwq1GpiouAdobH7/IMG_20170304_153321830.jpg)
+
+**Yet Another Outstanding View**
+
+![IMG_20170304_153324987.jpg](https://steemitimages.com/DQmcSZUf2TvBQKz7pnLDLQ1uzg2eTfgYc3LLAB9kgnYsRSn/IMG_20170304_153324987.jpg)
+
+**Temple at the Peak**
+
+![IMG_20170304_140539255.jpg](https://steemitimages.com/DQmbCR348euqt5N89DmxJAmiQH99QdYqSxFTzQGqvyoB2Bv/IMG_20170304_140539255.jpg)
+
+**Nothing Much to say :P**
+
+![IMG_20170304_143529532.jpg](https://steemitimages.com/DQmaHuzZ7BoHp1PQZfp8fkLdwRREBGx8zzbsFEEzjXu8nxt/IMG_20170304_143529532.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/state-of-emergency-g20-summit-2017">State Of Emergency - G20 Summit 2017</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://picload.org/image/rplgigwi/webp.net-resizeimage36.jpg" alt="state-of-emergency-g20-summit-2017"/><p class="hive-body"><html>
+<center><h3>Today was a day full of<em> stress, traffic jam</em> and a lot of <em>negative energy....</em></h3>
+<p><br></p>
+<p>https://picload.org/image/rplgigwi/webp.net-resizeimage36.jpg</p>
+<p><br></p>
+<p>The G20 summit takes place in my city, Hamburg, as everyone already know. The traffic was totally out of control just one day before the G20 summit should start because Donald Trump landed today and blocked the whole city centre. I was stuck in traffic for three hours and needed to park outside the area and take the train to reach my destination. I really want to mention that the police officer are doing a great job. You see police trucks, weapons and officers everywhere. In addition at least five helicopters are circling around the town to protect the world leaders.&nbsp;</p>
+<p><br></p>
+<h3>--------------------------------------------------------------------</h3>
+<h3>I took some pictures out of my car window to show you what happened today.</h3>
+<p><br></p>
+<p><em>I literally was staying in that position for over 30 minutes without moving a centimeter! After waiting 50 minutes I was told that the street is blocked you need to drive a different road. If I only knew that before...</em></p>
+<p>https://picload.org/image/rplgigww/img_1216.jpg</p>
+<p>https://picload.org/image/rplgirgr/img_1217.jpg</p>
+<p><br></p>
+<p><em>After searching for the right route I got into the second traffic jam. If I only knew what happened after that...</em></p>
+<p>https://picload.org/image/rplgirgl/img_1227.jpg</p>
+<p><br></p>
+<p><em>People turned off their motor and got out of their cars to talk to others or to ask the police officer, who blocked the street, some questions.&nbsp;</em></p>
+<p>https://picload.org/image/rplgirra/img_1228.jpg</p>
+<p><br></p>
+<p><em>This place isnt even in the city centre but there were a lot of police officer doing their jobs.&nbsp;</em></p>
+<p>https://picload.org/image/rplgirdl/img_1235.jpg</p>
+<p><br></p>
+<p>https://picload.org/image/rplgirlr/ezgif.com-video-to-gif18.gif</p>
+<p><br></p>
+<p><em>I also had no internet connection because they turned off the signal for a specific area and thats why I couldnt search for a faster route....</em></p>
+<p>https://picload.org/image/rplgirwi/ezgif.com-video-to-gif19.gif</p>
+<p><br></p>
+<h3>Here are some pictures from the news to see how big the traffic jam was</h3>
+<p><br></p>
+<p>http://cdn4.spiegel.de/images/image-1158553-860_poster_16x9-iost-1158553.jpg</p>
+<p>http://cdn3.spiegel.de/images/image-1162652-860_poster_16x9-dwwn-1162652.jpg</p>
+<p>http://www.mopo.de/image/27784688/2x1/940/470/43e3c4ea613c055a8d4b74f9077029c4/gq/verkehr-g20.jpg</p>
+<p>http://cdn3.spiegel.de/images/image-1162746-640_panofree-qflt-1162746.jpg</p>
+<p><br></p>
+<p>-------------------------------------------------------</p>
+<p><br></p>
+<p>I just want to leave before the total chaos breaks out. The G20 summit hasnt even started yet and the town is close to be out of control. ( Not because of the safety, because of the traffic jam )</p>
+<p>I am curious what happens next. For everybody who is in Hamburg right now - Be safe! Do not go into the centre of the city and take care of yourself!</p>
+<p><br></p>
+<h3><em>I hope you liked the update, I will let you know if anything spectacular happens</em></h3>
+<p><br></p>
+<p>Source -</p>
+<p><a href="http://www.spiegel.de/auto/aktuell/g20-gipfel-in-hamburg-so-veraendert-der-gipfel-carsharing-mietwagen-und-oepnv-a-1154446.html">Spiegel Online</a></p>
+<p><a href="http://www.mopo.de/hamburg/g20/verkehrschaos-zu-g20--das-sagt-der-hamburger-senat-zu-einschraenkungen-27784650">Mopo&nbsp;</a></p>
+<p><br></p>
+<p>Stay focused</p>
+<p>https://img1.steemit.com/0x0/https://picload.org/image/rdrlwrgg/ezgif.com-resize.gif</p>
+<p>Love, Soldier</p></center>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</html></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/do-you-need-food-we-re-giving-away-free-food-every-day-and-we-re-happy-to-share-with-you">Do You Need Food? We&#x27;re Giving Away FREE Food Every Day &amp; We&#x27;re Happy to Share with YOU!</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://s6.postimg.org/j4kwfakq9/image.jpg" alt="do-you-need-food-we-re-giving-away-free-food-every-day-and-we-re-happy-to-share-with-you"/><p class="hive-body"><html>
+<h1><center>We  are already feeding free food every single day--do you need food too? We have enough to share.
+</center></h1><br>
+<p><center>You can get free food from us at the Garden of Eden, no questions asked. Whether you need a box of food or a single meal, you can come get food.&nbsp;</center></p>
+<p><br></p>
+<p><center><img src="https://s6.postimg.org/j4kwfakq9/image.jpg" width="561" height="373"/></center></p>
+<p><br></p>
+<h3>Right now, we have an abundance of&nbsp;</h3>
+<ul>
+  <li>tofu</li>
+  <li>whole milk</li>
+  <li>2% milk</li>
+  <li>soy yogurt</li>
+  <li>eggs</li>
+  <li>lamb's quarter</li>
+  <li>herbs</li>
+</ul>
+<p><br></p>
+<p><center><img src="https://s6.postimg.org/cplvime0h/IMG_2719.jpg" width="800" height="574"/></center></p>
+<h1><center>Do you need or want food??</center></h1><br>
+<p><center>Our offerings change often, but we will share what we have with you.</center></p>
+<p><br></p>
+<p><center><img src="https://s6.postimg.org/czte1ysmp/IMG_1179.jpg" width="800" height="533"/></center></p>
+<h2><center>Contact us via email at <a href="gardenofedenvortex@gmail.com">gardenofedenvortex@gmail.com&nbsp;</a></center></h2><br>
+<p><center>We'll work out a time that works for both of us, and you can come by to get free food!&nbsp;</center></p>
+<h1><center>Let us know any time you need food, and you can come get some free food.&nbsp;</center></h1>
+<p><center>This is an ongoing offer, although the foods we have in abundance changes frequently. We have a lot of dairy right now that we want to share ASAP, because we don't have professional/industrial refrigeration or anything like that.<strong> If you want to help us acquire a better infrastructure to serve more people, please contact us.&nbsp;</strong></center></p>
+<p><br></p>
+<p><center><img src="https://s6.postimg.org/f5nowgw35/IMG_2723.jpg" width="800" height="766"/></center></p>
+<h1><center>In summary, we have food, and if you or anyone you know needs or wants food, we will share!</center></h1>
+<p><br></p>
+<p><center>Contact us via email at&nbsp;</center></p>
+<h1><center><a href="gardenofedenvortex@gmail.com">gardenofedenvortex@gmail.com</a></center></h1>
+<p><br></p>
+<p><br></p>
+<h1><center>Blessings~*~</center></h1>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1><center><a href="www.intothegardeonfeden.com">www.intothegardenofeden.com</a></center></h1>
+<p><center><img src="https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/http://i.imgsafe.org/b89f20caa6.png" width="960" height="330"/></center></p>
+</center></html></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/did-you-notice-today-steemit-family-that-your-blog-posts-are-not-auto-upvoted-by-yourself-any-longer-i-bet-some-of-you-did-not">Did you notice today Steemit Family that your blog posts are NOT AUTO UPVOTED BY YOURSELF any longer?   I bet some of you did not notice this change in code today!!</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmf3n3rFPUdGoavakuzpnzfsbk1DbjaM1uNPyuDmDArsS8/image.png" alt="did-you-notice-today-steemit-family-that-your-blog-posts-are-not-auto-upvoted-by-yourself-any-longer-i-bet-some-of-you-did-not"/><p class="hive-body">##### <center>
+ https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmf3n3rFPUdGoavakuzpnzfsbk1DbjaM1uNPyuDmDArsS8/image.png
+
+----
+
+Normally when you write and post a blog, the default setting is to the checkbox  here where my cursor is, in the image below, being checked where you write and format your post-- so you automatically UV (upvote) your own post.
+
+----
+
+![](https://steemitimages.com/DQmYPu3dKpr4r1d3MeB73EYWsXsQZupXSFRzEiMnSho8fqF/image.png)
+
+----
+
+As you can  see, it  is the little checkbox that says **Upvote Post** right below where you have the REWARDS option drop down box.  It is either a glitch, in the code, or the code has been changed -- so please pay attention to this.
+
+I've been on here 11 months and I have about 800 blog posts up and it has always been auto-checked to auto upvote my post when I publish a post. 
+
+I'm not sure why it has become unchecked now, but the norm is to UV your post when you publish.   For people with a little more (or a lot more) SP (Steem Power) -- this is a significant change and makes a big difference.  
+
+All my posts y-day were fine, so overnight, something changed last nite or very early today in my EST zone, anyways. 
+
+----
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmWGQ9N7Ysr3o9dir4G6hXrK9s7dfAoCbjmf6YQz4Uthdw/image.png
+
+----
+
+#### Figured this is important for new and older Steemians alike!!!
+
+----
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmZ3h5ghWebGtF1jvRZ9mNbx76JtLLFptKUepa3mzDwZEo/image.png
+
+----
+
+Good night my friends, I will check in with you tomorrow!!
+
+----
+
+#### Thanks for reading, have a nice day.
+
+----
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmWGQ9N7Ysr3o9dir4G6hXrK9s7dfAoCbjmf6YQz4Uthdw/image.png
+
+----
+----
+
+http://i.imgur.com/68SXQpW.gif
+
+----
+----
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/DQmeMsokLJHgvoqfQt44Zy7Kvmvjr68x51nGqfrtm65zqoe/image.png
+
+----
+
+----
+
+
+### If you liked this blog post - please Resteem it and share good content with others!
+
+----
+
+### Some of my recent blogs: 
+
+--
+
+https://steemit.com/life/@barrydutton/activist-post-series-or-e-5-or-gathering-nearly-1000-petitions-signed-that-landed-on-the-prime-minister-of-canada-s-desk-to
+
+https://steemit.com/steemit/@barrydutton/telling-fascistbook-off-on-your-page-saying-they-should-get-on-steemit-lol-captured-on-the-blockchain-and-the-twitter
+
+https://steemit.com/bitcoin/@barrydutton/crypto-101-or-video-just-released-andreas-antonopoulous-bitcoin-q-and-a-unstoppable-code-9-mins-super-practical-resource-here
+
+https://steemit.com/cryptocurrency/@barrydutton/dash-smash-dash-just-hits-a-new-ath-of-usd211-usd-up-another-15-today
+
+https://steemit.com/steemit/@barrydutton/hey-steemit-family-what-was-your-1st-blog-post-you-authored-on-here-and-why-or-e-3-or-post-it-or-community-engagement-series
+
+https://steemit.com/steemit/@barrydutton/the-steemu-asks-what-are-you-blogging-about-today-or-e-5-or-drop-your-links-and-ideas-here-like-mad-pictures-thoughts-ideas-etc
+
+https://steemit.com/cryptocurrency/@barrydutton/what-are-you-trading-today-and-why-or-e-37-of-a-community-based-engagement-resource-for-everyone-july-4th-2017-basic-market
+
+https://steemit.com/life/@barrydutton/visiting-my-friend-s-cockatoo-for-the-first-time-birds-either-love-you-or-hate-you-right-away-this-was-entertaining-so-here-s
+
+----
+
+##### <center>If you feel my posts are undervalued or you want to donate to tip me - I would appreciate it very much.
+
+Bitcoin (BTC) - 18J6RRuzX4V7b2CDbx7tWZYNBLkkGWsvWX
+
+DASH - XgZvsvSZgPkNbmGbRhc3S1Pt2JAc7QHwiS
+
+PIVX - DA3azxQqJiX9t7EviuacpamfNhMi2zGAUh
+
+Expanse (EXP) - 0x819b9cce8630ab638198eabfd7496786c20d629a
+
+Monero (XMR) - d8ecb02c09f70ec10504b59b96bc1f488af28b05933893dfd1f55b113e23fbff
+
+Ethereum (ETH) - 0x3Ad69Ff057C9533ca667B2d7E3E557F5eeFd4477
+
+Ethereum Classic (ETC)  - 0x5ab2b08d4ce8d454eb9d1ecc65c6d8b0c5f9784c
+
+LiteCoin (LTC) - LKdsnvSXk9JW99EiNicFMGKc1FXiBo9tUE
+
+Stratis (STRAT) - SNsJp6v1jXvKWy4XcXSXfNQ9zhSJJppJgv
+
+Synereo (AMP) - 1KnrL6wFHaT4gjJ2YJ5f6WmKTDJNsaBS8s
+
+ZCash (ZEC) - t1aCPEYELkGaf3GtgGTiCEDo7XfPm4QEwmL   </center></p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/66">← Previous Page</a><li style="margin:0">67</li><a rel="next" href="/hive-blog/68">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/67";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

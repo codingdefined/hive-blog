@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\61\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/money-can-actually-buy-you-happiness">Money can actually ‘buy’ you happiness</a></h3><small>July 26, 2017</small></header><section><img class="img-body" srcSet="noimage.png" alt="money-can-actually-buy-you-happiness"/><p class="hive-body">Money can buy you happiness, it would appear. Or, at least, money can buy you extra free time and that may make you happier, according to a new study.
+
+The research suggests that, instead of engaging in "retail therapy" in an attempt to feel better, people with enough money should spend it on paying someone else to do chores, such as cleaning, cooking, mowing the lawn, household maintenance or even shopping.
+
+One of the researchers, Professor Elizabeth Dunn, said: "Although buying time can serve as a buffer against the time pressures of daily life, few people are doing it even when they can afford it.
+
+"Lots of research has shown that people benefit from buying their way into pleasant experiences, but our research suggests people should also consider buying their way out of unpleasant experiences." She added that the benefits of that extra time "aren't just for wealthy people".
+
+"We thought the effects might only hold up for people with quite a bit of disposable income, but to our surprise, we found the same effects across the income spectrum," said Dunn, of British Columbia University in Canada.
+
+The researchers surveyed more than 6,200 people in the US, Canada, Denmark and The Netherlands, asking them how they felt and how much they spent on time-saving services.
+
+"Across samples, there was a significant interaction between time-saving purchases and time stress," they wrote in the journal 'Proceedings of the National Academy of Sciences'. "Deconstructing this interaction, time stress was associated with lower life satisfaction among respondents who did not spend money on time-saving purchases.
+
+"For respondents who spent money on time-saving purchases, the negative effect of time pressure on life satisfaction was not significant."
+
+As part of the study, the researchers also gave $40 (approx. Rs 2,000) to 60 people in Vancouver to spend on a material purchase on one weekend and a time-saving service on another weekend. They found people were happier in the latter case.
+
+However, the survey found that many people did not seem to want to buy time-saving services even when they could easily afford them. Of some 818 Dutch millionaires included in the survey, nearly half said they "spent no money outsourcing disliked tasks".
+
+"In recent decades, incomes have risen in many countries, potentially exacerbating a new form of poverty: from Germany to Korea to the US, people with higher incomes report greater time scarcity," the paper said.
+
+"Feelings of time stress are in turn linked to lower well-being, including reduced happiness, increased anxiety, and insomnia... In theory, rising incomes could offer a way out of the 'time famine' of modern life, because wealth offers the opportunity to have more free time, such as by paying more to live closer to work."
+
+Source [Times Of India](http://timesofindia.indiatimes.com/home/science/money-can-actually-buy-you-happiness/articleshow/59766287.cms)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/18-years-ago-india-has-won-the-kargil-war">18 Years Ago India has won the Kargil War</a></h3><small>July 26, 2017</small></header><section><img class="img-body" srcSet="https://i.redd.it/bxldraw0qubz.jpg" alt="18-years-ago-india-has-won-the-kargil-war"/><p class="hive-body">[]https://i.redd.it/bxldraw0qubz.jpg
+
+The Kargil War (Hindi: करगिल युद्ध, kargil yuddh, Urdu: کرگل جنگ ‎ kargil jang), also known as the Kargil conflict,[note (I)] was an armed conflict between India and Pakistan that took place between May and July 1999 in the Kargil district of Kashmir and elsewhere along the Line of Control (LOC). In India, the conflict is also referred to as Operation Vijay (Hindi: विजय, lit. "Victory") which was the name of the Indian operation to clear the Kargil sector.
+
+The cause of the war was the infiltration of Pakistani soldiers and Kashmiri militants into positions on the Indian side of the LOC, which serves as the de facto border between the two states. During the initial stages of the war, Pakistan blamed the fighting entirely on independent Kashmiri insurgents, but documents left behind by casualties and later statements by Pakistan's Prime Minister and Chief of Army Staff showed involvement of Pakistani paramilitary forces, led by General Ashraf Rashid. The Indian Army, later supported by the Indian Air Force, recaptured a majority of the positions on the Indian side of the LOC infiltrated by the Pakistani troops and militants. Facing international diplomatic opposition, the Pakistani forces withdrew from the remaining Indian positions along the LOC.
+
+The war is one of the most recent examples of high-altitude warfare in mountainous terrain, which posed significant logistical problems for the combating sides. It is one of the very few instances of direct, conventional warfare between nuclear states (i.e., those possessing nuclear weapons). India had conducted its first successful test in 1974; Pakistan, which had been developing its nuclear capability in secret since around the same time, conducted its first known tests in 1998, just two weeks after a second series of tests by India.
+
+Source [Wikipedia](https://en.wikipedia.org/wiki/Kargil_War)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/white-peocock-bannerghatta-national-park-india">White Peocock - Bannerghatta National Park, India</a></h3><small>July 25, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmQw5WqPAjZcJ8x5JmFRxsPwTxBKkHRFyH7ngrsic7Rmqx/20170723_164630.jpg" alt="white-peocock-bannerghatta-national-park-india"/><p class="hive-body">![20170723_164630.jpg](https://steemitimages.com/DQmQw5WqPAjZcJ8x5JmFRxsPwTxBKkHRFyH7ngrsic7Rmqx/20170723_164630.jpg)
+![20170723_164614.jpg](https://steemitimages.com/DQmNkyrZqpa2ksCsavnswsHP1mjuSdtm1nNZ5Jg6L8QSfSs/20170723_164614.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/can-t-stand-your-boss">Can&#x27;t Stand Your BOSS?</a></h3><small>July 25, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmYPxmxDnBhMsHgtuBt8CHFVczyZEmw1wt8BCvU23fUWQB/boss2.jpg" alt="can-t-stand-your-boss"/><p class="hive-body">It seems like every boss I have ever had has exerted this authoritarian rule over my life.  Why is it that some humans think they are better then others?  This is life I suppose.   One boss I am dealing with seems to like to scream and belittle me when she thinks I do something wrong. This has happened a few times, and its really getting old.   She plays a nice roll in front of others but then exerts this "you will do this" mentality all the time.  It seems like everytime I turn around she is there.  Getting tired.  I am really considering taking my own advise and quiting my job.  Life really is to short to be living under an oppression.  Looking to take the "leap of faith" soon.  I just hope I have the courage to follow through. 
+![boss2.jpg](https://steemitimages.com/DQmYPxmxDnBhMsHgtuBt8CHFVczyZEmw1wt8BCvU23fUWQB/boss2.jpg)
+
+
+Living overseas doesn't help matters either.  Raising 3 children in a culture that is not their own, learning a new language, customs, etc. I sure would like to be living back in the States.  I think what is really going on is that the stress load is just to great for me here.  A boss that hovers over me sure doesn't help matters.  
+
+What are your thoughts?  Does anyone have a Boss that they just are having problems with?   Good Luck and Hang in their STEEMIANS.  Cheers.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/afternoon-yawning">Afternoon Yawning</a></h3><small>July 25, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmXCkXVCQiX5S9aXoYxWtFVfewhw6bSJ97hR5rCHQxrGki/20170723_151442.jpg" alt="afternoon-yawning"/><p class="hive-body">![20170723_151442.jpg](https://steemitimages.com/DQmXCkXVCQiX5S9aXoYxWtFVfewhw6bSJ97hR5rCHQxrGki/20170723_151442.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/weekly-steem-stats-report-july-24-2017">Weekly Steem Stats Report - July 24, 2017</a></h3><small>July 24, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmTKGpTasX51AWbwjoUBxbPbjThNLNNh9QiQaUvtTkjwN1/image.png" alt="weekly-steem-stats-report-july-24-2017"/><p class="hive-body">Welcome to my Steem Stats Report for Monday, July 24, 2017. All data is coming directly from the Steem blockchain and is based on UTC time.
+
+*The format of the date fields is 'YYYYWW'.
+I.e. 201729 is week 29 of 2017 (from July 17 to July 23).*
+
+## 1. Weekly number of Posts (including comments)
+![](https://steemitimages.com/DQmTKGpTasX51AWbwjoUBxbPbjThNLNNh9QiQaUvtTkjwN1/image.png)
+Date | Posts
+--- | ---
+201729 | 735,617
+201728 | 806,891
+201727 | 852,571
+201726 | 976,399
+201725 | 808,004
+201724 | 572,741
+201723 | 428,461
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 2. Weekly number of votes
+![](https://steemitimages.com/DQmbjjHPd64mhY3TLJksrXgDMdTQMkFuAX2wQhQJSeGTWKm/image.png)
+Date | Votes
+--- | ---
+201729 | 2,077,547
+201728 | 2,127,795
+201727 | 1,937,757
+201726 | 1,910,964
+201725 | 1,904,070
+201724 | 1,733,898
+201723 | 1,422,894
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 3. Weekly active users
+![](https://steemitimages.com/DQmQDQssbVGocjqLJGtQYDnxRcwA7r6wjPddPxwT75V3oyw/image.png)
+Date | Active users
+--- | ---
+201729 | 43,617
+201728 | 44,583
+201727 | 41,424
+201726 | 40,760
+201725 | 34,553
+201724 | 26,166
+201723 | 19,811
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 4. Posts + Comments per post
+![](https://steemitimages.com/DQmbY5JFtatKFK3mXsDCk2FMDPXE13Y9DCf27J159AzXcg9/image.png)
+Date | Average # comments
+--- | ---
+201729 | 3.51
+201728 | 3.54
+201727 | 3.58
+201726 | 3.65
+201725 | 3.62
+201724 | 3.74
+201723 | 3.67
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 5. New accounts created
+![](https://steemitimages.com/DQmYpeiaM5mN8LcVhJNhuzTyWencKuJnkjrLALiWMYP6cqn/image.png)
+Date | New Accounts
+--- | ---
+201729 | 12,728
+201728 | 14,156
+201727 | 10,698
+201726 | 17,353
+201725 | 17,322
+201724 | 19,072
+201723 | 6,985
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 6. Weekly Amount of SBD converted to Steem
+![](https://steemitimages.com/DQmTmbCWWTyj81sMWvSBXL22AMWtRQJK5se5LzQDGo3oxUq/image.png)
+Date | Amount in SBD
+--- | ---
+201729 | 131,795.166 SBD
+201728 | 53,547.834 SBD
+201727 | 16,156.954 SBD
+201726 | 20,851.761 SBD
+201725 | 14,021.673 SBD
+201724 | 10,572.907 SBD
+201723 | 6,005.578 SBD
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 7. Weekly Amount of Steem Powered UP & DOWN
+![](https://steemitimages.com/DQmXyEX52qTFCevxAxqawqWuLWewrSfE7ySLfjuJecYxzYy/image.png)
+Date | Powered UP | Powered DOWN | Difference
+--- | ---
+201729 | 3,230,324 STEEM | 1,595,833 STEEM | 1,634,491 STEEM
+201728 | 1,806,991 STEEM | 1,726,677 STEEM | 80,314 STEEM
+201727 | 1,784,699 STEEM | 1,967,021 STEEM | -182,322 STEEM
+Average p/d | 2,274,005 STEEM | 1,763,177 STEEM | 510,828 STEEM
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 8. Weekly Steem & SBD Transfers
+![](https://steemitimages.com/DQmSL1FzEdC7hANuJkTS55E3sSMHEKsi92PuPPnUHdP4hAu/image.png)
+Date | Steem | SBD
+--- | --- | ---
+201729 | 4,882,936.491 STEEM | 733,431.355 SBD
+201728 | 3,588,464.004 STEEM | 944,199.512 SBD
+201727 | 3,592,993.320 STEEM | 659,503.437 SBD
+201726 | 3,798,055.393 STEEM | 933,402.011 SBD
+201725 | 3,655,019.450 STEEM | 465,504.810 SBD
+201724 | 6,143,653.407 STEEM | 467,103.596 SBD
+201723 | 12,240,053.631 STEEM | 388,531.815 SBD
+
+
+<center>https://steemitimages.com/DQmbNxNgXLda5QXpWfDZxP2d3XR498RxCgucZVMnrBVcw7g/image.png</center>
+## 9. Steem Price Update
+![](https://steemitimages.com/DQmX4iRLwDbBm97pdMi7YCtGQuaYg1cdgnDDiKxL1SVxTXt/image.png)
+![](https://steemitimages.com/DQmUbq564nLJ8iMkV8WpdThDcjoxHrT5qFXTFVThp1JAiET/image.png)
+
+
+---
+<center><sub>¯\\___(ツ)____/¯ *Follow me @penguinpablo for daily Steem statistics.*</sub></center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/a-look-back-in-time-to-where-we-are-now">A look back in time to where we are now.</a></h3><small>July 21, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmUaqSDrQcLSqiKKe2eaGk9zSjeukUpoGtdbLtftjPbrbS/image.png" alt="a-look-back-in-time-to-where-we-are-now"/><p class="hive-body">It's been an interesting ride since April 2016 that's for sure.
+-
+
+Take a look at where we have come from, in all this time, just to retain a little perspective.
+
+We had the very early adopters, from before July 2016... some nice growth after payouts commenced... a slight decline and then an explosion coinciding with the Asian Crypto expansion.
+
+The graph has always displayed an interesting saw tooth pattern which becomes more pronounced as we on-board more users.
+
+There is a slight drop off at the moment but this is the usual consolidation that occurs after a massive surge in price and accompanying growth spurt. As the STEEM price consolidates and declines a little so does the user base.
+
+![](https://steemitimages.com/DQmUaqSDrQcLSqiKKe2eaGk9zSjeukUpoGtdbLtftjPbrbS/image.png)
+
+Its because most users like to visit the site on Wednesdays every week... I wonder what's up with that?
+-
+
+![](https://steemitimages.com/DQmPjp71Pz2owoEBd6r16N7BShEHsMJD5r5c1Mrro4xBH1S/image.png)
+
+The last couple of Weeks the US and South Korea have been swapping places.
+-
+It's interesting to see India in 4th place and Indonesia in 6th. 
+-
+It's interesting to also note the respective positions of:
+-
+- Nigeria, Venezuela in 10 and 11th
+- Philippines, Japan in 14 and 15th
+- Mexico, South Africa and Ukraine in 18,19 and 20th
+- China and Brazil are also making a push forward.
+
+Those are just the movers I notice, How is your country doing?(edit: the numbers in these columns are sessions not users)
+-
+
+
+
+![](https://steemitimages.com/DQmTFAzs5E6gapK8kuKRYMX2MrAynuzU3oFbnbV98SCoNPk/image.png)
+![](https://steemitimages.com/DQmW8eNVWUxj8ikBXUvqS9RGYNutzCHJkTqJgZ2NSc1okud/image.png)
+
+Now for the biggest surprise of them all... Check out the top three cities.
+-
+
+Seoul - South Korea
+-
+Medan - Indonesia
+-
+Lagos - Nigeria
+-
+
+Medan and Lagos have just squeezed past the incumbents, London and New York  (edit: the numbers in these columns are sessions not users)
+-
+
+![](https://steemitimages.com/DQmf7qZjUo3rhdxefF4pUkkGWVQ5ntJf6kSMDUUZQeninRR/image.png)
+![](https://steemitimages.com/DQmV1KRAyWgsGz45SHX5CND8jfbc3FbiMVtmGjrgYGhDeXN/image.png)
+
+How's your city doing? is it on the list?
+-</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/follow-friday-people-i-disagree-with">Follow Friday: People I disagree with</a></h3><small>July 21, 2017</small></header><section><img class="img-body" srcSet="https://steevc.keybase.pub/steemit/steevc.png" alt="follow-friday-people-i-disagree-with"/><p class="hive-body">There's plenty of healthy debate here on Steemit. I'm okay with people holding different opinions as long as they are open to discussing them. So, here are some people I don't always agree with, but I still choose to follow some of them:
+
+* @everittdmickey has strong view on bots and flagging on Steemit. He's very active here.
+* @shayne may be a bit of a Trump fan, but he's not so bad really ;) I don't buy into some of the things he posts about, but we get along.
+* @mindhunter has different opinions to me on various aspects of politics and finance, but he's a smart guy and one of the most active posters on Steemit.
+* I've known @jumowa for a few years. He thinks I'm a little naïve when it comes to trusting the news, but I think I'm less so than most people and I am open to different points of view.
+* @dickturpin is the only one of these I've actually met. We differ in our politics, but otherwise I think we have a lot in common.
+
+Just because you disagree with someone about some topics doesn't mean you can't be friends. We should not be afraid to admit we are wrong sometimes.
+
+Other people are using [the Follow Friday tag](https://steemit.com/trending/followfriday). We need ways to discover people to follow. Just following everyone you encounter will lead to a feed you can't keep up with. It pays to be choosy. I did the [first of these posts](https://steemit.com/steemit/@steevc/fridays-are-for-following-on-steemit) about ten months ago and I think I've done just about every week since then. Steemit is not showing all the posts when you click on the tag these days, but you can find a lot of them with the search.
+
+Steem on!
+
+<p><b><div class="pull-left"><img src="https://steevc.keybase.pub/steemit/steevc.png"></div>
+I'm Steve, the geeky guitarist. </b></p><p>I'll buy <a href="https://steemit.com/guitar/@steevc/steem-for-picks">guitar picks for Steem Dollars</a></p></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/creating-the-world-we-long-for">Creating The World We Long For!</a></h3><small>July 20, 2017</small></header><section><img class="img-body" srcSet="https://i.imgur.com/Gl2osAt.jpg" alt="creating-the-world-we-long-for"/><p class="hive-body">https://i.imgur.com/Gl2osAt.jpg
+
+1600 - Steem's popularity is skyrocketing! Join now and profit! Seriously! And for everyone else already on Steem, let's boost this growing popularity even more. 
+
+This post is about how to create the world we long for and how Steem and other cryptocurrencies can play a big part in this, why we should all try to boost Steem's growth with each of our posts as well as ways to incentivize such sharing so it becomes part of Steemians' second nature.     
+
+Most people who could benefit from using Steem haven't heard about it yet and it's a no-brainer for everyone  to work toward a better world helping remediate to this.  
+
+## Steem Pays Its Users! ##
+
+Steem is a revolutionary social network which pays its users for the votes, posts and comments they make depending on the votes they received. Not all votes are equal. 
+
+I've made a lot of money Steeming in the last year, more than a hundred thousand dollars, but there's possibly very few people who can still expect to make many thousands solely blogging nowadays. 
+
+Steem is the name of the technology and data base on which Steemit runs. Steemit is only one of the the many projects using this data base. [Busy.org](https://busy.org/) is another example, displaying the same information but differently. 
+
+Steem is also the name of the currency users are being paid with. Each Steem are currently worth around [1,40$](https://coinmarketcap.com/currencies/steem/#markets) and can easily be exchange for money. Steem is currently distributing around 63,000 Steem daily.
+
+No credit card is required ever. The only thing needed to register is a valid email account. 
+
+Steem details of its functionings can be found [here](https://steemit.com/steem/@teamsteem/steem-an-in-depth-overview). 
+
+Sign up [here](https://steemit.com/pick_account). 
+
+## The Opportunity Of A Lifetime! 
+
+<div class="pull-right"><center><img src="https://cdn.pixabay.com/photo/2013/07/18/20/27/sunrise-165094_960_720.jpg" /><br/><em></div>
+
+We're still very early and the opportunity to make interesting profits are very real. Steem currently has a bit more than 263,000 accounts.
+
+It's somewhat getting increasingly harder to succeed but any success is also increasingly more rewarding as we go. 
+
+Any posts or comments can pay their authors from mere pennies to hundreds of dollars and even though the trending page is filled with posts making hundreds of dollars, no new authors should expect their posts to make this much money even though it remains a possibility. 
+
+Most trending posts are from established authors holding a lot of Steem and thus having a lot to lose or gain from the Steem price performance. Also, people holding a lot of Steem are leveraging them to receive more votes and thus bigger rewards. 
+
+Posting anything will get their authors some rewards, from not quite a penny to much larger rewards as mention above. Posts can be a simple link or image or more extensive post. 
+
+New authors should probably stick to short posts requiring small amount of work and which are fun and witty, that is unless they know how to make their posts being paid well or if they are writing those posts with a precise objective which suits them. 
+
+## Steem Popularity Is Skyrocketing! 
+
+<div class="pull-left"><center><img src="https://cdn.pixabay.com/photo/2010/12/01/space-shuttle-774_960_720.jpg" /><br/><em></div>
+  
+Steem is the most fun social network and its meteoric growth is a testament to that.
+
+Steem steemed from concept to reality in early 2016, to become the [3,673](http://www.alexa.com/siteinfo/steemit.com) most visiting website today and is still going up the rank at a frantic pace. 
+
+Cryptocurrencies are changing the way money is created, distributed and transacted and now Steem also change the way information is disseminated. Money "rule" the world and money creation rules money but that's a topic for another post. 
+
+Every 3 seconds new Steem are created and distributed by a network of computers which no single entity control. 
+
+If steemit.com were to close every Steemians would still have control of their funds and they could still access their exact same blog through other site like [busy.org](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiE6_DriJbVAhXDuhQKHcPRCzoQFggmMAA&url=https%3A%2F%2Fbusy.org%2F&usg=AFQjCNHRaFK-QAtRGOkZjASdIcd9PQ4FoA) or app like [eSteem](https://steemit.com/esteem/@good-karma/esteem-frequently-asked-questions-faq-eys44lmimx).
+
+## Hundreds Are Joining Everyday!
+
+<div class="pull-right"><center><img src="https://cdn.pixabay.com/photo/2017/07/13/08/02/shaking-hands-2499612_960_720.jpg" /><br/><em></div>
+
+Hundreds of people are already joining Steem everyday, sometimes thousands and in a few months it could be tens of thousands. 
+
+I know a lot of us wished we were making and publishing video when Youtube got launched back in early 2005. There wasn't a lot of competition back then and this would have been a good opportunity to build a valuable and fun business. 
+
+The same can be said about Twitter, Facebook and Instagram. People with a lot of followers on these websites are receiving advertising offers and some of them are getting well paid to post simple advertising links. 
+
+Steem present even bigger opportunities than these websites and is still in its very early days. 
+
+Joining emerging social networks very early can be very rewarding and Steem is no exception.  
+
+## Our Thoughts And Actions' Purpose ##
+
+<div class="pull-left"><center><img src="https://cdn.pixabay.com/photo/2017/04/08/22/26/meditation-2214532_960_720.jpg" /><br/><em></div>
+
+The very purpose of our thoughts and actions should be to create the world we long for and for this to happen, it's necessary to have our ideas shared by a growing number of people, therein lies the need to share our Steem posts far and wide as much as possible. 
+
+Steem and all its users will gain immensely from accelerating Steem's growth. Steem content will get much more diversify, plenty and authors will feed on each others influence of ever more enlightening reflections. 
+
+The real value in each of our lives lie in the joy our actions and knowledge bring us rather than in any sorts of pseudo valuable we own, like national currencies. 
+
+Cooperation amplify our joy while its opposite, abuse, leads to mutual destruction. Let's work toward greater cooperation and curtailing abuse whenever possible. 
+
+Our posts should also have a place left open to introduce people to what Steem is and what it can do for them. 
+
+## Creating Beneficial Change! 
+
+<div class="pull-right"><center><img src="https://cdn.pixabay.com/photo/2014/11/22/17/58/clasped-hands-541849_960_720.jpg" /><br/><em></div>
+
+As I've laid out above, reaching out to people is one of the most important thing in regard to creating the world we long for that's why I want to reward those who are doing it. 
+
+My 100% upvote is worth around 70$ and I have 10 of these every 24 hours. I don't necessarily plan on giving only 100% upvote but I would love to give at least one a day for the best outreach posts. 
+
+Five days ago I said I would do such a thing for introduction posts. See [here](https://steemit.com/almost-famous/@teamsteem/hello-steemit-coinmaketcap-com-introduced-me).  It turned out I gave 6 100% votes in a roughly 24 hours period. Here's the [list](https://steemit.com/almost-famous/@teamsteem/hello-steemit-coinmaketcap-com-introduced-me#@teamsteem/re-teamsteem-hello-steemit-coinmaketcap-com-introduced-me-20170719t225913791z) of those posts. 
+
+Any posts can be used to promote Steem, even introduction post. I will look for these posts promoting Steem in the tag #promoting-steem. 
+
+None of officially listed tags on Steemit are about promoting Steem. See [here](https://steemit.com/tags). 
+
+## Creating The Culture We Long To Live From! 
+
+<div class="pull-left"><center><img src="https://cdn.pixabay.com/photo/2016/01/02/01/15/orange-tree-1117420_960_720.jpg" /><br/><em></div>
+
+Let's create a culture where it's in everyone's second nature to share their most useful knowledge and human power. 
+
+Sharing our posts as much as possible should be part of this. Promoting Steem can be easy and can make any already valuable posts even more valuable. 
+
+It's easier to create a good post promoting Steem than to make any other type of post.   
+
+## I Made Money On Steemit And So Can You!
+
+There's so many people in dire need of money that money can always be used to attract attention but everyone should make sure to be honest though and clearly state that most people won't probably make as much money as the earliest adopters. 
+
+Now no matter how much money people will make on average, Steem truly is a revolutionary technology and that's one of the reason why I want to share it far and wide as much as possible. I've already shared about all this throughout most of my posts. Here's one good [example](https://steemit.com/cooperation/@teamsteem/cooperation-is-humanity-s-greatest-asset). 
+
+By the way, a click-bait title is only a click-bait if the post isn't a useful post to the person who clicked on it. A title's purpose is to have people click on it and the intent of someone clicking on a link is to have a good time seeing what's behind that link. 
+
+## Let's Reward Promoting Steem!
+
+<div class="pull-right"><center><img src="https://cdn.pixabay.com/photo/2017/07/05/09/13/setting-2473874_960_720.jpg" /><br/><em></div>
+
+
+
+I will peruse the #promoting-steem tag. I invite others to join too. People should mention approximately how many people they will share their posts with, as well as provide links to these posts from their social media where they shared their posts. 
+
+I use [Bitly.com](https://bitly.com/a/bitlinks) to share my links on other social networks. Bitly allow me to know how many people clicked on my links and also when. 
+
+I have more than 200 clicks from Facebook's profile, on one of my [post](https://www.facebook.com/guillaumecardinalvegan/posts/10159024444040471) I shared there last week. I also have more than [90 views](https://www.facebook.com/Guillaumecardinal8/posts/1172186039593860) on the same post I share on one of my Facebook page. 
+
+Steemit.com receive around [555k page views](http://www.hypestat.com/info/steemit.com) per day and around [14.4k Steem posts](https://steemdata.com/charts) are published every day. If everyone shared their posts and received only 10 clicks on them then that would result in a 25% increase in page views per day. From there, even more could be achieved.     
+
+It's a given, Steem's already skyrocketing popularity would experience an epic boost if everyone would shared most of their Steem posts to their other social networks and that's why we should all make concerting efforts toward this goal.  
+
+# Boosting Steemit's Already Existing Buzz! 
+
+<div class="pull-left"><center><img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/audience-1850119_960_720.jpg" /><br/><em></div>
+
+Each and every time people will hear about Steem should help generate create more interest.  
+
+Tagging friends on Facebook and Twitter as well as adding tag there, will definitely helps your posts get more views.
+
+If a lot of people begin to use the tag #promoting-steem then it might be a good idea to put the number of people the post is going to be shared with in the first line under the title's post like I did. 
+
+The number of people being reached out isn't the only thing I'll be looking in rewarding posts. I'll also be looking at the overall quality. 
+
+I encourage everyone to help me incentivize this habit of doing as much as possible to boost Steem's growth. 
+
+Whether or not this initiative will do much difference remains to be seen. It might or might not but I felt like trying.
+
+## Shared On ##
+
+- Facebook Profile: ([760](https://www.facebook.com/guillaumecardinalvegan))
+- Facebook Page: ([204 followers](https://www.facebook.com/Guillaumecardinal8/))
+- Twitter: ([600](https://twitter.com/TeamSteemLive)) 
+- Instragram: (I'll be using it in the future)
+ 
+## I'd Love To Change The World!
+
+https://www.youtube.com/watch?v=1URj5VJl_JE
+
+Thank you to @papa-pepper for the awesome t-shirt! 
+
+## Thank You!
+
+Thank you for reading and for commenting! I read all of them! 
+
+Vote for my witness [here](https://steemit.com/~witnesses) if you consider I'm Steeming the world you want to be living in. ([What Are Steem Witnesses And Why You Should Support Them!](https://steemit.com/witness/@teamsteem/what-are-steem-witnesses-and-why-you-should-support-them))
+
+I use [Markdown Pad](http://markdownpad.com/) to create my posts and I recommend it to everyone. 
+
+See [here](https://steemit.com/steemit-help/@krnel/how-to-align-images-in-steemit-posts-left-right-and-center) how to align pictures. 
+
+### Chat
+
+Get on the chats. Not in private messages but in the chat rooms. These are some of the best places to makes some Steem friends. 
+
+- [Official Steemit.chat](https://steemit.chat/)
+- [SteemSpeak.com](https://discord.gg/sqxV63P) (24h/7 Voice chat)
+- [Peace, Abundance, Liberty](https://discord.gg/6KUGbE) (Minnow Support Project)
+
+### Find Out More! 
+
+- <sub><sup> [#1 "Stand for What Feels Best!"](https://steemit.com/joy/@teamsteem/thanks-to-steemit-i-feel-better-than-ever) (Money in the world today is created out of thin air by a small elite group at the expense of everyone else.)</sub>
+- <sub><sup>[#2 "Steem: An In-Depth Overview!](https://steemit.com/steem/@teamsteem/steem-an-in-depth-overview)" (The most in-depth and clearest guide to understand what Steem is and what it can do for you!) (Reached top #1)</sub>
+- <sub><sup>[#3 "The Ultimate Steem Guide!](https://steemit.com/steem/@teamsteem/the-ultimate-steem-guide)" (How to Use Steem: The revamped edition.) (Reached top #1)</sub> 
+- <sub><sup>[#4 "Steem: The Most Enjoyable Governance Tool Ever Devised!"](https://steemit.com/joy/@teamsteem/steem-the-most-enjoyable-governance-tool-ever-devised)(Everything we ever did was an act of governance.)</sub>
+- <sub><sup>[#5 "Make More Steem: Verify Your Introduction Posts!"](https://steemit.com/introduceyourself/@teamsteem/make-more-steem-verify-your-introduction-posts)
+- <sub><sup>[#6 "Some Steem Stats"](https://steemit.com/steem/@teamsteem/some-steem-stats) (The most empowering cryptocurrencies stats you'll read all day.)</sub>
+- <sub><sup>[#7 "What Are Steem Witnesses And Why You Should Support Them!"](https://steemit.com/witness/@teamsteem/what-are-steem-witnesses-and-why-you-should-support-them) (The clearest guide to understand what are "Witnesses" and why you should vote for them.)</sub>
+- <sub><sup>[#8 "Some Steem Tips For Some Steem Success!"](https://steemit.com/joy/@teamsteem/some-steem-tips-for-some-steem-success) (Who to follow and many more Steem fundamentals every serious Steemians should know!)</sub>
+- <sub><sup>[#9 "What Will You Be Steeming When Billions Are Watching!"](https://steemit.com/joy/@teamsteem/what-will-you-be-steeming-when-billions-are-watching) (Soon millions of Steemians will be Steeming us to a much better world!)</sub>
+- <sub><sup>[#10 "I Saw Your Dance Video And Now I Know You're Rich!"](https://steemit.com/joy/@teamsteem/i-saw-your-dance-video-and-now-i-know-your-rich) (Cool post pack with goodies as usual.)</sub>
+- <sub><sup>[#11 "Never Lose Sight Of Why You’re Posting!"](https://steemit.com/joy/@teamsteem/never-lose-sight-of-why-you-re-posting) (Wealth is just a tool and not an end in itself. )</sub>
+- <sub><sup>[#12 "Cooperation Is Humanity's Greatest Asset!"](https://steemit.com/cooperation/@teamsteem/cooperation-is-humanity-s-greatest-asset)</sub>
+- <sub><sup>[#13 "I'm Now A Full-Time Steemian!"](https://steemit.com/steemit/@teamsteem/i-m-going-to-put-my-whole-world-in-your-hands) That's it! I've quit my job.</sub>
+- <sub><sup>[#14 "Steeming Never Felt This Good!"](https://steemit.com/steemit/@teamsteem/steeming-never-felt-this-good) To create the world we long to see necessitate to influence our self first and foremost.</sub>
+- <sub><sup>["#15 Hello Steemit! - Coinmarketcap.com Introduced Me!"](https://steemit.com/almost-famous/@teamsteem/hello-steemit-coinmaketcap-com-introduced-me) (This post is a template people can follow for their own introduction post. It list my most favorite short video and documentaries.)</sub>
+- <sub><sup>["Thank you Dan Larimer! You are a great mentor!"](https://steemit.com/liberty/@teamsteem/thank-you-dan-larimer-you-are-a-great-mentor) (Dan is the Ex-CTO of Steemit)</sub>
+- <sub><sup>["Steemit.com Set To Become The World's Most Popular Website"](https://steemit.com/steem/@teamsteem/steemit-com-set-to-become-the-world-s-most-popular-website) (Part of The Ultimate Steembook)</sub>
+- <sub><sup>["The most beautiful thing I’ve ever heard"](https://steemit.com/lyrics/@teamsteem/the-most-beautiful-thing-i-ve-ever-heard) (My best paid post at 8,000$)</sub></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-12-digha-west-bengal">Beautiful India #12 - Digha, West Bengal</a></h3><small>July 20, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmQZ973uKAnwzSxKABq6hkT5BBCiQShAoz5PGfHgVuCxNu/IMG_20161216_162133480.jpg" alt="beautiful-india-12-digha-west-bengal"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get more beautiful pictures of India.
+
+**Sunset** 
+
+![IMG_20161216_162133480.jpg](https://steemitimages.com/DQmQZ973uKAnwzSxKABq6hkT5BBCiQShAoz5PGfHgVuCxNu/IMG_20161216_162133480.jpg)
+
+**Fish**
+
+![IMG_20161216_163638171.jpg](https://steemitimages.com/DQmcqbCWLBcuP8p6UrSsVs5ZETtTeUu5keFHgm1NGxRNhJG/IMG_20161216_163638171.jpg)</p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/60">← Previous Page</a><li style="margin:0">61</li><a rel="next" href="/hive-blog/62">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/61";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

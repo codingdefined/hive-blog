@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\68\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/bitcoin-and-anarchy-in-mexico-jeff-berwick-on-the-keiser-report">Bitcoin and Anarchy in Mexico - Jeff Berwick on The Keiser Report</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://dollarvigilante.com/wp-content/uploads/2017/07/bitcoinandanarchyinmexico.jpg" alt="bitcoin-and-anarchy-in-mexico-jeff-berwick-on-the-keiser-report"/><p class="hive-body"><center>https://dollarvigilante.com/wp-content/uploads/2017/07/bitcoinandanarchyinmexico.jpg</center>
+
+I was recently in Mexico City with Max Keiser of The Keiser Report on RT talking about a wide range of topics including bitcoin, anarchy and how they may end up being the two things which help the world retake the freedoms taken from them by central banks and government.
+
+We spoke about how bitcoin came about in 2009 right at the peak of the last financial crisis as almost a gift from God.
+
+I talked about how well the Mexican economy is doing compared to the US’ in addition to how difficult it is to do business in the US because of the massive number of regulations and taxation.
+
+I said one of the reasons why I personally love Mexico is that the population is generally anti-government.
+
+We also talked about things like the differences between the Mexican and US economies and how there are quite a few Americans coming to Mexico in search of greener pastures as well as how America has really turned into a massive nanny state. 
+
+Plus, we highlight just how awful and expensive the medical care systems are in the US and Canada and how not only is the quality of care better in Mexico, but it’s on demand and cheaper.
+
+Check out the full interview below to learn more about what it’s like to live a little bit freer on the other side of the imaginary line.
+
+https://www.youtube.com/watch?v=xt6vyB3ttE4
+
+If you want to learn more about cryptocurrencies check out my free four video webinar <a href="https://dollarvigilante.com/nationless-private-bank?cfid=138">HERE</a>.
+
+And make sure to subscribe to our <a href="https://www.youtube.com/subscription_center?add_user=TheDollarVigilante">Youtube channel</a> so you don’t miss any future videos.
+
+And, of course, follow us <a href="https://steemit.com/@dollarvigilante">here on Steemit</a> where The Dollar Vigilante content is always posted first!  We are closing in on 10,000 followers on Steemit!  Thank you!
+
+<center>https://img1.steemit.com/0x0/https://www.dollarvigilante.com/wp-content/uploads/2016/08/Jeff-Berwick-The-Dollar-Vigilante-Steemit-Bio-1024x221.jpg</center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/my-photography-water-candles-original">My photography - Water candles (Original) 水蜡烛</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://steemit.marketing/wp-content/uploads/2017/07/IMG_7958.jpg" alt="my-photography-water-candles-original"/><p class="hive-body">In a pond, I see a lot of these plants like ham sausage, approached to see, and looks like a candle, back home search the information, this plant called Po rod [pú bàng], with anti-inflammatory hemostasis effect, commonly used In the Trauma bleeding, antibacterial swelling, treatment of trauma to stop bleeding, I picked some my favorite photos,Together to enjoy！ 
+我在一个水塘，看到许多长得很像火腿肠的植物，走近看，又长得像蜡烛，查了下资料，这种植物叫蒲棒[pú bàng]，具有消炎止血之功效, 常用于外伤出血, 抑菌退肿,治创伤止血, 所有图像拍摄Iphone6，挑选了一些照片，希望大家喜欢.
+****
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7958.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/3-205.jpg<br>
+
+http://steemit.marketing/wp-content/uploads/2017/07/3-224.jpg<br>
+
+
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7933.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7934.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7935.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7941.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7946.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7947.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7959.jpg<br>
+****
+Hope you like!</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/see-eth-icos-craze-meet-useless-ethereum-token">See ETH ICOs Craze? Meet Useless Ethereum Token!</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/fnONU7D.png" alt="see-eth-icos-craze-meet-useless-ethereum-token"/><p class="hive-body">Anyone checking cryptos right know is aware of crazy Ethereum based ICOs that mostly pay out really good.
+While some of this tokens are really coded new things on the network many are just a copy-paste template of ERC20 to get funding.
+
+http://i.imgur.com/fnONU7D.png
+
+So for laugh (just like DOGE long ago) some guys made a token called - Useless Ethereum Token UET.
+http://i.imgur.com/1PFCYAL.png
+
+## ICO Investment
+http://i.imgur.com/nS5L8PV.png
+
+Sounds like trolling right? Well it just got real. Its trading!
+<a href="http://fuk.io/hitbtc"><img src="http://i.imgur.com/t8rn1br.png"></a>
+
+<a href="http://fuk.io/hitbtc">HitBTC exchange</a> that ive already spoke of here few times added it and its running already with volume.
+
+<a href="http://fuk.io/hitbtc"><img src="http://i.imgur.com/BwmUqNq.png"></a>
+<a href="http://fuk.io/hitbtc"><img src="http://i.imgur.com/kBALpCT.png"></a>
+
+Of course it just started, first trades are always super big on markets and we see 100% off later but the interesting thing is the coin actually getting an exchange with volumes.
+
+<a href="http://fuk.io/hitbtc"><img src="http://i.imgur.com/5bmOt8v.png"></a>
+
+
+## TLDR; Coin was made for lulz but remember where DOGE is now!
+http://i.imgur.com/qLr2AZG.png
+
+<table>
+  <tr>
+    <th><h1> Follow, Resteem and VOTE UP <a href="/@kingscrown">@kingscrown</a> creator of <a href="http://fuk.io" rel="noopener">http://fuk.io</a> blog for 0day cryptocurrency news and tips!</h1></th>
+    <th><img src="https://steemitimages.com/0x0/https://media.giphy.com/media/3ohzdPbKlUFVsmGpq0/giphy.gif" /></th>
+  </tr>
+</table></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/7dwguk-hi-morning">Hi Morning，天空变成蓝色的</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://steemit.marketing/wp-content/uploads/2017/07/IMG_7917.jpg" alt="7dwguk-hi-morning"/><p class="hive-body">Hi steemit 朋友，早起的虫被鸟吃，你们还在睡懒觉吗？ 晨跑是我这几年一直坚持的运动，起初是为了减肥，慢慢的变成了习惯，身边一些朋友受我的影响，也加入了晨跑，但没一个人坚持下来了，出汗几天就放弃了，许多人喜欢夜跑，因为工作原因，我很少夜晚出去活动，也不安全， 今天见到了久违的蓝天白云了，庐山上应该是非常舒服的一天，爬上海拨800，应该能见到鄱阳湖的雾海了.<br>
+
+捡了辆小黄车，小区到处都是，免费骑行了几公里<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7917.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7923.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7925.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7927.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7904.jpg<br>
+跑步遇到几位熟人，每天都能见面，他们有些人成了职业化，参加全国的马拉松比赛，目前我没有兴趣参加，需要太多的时间去训练<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7919.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7929.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7900.jpg<br>
+7600步，只消耗了5块饼干的能量，软件计算应该是有问题，不科学<br>
+http://steemit.marketing/wp-content/uploads/2017/07/12-142.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/12-138.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/12-139.jpg<br>
+我喜欢慢跑，或快走,直到出汗<br>
+http://steemit.marketing/wp-content/uploads/2017/07/12-143.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7894.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7909.jpg<br>
+http://steemit.marketing/wp-content/uploads/2017/07/IMG_7906.jpg<br>
+
+Steem的价格有所上升，但P和B网差价已经搬平， 昨天在云币申请的转账地址下来了， EOS上了车，Press.One 在12号也要ICO，趋着牛市还在，准备好上车了吗?</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/this-floor-generates-renewable-electricity-with-every-step">This floor generates renewable electricity with every step</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/zT9YvOL.jpg" alt="this-floor-generates-renewable-electricity-with-every-step"/><p class="hive-body"><html>
+
+<h2>Pavegen's specialised flooring has recently been installed at London's Heathrow Airport.</h2>
+
+<center><p><img src="http://i.imgur.com/zT9YvOL.jpg"/></p></center>
+
+<p>Imagine being able to harness energy for your home just from your body alone. This would completely wipe out the need for polluting fossil fuels and revolutionise how we think about and use energy.  One company from the UK is trying to do just that—with the help of a special type of flooring.</p>
+
+<h2>Pavegen’s V3 Flooring</h2>
+
+<p>UK company Pavegen, has developed a special floor tile which generates electricity whenever someone walks over it. As people step on the tiles, their weight pushes down on electromagnetic induction generators causing them to move. The kinetic energy is then transferred into off-grid electricity which is stored in batteries.</p>
+
+<center><p><iframe width="560" height="315" src="https://www.youtube.com/embed/_sby4GR0sD8" frameborder="0" allowfullscreen></iframe></p></center>
+
+<h2>The idea</h2>
+
+<p>Laurence Kemball-Cook, the founder of Pavegen, came up with the idea after doing a placement year at the energy company Eon. He was given the task of finding a way to power street lighting with solar energy and wind. But due to constraints such as a lack of sunlight and temperamental weather, he couldn’t find a solution. Instead, he started thinking about other potential sources of power in urban environments. It was here that the idea for an energy harnessing floor was born.</p>
+
+<p>Given its usability, you’d think companies would have jumped at the chance to install this smart floor. However, after developing the technology it took Kemball-Cook several years to convince people to take it on. Speaking to The Guardian on how he got his first deal, <a href="https://www.theguardian.com/technology/2015/jan/11/floor-tile-generates-power-from-footsteps-energy-electricity-startup">he said</a>:</p>
+
+<blockquote>Investors wouldn’t invest without tiles in the ground, so I broke into a building site on the south bank of the Thames at 2am, installed the product illegally, took photos and put them on our website saying: ‘Celebrating our latest installation.’ I closed a deal with Westfield pretty soon after that.</blockquote>
+
+<h2>Projects around the world</h2>
+
+<p>Since then, Pavegen has completed over 150 projects around the world, across various sectors including train stations, shopping centres, airports and public spaces. It’s also worked with brands like Coca-Cola and Siemens.</p>
+
+<p>It’s most recent installations were in West End London and in Heathrow Airport.</p>
+
+<center><p><img src="http://i.imgur.com/GSoTEhk.jpg"/></p></center>
+
+<blockquote>Our Head of Comms (at)alexmwjohnson filming with (at)fastcompany today at our latest install in the heart of London's West End! Discussing how we are creating a smart, sustainable oasis just off one of the busiest areas in the city 🇬🇧 The project is launching soon - watch this space!</blockquote>
+
+<p>Photo: Pavegen/<a href="https://www.instagram.com/p/BVZxp0-l0_t/">Instagram</a></p>
+
+<center><p><img src="http://i.imgur.com/oimvzTj.jpg"/></p></center>
+
+<blockquote>As people jet off on their holidays, they also contribute to powering the lights at @heathrow_airport through their footsteps👣 ✈️ Look out for us in Terminal 3!</blockquote>
+
+<p>Photo: Pavegen/<a href="https://www.instagram.com/p/BT6eAnLFKWc/">Instagram</a></p>
+
+<h2>Data collection</h2>
+
+<p>As well as producing electricity, the floor tiles also collect data. This data can then be used to measure footfall, predict peak timings and prime locations, ideal information for surrounding businesses like shops, cafes and restaurants. Likewise, anyone who steps on the tiles who is connected via a mobile APP collects points. Each footstep collected is converted into a digital currency that can be used to reward loyalty or to donate to charitable causes.</p>
+
+<p>Pavegen’s smart flooring appears a fantastic invention which has got people excited about alternative sources of energy. It’s not only encouraging people to walk in cities, rather than drive or take the bus, but also to think about energy consumption and how we can reduce our impact on the environment. Better for our health, better for the planet.</p>
+
+<p><em>Featured image: Pavegen/<a href="https://www.facebook.com/pavegen/">Facebook</a></em></p>
+
+<hr>
+
+<center><p><a href="https://www.adaptnetwork.com/">adaptnetwork.com</a> | Inspiring life's adventure</p></center>
+
+</html></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/4cteeo-steemvoter-guild-nominate-a-friend-for-the-guild-vote-tuesday-july-4">Steemvoter Guild: &quot;Nominate-a-Friend&quot; for the Guild Vote (Thursday July 6)</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="https://cdn.pixabay.com/photo/2016/06/09/10/00/smartphone-1445489_960_720.jpg" alt="4cteeo-steemvoter-guild-nominate-a-friend-for-the-guild-vote-tuesday-july-4"/><p class="hive-body"><center>https://cdn.pixabay.com/photo/2016/06/09/10/00/smartphone-1445489_960_720.jpg</center>
+
+## Previous first place winner - [Struggles of An Indian Girl | Before Birth To After School | Personal Experience | Part 1 - 3 by @indian-mom](https://steemit.com/life/@indian-mom/struggles-of-an-indian-girl-or-before-birth-to-after-school-or-personal-experience-or-part-1-3-by-indian-mom) by @indian-mom
+
+Today's guild nomination is a tale of a "Good Son" who helped his @indian-mom get her post noticed and voted for on the Steemvoter Guilds, a teen with only 22 SP in his Steem wallet managed to use what he had to get bot support and networked with others to help his mom's post get voted for the win. He indicated to us that his mom made many sacrifices for him and loves him very much, in return he promoted and uplifted her on Steem. This is the kind of good that comes out of collaborative ventures such as Steemvoter Guilds and makes what we do mean something. Thank you for solidifying our purpose @indian-mom and Good Son. 
+
+
+## Previous runner-up - [Tutorial Drawing Hanzo from Overwatch Game](https://steemit.com/art/@ferdian/tutorial-drowing-hanzo-from-overwatch-game) by @ferdian
+
+<br>
+
+Now on to today's nominations...
+
+## The "Nominate-a-Friend" Steemvoter (SV) Guild program. 
+
+So how does it work? Simple ... reply with a comment to this post with the link to another Steemian's post you think deserves the daily Steemvoter guild upvote, you are welcome to motivate in the reply why you think they deserve it. 
+
+The reply with the highest upvote $ value will be the winner and the post nominated in that reply will receive the guild upvote, which as you may have seen from previous posts, is a generous upvote from over 500 guild members, giving $100 dollars or more to the author depending on starting value.
+
+Please make sure your nomination follows these guidelines:
+
+## Two  Winner Trial Test
+
+We are currently voting the top two winning nominations at an equal vote weight each. 
+
+## Basic Guidelines
+
++ **You cannot submit your own post or that of your other related accounts that you own or share ownership in**, if you are found or reported to do this and substantially verified, your and your related accounts will be blacklisted from future guild vote eligibility. 
+
++ No religious, NSFW, racist, trolling, fake news or inappropriate posts will be considered, in which case runner's up will be selected. @steemvoter has the final word as to which post is selected for the daily vote.
+
++ We will not vote the same author in a seven-day window.
+
++ **Cut-off time:** We will choose the highest value comment nomination within 48 hours of this post becoming active. Please only submit posts that are still within their 7 day voting window, and allow enough time for the guild vote to be done before their payout window closes. 
+
++ This is not about curation rewards for the guild members and getting in early on the vote etc, it is purely to reward the deserving author.
+
++ @steemvoter will consider this a free market experiment and we will facilitate the voting of the post that the community wants voted, without checking for PLG of content, photos and artwork. At our discretion, blatantly inappropriate posts will not be voted on however.
+
++ This is a beta guild project and terms are subject to change at any time. 
+
+# Let's make Steem great ... together!!
+
+ <hr>
+
+<center>![](https://steemitimages.com/DQmexGbcEFRk2RsNjb3g8x3xWFYZuXmNptdAFgEDpThsYGi/image.png)</center>
+
+
+# The Steemvoter Guild
+
+If you are not already a part of our **[SV Guild](http://www.steemit.com/@steemvoter)** please support our service and the authors we uplift by signing up at [steemvoter.com](https://steemvoter.com/); add your Steem account and make sure the **"Guild"** checkbox is enabled for each account you load on the dashboard. 
+
+In addition, you will be able to use our bot service to select your own authors to auto-vote; the guild vote is an additional daily donation to a deserving Steem author. 
+
+Steemvoter is a public curation bot with an easy to use interface, it truly is a bot for the people, making automatic curation on Steemit easy with just a few clicks.
+
+This is a payment post! Thank you for allowing us to use your Steem accounts to upvote this post by virtue of your free subscription to our bot service! 
+
+Anyone not signed up at [steemvoter.com](https://steemvoter.com/) is welcome to do so or just vote this post to help the project.
+
+**And if you missed it, be sure to check out our [Steemvoter Week In Review for June 19 - 24](https://steemit.com/steemvoter/@steemvoter/steemvoter-week-in-review-for-june-19-24) for previous guild vote winners & Steemvoter news.**
+
+<hr>
+
+## Paying for Premium Services with Bitcoin and other Alt Coins
+
+Our premium services allow you up to 500 voting rules regardless of your Steem Power holdings, and exempts you from our daily self-vote payment posts, however you can still choose to add the @steemvoter account to your rules and decide your own timing to vote our posts. To pay for premium services send 3 SBD to the @steemvoter account for a one month subscription or multiples of 3 SBD for a bulk payment. 
+
+We have been asked recently if we accept Bitcoin as payment, the [blocktrades.us](https://www.blocktrades.us/) service allows you to convert Bitcoin and several altcoins, including Ether, Bitshares, Dash, Litecoin, Dogecoin and more into Steem or Steem Dollars and have it sent to the Steem account of your choosing. 
+
+As per the screenshot below, you can select the Bitcoin and SBD pair, populate the SBD field with 3 SBD (or multiples of 3), the receive address with **steemvoter** and **your Steem account name** in the memo field. As easy as that!
+
+![](https://steemitimages.com/DQmekF5Z3M9xGa7qiicyAS1ARRuX81DkU7aur6H7mdvGbxF/image.png)
+
+-------------------
+
+## Should you require any assistance with our service please contact @cryptomancer in the [#steemvoter.com channel on steemit.chat](https://steemit.chat/channel/steemvoter.com).
+
+-----------------------
+
+## A witness vote for our co-owner @thecryptodrive would be much appreciated if you can spare it. Thank you so much!
+
+-------------------------
+<center>https://steemitimages.com/0x0/https://steemitimages.com/DQmRSmRyg4MdRdiKsWTMbfyiAG673K1yP65MoUTbCXGp9Xi/PAL-FOOTER.gif</center>
+
+Please support P.A.L and @minnowsupport by joining their [Discord group](https://discord.gg/E4t4efP), it's an amazing community that uses Steemvoter to grow its member base.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/my-photoshoot-with-kendrick-lamar-outside-the-world-famous-roscoe-s-in-los-angeles">My Photoshoot with Kendrick Lamar Outside the World Famous Roscoe&#x27;s in Los Angeles</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmbQgk4WYb7bAd88xqLrphDoxVuCPrMVjLXyfUG3jmZ9ZY/Kendrick%20Lamar%20Outside%20Roscoes.jpg" alt="my-photoshoot-with-kendrick-lamar-outside-the-world-famous-roscoe-s-in-los-angeles"/><p class="hive-body">![Kendrick Lamar Outside Roscoes.jpg](https://steemitimages.com/DQmbQgk4WYb7bAd88xqLrphDoxVuCPrMVjLXyfUG3jmZ9ZY/Kendrick%20Lamar%20Outside%20Roscoes.jpg)
+
+We were at a XXL Magazine Cover Photoshoot, right around the corner from the World Famous Roscoe's. With that in mind, we had planned to run out to Roscoe's after the shoot to grab some quick candid, improv photo's before we left. Both Kendrick and Roscoe's are both legendary and staples of the Los Angeles culture so it only made sense.
+
+We were outside with a large group of us when people started to take notice of what was going on. Once that caused attention, the cops came by. With only a few minutes to get these shots and move on, I was able to capture some real, raw, candid shots that have been some of the most iconic photo's I think I've taken to date.
+
+The greatest thing about this photoshoot to me is the location, how raw and real it is, not having anything planned and just capturing the real Los Angeles vibes. The cop coming by unplanned is just icing on the cake — which really makes this that much more real in the era we live in.
+
+![Kendrick Lamar Outside Roscoe's-3.jpg](https://steemitimages.com/DQmT6Yp4UgQheEcoDyayX9sUuYxP1TyaAbuP2iVyhZ6GiGm/Kendrick%20Lamar%20Outside%20Roscoe's-3.jpg)
+
+![Kendrick Lamar Outside Roscoe's-2.jpg](https://steemitimages.com/DQmSQqvo1oCCEUmhJg7KGpWBoNjWW9Q14NGunYgMYJNCZRe/Kendrick%20Lamar%20Outside%20Roscoe's-2.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-7-udaipur-city-palace-rajasthan">Beautiful India #7 - Udaipur City Palace, Rajasthan</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmb2FeDLGvktLRdBEUhFaYiAyqiUhNcDSVgnz7grYdrVng/IMG_20170302_102333531.jpg" alt="beautiful-india-7-udaipur-city-palace-rajasthan"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get updates.
+
+**Udaipur City Palace, Rajasthan, India**
+
+![IMG_20170302_102333531.jpg](https://steemitimages.com/DQmb2FeDLGvktLRdBEUhFaYiAyqiUhNcDSVgnz7grYdrVng/IMG_20170302_102333531.jpg)
+
+![IMG_20170302_102846408.jpg](https://steemitimages.com/DQmZfEc4zNxLJEnWfVxvLepxMhNY7fnYhYSa1grEWBJeTtd/IMG_20170302_102846408.jpg)
+
+![IMG_20170302_111955918_HDR.jpg](https://steemitimages.com/DQmaPG7TFxhqh6dDeaH5aZbwfiiwa95XkmR5Ymkr77W7gRu/IMG_20170302_111955918_HDR.jpg)
+
+![IMG_20170302_105506400_HDR.jpg](https://steemitimages.com/DQmeFWQyhi4S3E9EDhFvRgjRerSSj6LSMVzTMjpn2CcXw8F/IMG_20170302_105506400_HDR.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/worldly-wanders-7-goodbye-cape-town-south-africa">Worldly Wanders #7 - Goodbye Cape Town, South Africa</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmbCqqNKRCuxhfEYHrAWaTT2obRoSQUPBMUN78czJwmwgs/IMG_6334-Edit.jpg" alt="worldly-wanders-7-goodbye-cape-town-south-africa"/><p class="hive-body">This really is a sad day!
+
+After spending the last week and a bit in Cape Town it is time to pack up and go home...
+
+Life in the Cape is so different to what I'm used to in the northern part of South Africa. It really feels like you're in a different country down here.
+
+![IMG_6334-Edit.jpg](https://steemitimages.com/DQmbCqqNKRCuxhfEYHrAWaTT2obRoSQUPBMUN78czJwmwgs/IMG_6334-Edit.jpg)
+
+I usually have mixed feelings when a trip comes to an end - I'm sad that I have to go but then I'm actually quite excited to just get home and sleep in my own bed again...
+Anyone else feel the same?
+
+Nonetheless, Cape Town has been great! In fact, it was so great that I have already planned another trip to the Mother City for September - yeah!!
+
+If you missed any of my previous posts for this trip, please check them out here:
+[Worldly Wanders #6 - Two Oceans Aquarium, Cape Town, South Africa](https://steemit.com/travel/@cheeto.blue/worldly-wanders-6-two-oceans-aquarium-cape-town-south-africa)
+[Worldly Wanders #5 - Kiteboarders at Scarborough, South Africa](https://steemit.com/travel/@cheeto.blue/worldly-wanders-5-kiteboarders-at-scarborough-south-africa)
+[Worldly Wanders #4 - Chapman's Peak, South Africa](https://steemit.com/travel/@cheeto.blue/worldly-wanders-4-chapman-s-peak-south-africa)
+[Worldly Wanders #3 - Warrior Toy Museum, Simon's Town, South Africa](https://steemit.com/travel/@cheeto.blue/worldly-wanders-3-warrior-toy-museum-simon-s-town-south-africa)
+[Worldly Wanders #2 - Boulders Beach, South Africa](https://steemit.com/travel/@cheeto.blue/worldly-wanders-2-boulders-beach-south-africa)
+[Worldly Wanders #1 - Kalk Bay, South Africa](https://steemit.com/travel/@cheeto.blue/worldy-wanders-1-kalk-bay-south-africa)
+
+![IMG_6346-Pano-Edit.jpg](https://steemitimages.com/DQmQS2CZTeqGWZVjY7P7ZDQu6CVAYTmhTavzGtGMmQWiXih/IMG_6346-Pano-Edit.jpg)
+
+---
+
+Please upvote if you liked this post, follow if you want to see more, and let me know your thoughts in the comments.
+
+Equipment used:
+[Canon 6D](http://amzn.to/2sWCH11)
+[Canon EF 24-105mm f/4 L IS USM ](http://amzn.to/2rUbFHv)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/explore-hong-kong-with-me-3--yuen-long-park-">Explore Hong Kong with me #3- Yuen Long Park 元朗公園 by  @krischy</a></h3><small>July 06, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmSZysTNgNTAXgo35rXen6iszgMbbJkffhdpdtdmffQmT3/19866402_10154534697716604_703154930_n.jpg" alt="explore-hong-kong-with-me-3--yuen-long-park-"/><p class="hive-body">This article was written by @krischy / 本文由 @krischy 撰写提交 
+
+About the authour / 关于作者:
+* [Hi Steemit! This is Kristy from Hong Kong. Excited to be part of this community](https://steemit.com/chainbb-general/@krischy/hi-steemit-this-is-kristy-from-hong-kong-excited-to-be-part-of-this-community-2017619t17721169z)
+* [CN的朋友大家好！我是來自香港的Kristy](https://steemit.com/cn/@krischy/cn-kristy)
+
+Follow the author @krischy to find the other great articles from him/her.
+请关注/追随作者查看他/她的其它优质文章。
+
+Original text/原文如下：
+
+----
+	
+## Hi Steemit friends,
+<br>
+![19866402_10154534697716604_703154930_n.jpg](https://steemitimages.com/DQmSZysTNgNTAXgo35rXen6iszgMbbJkffhdpdtdmffQmT3/19866402_10154534697716604_703154930_n.jpg)
+
+First of all, I want to say thank you to all my followers who upvoted and left messages on my CELEBRATING 200+ FOLLOWERS post. I am really appreciate it.As I discovered my interest in photography and have devoted my love to nature, my friend recommended a place in Yuen Long to me. Today, I am taking you to there, Yuen Long Park. In order to present the beauty of the natural forest land in front of the visitors, landform and most of the trees are preserved. 
+
+>  Steemit的朋友大家好，首先我想謝謝我的支持者，你們的心意我收到了，謝謝你們的留言和upvote，我會繼續努力寫更多好文給大家！元朗公園是我今天跟你分享的地方。最近我開始學習拍照，同時我也很喜歡大自然，我的朋友推薦了元朗公園這個拍照好地點給我。這個依山而建的公園，建園前是一個天然林地，為了呈現林地最原始美麗一面給遊客，大部份的樹木和原來地形都保存下來。
+
+<hr>
+<br>
+<br>
+
+*Here's the map of the Park, there are many facilities including gateball court, soccer pitch, artificial lake etc..*
+>*這裡是公園的地圖，園內有很多設施，包括足球場，草地門球場，人造湖等。*
+
+![webwxgetmsgimg (12).jpeg](https://steemitimages.com/DQmUmuysA71dWdv74fU8F9JdRyHkPegVwTgF2EZ7P8bnKB4/webwxgetmsgimg%20(12).jpeg)
+
+<hr>
+
+But the most eye-catching Chinese architectural building is a Aviary Pagoda located on the top of a hill. It makes me think of the Sakyamuni Pagoda of Fogong Temple in Shanxi, China that the architectural designs are very similar. It serves as an aviary at its lowest level and a viewing deck in its upper level. 
+
+> 但最吸睛的是園內心臟地帶，具有中國建築特色的百鳥塔，這個塔讓我想起山西的應縣木塔，他們的建築設計非常相似。百鳥塔的最低層是鳥舍，上層則是觀景台。
+
+
+*Here's how it looks from outside.*
+>*我們來看看這個百鳥塔，是不是很有中國建築特色？*
+
+![webwxgetmsgimg (10).jpeg](https://steemitimages.com/DQmVyDxoDoXbfSs7c4RrEe5hMqzdj8cS48Czm4Z4A5AJ5gw/webwxgetmsgimg%20(10).jpeg)
+
+<br>
+
+The lower level is an Aviary that over 100 different species of birds live in.
+
+> 低層是鳥舍，多達百多隻不同種類的鳥類居住在這𥚃。
+
+![webwxgetmsgimg (17).jpeg](https://steemitimages.com/DQmbdTgiejZGccdtDUK4PQddhbn575K5ZAyLsK9tywGgpTw/webwxgetmsgimg%20(17).jpeg)
+
+![webwxgetmsgimg (18).jpeg](https://steemitimages.com/DQmboHxAoDUgPGovFzq7kGF37pMMrW5ePCJTonxzD1Ng3v6/webwxgetmsgimg%20(18).jpeg)
+
+A hill myna (also known as Gracula religiosa) greets the visitor by saying "get away" and " what's wrong with you" in Cantonese LOL. I was quite surprised when she say hello to me. Hill myna is a animal that good at learning human voice and reproduce it accurately and clearly. 
+
+> 最讓我驚喜的是這隻小鷯哥，當日他跟我說了 “行開啦！（走開！）”跟 “做乜野呀你？（幹嘛啊你？）”，看來它不太歡迎我喔！鷯哥(學名：Gracula religiosa)是一種善於學習人類語言的鳥類，可準確清晰地摸仿不同的音調。
+
+https://youtu.be/Trf8oRo94Wc
+
+![webwxgetmsgimg (26).jpeg](https://steemitimages.com/DQmQgHQZw5ZpjqGcmEkp76JZuXVjXddDkqEWCJAQMKhsJcU/webwxgetmsgimg%20(26).jpeg)
+
+![webwxgetmsgimg (19).jpeg](https://steemitimages.com/DQmRuP1gis6ZSzc13f8htape4seCvchCtcc9WDDtWo26PpN/webwxgetmsgimg%20(19).jpeg)
+
+<hr>
+
+Walking to the upper level, I found the place that my friend recommended to me. This photo is a bottom-up view of the stairs. I love the white and blue combination of these stairs and contrast of the light and shadow. 
+
+>走到上層，我找到了我朋友向我推薦的地方。 這張照片是我由下往上拍的，是不是很棒呢？ 我喜歡這個由白色和藍色組合的樓梯，感覺很清新，和樓梯底的陰影形成強烈的對比。
+
+![webwxgetmsgimg (5).jpeg](https://steemitimages.com/DQmUxznmy3ZaEZa5j9tK22dYoz9uwrmGu3uJk4VJognQfLg/webwxgetmsgimg%20(5).jpeg)
+
+![webwxgetmsgimg (6).jpeg](https://steemitimages.com/DQmWyp8yrGVnH5QaFhkUPBZc1NrVHcC1LcNfGMyTMmjXCes/webwxgetmsgimg%20(6).jpeg)
+
+The upper level is a viewing deck that offer a panoramic view of  Yuen Long. Although the weather is not good today, but I am enjoy my visit. 
+
+>再往上走，我們就到了觀景台，這𥚃可以俯瞰整個公園和元朗。雖然今天的天氣不是很好，不過我還是很享受今天的行程。
+
+![webwxgetmsgimg (15).jpeg](https://steemitimages.com/DQmZcwE6sd3Skb4CPyq1DqH2DYmuWJP8Y74RdYDHe2HgPBa/webwxgetmsgimg%20(15).jpeg)
+
+<hr>
+
+Here's other part of the park
+>這些是公園的其他設施，公園內種植了800棵不同的花木，也有小橋流水，是不是很不錯，大家喜歡我拍的照片嗎？
+
+![webwxgetmsgimg (4).jpeg](https://steemitimages.com/DQmYRxpnNQ337SdR8LJCyb7vL6GTPho6oFpnBsQ5EMaHbtu/webwxgetmsgimg%20(4).jpeg)
+
+![webwxgetmsgimg (3).jpeg](https://steemitimages.com/DQmcGwRALxPdSqzzbMJ1jM7JpWzB52dQo6jdBfk6TDyUg67/webwxgetmsgimg%20(3).jpeg)
+
+![webwxgetmsgimg (2).jpeg](https://steemitimages.com/DQmYmVWnNGmbY4nihrJTiTQkf248q2DXT5RdfrA2nwNcqYd/webwxgetmsgimg%20(2).jpeg)
+
+![webwxgetmsgimg (1).jpeg](https://steemitimages.com/DQmbLF1nRBiugFsm9XbEDGcxohKFrn7QfjuWyCumRepTxVg/webwxgetmsgimg%20(1).jpeg)
+
+I think I will stop here. Hope you like this post today!
+
+今天先分享到這裡，我會繼續分享更多地方給大家，請多多支持我！
+
+<hr>
+
+Photos are taken with my Canon EOS 70D and my iPhone 7
+
+<hr>
+
+<center>Thanks for your time. Wish you all have a wonderful day.</center>
+<center>Please Upvote and Follow Me</center>
+<center>Much Love! Kris xx</center>
+
+<center>謝謝看到這裡的朋友！歡迎大家在下面留言喔！</center>
+
+<center>請關注我，我會繼續分享更多好文給大家，謝謝大家 ：）</center>
+
+
+<hr>
+
+Author @krischy, Posted By @someone
+![eye.jpg](https://steemitimages.com/DQmZBbPQssRFZKWQSetrRygnfWGyk33DpNC7XonwvguD1v5/eye.jpg)</p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/67">← Previous Page</a><li style="margin:0">68</li><a rel="next" href="/hive-blog/69">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/68";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

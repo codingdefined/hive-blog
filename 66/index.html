@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\66\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/miss-delicious-70-virgil-s-real-bbq-at-atlantis">Miss. Delicious #70 : Virgil&#x27;s real BBQ at Atlantis!</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmNu6z5ou9CFUPDkKzNFk8hpRrpWxkXHDHPXUFBTH645zg/IMG_0s261.jpg" alt="miss-delicious-70-virgil-s-real-bbq-at-atlantis"/><p class="hive-body">### Dear Steemit friends :
+![IMG_0s261.jpg](https://steemitimages.com/DQmNu6z5ou9CFUPDkKzNFk8hpRrpWxkXHDHPXUFBTH645zg/IMG_0s261.jpg)
+
+Continuing our exploration of the culinary delights of Atlantis, today we'll be having a look at one of the most scenic restaurants in Atlantis. Sure it doesn't have the same high end thematic feel of [Poseidons Table](https://steemit.com/food/@sweetsssj/miss-delicious-68-poseidon-s-table-a-restaurant-worthy-of-gods), nor is it by the gorgeous ocean like [Blue Sail Restaurant](https://steemit.com/food/@sweetsssj/miss-delicious-66-the-infamous-blue-sail-beach-restaurant) but with the backdrop of the Atlantis defining *Royal Towers*, ***Virgils BBQ*** is definitely one of the most visually pleasant places to eat in Atlantis.
+
+Situated just a minutes walk away from the [Lagoon Bar & Grill](https://steemit.com/travel/@sweetsssj/travel-with-me-75-saying-hello-to-sharks-stingrays-sawfish-at-the-predator-lagoon-photos-video) - also the home of the *Predator Lagoon*, ***Virgils BBQ*** is surrounded by some of the best attractions in Atlantis, offering diners a true visual treat.
+
+
+![virgils.png](https://steemitimages.com/DQmaSLQjK49qg96C93awZgHgpb7Qnt14Pg375yPmR6C6YqK/virgils.png)
+
+***Virgils BBQ*** prides itself as a top 10 BBQ restaurant originating from the USA. 
+
+In 1993, the first *Virgils BBQ* opened in Times Square. The vision of its founder, *Artie Cutler* was to serve authentic southern barbecue ribs, chicken, brisket and pork.  Today, it has restaurants in Las Vegas and now in Atlantis, Bahamas!
+
+http://i.imgur.com/LepRfvh.gif
+
+A quick look around and you can see this restaurant is surrounded by sheer tropic splendour. Palm trees and dense vegetation everywhere you look. A real sense of paradise, borrowed from the magnificent setting that is the Atlantis resort.
+
+http://image.ibb.co/e9QeaF/IMG_0257.jpg
+
+As this was an afternoon lunch visit, most diners have opted to sit on the outside terrace. Shallow lagoons line one side of the terrace with Stingrays swimming freely below.
+
+http://image.ibb.co/fy1KaF/IMG_0259.jpg
+
+On the other side, we have a perfect view of the Royal Towers. 
+
+http://image.ibb.co/j3Vbpa/DSC01848.jpg
+
+This is one of the open kitchens doubling up as an open bar. 
+
+http://image.ibb.co/e6HBNv/IMG_0263.jpg
+
+You can also choose to sit inside where you have a perfect view of the *Stingray lagoon*.
+
+http://image.ibb.co/jLhp9a/DSC01849.jpg
+
+As you can see, it is a very spacious restaurant with some lovely semi enclosed tables serving as shade from the sun and also a little bit of privacy.
+
+http://image.ibb.co/nB4EaF/DSC01850.jpg
+
+The bar is very spacious and holds up as a perfect gathering place for some drinks as well as delicious barbecue food. 
+
+http://image.ibb.co/etO7vF/DSC01852.jpg
+
+Guests will have the option to sit outside on the terrace, in the main court, or on these high tables.
+
+http://image.ibb.co/ngzfFF/DSC01851.jpg
+
+I was told that their kitchen uses actual firewood to barbecue the meat. No wonder they have piles of wood ready to use on the side.
+
+http://image.ibb.co/evwhUa/DSC01863.jpg
+
+All around the top of the centre court, are names of places in the South of the US. This reflect's the style of food which they serve - Southern Barbecue!
+
+http://image.ibb.co/iYJzaF/IMG_0258.jpg
+
+As nice as the inside of the restaurant is, the front side had such beautiful views of the Paradise Lagoon and the Royal Towers. I decided to sit outside in the sun after feeling a bit lonely inside. (There was literally no other guests inside)
+
+http://image.ibb.co/gnKmpa/IMG_8522.jpg
+
+As you can see from the map below, ***Virgils BBQ*** has certainly done their research and have collected all the various southern style bbq's and integrated them into their own product. I never knew that the taste of the meat could differ so much depending on how you smoke the meat, and which type of wood oak was used.  
+
+http://image.ibb.co/exY7vF/IMG_8519.jpg
+
+Below is the *Patio Lunch Menu*, there are also happy hour deals for those dining at the slightly awkward hours of 3pm-8pm.
+
+http://image.ibb.co/iDxBNv/IMG_8520.jpg
+
+http://image.ibb.co/kLG5hv/IMG_8521.jpg
+
+By now you must have realised that I am a big fan of salad and vegetables in general! So we begin with a small serving of side salad.  Fresh, with chunky cucumber and cherry tomatoes, a perfect light refreshing start!
+
+http://image.ibb.co/ireEaF/IMG_8525.jpg
+
+Next up, we have the *Garlic Shrimp*. Usually shrimp on a stick tends to taste a little water logged, masked by the taste of the sauce. Not these shrimp! They are full of oceanic flavour, probably caught on the same day. In China, shrimp is always kept live in water tanks right up to the point they are cooked. These shrimp taste comparatively fresh so that's a very big yes in approval from me! 👍
+
+http://image.ibb.co/hik99a/IMG_8526.jpg
+
+Next up, the ***Pulled Chicken Sandwich***. In China, we have a similar dish except with pulled pork in a white softer bun. This BBQ version tasted a little tougher, but the chicken has absorbed the bbq sauce really thoroughly making the burger bun a necessary balance to the quite strong sweet and slightly spicy taste. I've never had chips served on the side of a burger / sandwich before, usually just Fries. It's a welcome surprise anyway!
+
+http://image.ibb.co/cj8U9a/IMG_8529.jpg
+
+It's hard to believe how scenic the patio is. The Royal Towers in full view, and green / blue everywhere you look!
+
+http://image.ibb.co/fAN32v/IMG_0256.jpg
+
+Finally, the main course and the *"meat"* of the meal. ***Kansas Special***. They labelled this as a *PIG-OUT* and for good reason. The platter has Ribs, wings, trash ribs and brisket! Basically all of the Virgin BBQ specialities all in one platter!
+
+One thing I really appreciate about the BBQ meats is how little BBQ sauce was used. I don't have to get my fingers too dirty and the sauces never overwhelm the strong oak wood smoked taste etched into the meat.  
+
+http://image.ibb.co/g1AFhv/IMG_8536.jpg
+
+http://image.ibb.co/m9xNUa/IMG_8531.jpg
+
+One thing I can say about the restaurant aside from it's really delicious BBQ food, is the restaurant staff are incredibly friendly and willing to answer any questions about everything to do with Bahamas. *De Angeli* who is the girl in the picture with me was super nice and we had a nice eye opening chat about life in Bahamas and what it's like to be a local there. I really wanted to have my picture taken with her and I even told her to sign up to Steemit. I hope she sees this and we can reconnect!
+
+http://image.ibb.co/g8Ku9a/IMG_0260.jpg
+
+***Virgin BBQ*** is a lovely restaurant for those craving some genuine southern style BBQ meat. It's location is probably it's greatest asset, views of the Royal Towers are sublime from the patio, and the shallow Stingray lagoon surrounding part of the restaurant give it that extra bit of exotic tropical life!
+
+
+<hr>
+
+Hope you enjoyed my post! As always, I appreciate your upvote if you liked my post, be sure to follow for more updates and leave a comment to let me know what you think!
+
+<hr>
+
+在亚特兰蒂斯的酒店里试过了好几家餐厅了，无论是食物种类超级丰富的优雅[自助餐](https://steemit.com/food/@sweetsssj/miss-delicious-68-poseidon-s-table-a-restaurant-worthy-of-gods)，还是日日夜夜灯火通明的[豪华赌场餐厅](https://steemit.com/travel/@sweetsssj/travel-with-me-73-a-look-at-the-atlantis-casino-from-a-non-gambler)，都是在室内吃的，今天我就在想，海岛的天气这么好，难道酒店里就没有一家可以在室外吹海风，晒太阳的餐厅吗？走着走着，就看见了这家叫Virgil's的餐厅，它正好位于[捕食者湖](https://steemit.com/travel/@sweetsssj/travel-with-me-75-saying-hello-to-sharks-stingrays-sawfish-at-the-predator-lagoon-photos-video)边，现在就带大家进去探索一下吧。
+
+
+这家餐厅的地理位置非常好,简直满足我的所有幻想，它一面是亚特兰蒂斯标志性的主题建筑群，面对着酒店最大的湖，另一面是挨着养殖黄貂鱼小宝宝的鱼池，坐在这里吃饭，享受极了。坐在鱼池边，看着黄貂鱼小宝宝成群结队，来回游走，好自由好幸福。那时候我并不知道它们有时候会咬人，不然可能不会把脚放在水面上吧，呵呵。走进餐厅，迎面而来的是热情的服务生领位，这个8边形的亭子是酒吧台，下午的时候太阳真火热的撒下阳光，所以并没有那么多人在室外坐着。走进室内，一股清凉的冷气扑面而来，在室内也有个多边形的房间，可以透过落地大玻璃窗，近距离观察黄貂鱼小宝宝在水里游玩。餐厅室内的空间可不小，各种长桌，圆桌，还有吧台都装饰得非常精致，虽然是白天，还打着灯光，非常漂亮。我非常喜欢它的屋顶，由木头搭起来的棚，非常有热带岛屿的风格，还有这几个像奥运会五环的吊灯，设计新颖，风格独特。在岛上的每一天，都非常亮丽，无论照什么样的景物，都鲜艳无比的。
+
+现在我们来一起看看菜单吧。这个菜单设计的好有趣，它用漫画的形式画出了很多故事。这家餐厅提倡的是真正的烧烤味道，所以你们一定迫不及待想尝尝美食了吧。先上来的是蔬菜沙拉，在炎热的夏天，吃一碗沙拉比任何山珍海味都来得舒服清凉。接下来是烤虾，带一点甜味。虾的肉质非常鲜嫩，烤得好香。鸡肉汉堡，看到面包上香香芝麻的时候，我就已经确认这个汉堡会很好吃，果然不出我所料，最有趣的是，当我点菜的时候问到服务员，汉堡的配料是什么时候，她说是薯片的时候，我就有点疑惑，原来这是美国的习惯，汉堡配薯片。原来在英国上学的时候，只知道薯片就是薯条，这一次涨知识啦。接下来是满满的肉食，烤猪排，烤鸡翅膀，味道很香很诱人，让我一口气吃了好几块。在吃饭的时候，热情地服务员一直找我聊天，当我告诉她我喜欢写旅行博客的时候，她更是表现出非常感兴趣的态度。所以我就为她简单介绍了Steemit，并告诉她我的账号，她说下班就会用手机查询，希望她也能在平台写文章。最后我和她合影留恋，并和她说我们要保持联系。多么美好的一天呀，吃到了烧烤美食，又能旅游交朋友。希望大家喜欢我分享的烧烤美食探索，之后还有更多有趣的餐厅等着和大家分享。</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/throughmylens-2-g20-summit-no-comment">ThroughMyLens #2 - G20 Summit (no comment)</a></h3><small>July 08, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmUFci2TkLKYnKJX8FkiGh2zNJkeooKvoktdoi5a8QQiWG/DSC_4361.jpg" alt="throughmylens-2-g20-summit-no-comment"/><p class="hive-body"><center>_Welcome dear readers to a special episode of ThroughMyLens_</center>
+As most of you already know, the G20 is taking place in Hamburg and there is much going on. I went to Hamburg to document the happening and will present you some photographs here. This post will be the first part of two. The photographs will be uncommented. Make your own conclusions.
+
+<center>_Steemit exclusive_</center>
+
+<hr>
+
+<center>https://steemitimages.com/DQmUFci2TkLKYnKJX8FkiGh2zNJkeooKvoktdoi5a8QQiWG/DSC_4361.jpg</center>
+<center>https://steemitimages.com/DQmNWa3HS5HtTNdxLNj7Xz4iXzr7Vusy8v6eCVUA3PEnCTj/DSC_4363.jpg</center>
+<center>https://steemitimages.com/DQmNYoULy78Fux9XVZ2ys8r3V49Nd6tjLayp38Wfbe672AD/DSC_4366.jpg</center>
+<center>https://steemitimages.com/DQmXLAnAGXX76AVDXTqruZ435oNFKC7jnBe9yWBU19Tfcbc/DSC_4374.jpg</center>
+<center>https://steemitimages.com/DQmTQFcox7SMeDs2PviouPJ5tWraePBJffCakZW6i3aRPDZ/DSC_4380.jpg</center>
+<center>https://steemitimages.com/DQmZuxve9L9NBbydLYPYUt9chCLh8pYx5b3x8SkNvoHvf15/DSC_4384.jpg</center>
+<center>https://steemitimages.com/DQmQDBcJgzH5QRZ8uKM7sfaDBZ2AoATcjtynNhhm37wSJGy/DSC_4401.jpg</center>
+<center>https://steemitimages.com/DQmNuy4Xq5NRwiF9J13ByfLeRVZDtYuPaz2caE4dXcBi2CW/DSC_4405.jpg</center>
+<center>https://steemitimages.com/DQmepGbsXUwLTcm4rTV97xVX4tjj2WSGdQMSqDNa7XxiUC9/DSC_4412.jpg</center>
+<center>https://steemitimages.com/DQmPbHHqAGjFDhnP23mh1Kz6VKaFqcyo4Tp7F8bGrdcMTM8/DSC_4413.jpg</center>
+<center>https://steemitimages.com/DQmRKxhqkGzd7LcW6pFFKQEjwB5MEnk3ehD6i9W7biry2fv/DSC_4414.jpg</center>
+<center>https://steemitimages.com/DQmUBCn5neGxP6es991658MKqZFnoSEfXBU7YfNuYe3L4ds/DSC_4415.jpg</center>
+<center>https://steemitimages.com/DQmei8oQYuw9q2xQ1tNvYPpW6Hx3HUu5YNmgdWBVjbjHauz/DSC_4420.jpg</center>
+<center>https://steemitimages.com/DQmcK6wxY9f1oUjJyNPQU931Ua8BgYDgcjrawDndpG1PQV3/DSC_4634.jpg</center>
+<center>https://steemitimages.com/DQmYBk3hZTW8F8MqSkk4oyHhpr9uWAz8JQyqCBviHsgfSec/DSC_4649.jpg</center>
+<center>https://steemitimages.com/DQmdzBzdowf5y3WYCZD3chHHfaarK28kW1sGomgVSo9ce2A/DSC_4652.jpg</center>
+<center>https://steemitimages.com/DQmctdKLyTW3L34cJ6kFJYUrxpuMg8FSr3sWbSRDRZLKp4H/DSC_4670.jpg</center>
+<center>https://steemitimages.com/DQmWYJxS5LVfQd3LWim2AfHEsnCGdaN1iKtaynHuaNpsNFy/DSC_4674.jpg</center>
+<center>https://steemitimages.com/DQmbFYEHF2UZUsfvQ2ZjgFs4vKTuLvvBcuJnA1QrQyzLVQY/DSC_4679.jpg</center>
+<center>https://steemitimages.com/DQmT57F9WxxzpVpRRBZSvW3RRTitmBL4LjN57MTNmVwAK2k/DSC_4694.jpg</center>
+<center>https://steemitimages.com/DQmbxcRUWv8zebqQTasoUWYWuziX5u2TowZEfSBz3iQtZPn/DSC_4697.jpg</center>
+<center>https://steemitimages.com/DQmXtBioWLEf5MHSbo3kx5FKPpwQqFTs9dqR9539ioB4HiH/DSC_4710.JPG</center>
+<center>https://steemitimages.com/DQmYpvehv1JBKm7v1K8479nh2CFKzBsf1efG3otGwGWKUf7/DSC_4724.JPG</center>
+<center>https://steemitimages.com/DQma1MzDTrrJhiCN6GKvkqpNjAj7vt5YRQXTe4ur2QC2eUa/DSC_4729.JPG</center>
+<center>https://steemitimages.com/DQme2ZaCLwB7LK1KfAWEekqGDZhrrfhwaugQLDR1X2WnffU/DSC_4745.JPG</center>
+<center>https://steemitimages.com/DQmXVcB1TCMcNz8JHiZi8MXfayMbjQVuuj2PQFsMdviQKGN/DSC_4761.JPG</center>
+<center>https://steemitimages.com/DQmNVjoTsEgUqynSsufArhU3T5aeaLKywDMJzZyoFVSDuqm/DSC_4870.JPG</center>
+<center>https://steemitimages.com/DQmbgrv2Ev8na1MDrconXn72hcfZfJvwEK5zXSN8GH8J6UH/DSC_4875.JPG</center>
+<center>https://steemitimages.com/DQmdDpdbJvRT4ehVQWQxbki83UBa2xP5QQsApkfzr65xeLc/DSC_4882.JPG</center>
+<center>https://steemitimages.com/DQmQ8suUPQpMskh2geJi8WZwoUHVpRjFmyWuBmmjyXkKwmy/DSC_4889.JPG</center>
+<center>https://steemitimages.com/DQmT88hVx3utK8FYCu7sA9xdKv8LTyERQbXvRBF4LrEHanG/DSC_4855.JPG</center>
+<center>https://steemitimages.com/DQmXPxLW2oPnW7a8ckeDANtjT9zRqw3u5kjc1Mv6NoQyAzi/DSC_4478.jpg</center>
+<center>https://steemitimages.com/DQmZCitymZ5yxhybV5fcDSzu8Hw7NFcYR1yYABnRanjt1xh/DSC_4479.jpg</center>
+<center>https://steemitimages.com/DQmXvooorZf4iBSmqPbnP5DA6Pk1dBuoXE8wVo3bSw1hfzE/DSC_4494.jpg</center>
+<center>https://steemitimages.com/DQmeE6mFE6kJjgURcSpceZZfNswy6BQfXTnBTqKfNdkb2kF/DSC_4450.jpg</center>
+<center>https://steemitimages.com/DQmPYVxFWJ9jTReKUdkLZaJvS2eho13EcWgmzPum6PzWYLh/DSC_4453.jpg</center>
+<center>https://steemitimages.com/DQmUhzk4a1jTKvovrpHN8tU3vJWw5qz87HH7VYNnwfZVKz4/DSC_4838.JPG</center>
+<center>https://steemitimages.com/DQmcomYQHkkqFTi2dn1dmvgqUve7HFKwEqxPesqdP64eDw4/DSC_4848.JPG</center>
+<center>https://steemitimages.com/DQmYupo52oCnhUSpuJwj9poYwCZbGwq4UAwkjiFbvK6fitJ/DSC_4853.JPG</center>
+<center>https://steemitimages.com/DQmQp1ej1ECLkjWMdshuqyF3efVH5zWm7v7Z3PoYj8t43ZA/DSC_4841.JPG</center>
+<center>https://steemitimages.com/DQmTM9awDyLnqNdvYVpY31uKEgjk4yKyLDmdNysPbCqsFM4/DSC_4617.jpg</center>
+<center>https://steemitimages.com/DQmbNphm2jLXsVSPbYwJv3G63yyAGYvy7JWGLtUvYk6ZCFV/DSC_4451.jpg</center>
+<center>https://steemitimages.com/DQmRPYFiyqrZVfdVyrASKdEwFmMjj15LiPeykZvgBjsvabR/DSC_4600.jpg</center>
+<center>https://steemitimages.com/DQmeUot66JBgA3zPKiE2LboXxXQsY8LoB7ef5QasHCcVAnY/DSC_4576.jpg</center>
+<center>https://steemitimages.com/DQmSPrEnBJC5DKZwMQ1hnGDnuW3eTA5PHy1vicF12RfoSpz/DSC_4542.jpg</center>
+<center>https://steemitimages.com/DQmTSSvjhRY2SNwCxdhDuRT98u3YRVMbTrbDg8CbUEpSLLh/DSC_4910.JPG</center>
+<center>https://steemitimages.com/DQmYCFm2wrv5gnSLVTPMByDYwsYgxrN8CTeAnTjYXsLh2qh/DSC_4915.JPG</center>
+<center>https://steemitimages.com/DQmQDXW8vJwPhdbyocKdYME58n7Sj6DRNseyAMqDchETGbS/DSC_4484.jpg</center>
+
+<hr> 
+
+_Don't miss the second part which will follow tomorrow. Feel free to resteem and leave a comment_</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/travel-with-me-76-swimming-with-the-sharks-at-compass-cay">Travel with me #76 : Swimming with the Sharks at Compass Cay!</a></h3><small>July 08, 2017</small></header><section><img class="img-body" srcSet="http://image.ibb.co/gmimNv/IMG_00s70.jpg" alt="travel-with-me-76-swimming-with-the-sharks-at-compass-cay"/><p class="hive-body">## Dear Steemit friends:
+http://image.ibb.co/gmimNv/IMG_00s70.jpg
+
+Bahamas is a dream destination for interacting with animals you won't find in your back yard!
+
+Although some of the animals I've had the pleasure of interacting with have been in captivity, I've also had the opportunity to come face to face with many free roaming animals in the comfort of their own natural habitats.
+
+So far, we've seen the cute and curious [Iguanas of Allen Cay](https://steemit.com/travel/@sweetsssj/travel-with-me-71-powerboating-to-exuma-cays-feeding-the-iguanas-photos-video) and had the odd experience of [Swimming with the Pigs in Major Cay](https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs). Both experiences have been really hands on, whether it's feeding Iguanas little grapes on sticks (and getting bitten!), or mildly satisfying the aquatic pigs with Carrots, I've thoroughly enjoyed the opportunity come closer to nature.
+
+Bahamas being a collection of islands surrounded by the expanse of the ocean, it is no surprise that they have some of the most amazing marine wildlife too.  In Atlantis I was able to meet some [Sea Lions](https://steemit.com/travel/@sweetsssj/travel-with-me-74-a-visit-to-dolphin-cay-to-interact-with-sea-lions) and see just how intelligent these cats of the ocean really are. I've also had many opportunities to see a variety of fishes both at [The Dig](https://steemit.com/travel/@sweetsssj/travel-with-me-70-the-dig-at-the-lost-city-of-atlantis) and [The Predator Lagoon](https://steemit.com/travel/@sweetsssj/travel-with-me-75-saying-hello-to-sharks-stingrays-sawfish-at-the-predator-lagoon-photos-video). 
+
+I've always ravished the opportunity to interact with Sharks because aside from their formidable appearance and reputation of being vicious predators, they're also some of the most diverse species of marine life in the world. From my visit to the Predator lagoon, I realised that not all sharks are blood thirsty, human attacking predators they are often portrayed to be. 
+
+Join me and let's find out how true that statement is!
+
+
+http://image.ibb.co/nuUFfF/DSC02641.jpg
+
+### Compass Cay Marina
+
+For this Shark adventure, we'll be taking a boat ride from Nassau to Compass Cay Marina. Whilst this island is uninhabited,  it is frequently visited by many adventurers who will dock their boats and Yachts at the Marina and then set off exploring the island's natural wildlife. 
+
+The journey from Nassau to Compass Cay takes around 1 hour by speedboat, and there are many excursions each day which can be booked from most hotels in Nassau. 
+
+Most people come to Compass Cay to see their family of Nurse Sharks and the Compass Cay Marina has been featured in many shows such as the Discovery Channel, Shark Week and Animal Planet.
+
+Now it's featuring on my blog!
+
+![compasscay.png](https://steemitimages.com/DQmdmgfeJZYYp4B1xEEvaDDAtPmDWDH6YfSnb5ySMQiPKUj/compasscay.png)
+
+Travelling by speedboat is always an exhilarating experience. With the temperature pushing 37 degrees Celsius, the gushing wind is very welcoming. 
+
+http://i.imgur.com/heiXvHc.gif
+
+There are many boats already docked at the Marina but this Yacht called *Charisma* stood out to be the most luxury one. Someone told me that this particular Yacht is worth $40 million dollars. Better start saving!
+
+http://image.ibb.co/nfvhSv/DSC02650.jpg
+
+Our speedboat pulled up against these wooden docks and then we proceed to climb out of the boat onto the wooden pier. 
+
+http://i.imgur.com/d4Kp7WI.gif
+
+This was our boat on the left, and behind it, you can see just how large the *Charisma* yacht is.
+
+http://image.ibb.co/kso80F/DSC02644.jpg
+
+http://image.ibb.co/bNZsSv/IMG_0075.jpg
+
+Just a short walk along the wooden pier takes us to a building where you can purchase some merchandise as well as some refreshments.  Obviously, the main point of interest here are the Nurse Sharks swimming below this building. There is a ladder that leads us to a shallow part of the water. Just a few meters from the ladder, the is a swarm of fish and Nurse sharks swimming around!
+
+http://i.imgur.com/6YK2Q3Z.gif
+
+### Nurse Sharks
+
+This species of Shark are abundant around Bahamas and currently are not considered an endangered species. 
+They are easily recognised by their curled, hinged mouth and little whiskers resembling a cat. 
+
+The origin of the Nurse Shark's name is not clear. Some say that it is called a Nurse shark because of the sucking noise resembling a nursing baby, when hunting for prey. Others claim the word "Nurse" comes from the old word *nusse* which means cat shark. 
+
+Regardless of how they named the shark, the Nurse shark is mostly harmless to humans and there have been very few attacks on humans ever recorded. 
+
+http://image.ibb.co/dOw6nv/IMG_0073.jpg
+
+Despite their docile nature, getting up and close with the Nurse Sharks was initially a very terrifying experience. I've never been around fish anywhere near this size. 
+
+*Did you know, Nurse Sharks can grow to 14ft in length!*
+
+http://i.imgur.com/VKAilgh.gif
+
+As they swam around us in the waist height water. Some of the locals through some fish bait into the water to attract them. 
+
+http://image.ibb.co/eJURnv/IMG_0074.jpg
+
+They seem to be completely unfazed by the large group of humans around them and will happily swim between us.
+
+http://image.ibb.co/dfVo0F/IMG_0071.jpg
+
+As they swim by, they're happy for you to stroke them. They seem to be quite excited by the human company!
+
+http://i.imgur.com/EdqYwhP.gif
+
+There's even baby ones!
+
+http://image.ibb.co/gv1YZa/IMG_0078.jpg
+
+I was quite surprised by the texture of their skin. I was expecting it to feel smooth like a regular fish, but it's actually very coarse.
+
+http://i.imgur.com/mO6JE6x.gif
+
+I read somewhere that the water clarity here is amongst the best in the world. Even beating places like Maldives. From the pictures, you can see the Nurse sharks and the other tropical fish through the perfectly clear crystal water. 
+
+http://image.ibb.co/eQbgnv/IMG_0085.jpg
+
+### Check out the video !
+
+https://youtu.be/roejtsi7IxY
+
+Swimming with sharks is definitely one of my most memorable experiences. From interacting with them so closely, I've now cultivated a new love for them (at least the Nurse Sharks). Who would have known they could be so friendly and playful around humans? 
+
+If you are thinking about a trip to the Bahamas, then a trip to Compass Cay to swim with the sharks is an absolute must! 
+
+<hr>
+
+If you enjoyed my post, I always appreciate your upvote, be sure to follow for more exciting travel blogs, and leave a comment to let me know what you think!
+
+<hr>
+
+我喜欢巴哈马的原因，大概是因为这里提供好多机会,能和许多特别的动物互动，而这些动物也许这辈子我都不会在其他地方看到。在巴哈马旅游都每一天都是难以用言语形容的精彩，这里是动物的天堂，也是我的梦想目的地。虽然有些动物是被人类圈养的，但是我依然得到了一次宝贵的机会，可以和海里自由自在游走的鲨鱼又一次互动的机会。到目前为止，我们已经看到了顽皮机灵的[ Allen Cay岩鼠蜥](https://steemit.com/travel/@sweetsssj/travel-with-me-71-powerboating-to-exuma-cays-feeding-the-iguanas-photos-video) ，并且还约会了[Major Cay岛上的小猪](https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs)，直到现在，我都难以想象我拥有这样奇怪的经历。无论是喂葡萄给岩鼠蜥还是喂面包胡萝卜给小猪们，我都超级享受这样亲近自然的机会。
+
+巴哈马群岛是海洋生物栖息的天堂，在亚特兰蒂斯，我遇到了可爱搞笑的[海狮](https://steemit.com/travel/@sweetsssj/travel-with-me-74-a-visit-to-dolphin-cay-to-interact-with-sea-lions) ，他们好聪明好灵活，特别通人性。当然我也在[水族馆](https://steemit.com/travel/@sweetsssj/travel-with-me-70-the-dig-at-the-lost-city-of-atlantis)和[捕食者的湖](https://steemit.com/travel/@sweetsssj/travel-with-me-75-saying-hello-to-sharks-stingrays-sawfish-at-the-predator-lagoon-photos-video)有机会接触到了大量的海洋生物，难得一见的sawfish锯鳐和黄貂鱼，每一次都让我印象深刻，非常感动。虽然我也谈不上特别勇敢，但是自从听说岛上有可以和鲨鱼近距离接触的活动，看见可以抚摸鲨鱼的照片，我的眼睛就离不开了。并不是所有鲨鱼都会被当作攻击人类的对象，护士鲨就可以和人类和睦相处。今天我们就一起去护士鲨小港Compass Cay, 约会一下性格温顺可爱的护士鲨吧。护士鲨又叫铰口鲨，白天它们会在海底或者岩洞内休息，晚上会醒来捕食，这点生活习惯，还挺像小猫的。护士鲨捕食通常以吸食的方式捕捉鱼类、甲壳类和软体动物，所以在接触它们之前，当地人特意提醒我们，不要把手指放在它们眼前，不然会被当作是可口的食物，可就不好了。听说护士鲨这个名字，就是因为它们吃食物的方式，像小婴儿在吸奶的声音，英文里叫nursing。我们的船靠近Compass Cay，就看到好多我从来没见过的，超级豪华的游轮，有的上面带一个长长的滑梯，想象游客们从船上坐滑梯到海里，感觉一定超级清凉。还有部分漂亮的游艇应该私人的，都停靠在Compass Cay看望护士鲨。第一次看到这么大的“鱼”在水里游，并且我还要下水和它们亲密接触，心里难免紧张。
+
+因为护士鲨白天大多在海底睡觉，所以当地人都木头敲敲木地板，护士鲨就醒来开始游动了。它们的身体太漂亮了，银灰色的皮肤泡在水里，在阳光下闪闪发光。它们的尾巴很长，游起来姿势特别优美。好吧，犹豫了一会，我准备下水了。我发现巴哈马的海水简直清澈的像透明的水，听说加勒比海几乎是世界上最清澈的海域了，有人曾经做过测试，三亚的海底能见度是10米，而马尔代夫是40米左右，但是巴哈马，竟然是60米。没错，我可以不用浮浅的工具，就可以清楚地看见海底游走的护士鲨。这种鲨鱼在巴哈马周围最为丰富，目前不被认为是濒危物种。我从梯子走到水中，鲨鱼们一下子都游过来围着我，吓得我有些不敢动了。之后我学着周围的游客，开始抚摸它们，它们超级喜欢被抚摸，一下子就浮在水面上了。我可以清晰地看见它们大大的脑袋超级萌，还有它们最有辨识度的小胡须，简直就像个小猫。它们的皮肤摸起来比较粗糙，但是感觉它们的力量不小。它们和我玩熟了之后，就像见到老朋友一样，一会从后面撞我一下，贴着我的腿边游过去，我简直太享受和它们在一起的时光了。虽然美好的时光总是短暂的，但是这次与护士鲨的互动一定是我永生难忘的经历。希望大家喜欢我与护士鲨游玩的经历，之后还有更多更精彩的故事想要分享给大家。</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/sunset-photos-of-our-drive-back-home">Sunset photos of our drive back home</a></h3><small>July 08, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmed3toAdgraam5pRgrMVvXXjMeDPEmWWfsn6a8Y5R88R1/20170707_231940.jpg" alt="sunset-photos-of-our-drive-back-home"/><p class="hive-body">Yesterday me and @strawhat were at this yearly event in a small town about 100 kilometers away. We met a lot of friends and people we hadn't seen in a long time and somehow completely forgot to take any photos there. Guess we are still so new to photography that it didn't really cross our mind or we were just too busy enjoying our time there.
+
+On our way driving back we were amazed by the sunset and we suddenly remembered our cameras on our phone and decided to stop here and there and snap some pics. This is a collaborative post between me and @strawhat and the rewards will be shared among us. 
+
+Hope you like them!
+
+___
+
+#### @strawhat's pics in order of taking them.
+
+
+![20170707_231940.jpg](https://steemitimages.com/DQmed3toAdgraam5pRgrMVvXXjMeDPEmWWfsn6a8Y5R88R1/20170707_231940.jpg)
+
+
+![20170707_233119.jpg](https://steemitimages.com/DQmcmTKrKW41XJtRDAHkNS6KRZ9Phb69csLh9TNFnqQiAya/20170707_233119.jpg)
+
+
+![20170707_233322.jpg](https://steemitimages.com/DQmWqX6dcYGvJsk7FYzQVXvw66UwY6KjkRAraN6xWdKDsRK/20170707_233322.jpg)
+
+![20170707_234005.jpg](https://steemitimages.com/DQmYZAT2hFBEgmft4w8EFaRSrQrkj5Hi7AiJmyLWtMAb8x3/20170707_234005.jpg)
+
+![20170707_234014.jpg](https://steemitimages.com/DQmWuz6qNVJxKEP76SPpxbiwAGMLHrq9XS5tRxrribnSMq2/20170707_234014.jpg)
+
+___
+
+#### My pics in the order of taking them.
+
+![IMG_20170707_231939.jpg](https://steemitimages.com/DQmQbNeJ3uzdJMefJiMATrBYenK7EaoXzcQ5gJHoctJJQL3/IMG_20170707_231939.jpg)
+
+![IMG_20170707_234337.jpg](https://steemitimages.com/DQmatX8xpw9J8mEZSbEiHDbrhNwkn1M88BsmC4r1o7G3Fy6/IMG_20170707_234337.jpg)
+
+![IMG_20170707_234940.jpg](https://steemitimages.com/DQmcCgdyp8R52E5cmgCxaFGauJoxojQe7hqJvgjSBVmnK2Z/IMG_20170707_234940.jpg)
+
+![IMG_20170708_001240.jpg](https://steemitimages.com/DQmbWv4TzzqTywMs4ihAyqxUjbxASySbQivzbAnq35AqGNy/IMG_20170708_001240.jpg)
+
+___
+
+These photos were taken with a Samsung S7 and a Huawei P10 Camera. Unedited and unfiltered.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/disapprearing-things-shoe-store">Disapprearing things : Shoe Store</a></h3><small>July 08, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/CvKCaFt.jpg" alt="disapprearing-things-shoe-store"/><p class="hive-body">Shoe store was very famous near Seoul Station. People had been crowded all day long. Merchants from each provinces were busy to buy good shoes first. Shoe makers had earned much money. Once this place was downtown.
+
+Old memories made me visit the shoe store alley. The glory of the past was disappearing. Shoe store was getting less and less. Some shoe stores were closed.
+
+http://i.imgur.com/CvKCaFt.jpg
+
+They displayed the shoes in front of the store but I couldn’t feel vigorous on the street
+http://i.imgur.com/pnBShnI.jpg
+
+http://i.imgur.com/1XeEdyj.jpg
+
+http://i.imgur.com/Y3ENPNJ.jpg
+
+I couldn’t see people on the street. 
+
+http://i.imgur.com/9HLimgv.jpg
+
+http://i.imgur.com/UzVf8sj.jpg
+
+http://i.imgur.com/r6lLQGu.jpg
+
+Entering the shoe store, I asked the business condition to the owner. He told me the shoe business was over in Korea.
+
+http://i.imgur.com/QVaGkAX.jpg
+
+The Shoemaker couldn’t make shoes anymore. It is not easy to maintain their daily life only with making the shoes. They need to find another job to live. People do not want to learn how to make the shoes. Beside, it took several years to learn how to make the shoes. Who could learn shoemaking technology without paying. Rarely there are some hand made shoe technicians, but it is too expensive to buy handmade shoes for common users. So it would be hard to keep up handmade shoe business    
+
+This shoes street would be disappeared not for long time. We could not see crowded and loud scenery in this street any more. In their voice, there were life. 
+
+Too many things are disappearing in my generation.  Most of them had been continued for several hundred years. 
+
+There are no exception in disappearing and oblivion. Nothing could escape from the oblivion, including myself. And the world would be renewed from the oblivion. That’s the principle of the world.
+
+But I am sad, when I notice that acquainted things are being forgotten.
+
+I am thinking again how to live with seeing the disappearing things</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/real-image-of-india-during-diwali-from-space">Real image of India during Diwali from Space</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://en.es-static.us/upl/2012/11/India_Diwali_11-12-2012.jpeg" alt="real-image-of-india-during-diwali-from-space"/><p class="hive-body">http://en.es-static.us/upl/2012/11/India_Diwali_11-12-2012.jpeg
+
+[Image Credit](http://earthsky.org/earth/fake-image-of-india-during-diwali-versus-the-real-thing)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-9-flower-garden-in-udaipur">Beautiful India #9 - Flower Garden in Udaipur</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmaeXGL5JdofVpgpZ6nWsxv4JWnxvvQQ4df656xkj8Tu8v/IMG_20170302_174137233_HDR.jpg" alt="beautiful-india-9-flower-garden-in-udaipur"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get more beautiful pictures of India.
+
+![IMG_20170302_174137233_HDR.jpg](https://steemitimages.com/DQmaeXGL5JdofVpgpZ6nWsxv4JWnxvvQQ4df656xkj8Tu8v/IMG_20170302_174137233_HDR.jpg)
+
+![IMG_20170302_174141881.jpg](https://steemitimages.com/DQmUQcV6KNV4NfGiNerJGSdZxz8qRD4sYAviGP1bdLx7AHo/IMG_20170302_174141881.jpg)
+
+![IMG_20170302_174603985_HDR.jpg](https://steemitimages.com/DQmSuNeTMHJ2pHsjrkN43yvQ8hYiXxK3HhKCBEFLBqyVqx8/IMG_20170302_174603985_HDR.jpg)
+
+![IMG_20170302_174623689.jpg](https://steemitimages.com/DQmZ2Mcp24Xzh5TQR8SkivUv8gXgpLuhsBcVbV9UEdVQgw7/IMG_20170302_174623689.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/the-milky-way">The Milky Way</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://www.talkpundit.com/wp-content/uploads/2014/06/milky-way.jpg" alt="the-milky-way"/><p class="hive-body">![enter image description here](http://www.talkpundit.com/wp-content/uploads/2014/06/milky-way.jpg)
+[Image Credit](http://www.talkpundit.com/wp-content/uploads/2014/06/milky-way.jpg)
+
+The Milky Way is the galaxy which we live in. We can see it in the night sky, although we don't see the whole thing because we look at it from the inside. There is a lot of information about the milky way and our universe, but whether or not the information is accurate is debatable. A lot of it is based on unproven theories, which are also not disproved either. Some of these are Black Holes, Dark Matter, the Big Bang and so on.
+
+The Constellation Sagittarius is where the center of the milky way can be found in the night sky. The Milky Way looks like a band of light and darkness in the night sky with the naked eye and it is because of this that it is called the Milky Way. The light comes from stars in the Milky Way and the darkness comes from cosmic dust, blocking the light. Cameras are able to take better photos than what we can see, although seeing it in the night sky with the naked eye is spectacular in it's own right. The Milky Way is better seen in rural areas where there is little to no light pollution. It is also most clearly seen when the moon is below the horizon, when it is new moon and when the sky is clear with no clouds, humidity or air pollution.
+
+I personally love going on Hikes in the mountains where there is no civilization of any kind and looking at the stars, especially the Milky Way. Enjoy the pictures!
+
+![enter image description here](https://apod.nasa.gov/apod/image/1608/ganab_mosaic.jpg)
+[Image Credit](https://apod.nasa.gov/apod/image/1608/ganab_mosaic.jpg)
+
+This is a different Galaxy from ours, if we could see our Galaxy from the out side it should look similar.
+![enter image description here](http://www.et.byu.edu/~mfreemie/security/picture8.jpeg)
+[Image Credit](http://www.et.byu.edu/~mfreemie/security/picture8.jpeg)
+
+![enter image description here](http://i.imgur.com/PgYKaSd.jpg)
+[Image Credit](http://i.imgur.com/PgYKaSd.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-purple-201777t211143357z">Beautiful Purple</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmdwwW8T6t6fz6SFTvnAWp7ooG4p7iXGXqJEpUPukgwK7m/IMG_20170630_135842.jpg" alt="beautiful-purple-201777t211143357z"/><p class="hive-body">Our eyes will move from beauty, especially if you see a beautiful woman. Here I also can not lie with what I see, the beautiful flower caught my attention.
+
+I do not know the name of this flower, Its size is very small, I found out on the roadside in my travels. Looks great because I use a macro lens, on my smartphone's camera, hope you like it.
+
+![IMG_20170630_135842.jpg](https://steemitimages.com/DQmdwwW8T6t6fz6SFTvnAWp7ooG4p7iXGXqJEpUPukgwK7m/IMG_20170630_135842.jpg)
+
+![IMG_20170630_135832.jpg](https://steemitimages.com/DQmWtTbpLimx3vjRqea1CVXk8MA6mDPqVgM6JX7aMXaEYyD/IMG_20170630_135832.jpg)
+
+![IMG_20170630_135802.jpg](https://steemitimages.com/DQmU9tsRcHcbQ6xHpjf4tJbXGqSyU7JSUJfKBG1SfLV94Hf/IMG_20170630_135802.jpg)
+***
+
+## <center> Follow Me : @ejhaasteem </center>
+***
+<center> <img src="http://www.steemimg.com/images/2017/01/18/IMG_8156c267a.jpg" alt="IMG_8156c267a.jpg" border="0" /> </center>
+***
+
+<center> <img src="http://www.steemimg.com/images/2016/12/03/ejhaasteem422ed.png" alt="ejhaasteem422ed.png" border="0"> </center>
+<center> <img src="http://www.steemimg.com/images/2016/12/13/Title-0122248f287.gif" alt="Title-0122248f287.gif" border="0"> </center>
+
+***</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/in-praise-of-south-african-critters-the-six-legged-variety">In praise of South African critters - the six-legged variety</a></h3><small>July 07, 2017</small></header><section><img class="img-body" srcSet="http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/1266387e-1d56-4d5b-9ef7-83cf568ecc72_zpsr6eu5dk7.jpg" alt="in-praise-of-south-african-critters-the-six-legged-variety"/><p class="hive-body">My love for critters of all sorts, even (especially?) the odd and unloveable, began at an early age in the fields of northern England and then in the suburbs of South Shore Montreal, which in the 1960s and 70s was critter paradise, at least the six-legged critter kind. Monarch butterflies feeding on milkweed - there must be caterpillars! Tomato hornworms chowing the tomato plants? Terrific! They're boss caterpillars. I don't think my mother shared the same view, given their influence on the summer crop. [Black swallowtail butterflies](http://www.pbase.com/rcm1840/lifecycleofblsw)? The coolest caterpillars, except for those rather stinky orange protuberances from their heads. But again, voracious consumers of anything related to dill and parsley, so they were only popular with the *mater familias* if we took them off their feeding grounds and kept them in the laboratory known as the "front porch". 
+
+Crickets, grasshoppers, praying mantises, katydids - as kids, not only did we have our ears to the ground, but the rest was pretty close too, so we were often at eye level with these representatives of the insect world. 
+
+But it wasn't just insects that caught our attention. We caught crayfish in the nearby creek - ask me how and I'll tell you the world's easiest trick for doing it...these are not the sharpest critters in the food chain. Sticklebacks and minnows were fair game as well, as were leopard frogs and a variety of toads. One year we found a snapping turtle, and there was indeed joy in Mudville that summer. 
+
+Ah, the critter love runs deep in this one. I pored over books and books of butterfly and moth species of eastern North America, hoping against hope to spot a Cecropia or a Luna moth. Living where we lived, I had a better chance of seeing those more exotic species in books than in the garden or flying around the outside light. However, South Africa's critters are on a whole different scale to Canada's, and running into them tends to be, well, random. Today I thought I'd share with you a collection of critters I've met in South Africa over the last few years, just because it's Friday and who doesn't need a little Cute & Adorable (C&A) critter love on a Friday?
+
+## Meet some critters from KZN
+
+The [Drakensberg](https://en.wikipedia.org/wiki/Drakensberg) mountains are a paradise for nature lovers, hikers and people who just want peace and quiet. 
+
+Visiting a farm a couple of years ago not far from [Himeville](https://en.wikipedia.org/wiki/Himeville) in the province of KwaZulu Natal (KZN), on the eastern edge of the Drakensberg, we were impressed by the range of wild things wandering around alongside the cattle. As an aside, we were entertained daily on the farm by flocks of blue cranes and crowned cranes flying in to forage the nearby fields. Sometimes the crowned cranes would do their mesmerising mating dance...but cranes are a story for another day. Six-legged critters are the order of the day today. 
+
+### Moths
+
+Here's your first selection, some moths which appeared inside the farmhouse one December evening.
+
+<center>![green moth](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/1266387e-1d56-4d5b-9ef7-83cf568ecc72_zpsr6eu5dk7.jpg)</center>
+<br>
+
+Exquisite, isn't it? I'll bet you didn't know what it was until I told you it was a moth. At least, I think it is! Here's another view which gives you a better feel for its "mothness".
+<center>![green moth](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/45e47804-34e6-4763-8aff-3c05669faaa9_zpsazmvnc4r.jpg)</center>
+<br>
+What extraordinary detail and delicate colouring - truly a work of art. It looks like it has scales on its wings, which tags it as a member of the order of insects known as *lepidoptera* (moths and butterflies). Also, moths and butterflies often have those "furry mantles", and furry legs, like this green specimen above. However, we can't see its antennae, which would go a long way towards convincing me of its ultimate mothness. 
+
+Here's more of a daytime fellow, looking longingly out the window. Isn't that outstretched right leg poignant?
+<center>![white moth](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/379445_1768636272069_1754027732_n_zpsyt6gwugj.jpg)</center>
+<br>
+Seen from the other side, it looks a bit bedraggled. Perhaps it had suffered a difficult night.
+<center>![white moth](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/390025_1768636032063_1902956101_n_zpsqx7elk5l.jpg)</center>
+<br>
+Again, you can see the almost furry mantle behind its head. This time its antennae are clearly visible. Aren't those leg markings striking, and the way they contrast with the colours of the wings and the thorax (chest) markings is sublime.
+
+This next fellow was a little less cooperative and wouldn't sit still long enough for a photo session, so I'm afraid he's a bit out of focus, but oh, the colour....
+<center>![red moth](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/381236_1768636752081_1861123091_n_zpsv87xok9g.jpg)</center>
+<br>
+I couldn't leave him out. And check out the feathery antennae, although the lack of focus means you can't see the fine detail there. However, you can get a decent idea of the scales on the wings.
+
+One of the ways you can tell moths and butterflies apart, besides their antennae (feathery versus not feathery), cocoon versus chrysalis metamorposis phase and night versus day living habits, is that moths generally rest with their wings down, more or less parallel to the surface they're resting on, while butterflies rest with their wings vertical. Here's an example of a moth resting with wings outstretched; this one was taken in Port Edward a couple of months ago.
+
+<center>![Port Edward moth1](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/18222052_10202968336565754_8494416196093214366_n_zpsk1wmztnx.jpg)</center>
+You can clearly see the feathery antennae and the wing scales which form the beautiful pattern, and in the view below the furry mantle is easy to see.
+
+<br><center>![Port Edward moth2](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/18157482_10202961366471506_8246207603459027183_n_zps95bcdlq4.jpg)</center>
+<br>
+
+### Hoppers and grabbers
+
+We decided to take a quick day hike in [Cobham](http://www.kznwildlife.com/accomodation/resorts/cobham.html) before the afternoon thunderstorms rolled in. To give you an idea of the terrain and scenery there, a couple of scene setting pictures:
+ 
+<center> ![Cobham1](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/408169_1768585910810_1411912053_n_zpsjqmpfaly.jpg)</center>
+ <br>
+ 
+ <center> ![Cobham2](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/408834_1768583990762_2058221133_n_zpsvskysae0.jpg)</center>
+ <br>
+ By the way, that's not a critter/hopper/grabber. That's @tim-beck.
+ 
+ Walking along that trail, I looked down and what did I see, but this not so little guy:
+ 
+ <center> ![Cobham locust type critter1](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/408094_1768584510775_1845664141_n_zpstkm3xgrj.jpg)</center>
+ <br>
+  <center> ![Cobham locust type critter2](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/384028_1768584790782_300185384_n_zpslyxbtkz8.jpg)</center>
+ <br>
+I assume it's some kind of locust, and with that kind of bright colouring it probably either tastes really bad or is poisonous - the colouring would warn off birds and other predators. I tried to find out more about it online, with no luck. Perhaps some knowledgeable Steemian entomologist could chime in here with more information about this insect.
+
+Now that the hopper side has been represented, here's a rep for the grabber team:
+
+ <center> ![Mantis](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/18193695_10202961365751488_4219649475387325050_n_zpssxlabawz.jpg)</center>
+ <br>
+
+This is a kind of praying mantis, although it's not resting in the characteristic praying position and you can't really see the alien-type head well in this shot - it refused to look my way and pose. If you've ever had one grab onto your finger, you'll know they have an incredibly powerful grip. In the Montreal area, these were always a bright green, probably because their habitat was full of green plants. I've seen reddish and other coloured mantids here in South Africa. As you can see from its colouring, this fellow would probably blend in with a mottled surrounding.
+
+## Now for something completely different
+I saw this next fellow (I think it's some kind of fly, but an awfully ostentatious, exotic one) on my kitchen door window last year and discovered just how poor my cell phone camera was at the time - had a heckuva time focusing on it. We live in Johannesburg, so unless it came in on a windstorm, it's probably native to South Africa's [Highveld](http://www.nature-reserve.co.za/south-africa-info-highveld.html). 
+
+I hope you can make out its topside and underside from the next two images.
+ <center> ![Critter1](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/Kitchen%20fly%20top%20cropped_zpsilbhznrm.jpg)</center>
+<center>Fly? Top view</center>
+ <br> <center> ![Critter2](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/Kitchen%20fly%20cropped_zpsk9wp7rvd.jpg)</center>
+<center>Fly? Underside view</center> <br>
+ What exquisite wing patterns and coloration. They look so delicate, and yet they are completely opaque; it's impossible to see through its wings that its body is bright red. I would never have known this if I'd seen it sitting on a leaf, but since it was kind enough to spend time on my window, serendipity!
+ 
+ ## Nope, nope, nope - not indoors
+ 
+And what critter feature would be complete without some eight-legged critters for jitters?
+ 
+Pardon the poor quality of this photo in our previous home, but I was going for evidence, not aesthetics. 
+<center> ![Spider1](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/10565036_4726684661430_3605634341061732421_n_zpszgygi3pr.jpg)</center>
+<br> 
+
+Geez, those things can move fast when they want to. This works against them in the @kiligirl court of "some things are just  not allowed in my house".
+<center> ![Spider2](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/10675784_4726685581453_5298193246880469801_n_zpsj3xcr2sk.jpg)</center>
+<br> 
+...and another one in the house we're living in now, just to remind me of the futility of that @kiligirl court.
+<center> ![Spider3](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/2982c373-e70a-4518-86d6-c2dbdc089dca_zps719xnqka.jpg)</center>
+<br> 
+
+## And happy Friday, folks
+I hope you enjoyed this taste of the C&A that South Africa has to offer!
+<center> ![Ookpik](http://i36.photobucket.com/albums/e39/Linsey_Dyer/Critters/69793_1250923729579_2293424_n_zps9zwcfvor.jpg)</center>
+<br> 
+I drew that. He's my alter ego.
+
+<center> ![RSA Steemit logo](http://i36.photobucket.com/albums/e39/Linsey_Dyer/steemit%20RSA%20flag_zpsdflhbxvo.png)</center><center>Cool South African Steemit logo courtesy of @alainite</center>
+<br></p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/65">← Previous Page</a><li style="margin:0">66</li><a rel="next" href="/hive-blog/67">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/66";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

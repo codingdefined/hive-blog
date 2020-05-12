@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">🏅Daily TOP posts &amp; authors and stats in the past 7 days (Jun 27 to Jul 03) | My Hive Posts</title><meta data-react-helmet="true" name="description" content="![stats](https://steemitimages.com/DQmZg25ewtzVqzWuMWferX9xzXkMTHLSBeL2LrcfHNXwVG1/statistics.jpg)
+
+## Information
+
+Data source: [SteemData](http://steemdata.com/) &amp; steemd
+Generation time: `2017-07-05 09:20:01(UTC)`
+
+
+### &amp;#x1F4CA; Simple post stats in the past 7 days
+
+Item.|`Jun 27`|`Jun 28`|`Jun 29`|`Jun 30`|`Jul 01`|`Jul 02`|`Jul 03`
+----|----|----|----|----|----|----|----
+**`Authors`**|`9497`|`9136`|`8937`|`8323`|`7915`|`7943`|`8470`
+**`Posts`**|`22204`|`20234`|`19578`|`18020`|`16929`|`17306`|`18383`
+**`Replies`**|`112484`|`102290`|`100560`|`91785`|`85990`|`84168`|`86340`
+**`Votes`**|`250455`|`243726`|`235385`|`213630`|`203789`|`209942`|`213013`
+**`Rewards`**|`109411`|`123242`|`120884`|`107335`|`95215`|`99877`|`114264`
+***`Notes`***
+**`Authors:`** `Number of unique authors`
+**`Posts:`** `Number of unique posts`
+**`Replies:`** `Total comments(replies) on the posts mentioned above.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Rewards:`** `Total rewards (in SBD and rounded) of the posts.`
+----
+
+### &amp;#x1F3C5; Daily top 30 posts in 2017-07-03 (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`2`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`3`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`4`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`5`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`6`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`7`|@kingscrown|`741.87`|`728/120`|[Australia, Japan, Delaware (USA) All in Favor of Bitcoin with Law/Taxes](https://steemit.com/bitcoin/@kingscrown/australia-japan-delaware-usa-all-in-favor-of-bitcoin-with-law-taxes)
+`8`|@rea|`728.92`|`386/133`|[My Adventure on the Island of Crete - Day 8 / 希腊克里特岛之旅 - 第八天](https://steemit.com/cn/@rea/my-adventure-on-the-island-of-crete-day-8)
+`9`|@officialfuzzy|`699.07`|`437/53`|[E213 2017-06-30 Beyond Bitcoin - GRC, OpenSteem, Peerity, Virgrow, WC, OHMCoin &amp; WhaleShares!](https://steemit.com/beyondbitcoin/@officialfuzzy/e213-2017-06-30-beyond-bitcoin-grc-opensteem-peerity-virgrow-wc-ohmcoin-and-whaleshares)
+`10`|@bookingteam.com|`567.25`|`245/56`|[What You Need To Know In The Vacation Rental Industry 07-03-2017](https://steemit.com/business/@bookingteam.com/what-you-need-to-know-in-the-vacation-rental-industry-07-03-2017)
+`11`|@papa-pepper|`465.55`|`513/125`|[ECHINACEA - A PHOTO SHOOT WITH A WONDERFUL WILD FLOWER](https://steemit.com/photography/@papa-pepper/echinacea-a-photo-shoot-with-a-wonderful-wild-flower)
+`12`|@madbitcoins|`453.62`|`178/48`|[Today in Bitcoin (2017-07-03) - Colombia, Goldman Sachs Bullish and Smart Contracts, ICOs](https://steemit.com/bitcoin/@madbitcoins/today-in-bitcoin-2017-07-03-columbia-goldman-sachs-bullish-and-smart-contracts-icos)
+`13`|@fathin-shihab|`452.71`|`144/121`|[DIY Steemit chocolate+ Steemit 3D chocolate box+ tutorial](https://steemit.com/steemit/@fathin-shihab/diy-steemit-chocolate-steemit-3d-chocolate-box-tutorial-201773t71549892z)
+`14`|@gavvet|`451.79`|`378/69`|[The piece of the cold war nobody told you about - Africa&#x27;s forgotten war - Regional Tensions.](https://steemit.com/war/@gavvet/the-piece-of-the-cold-war-nobody-told-you-about-africa-s-forgotten-war-regional-tensions)
+`15`|@diegotorrescolo|`437.05`|`211/73`|[Drone Footage of the Riviera Maya - Playa del Carmen / Xpuha / Surprise Location](https://steemit.com/travel/@diegotorrescolo/drone-footage-of-the-riviera-maya-playa-del-carmen-xpuha-surprise-location)
+`16`|@bitcoiner|`429.61`|`274/133`|[Steem software is out of beta now?](https://steemit.com/steem/@bitcoiner/steem-software-is-out-of-beta-now)
+`17`|@firepower|`418.87`|`319/51`|[Crypto Current Affairs—South Korea Drafting Bills to Legalise Bitcoin &amp; Ethereum!](https://steemit.com/bitcoin/@firepower/crypto-current-affairs-south-korea-drafting-bills-to-legalise-bitcoin-and-ethereum)
+`18`|@oflyhigh|`416.08`|`125/48`|[那年夏天](https://steemit.com/cn/@oflyhigh/341nku)
+`19`|@steemcleaners|`412.82`|`264/33`|[Steemcleaner Report for July 1, 2017 Part 2](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017-part-2)
+`20`|@trilumia|`411.50`|`155/36`|[OPEN MIC WEEK 40 &amp;#124; Steemit Up ! 💙  TRILÚMIA &amp; Friends (BOB MARLEY) ✨](https://steemit.com/openmic/@trilumia/open-mic-week-40-or-steemit-up-trilumia-and-friends-bob-marley)
+`21`|@steemcleaners|`409.43`|`252/17`|[Steemcleaner Report for July 1, 2017](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017)
+`22`|@allasyummyfood|`390.43`|`277/92`|[RUSSIAN PICKLES RECIPE](https://steemit.com/food/@allasyummyfood/russian-pickles-recipe)
+`23`|@peterchen145|`390.33`|`77/20`|[如何生成以及注册eos公钥](https://steemit.com/eos/@peterchen145/39yu5j-eos)
+`24`|@deanliu|`389.80`|`189/45`|[🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui](https://steemit.com/travel/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui)
+`25`|@oflyhigh|`382.19`|`138/60`|[好人难做、坏人难当，还是当个机器人最简单](https://steemit.com/cn/@oflyhigh/75exnc)
+`26`|@papa-pepper|`374.87`|`471/76`|[THE WILD-MAN&#x27;S WILD FRIENDS VIDEO SERIES - EPISODE 20 - MISSISSIPPI MAP TURTLE](https://steemit.com/wild-man/@papa-pepper/the-wild-man-s-wild-friends-video-series-episode-20-mississippi-map-turtle)
+`27`|@mdwestlifecrisis|`361.49`|`158/20`|[The Definitive Guide to Writing and Delivering a Best Man Speech](https://steemit.com/funny/@mdwestlifecrisis/the-definitive-guide-to-writing-and-delivering-a-best-man-speech)
+`28`|@helene|`357.47`|`175/98`|[Seafood Salad With Vegetables   泰式海鲜蔬菜沙拉](https://steemit.com/food/@helene/seafood-salad-with-vegetables)
+`29`|@cryptogee|`357.33`|`152/35`|[Incredible You! - Move Like An Animal With Ido Portal](https://steemit.com/incredibleyou/@cryptogee/incredible-you-move-like-an-animal-with-ido-portal)
+`30`|@kyriacos|`339.71`|`377/225`|[Misconceptions About Steemit And Possible Solutions](https://steemit.com/steemit/@kyriacos/misconceptions-about-steemit-and-possible-solutions)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Daily top 30 authors in 2017-07-03 (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@dan|`67.99`|`1596.71`|`1`|`866`|`198`
+`2`|@papa-pepper|`75.25`|`1437.07`|`4`|`1735`|`283`
+`3`|@voronoi|`68.06`|`1189.74`|`1`|`657`|`149`
+`4`|@good-karma|`73.34`|`1164.46`|`1`|`1128`|`278`
+`5`|@craig-grant|`74.78`|`1098.99`|`9`|`2089`|`413`
+`6`|@steepshot|`61.53`|`1039.34`|`1`|`378`|`73`
+`7`|@jerrybanfield|`64.76`|`967.28`|`1`|`1021`|`302`
+`8`|@allasyummyfood|`69.33`|`925.62`|`4`|`985`|`292`
+`9`|@heiditravels|`71.33`|`910.66`|`1`|`669`|`233`
+`10`|@kaylinart|`73.11`|`843.33`|`6`|`982`|`409`
+`11`|@knozaki2015|`77.19`|`829.53`|`3`|`802`|`179`
+`12`|@steemcleaners|`73.08`|`822.25`|`2`|`516`|`50`
+`13`|@oflyhigh|`70.09`|`798.26`|`2`|`263`|`108`
+`14`|@kingscrown|`73.16`|`741.87`|`1`|`728`|`120`
+`15`|@rea|`67.08`|`728.92`|`1`|`386`|`133`
+`16`|@kafkanarchy84|`71.80`|`725.48`|`3`|`309`|`81`
+`17`|@officialfuzzy|`73.11`|`699.07`|`1`|`437`|`53`
+`18`|@v4vapid|`66.12`|`601.20`|`2`|`150`|`91`
+`19`|@kyriacos|`68.98`|`591.88`|`2`|`611`|`394`
+`20`|@bookingteam.com|`63.64`|`567.25`|`1`|`245`|`56`
+`21`|@dana-edwards|`71.59`|`540.18`|`4`|`358`|`98`
+`22`|@aggroed|`68.44`|`509.55`|`3`|`574`|`291`
+`23`|@stellabelle|`74.90`|`508.52`|`2`|`626`|`276`
+`24`|@steemsports|`77.82`|`482.33`|`3`|`640`|`44`
+`25`|@calaber24p|`73.24`|`464.90`|`2`|`409`|`53`
+`26`|@madbitcoins|`59.27`|`461.46`|`2`|`187`|`51`
+`27`|@fathin-shihab|`56.82`|`452.71`|`1`|`144`|`121`
+`28`|@gavvet|`76.61`|`451.79`|`1`|`378`|`69`
+`29`|@peterchen145|`55.54`|`439.77`|`3`|`98`|`21`
+`30`|@diegotorrescolo|`51.81`|`437.61`|`2`|`215`|`75`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+### &amp;#x1F3C5; Top 30 posts in the past 7 days (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`2336.85`|`658/196`|[EOS - Developer’s Log Stardate 20176.30](https://steemit.com/eos/@dan/eos-developer-s-log-stardate-20176-30)
+`2`|@jesta|`1638.11`|`837/192`|[chainBB v0.3.0 - social feed, following, and forum subscriptions](https://steemit.com/chainbb/@jesta/chainbb-v030-social-feed-following-and-forum-subscriptions)
+`3`|@steemitblog|`1628.06`|`277/93`|[Announcing Steemit&#x27;s First OFFICIAL Crowdsourced Marketing Project!](https://steemit.com/steemit/@steemitblog/announcing-steemit-s-first-official-crowdsourced-marketing-project)
+`4`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`5`|@sweetsssj|`1462.67`|`1253/701`|[Just Kitty : Raising kittens from birth - The joys of being a &quot;Crazy Cat Lady&quot;](https://steemit.com/cats/@sweetsssj/just-kitty-raising-kittens-from-birth-the-joys-of-being-a-crazy-cat-lady)
+`6`|@sweetsssj|`1370.66`|`1289/671`|[Miss. Delicious #67 : Visiting Señor Frogs in Bahamas!](https://steemit.com/food/@sweetsssj/miss-delicious-67-visiting-senor-frogs-in-bahamas)
+`7`|@sweetsssj|`1362.05`|`1566/605`|[Miss. Opinionated : The woes of Travel - Budget Airlines](https://steemit.com/life/@sweetsssj/miss-opinionated-the-woes-of-travel-budget-airlines)
+`8`|@jeffberwick|`1342.22`|`1038/295`|[Why I Stopped Drinking Alcohol II: It Does Absolutely Nothing Good For You](https://steemit.com/life/@jeffberwick/why-i-stopped-drinking-alcohol-ii-it-does-absolutely-nothing-good-for-you)
+`9`|@dollarvigilante|`1298.96`|`957/151`|[The Dollar Vigilante Invites You To Freedomfest ($100 discount included)!](https://steemit.com/anarchy/@dollarvigilante/the-dollar-vigilante-invites-you-to-freedomfest-usd100-discount-included)
+`10`|@belerophon|`1278.48`|`1018/313`|[Coindesk Libels Dan Larimer](https://steemit.com/eos/@belerophon/coindesk-libels-dan-larimer)
+`11`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`12`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`13`|@sweetsssj|`1148.27`|`1572/853`|[Travel with me #72 : Visiting Major Cay and taking a swim with the pigs! (photos + video)](https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs)
+`14`|@dollarvigilante|`1043.55`|`915/252`|[Janet Yellen Just Said The Most Ridiculous Thing We&#x27;ve Heard All Year!](https://steemit.com/yellen/@dollarvigilante/janet-yellen-just-said-the-most-ridiculous-thing-we-ve-heard-all-year)
+`15`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`16`|@crypt0|`975.28`|`1051/320`|[Bitcoin Could Reach $25,000 Soon / EOS Scam? / Blockfolio Snooping Portfolios / Dash Roadmap / More!](https://steemit.com/crypto-news/@crypt0/bitcoin-could-reach-usd25-000-soon-eos-scam-blockfolio-snooping-portfolios-dash-roadmap-more)
+`17`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`18`|@jeffberwick|`956.62`|`929/321`|[Being Happy Is A Choice... So Why Choose To Be Unhappy?](https://steemit.com/life/@jeffberwick/being-happy-is-a-choice-so-why-choose-to-be-unhappy)
+`19`|@jerrybanfield|`933.47`|`1299/546`|[Poloniex Crashing? $67,877+ in Unconfirmed Steem + SBD Deposits!](https://steemit.com/poloniex/@jerrybanfield/poloniex-crashing-usd67-877-in-unconfirmed-steem-sbd-deposits)
+`20`|@crypt0|`928.75`|`661/169`|[Tai Fu Index / ICOs Crashing ETH&#x27;s Price? / Consensys Diligence / IRS Coinbase &amp; Blockfolio Updates](https://steemit.com/crypto-news/@crypt0/tai-fu-index-icos-crashing-eth-s-price-consensys-diligence-irs-coinbase-and-blockfolio-updates)
+`21`|@jerrybanfield|`922.39`|`993/295`|[Steemit Updates Summarized From Launch to 19.0!](https://steemit.com/steem-help/@jerrybanfield/steemit-updates-summarized-from-launch-to-19-0)
+`22`|@jerrybanfield|`914.67`|`1236/433`|[Top 10 Cryptocurrency Questions and Answers!](https://steemit.com/bitcoin/@jerrybanfield/top-10-cryptocurrency-questions-and-answers)
+`23`|@timsaid|`913.00`|`648/165`|[MyPictureSunday#10 - Last day in Paris + MyPictureDay Challenge Round #3](https://steemit.com/photography/@timsaid/mypicturesunday-10-last-day-in-paris-mypictureday-challenge-round-3)
+`24`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`25`|@timsaid|`902.88`|`869/271`|[The Steemit Crypto Challenge #16 - CC2k17.6 - 100 STEEM Prize!](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-cc2k17-6-100-steem-prize)
+`26`|@hansikhouse|`899.06`|`428/156`|[STEEMPARK // 스팀 여름공원이 Steemit Inc. 의 첫 공식 Crowdsourcing 프로젝트로 채택되었습니다!](https://steemit.com/steempark/@hansikhouse/steempark-steemit-inc-crowdsourcing)
+`27`|@timsaid|`886.15`|`680/124`|[The Steemit Crypto Challenge #16 - Winner Announcement](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-winner-announcement)
+`28`|@theshadowbrokers|`883.02`|`439/121`|[TheShadowBrokers Monthly Dump Service - July 2017](https://steemit.com/shadowbrokers/@theshadowbrokers/theshadowbrokers-monthly-dump-service-july-2017)
+`29`|@jerrybanfield|`880.70`|`1036/411`|[2000 Steem Prize! Develop SteemJ.com for Steemit Freelancing!](https://steemit.com/steemj/@jerrybanfield/2000-steem-prize-develop-steemj-com-for-steemit-freelancing)
+`30`|@curie|`861.21`|`486/43`|[Curie Weekly Update (26th June to 2nd July 2017)](https://steemit.com/curation/@curie/curie-weekly-update-26th-june-to-2nd-july-2017)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Top 30 authors in the past 7 days (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@tamim|`66.66`|`7281.68`|`59`|`1719`|`318`
+`2`|@sweetsssj|`74.21`|`7015.59`|`6`|`8007`|`3905`
+`3`|@craig-grant|`74.78`|`6713.12`|`43`|`11850`|`3012`
+`4`|@papa-pepper|`75.25`|`5956.16`|`25`|`10725`|`1845`
+`5`|@oflyhigh|`70.09`|`5323.95`|`14`|`1959`|`534`
+`6`|@jerrybanfield|`64.76`|`5193.81`|`7`|`7057`|`2572`
+`7`|@kingscrown|`73.16`|`4745.57`|`7`|`5731`|`1237`
+`8`|@steemsports|`77.82`|`4281.66`|`23`|`5914`|`538`
+`9`|@allasyummyfood|`69.33`|`4276.52`|`26`|`6862`|`2301`
+`10`|@steemcleaners|`73.08`|`4158.68`|`11`|`2845`|`237`
+`11`|@timsaid|`71.10`|`4106.82`|`5`|`3605`|`853`
+`12`|@jeffberwick|`61.33`|`4074.88`|`6`|`4648`|`1273`
+`13`|@dan|`67.99`|`3933.56`|`2`|`1524`|`394`
+`14`|@dollarvigilante|`73.07`|`3769.19`|`6`|`5090`|`1239`
+`15`|@calaber24p|`73.24`|`3487.41`|`14`|`3209`|`547`
+`16`|@good-karma|`73.34`|`3478.70`|`4`|`3496`|`887`
+`17`|@knozaki2015|`77.19`|`3253.44`|`18`|`4525`|`805`
+`18`|@kaylinart|`73.11`|`3136.74`|`25`|`4447`|`1851`
+`19`|@officialfuzzy|`73.11`|`2992.91`|`6`|`2291`|`272`
+`20`|@firepower|`67.07`|`2753.51`|`7`|`2184`|`964`
+`21`|@b0y2k|`70.63`|`2740.28`|`9`|`2119`|`416`
+`22`|@crypt0|`69.15`|`2682.51`|`4`|`2971`|`859`
+`23`|@aggroed|`68.44`|`2604.80`|`15`|`2903`|`1085`
+`24`|@suesa|`59.97`|`2591.53`|`9`|`562`|`237`
+`25`|@lily-da-vine|`71.82`|`2523.07`|`30`|`1845`|`387`
+`26`|@gavvet|`76.61`|`2502.80`|`6`|`2514`|`452`
+`27`|@andrianna|`63.44`|`2490.49`|`22`|`1679`|`1131`
+`28`|@kyriacos|`68.98`|`2404.97`|`9`|`2532`|`1265`
+`29`|@deanliu|`69.90`|`2402.57`|`7`|`1173`|`354`
+`30`|@slowwalker|`68.26`|`2400.28`|`9`|`2217`|`717`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+The report will be updated daily
+This is a beta version of the report, and I will continue to improve it.
+If you like it, please upvote it and follow me @chinadaily
+Thank you very much. 😜
+
+© @chinadaily
+****
+[![follow me](https://www.steemimg.com/images/2016/08/13/followme1b3cb.th.jpg)](https://steemit.com/@chinadaily)
+"/><meta data-react-helmet="true" property="og:title" content="🏅Daily TOP posts &amp; authors and stats in the past 7 days (Jun 27 to Jul 03)"/><meta data-react-helmet="true" property="og:description" content="![stats](https://steemitimages.com/DQmZg25ewtzVqzWuMWferX9xzXkMTHLSBeL2LrcfHNXwVG1/statistics.jpg)
+
+## Information
+
+Data source: [SteemData](http://steemdata.com/) &amp; steemd
+Generation time: `2017-07-05 09:20:01(UTC)`
+
+
+### &amp;#x1F4CA; Simple post stats in the past 7 days
+
+Item.|`Jun 27`|`Jun 28`|`Jun 29`|`Jun 30`|`Jul 01`|`Jul 02`|`Jul 03`
+----|----|----|----|----|----|----|----
+**`Authors`**|`9497`|`9136`|`8937`|`8323`|`7915`|`7943`|`8470`
+**`Posts`**|`22204`|`20234`|`19578`|`18020`|`16929`|`17306`|`18383`
+**`Replies`**|`112484`|`102290`|`100560`|`91785`|`85990`|`84168`|`86340`
+**`Votes`**|`250455`|`243726`|`235385`|`213630`|`203789`|`209942`|`213013`
+**`Rewards`**|`109411`|`123242`|`120884`|`107335`|`95215`|`99877`|`114264`
+***`Notes`***
+**`Authors:`** `Number of unique authors`
+**`Posts:`** `Number of unique posts`
+**`Replies:`** `Total comments(replies) on the posts mentioned above.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Rewards:`** `Total rewards (in SBD and rounded) of the posts.`
+----
+
+### &amp;#x1F3C5; Daily top 30 posts in 2017-07-03 (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`2`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`3`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`4`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`5`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`6`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`7`|@kingscrown|`741.87`|`728/120`|[Australia, Japan, Delaware (USA) All in Favor of Bitcoin with Law/Taxes](https://steemit.com/bitcoin/@kingscrown/australia-japan-delaware-usa-all-in-favor-of-bitcoin-with-law-taxes)
+`8`|@rea|`728.92`|`386/133`|[My Adventure on the Island of Crete - Day 8 / 希腊克里特岛之旅 - 第八天](https://steemit.com/cn/@rea/my-adventure-on-the-island-of-crete-day-8)
+`9`|@officialfuzzy|`699.07`|`437/53`|[E213 2017-06-30 Beyond Bitcoin - GRC, OpenSteem, Peerity, Virgrow, WC, OHMCoin &amp; WhaleShares!](https://steemit.com/beyondbitcoin/@officialfuzzy/e213-2017-06-30-beyond-bitcoin-grc-opensteem-peerity-virgrow-wc-ohmcoin-and-whaleshares)
+`10`|@bookingteam.com|`567.25`|`245/56`|[What You Need To Know In The Vacation Rental Industry 07-03-2017](https://steemit.com/business/@bookingteam.com/what-you-need-to-know-in-the-vacation-rental-industry-07-03-2017)
+`11`|@papa-pepper|`465.55`|`513/125`|[ECHINACEA - A PHOTO SHOOT WITH A WONDERFUL WILD FLOWER](https://steemit.com/photography/@papa-pepper/echinacea-a-photo-shoot-with-a-wonderful-wild-flower)
+`12`|@madbitcoins|`453.62`|`178/48`|[Today in Bitcoin (2017-07-03) - Colombia, Goldman Sachs Bullish and Smart Contracts, ICOs](https://steemit.com/bitcoin/@madbitcoins/today-in-bitcoin-2017-07-03-columbia-goldman-sachs-bullish-and-smart-contracts-icos)
+`13`|@fathin-shihab|`452.71`|`144/121`|[DIY Steemit chocolate+ Steemit 3D chocolate box+ tutorial](https://steemit.com/steemit/@fathin-shihab/diy-steemit-chocolate-steemit-3d-chocolate-box-tutorial-201773t71549892z)
+`14`|@gavvet|`451.79`|`378/69`|[The piece of the cold war nobody told you about - Africa&#x27;s forgotten war - Regional Tensions.](https://steemit.com/war/@gavvet/the-piece-of-the-cold-war-nobody-told-you-about-africa-s-forgotten-war-regional-tensions)
+`15`|@diegotorrescolo|`437.05`|`211/73`|[Drone Footage of the Riviera Maya - Playa del Carmen / Xpuha / Surprise Location](https://steemit.com/travel/@diegotorrescolo/drone-footage-of-the-riviera-maya-playa-del-carmen-xpuha-surprise-location)
+`16`|@bitcoiner|`429.61`|`274/133`|[Steem software is out of beta now?](https://steemit.com/steem/@bitcoiner/steem-software-is-out-of-beta-now)
+`17`|@firepower|`418.87`|`319/51`|[Crypto Current Affairs—South Korea Drafting Bills to Legalise Bitcoin &amp; Ethereum!](https://steemit.com/bitcoin/@firepower/crypto-current-affairs-south-korea-drafting-bills-to-legalise-bitcoin-and-ethereum)
+`18`|@oflyhigh|`416.08`|`125/48`|[那年夏天](https://steemit.com/cn/@oflyhigh/341nku)
+`19`|@steemcleaners|`412.82`|`264/33`|[Steemcleaner Report for July 1, 2017 Part 2](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017-part-2)
+`20`|@trilumia|`411.50`|`155/36`|[OPEN MIC WEEK 40 &amp;#124; Steemit Up ! 💙  TRILÚMIA &amp; Friends (BOB MARLEY) ✨](https://steemit.com/openmic/@trilumia/open-mic-week-40-or-steemit-up-trilumia-and-friends-bob-marley)
+`21`|@steemcleaners|`409.43`|`252/17`|[Steemcleaner Report for July 1, 2017](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017)
+`22`|@allasyummyfood|`390.43`|`277/92`|[RUSSIAN PICKLES RECIPE](https://steemit.com/food/@allasyummyfood/russian-pickles-recipe)
+`23`|@peterchen145|`390.33`|`77/20`|[如何生成以及注册eos公钥](https://steemit.com/eos/@peterchen145/39yu5j-eos)
+`24`|@deanliu|`389.80`|`189/45`|[🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui](https://steemit.com/travel/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui)
+`25`|@oflyhigh|`382.19`|`138/60`|[好人难做、坏人难当，还是当个机器人最简单](https://steemit.com/cn/@oflyhigh/75exnc)
+`26`|@papa-pepper|`374.87`|`471/76`|[THE WILD-MAN&#x27;S WILD FRIENDS VIDEO SERIES - EPISODE 20 - MISSISSIPPI MAP TURTLE](https://steemit.com/wild-man/@papa-pepper/the-wild-man-s-wild-friends-video-series-episode-20-mississippi-map-turtle)
+`27`|@mdwestlifecrisis|`361.49`|`158/20`|[The Definitive Guide to Writing and Delivering a Best Man Speech](https://steemit.com/funny/@mdwestlifecrisis/the-definitive-guide-to-writing-and-delivering-a-best-man-speech)
+`28`|@helene|`357.47`|`175/98`|[Seafood Salad With Vegetables   泰式海鲜蔬菜沙拉](https://steemit.com/food/@helene/seafood-salad-with-vegetables)
+`29`|@cryptogee|`357.33`|`152/35`|[Incredible You! - Move Like An Animal With Ido Portal](https://steemit.com/incredibleyou/@cryptogee/incredible-you-move-like-an-animal-with-ido-portal)
+`30`|@kyriacos|`339.71`|`377/225`|[Misconceptions About Steemit And Possible Solutions](https://steemit.com/steemit/@kyriacos/misconceptions-about-steemit-and-possible-solutions)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Daily top 30 authors in 2017-07-03 (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@dan|`67.99`|`1596.71`|`1`|`866`|`198`
+`2`|@papa-pepper|`75.25`|`1437.07`|`4`|`1735`|`283`
+`3`|@voronoi|`68.06`|`1189.74`|`1`|`657`|`149`
+`4`|@good-karma|`73.34`|`1164.46`|`1`|`1128`|`278`
+`5`|@craig-grant|`74.78`|`1098.99`|`9`|`2089`|`413`
+`6`|@steepshot|`61.53`|`1039.34`|`1`|`378`|`73`
+`7`|@jerrybanfield|`64.76`|`967.28`|`1`|`1021`|`302`
+`8`|@allasyummyfood|`69.33`|`925.62`|`4`|`985`|`292`
+`9`|@heiditravels|`71.33`|`910.66`|`1`|`669`|`233`
+`10`|@kaylinart|`73.11`|`843.33`|`6`|`982`|`409`
+`11`|@knozaki2015|`77.19`|`829.53`|`3`|`802`|`179`
+`12`|@steemcleaners|`73.08`|`822.25`|`2`|`516`|`50`
+`13`|@oflyhigh|`70.09`|`798.26`|`2`|`263`|`108`
+`14`|@kingscrown|`73.16`|`741.87`|`1`|`728`|`120`
+`15`|@rea|`67.08`|`728.92`|`1`|`386`|`133`
+`16`|@kafkanarchy84|`71.80`|`725.48`|`3`|`309`|`81`
+`17`|@officialfuzzy|`73.11`|`699.07`|`1`|`437`|`53`
+`18`|@v4vapid|`66.12`|`601.20`|`2`|`150`|`91`
+`19`|@kyriacos|`68.98`|`591.88`|`2`|`611`|`394`
+`20`|@bookingteam.com|`63.64`|`567.25`|`1`|`245`|`56`
+`21`|@dana-edwards|`71.59`|`540.18`|`4`|`358`|`98`
+`22`|@aggroed|`68.44`|`509.55`|`3`|`574`|`291`
+`23`|@stellabelle|`74.90`|`508.52`|`2`|`626`|`276`
+`24`|@steemsports|`77.82`|`482.33`|`3`|`640`|`44`
+`25`|@calaber24p|`73.24`|`464.90`|`2`|`409`|`53`
+`26`|@madbitcoins|`59.27`|`461.46`|`2`|`187`|`51`
+`27`|@fathin-shihab|`56.82`|`452.71`|`1`|`144`|`121`
+`28`|@gavvet|`76.61`|`451.79`|`1`|`378`|`69`
+`29`|@peterchen145|`55.54`|`439.77`|`3`|`98`|`21`
+`30`|@diegotorrescolo|`51.81`|`437.61`|`2`|`215`|`75`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+### &amp;#x1F3C5; Top 30 posts in the past 7 days (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`2336.85`|`658/196`|[EOS - Developer’s Log Stardate 20176.30](https://steemit.com/eos/@dan/eos-developer-s-log-stardate-20176-30)
+`2`|@jesta|`1638.11`|`837/192`|[chainBB v0.3.0 - social feed, following, and forum subscriptions](https://steemit.com/chainbb/@jesta/chainbb-v030-social-feed-following-and-forum-subscriptions)
+`3`|@steemitblog|`1628.06`|`277/93`|[Announcing Steemit&#x27;s First OFFICIAL Crowdsourced Marketing Project!](https://steemit.com/steemit/@steemitblog/announcing-steemit-s-first-official-crowdsourced-marketing-project)
+`4`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`5`|@sweetsssj|`1462.67`|`1253/701`|[Just Kitty : Raising kittens from birth - The joys of being a &quot;Crazy Cat Lady&quot;](https://steemit.com/cats/@sweetsssj/just-kitty-raising-kittens-from-birth-the-joys-of-being-a-crazy-cat-lady)
+`6`|@sweetsssj|`1370.66`|`1289/671`|[Miss. Delicious #67 : Visiting Señor Frogs in Bahamas!](https://steemit.com/food/@sweetsssj/miss-delicious-67-visiting-senor-frogs-in-bahamas)
+`7`|@sweetsssj|`1362.05`|`1566/605`|[Miss. Opinionated : The woes of Travel - Budget Airlines](https://steemit.com/life/@sweetsssj/miss-opinionated-the-woes-of-travel-budget-airlines)
+`8`|@jeffberwick|`1342.22`|`1038/295`|[Why I Stopped Drinking Alcohol II: It Does Absolutely Nothing Good For You](https://steemit.com/life/@jeffberwick/why-i-stopped-drinking-alcohol-ii-it-does-absolutely-nothing-good-for-you)
+`9`|@dollarvigilante|`1298.96`|`957/151`|[The Dollar Vigilante Invites You To Freedomfest ($100 discount included)!](https://steemit.com/anarchy/@dollarvigilante/the-dollar-vigilante-invites-you-to-freedomfest-usd100-discount-included)
+`10`|@belerophon|`1278.48`|`1018/313`|[Coindesk Libels Dan Larimer](https://steemit.com/eos/@belerophon/coindesk-libels-dan-larimer)
+`11`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`12`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`13`|@sweetsssj|`1148.27`|`1572/853`|[Travel with me #72 : Visiting Major Cay and taking a swim with the pigs! (photos + video)](https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs)
+`14`|@dollarvigilante|`1043.55`|`915/252`|[Janet Yellen Just Said The Most Ridiculous Thing We&#x27;ve Heard All Year!](https://steemit.com/yellen/@dollarvigilante/janet-yellen-just-said-the-most-ridiculous-thing-we-ve-heard-all-year)
+`15`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`16`|@crypt0|`975.28`|`1051/320`|[Bitcoin Could Reach $25,000 Soon / EOS Scam? / Blockfolio Snooping Portfolios / Dash Roadmap / More!](https://steemit.com/crypto-news/@crypt0/bitcoin-could-reach-usd25-000-soon-eos-scam-blockfolio-snooping-portfolios-dash-roadmap-more)
+`17`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`18`|@jeffberwick|`956.62`|`929/321`|[Being Happy Is A Choice... So Why Choose To Be Unhappy?](https://steemit.com/life/@jeffberwick/being-happy-is-a-choice-so-why-choose-to-be-unhappy)
+`19`|@jerrybanfield|`933.47`|`1299/546`|[Poloniex Crashing? $67,877+ in Unconfirmed Steem + SBD Deposits!](https://steemit.com/poloniex/@jerrybanfield/poloniex-crashing-usd67-877-in-unconfirmed-steem-sbd-deposits)
+`20`|@crypt0|`928.75`|`661/169`|[Tai Fu Index / ICOs Crashing ETH&#x27;s Price? / Consensys Diligence / IRS Coinbase &amp; Blockfolio Updates](https://steemit.com/crypto-news/@crypt0/tai-fu-index-icos-crashing-eth-s-price-consensys-diligence-irs-coinbase-and-blockfolio-updates)
+`21`|@jerrybanfield|`922.39`|`993/295`|[Steemit Updates Summarized From Launch to 19.0!](https://steemit.com/steem-help/@jerrybanfield/steemit-updates-summarized-from-launch-to-19-0)
+`22`|@jerrybanfield|`914.67`|`1236/433`|[Top 10 Cryptocurrency Questions and Answers!](https://steemit.com/bitcoin/@jerrybanfield/top-10-cryptocurrency-questions-and-answers)
+`23`|@timsaid|`913.00`|`648/165`|[MyPictureSunday#10 - Last day in Paris + MyPictureDay Challenge Round #3](https://steemit.com/photography/@timsaid/mypicturesunday-10-last-day-in-paris-mypictureday-challenge-round-3)
+`24`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`25`|@timsaid|`902.88`|`869/271`|[The Steemit Crypto Challenge #16 - CC2k17.6 - 100 STEEM Prize!](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-cc2k17-6-100-steem-prize)
+`26`|@hansikhouse|`899.06`|`428/156`|[STEEMPARK // 스팀 여름공원이 Steemit Inc. 의 첫 공식 Crowdsourcing 프로젝트로 채택되었습니다!](https://steemit.com/steempark/@hansikhouse/steempark-steemit-inc-crowdsourcing)
+`27`|@timsaid|`886.15`|`680/124`|[The Steemit Crypto Challenge #16 - Winner Announcement](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-winner-announcement)
+`28`|@theshadowbrokers|`883.02`|`439/121`|[TheShadowBrokers Monthly Dump Service - July 2017](https://steemit.com/shadowbrokers/@theshadowbrokers/theshadowbrokers-monthly-dump-service-july-2017)
+`29`|@jerrybanfield|`880.70`|`1036/411`|[2000 Steem Prize! Develop SteemJ.com for Steemit Freelancing!](https://steemit.com/steemj/@jerrybanfield/2000-steem-prize-develop-steemj-com-for-steemit-freelancing)
+`30`|@curie|`861.21`|`486/43`|[Curie Weekly Update (26th June to 2nd July 2017)](https://steemit.com/curation/@curie/curie-weekly-update-26th-june-to-2nd-july-2017)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Top 30 authors in the past 7 days (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@tamim|`66.66`|`7281.68`|`59`|`1719`|`318`
+`2`|@sweetsssj|`74.21`|`7015.59`|`6`|`8007`|`3905`
+`3`|@craig-grant|`74.78`|`6713.12`|`43`|`11850`|`3012`
+`4`|@papa-pepper|`75.25`|`5956.16`|`25`|`10725`|`1845`
+`5`|@oflyhigh|`70.09`|`5323.95`|`14`|`1959`|`534`
+`6`|@jerrybanfield|`64.76`|`5193.81`|`7`|`7057`|`2572`
+`7`|@kingscrown|`73.16`|`4745.57`|`7`|`5731`|`1237`
+`8`|@steemsports|`77.82`|`4281.66`|`23`|`5914`|`538`
+`9`|@allasyummyfood|`69.33`|`4276.52`|`26`|`6862`|`2301`
+`10`|@steemcleaners|`73.08`|`4158.68`|`11`|`2845`|`237`
+`11`|@timsaid|`71.10`|`4106.82`|`5`|`3605`|`853`
+`12`|@jeffberwick|`61.33`|`4074.88`|`6`|`4648`|`1273`
+`13`|@dan|`67.99`|`3933.56`|`2`|`1524`|`394`
+`14`|@dollarvigilante|`73.07`|`3769.19`|`6`|`5090`|`1239`
+`15`|@calaber24p|`73.24`|`3487.41`|`14`|`3209`|`547`
+`16`|@good-karma|`73.34`|`3478.70`|`4`|`3496`|`887`
+`17`|@knozaki2015|`77.19`|`3253.44`|`18`|`4525`|`805`
+`18`|@kaylinart|`73.11`|`3136.74`|`25`|`4447`|`1851`
+`19`|@officialfuzzy|`73.11`|`2992.91`|`6`|`2291`|`272`
+`20`|@firepower|`67.07`|`2753.51`|`7`|`2184`|`964`
+`21`|@b0y2k|`70.63`|`2740.28`|`9`|`2119`|`416`
+`22`|@crypt0|`69.15`|`2682.51`|`4`|`2971`|`859`
+`23`|@aggroed|`68.44`|`2604.80`|`15`|`2903`|`1085`
+`24`|@suesa|`59.97`|`2591.53`|`9`|`562`|`237`
+`25`|@lily-da-vine|`71.82`|`2523.07`|`30`|`1845`|`387`
+`26`|@gavvet|`76.61`|`2502.80`|`6`|`2514`|`452`
+`27`|@andrianna|`63.44`|`2490.49`|`22`|`1679`|`1131`
+`28`|@kyriacos|`68.98`|`2404.97`|`9`|`2532`|`1265`
+`29`|@deanliu|`69.90`|`2402.57`|`7`|`1173`|`354`
+`30`|@slowwalker|`68.26`|`2400.28`|`9`|`2217`|`717`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+The report will be updated daily
+This is a beta version of the report, and I will continue to improve it.
+If you like it, please upvote it and follow me @chinadaily
+Thank you very much. 😜
+
+© @chinadaily
+****
+[![follow me](https://www.steemimg.com/images/2016/08/13/followme1b3cb.th.jpg)](https://steemit.com/@chinadaily)
+"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="🏅Daily TOP posts &amp; authors and stats in the past 7 days (Jun 27 to Jul 03)"/><meta data-react-helmet="true" name="twitter:description" content="![stats](https://steemitimages.com/DQmZg25ewtzVqzWuMWferX9xzXkMTHLSBeL2LrcfHNXwVG1/statistics.jpg)
+
+## Information
+
+Data source: [SteemData](http://steemdata.com/) &amp; steemd
+Generation time: `2017-07-05 09:20:01(UTC)`
+
+
+### &amp;#x1F4CA; Simple post stats in the past 7 days
+
+Item.|`Jun 27`|`Jun 28`|`Jun 29`|`Jun 30`|`Jul 01`|`Jul 02`|`Jul 03`
+----|----|----|----|----|----|----|----
+**`Authors`**|`9497`|`9136`|`8937`|`8323`|`7915`|`7943`|`8470`
+**`Posts`**|`22204`|`20234`|`19578`|`18020`|`16929`|`17306`|`18383`
+**`Replies`**|`112484`|`102290`|`100560`|`91785`|`85990`|`84168`|`86340`
+**`Votes`**|`250455`|`243726`|`235385`|`213630`|`203789`|`209942`|`213013`
+**`Rewards`**|`109411`|`123242`|`120884`|`107335`|`95215`|`99877`|`114264`
+***`Notes`***
+**`Authors:`** `Number of unique authors`
+**`Posts:`** `Number of unique posts`
+**`Replies:`** `Total comments(replies) on the posts mentioned above.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Rewards:`** `Total rewards (in SBD and rounded) of the posts.`
+----
+
+### &amp;#x1F3C5; Daily top 30 posts in 2017-07-03 (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`2`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`3`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`4`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`5`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`6`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`7`|@kingscrown|`741.87`|`728/120`|[Australia, Japan, Delaware (USA) All in Favor of Bitcoin with Law/Taxes](https://steemit.com/bitcoin/@kingscrown/australia-japan-delaware-usa-all-in-favor-of-bitcoin-with-law-taxes)
+`8`|@rea|`728.92`|`386/133`|[My Adventure on the Island of Crete - Day 8 / 希腊克里特岛之旅 - 第八天](https://steemit.com/cn/@rea/my-adventure-on-the-island-of-crete-day-8)
+`9`|@officialfuzzy|`699.07`|`437/53`|[E213 2017-06-30 Beyond Bitcoin - GRC, OpenSteem, Peerity, Virgrow, WC, OHMCoin &amp; WhaleShares!](https://steemit.com/beyondbitcoin/@officialfuzzy/e213-2017-06-30-beyond-bitcoin-grc-opensteem-peerity-virgrow-wc-ohmcoin-and-whaleshares)
+`10`|@bookingteam.com|`567.25`|`245/56`|[What You Need To Know In The Vacation Rental Industry 07-03-2017](https://steemit.com/business/@bookingteam.com/what-you-need-to-know-in-the-vacation-rental-industry-07-03-2017)
+`11`|@papa-pepper|`465.55`|`513/125`|[ECHINACEA - A PHOTO SHOOT WITH A WONDERFUL WILD FLOWER](https://steemit.com/photography/@papa-pepper/echinacea-a-photo-shoot-with-a-wonderful-wild-flower)
+`12`|@madbitcoins|`453.62`|`178/48`|[Today in Bitcoin (2017-07-03) - Colombia, Goldman Sachs Bullish and Smart Contracts, ICOs](https://steemit.com/bitcoin/@madbitcoins/today-in-bitcoin-2017-07-03-columbia-goldman-sachs-bullish-and-smart-contracts-icos)
+`13`|@fathin-shihab|`452.71`|`144/121`|[DIY Steemit chocolate+ Steemit 3D chocolate box+ tutorial](https://steemit.com/steemit/@fathin-shihab/diy-steemit-chocolate-steemit-3d-chocolate-box-tutorial-201773t71549892z)
+`14`|@gavvet|`451.79`|`378/69`|[The piece of the cold war nobody told you about - Africa&#x27;s forgotten war - Regional Tensions.](https://steemit.com/war/@gavvet/the-piece-of-the-cold-war-nobody-told-you-about-africa-s-forgotten-war-regional-tensions)
+`15`|@diegotorrescolo|`437.05`|`211/73`|[Drone Footage of the Riviera Maya - Playa del Carmen / Xpuha / Surprise Location](https://steemit.com/travel/@diegotorrescolo/drone-footage-of-the-riviera-maya-playa-del-carmen-xpuha-surprise-location)
+`16`|@bitcoiner|`429.61`|`274/133`|[Steem software is out of beta now?](https://steemit.com/steem/@bitcoiner/steem-software-is-out-of-beta-now)
+`17`|@firepower|`418.87`|`319/51`|[Crypto Current Affairs—South Korea Drafting Bills to Legalise Bitcoin &amp; Ethereum!](https://steemit.com/bitcoin/@firepower/crypto-current-affairs-south-korea-drafting-bills-to-legalise-bitcoin-and-ethereum)
+`18`|@oflyhigh|`416.08`|`125/48`|[那年夏天](https://steemit.com/cn/@oflyhigh/341nku)
+`19`|@steemcleaners|`412.82`|`264/33`|[Steemcleaner Report for July 1, 2017 Part 2](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017-part-2)
+`20`|@trilumia|`411.50`|`155/36`|[OPEN MIC WEEK 40 &amp;#124; Steemit Up ! 💙  TRILÚMIA &amp; Friends (BOB MARLEY) ✨](https://steemit.com/openmic/@trilumia/open-mic-week-40-or-steemit-up-trilumia-and-friends-bob-marley)
+`21`|@steemcleaners|`409.43`|`252/17`|[Steemcleaner Report for July 1, 2017](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017)
+`22`|@allasyummyfood|`390.43`|`277/92`|[RUSSIAN PICKLES RECIPE](https://steemit.com/food/@allasyummyfood/russian-pickles-recipe)
+`23`|@peterchen145|`390.33`|`77/20`|[如何生成以及注册eos公钥](https://steemit.com/eos/@peterchen145/39yu5j-eos)
+`24`|@deanliu|`389.80`|`189/45`|[🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui](https://steemit.com/travel/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui)
+`25`|@oflyhigh|`382.19`|`138/60`|[好人难做、坏人难当，还是当个机器人最简单](https://steemit.com/cn/@oflyhigh/75exnc)
+`26`|@papa-pepper|`374.87`|`471/76`|[THE WILD-MAN&#x27;S WILD FRIENDS VIDEO SERIES - EPISODE 20 - MISSISSIPPI MAP TURTLE](https://steemit.com/wild-man/@papa-pepper/the-wild-man-s-wild-friends-video-series-episode-20-mississippi-map-turtle)
+`27`|@mdwestlifecrisis|`361.49`|`158/20`|[The Definitive Guide to Writing and Delivering a Best Man Speech](https://steemit.com/funny/@mdwestlifecrisis/the-definitive-guide-to-writing-and-delivering-a-best-man-speech)
+`28`|@helene|`357.47`|`175/98`|[Seafood Salad With Vegetables   泰式海鲜蔬菜沙拉](https://steemit.com/food/@helene/seafood-salad-with-vegetables)
+`29`|@cryptogee|`357.33`|`152/35`|[Incredible You! - Move Like An Animal With Ido Portal](https://steemit.com/incredibleyou/@cryptogee/incredible-you-move-like-an-animal-with-ido-portal)
+`30`|@kyriacos|`339.71`|`377/225`|[Misconceptions About Steemit And Possible Solutions](https://steemit.com/steemit/@kyriacos/misconceptions-about-steemit-and-possible-solutions)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Daily top 30 authors in 2017-07-03 (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@dan|`67.99`|`1596.71`|`1`|`866`|`198`
+`2`|@papa-pepper|`75.25`|`1437.07`|`4`|`1735`|`283`
+`3`|@voronoi|`68.06`|`1189.74`|`1`|`657`|`149`
+`4`|@good-karma|`73.34`|`1164.46`|`1`|`1128`|`278`
+`5`|@craig-grant|`74.78`|`1098.99`|`9`|`2089`|`413`
+`6`|@steepshot|`61.53`|`1039.34`|`1`|`378`|`73`
+`7`|@jerrybanfield|`64.76`|`967.28`|`1`|`1021`|`302`
+`8`|@allasyummyfood|`69.33`|`925.62`|`4`|`985`|`292`
+`9`|@heiditravels|`71.33`|`910.66`|`1`|`669`|`233`
+`10`|@kaylinart|`73.11`|`843.33`|`6`|`982`|`409`
+`11`|@knozaki2015|`77.19`|`829.53`|`3`|`802`|`179`
+`12`|@steemcleaners|`73.08`|`822.25`|`2`|`516`|`50`
+`13`|@oflyhigh|`70.09`|`798.26`|`2`|`263`|`108`
+`14`|@kingscrown|`73.16`|`741.87`|`1`|`728`|`120`
+`15`|@rea|`67.08`|`728.92`|`1`|`386`|`133`
+`16`|@kafkanarchy84|`71.80`|`725.48`|`3`|`309`|`81`
+`17`|@officialfuzzy|`73.11`|`699.07`|`1`|`437`|`53`
+`18`|@v4vapid|`66.12`|`601.20`|`2`|`150`|`91`
+`19`|@kyriacos|`68.98`|`591.88`|`2`|`611`|`394`
+`20`|@bookingteam.com|`63.64`|`567.25`|`1`|`245`|`56`
+`21`|@dana-edwards|`71.59`|`540.18`|`4`|`358`|`98`
+`22`|@aggroed|`68.44`|`509.55`|`3`|`574`|`291`
+`23`|@stellabelle|`74.90`|`508.52`|`2`|`626`|`276`
+`24`|@steemsports|`77.82`|`482.33`|`3`|`640`|`44`
+`25`|@calaber24p|`73.24`|`464.90`|`2`|`409`|`53`
+`26`|@madbitcoins|`59.27`|`461.46`|`2`|`187`|`51`
+`27`|@fathin-shihab|`56.82`|`452.71`|`1`|`144`|`121`
+`28`|@gavvet|`76.61`|`451.79`|`1`|`378`|`69`
+`29`|@peterchen145|`55.54`|`439.77`|`3`|`98`|`21`
+`30`|@diegotorrescolo|`51.81`|`437.61`|`2`|`215`|`75`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+### &amp;#x1F3C5; Top 30 posts in the past 7 days (sorted by rewards)
+`Rank.`|`Author`|`Rewards`|`V&amp;R`|`Link`
+----|----|----|----|----
+`1`|@dan|`2336.85`|`658/196`|[EOS - Developer’s Log Stardate 20176.30](https://steemit.com/eos/@dan/eos-developer-s-log-stardate-20176-30)
+`2`|@jesta|`1638.11`|`837/192`|[chainBB v0.3.0 - social feed, following, and forum subscriptions](https://steemit.com/chainbb/@jesta/chainbb-v030-social-feed-following-and-forum-subscriptions)
+`3`|@steemitblog|`1628.06`|`277/93`|[Announcing Steemit&#x27;s First OFFICIAL Crowdsourced Marketing Project!](https://steemit.com/steemit/@steemitblog/announcing-steemit-s-first-official-crowdsourced-marketing-project)
+`4`|@dan|`1596.71`|`866/198`|[EOS - Developer’s Log Stardate 201707.3](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3)
+`5`|@sweetsssj|`1462.67`|`1253/701`|[Just Kitty : Raising kittens from birth - The joys of being a &quot;Crazy Cat Lady&quot;](https://steemit.com/cats/@sweetsssj/just-kitty-raising-kittens-from-birth-the-joys-of-being-a-crazy-cat-lady)
+`6`|@sweetsssj|`1370.66`|`1289/671`|[Miss. Delicious #67 : Visiting Señor Frogs in Bahamas!](https://steemit.com/food/@sweetsssj/miss-delicious-67-visiting-senor-frogs-in-bahamas)
+`7`|@sweetsssj|`1362.05`|`1566/605`|[Miss. Opinionated : The woes of Travel - Budget Airlines](https://steemit.com/life/@sweetsssj/miss-opinionated-the-woes-of-travel-budget-airlines)
+`8`|@jeffberwick|`1342.22`|`1038/295`|[Why I Stopped Drinking Alcohol II: It Does Absolutely Nothing Good For You](https://steemit.com/life/@jeffberwick/why-i-stopped-drinking-alcohol-ii-it-does-absolutely-nothing-good-for-you)
+`9`|@dollarvigilante|`1298.96`|`957/151`|[The Dollar Vigilante Invites You To Freedomfest ($100 discount included)!](https://steemit.com/anarchy/@dollarvigilante/the-dollar-vigilante-invites-you-to-freedomfest-usd100-discount-included)
+`10`|@belerophon|`1278.48`|`1018/313`|[Coindesk Libels Dan Larimer](https://steemit.com/eos/@belerophon/coindesk-libels-dan-larimer)
+`11`|@voronoi|`1189.74`|`657/149`|[STEEM PARK : Documentary Film Underway!](https://steemit.com/film/@voronoi/steem-park-documentary-film-underway)
+`12`|@good-karma|`1164.46`|`1128/278`|[eSteem - Feature Set #13 (Voting slider, PIN code)](https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z)
+`13`|@sweetsssj|`1148.27`|`1572/853`|[Travel with me #72 : Visiting Major Cay and taking a swim with the pigs! (photos + video)](https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs)
+`14`|@dollarvigilante|`1043.55`|`915/252`|[Janet Yellen Just Said The Most Ridiculous Thing We&#x27;ve Heard All Year!](https://steemit.com/yellen/@dollarvigilante/janet-yellen-just-said-the-most-ridiculous-thing-we-ve-heard-all-year)
+`15`|@steepshot|`1039.34`|`378/73`|[Steepshot - Some stats &amp; explanations](https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations)
+`16`|@crypt0|`975.28`|`1051/320`|[Bitcoin Could Reach $25,000 Soon / EOS Scam? / Blockfolio Snooping Portfolios / Dash Roadmap / More!](https://steemit.com/crypto-news/@crypt0/bitcoin-could-reach-usd25-000-soon-eos-scam-blockfolio-snooping-portfolios-dash-roadmap-more)
+`17`|@jerrybanfield|`967.28`|`1021/302`|[Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!](https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades)
+`18`|@jeffberwick|`956.62`|`929/321`|[Being Happy Is A Choice... So Why Choose To Be Unhappy?](https://steemit.com/life/@jeffberwick/being-happy-is-a-choice-so-why-choose-to-be-unhappy)
+`19`|@jerrybanfield|`933.47`|`1299/546`|[Poloniex Crashing? $67,877+ in Unconfirmed Steem + SBD Deposits!](https://steemit.com/poloniex/@jerrybanfield/poloniex-crashing-usd67-877-in-unconfirmed-steem-sbd-deposits)
+`20`|@crypt0|`928.75`|`661/169`|[Tai Fu Index / ICOs Crashing ETH&#x27;s Price? / Consensys Diligence / IRS Coinbase &amp; Blockfolio Updates](https://steemit.com/crypto-news/@crypt0/tai-fu-index-icos-crashing-eth-s-price-consensys-diligence-irs-coinbase-and-blockfolio-updates)
+`21`|@jerrybanfield|`922.39`|`993/295`|[Steemit Updates Summarized From Launch to 19.0!](https://steemit.com/steem-help/@jerrybanfield/steemit-updates-summarized-from-launch-to-19-0)
+`22`|@jerrybanfield|`914.67`|`1236/433`|[Top 10 Cryptocurrency Questions and Answers!](https://steemit.com/bitcoin/@jerrybanfield/top-10-cryptocurrency-questions-and-answers)
+`23`|@timsaid|`913.00`|`648/165`|[MyPictureSunday#10 - Last day in Paris + MyPictureDay Challenge Round #3](https://steemit.com/photography/@timsaid/mypicturesunday-10-last-day-in-paris-mypictureday-challenge-round-3)
+`24`|@heiditravels|`910.66`|`669/233`|[Gov&#x27;t Regulations vs Crypto Freedom](https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom)
+`25`|@timsaid|`902.88`|`869/271`|[The Steemit Crypto Challenge #16 - CC2k17.6 - 100 STEEM Prize!](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-cc2k17-6-100-steem-prize)
+`26`|@hansikhouse|`899.06`|`428/156`|[STEEMPARK // 스팀 여름공원이 Steemit Inc. 의 첫 공식 Crowdsourcing 프로젝트로 채택되었습니다!](https://steemit.com/steempark/@hansikhouse/steempark-steemit-inc-crowdsourcing)
+`27`|@timsaid|`886.15`|`680/124`|[The Steemit Crypto Challenge #16 - Winner Announcement](https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-winner-announcement)
+`28`|@theshadowbrokers|`883.02`|`439/121`|[TheShadowBrokers Monthly Dump Service - July 2017](https://steemit.com/shadowbrokers/@theshadowbrokers/theshadowbrokers-monthly-dump-service-july-2017)
+`29`|@jerrybanfield|`880.70`|`1036/411`|[2000 Steem Prize! Develop SteemJ.com for Steemit Freelancing!](https://steemit.com/steemj/@jerrybanfield/2000-steem-prize-develop-steemj-com-for-steemit-freelancing)
+`30`|@curie|`861.21`|`486/43`|[Curie Weekly Update (26th June to 2nd July 2017)](https://steemit.com/curation/@curie/curie-weekly-update-26th-june-to-2nd-july-2017)
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rewards:`** `Rewards (in SBD) of the corresponding post.`
+**`V&amp;R:`** `Total net votes &amp; Total comments(Replies).`
+**`Post Link:`** `The post title and its link.`
+----
+
+### &amp;#x1F3C5; Top 30 authors in the past 7 days (sorted by Rewards)
+`Rank.`|`Author`|`Rep`|`Rewards`|`Posts`|`Votes`|`Replies`
+----|----|----|----|----|----|----
+`1`|@tamim|`66.66`|`7281.68`|`59`|`1719`|`318`
+`2`|@sweetsssj|`74.21`|`7015.59`|`6`|`8007`|`3905`
+`3`|@craig-grant|`74.78`|`6713.12`|`43`|`11850`|`3012`
+`4`|@papa-pepper|`75.25`|`5956.16`|`25`|`10725`|`1845`
+`5`|@oflyhigh|`70.09`|`5323.95`|`14`|`1959`|`534`
+`6`|@jerrybanfield|`64.76`|`5193.81`|`7`|`7057`|`2572`
+`7`|@kingscrown|`73.16`|`4745.57`|`7`|`5731`|`1237`
+`8`|@steemsports|`77.82`|`4281.66`|`23`|`5914`|`538`
+`9`|@allasyummyfood|`69.33`|`4276.52`|`26`|`6862`|`2301`
+`10`|@steemcleaners|`73.08`|`4158.68`|`11`|`2845`|`237`
+`11`|@timsaid|`71.10`|`4106.82`|`5`|`3605`|`853`
+`12`|@jeffberwick|`61.33`|`4074.88`|`6`|`4648`|`1273`
+`13`|@dan|`67.99`|`3933.56`|`2`|`1524`|`394`
+`14`|@dollarvigilante|`73.07`|`3769.19`|`6`|`5090`|`1239`
+`15`|@calaber24p|`73.24`|`3487.41`|`14`|`3209`|`547`
+`16`|@good-karma|`73.34`|`3478.70`|`4`|`3496`|`887`
+`17`|@knozaki2015|`77.19`|`3253.44`|`18`|`4525`|`805`
+`18`|@kaylinart|`73.11`|`3136.74`|`25`|`4447`|`1851`
+`19`|@officialfuzzy|`73.11`|`2992.91`|`6`|`2291`|`272`
+`20`|@firepower|`67.07`|`2753.51`|`7`|`2184`|`964`
+`21`|@b0y2k|`70.63`|`2740.28`|`9`|`2119`|`416`
+`22`|@crypt0|`69.15`|`2682.51`|`4`|`2971`|`859`
+`23`|@aggroed|`68.44`|`2604.80`|`15`|`2903`|`1085`
+`24`|@suesa|`59.97`|`2591.53`|`9`|`562`|`237`
+`25`|@lily-da-vine|`71.82`|`2523.07`|`30`|`1845`|`387`
+`26`|@gavvet|`76.61`|`2502.80`|`6`|`2514`|`452`
+`27`|@andrianna|`63.44`|`2490.49`|`22`|`1679`|`1131`
+`28`|@kyriacos|`68.98`|`2404.97`|`9`|`2532`|`1265`
+`29`|@deanliu|`69.90`|`2402.57`|`7`|`1173`|`354`
+`30`|@slowwalker|`68.26`|`2400.28`|`9`|`2217`|`717`
+***`Notes`***
+**`Author:`** `Author ID`
+**`Rep:`** `Reputation score`
+**`Rewards:`** `Total post rewards (in SBD) the author gotten.`
+**`Posts:`** `Number of posts the author made.`
+**`Votes:`** `Total net votes on the posts mentioned above.`
+**`Replies:`** `Total comments (replies) on the posts mentioned above.`
+----
+
+The report will be updated daily
+This is a beta version of the report, and I will continue to improve it.
+If you like it, please upvote it and follow me @chinadaily
+Thank you very much. 😜
+
+© @chinadaily
+****
+[![follow me](https://www.steemimg.com/images/2016/08/13/followme1b3cb.th.jpg)](https://steemit.com/@chinadaily)
+"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\daily-top-posts-authors-and-stats-in-the-past-7-days-2017-06-27-2017-07-03-1\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">🏅Daily TOP posts &amp; authors and stats in the past 7 days (Jun 27 to Jul 03)</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem"></p></header><section><p><img src="https://steemitimages.com/DQmZg25ewtzVqzWuMWferX9xzXkMTHLSBeL2LrcfHNXwVG1/statistics.jpg" alt="stats" /></p>
+<h2 id="information">Information</h2>
+<p>Data source: <a href="http://steemdata.com/">SteemData</a> &amp; steemd
+Generation time: <code>2017-07-05 09:20:01(UTC)</code></p>
+<h3 id="x1f4ca-simple-post-stats-in-the-past-7-days">&#x1F4CA; Simple post stats in the past 7 days</h3>
+<p>Item.|<code>Jun 27</code>|<code>Jun 28</code>|<code>Jun 29</code>|<code>Jun 30</code>|<code>Jul 01</code>|<code>Jul 02</code>|<code>Jul 03</code>
+----|----|----|----|----|----|----|----
+<strong><code>Authors</code></strong>|<code>9497</code>|<code>9136</code>|<code>8937</code>|<code>8323</code>|<code>7915</code>|<code>7943</code>|<code>8470</code>
+<strong><code>Posts</code></strong>|<code>22204</code>|<code>20234</code>|<code>19578</code>|<code>18020</code>|<code>16929</code>|<code>17306</code>|<code>18383</code>
+<strong><code>Replies</code></strong>|<code>112484</code>|<code>102290</code>|<code>100560</code>|<code>91785</code>|<code>85990</code>|<code>84168</code>|<code>86340</code>
+<strong><code>Votes</code></strong>|<code>250455</code>|<code>243726</code>|<code>235385</code>|<code>213630</code>|<code>203789</code>|<code>209942</code>|<code>213013</code>
+<strong><code>Rewards</code></strong>|<code>109411</code>|<code>123242</code>|<code>120884</code>|<code>107335</code>|<code>95215</code>|<code>99877</code>|<code>114264</code>
+<strong><em><code>Notes</code></em></strong>
+<strong><code>Authors:</code></strong> <code>Number of unique authors</code>
+<strong><code>Posts:</code></strong> <code>Number of unique posts</code>
+<strong><code>Replies:</code></strong> <code>Total comments(replies) on the posts mentioned above.</code>
+<strong><code>Votes:</code></strong> <code>Total net votes on the posts mentioned above.</code></p>
+<h2 id="rewards-total-rewards-in-sbd-and-rounded-of-the-posts"><strong><code>Rewards:</code></strong> <code>Total rewards (in SBD and rounded) of the posts.</code></h2>
+<h3 id="x1f3c5-daily-top-30-posts-in-2017-07-03-sorted-by-rewards">&#x1F3C5; Daily top 30 posts in 2017-07-03 (sorted by rewards)</h3>
+<p><code>Rank.</code>|<code>Author</code>|<code>Rewards</code>|<code>V&amp;R</code>|<code>Link</code>
+----|----|----|----|----
+<code>1</code>|@dan|<code>1596.71</code>|<code>866/198</code>|<a href="https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3">EOS - Developer’s Log Stardate 201707.3</a>
+<code>2</code>|@voronoi|<code>1189.74</code>|<code>657/149</code>|<a href="https://steemit.com/film/@voronoi/steem-park-documentary-film-underway">STEEM PARK : Documentary Film Underway!</a>
+<code>3</code>|@good-karma|<code>1164.46</code>|<code>1128/278</code>|<a href="https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z">eSteem - Feature Set #13 (Voting slider, PIN code)</a>
+<code>4</code>|@steepshot|<code>1039.34</code>|<code>378/73</code>|<a href="https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations">Steepshot - Some stats & explanations</a>
+<code>5</code>|@jerrybanfield|<code>967.28</code>|<code>1021/302</code>|<a href="https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades">Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!</a>
+<code>6</code>|@heiditravels|<code>910.66</code>|<code>669/233</code>|<a href="https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom">Gov't Regulations vs Crypto Freedom</a>
+<code>7</code>|@kingscrown|<code>741.87</code>|<code>728/120</code>|<a href="https://steemit.com/bitcoin/@kingscrown/australia-japan-delaware-usa-all-in-favor-of-bitcoin-with-law-taxes">Australia, Japan, Delaware (USA) All in Favor of Bitcoin with Law/Taxes</a>
+<code>8</code>|@rea|<code>728.92</code>|<code>386/133</code>|<a href="https://steemit.com/cn/@rea/my-adventure-on-the-island-of-crete-day-8">My Adventure on the Island of Crete - Day 8 / 希腊克里特岛之旅 - 第八天</a>
+<code>9</code>|@officialfuzzy|<code>699.07</code>|<code>437/53</code>|<a href="https://steemit.com/beyondbitcoin/@officialfuzzy/e213-2017-06-30-beyond-bitcoin-grc-opensteem-peerity-virgrow-wc-ohmcoin-and-whaleshares">E213 2017-06-30 Beyond Bitcoin - GRC, OpenSteem, Peerity, Virgrow, WC, OHMCoin & WhaleShares!</a>
+<code>10</code>|@bookingteam.com|<code>567.25</code>|<code>245/56</code>|<a href="https://steemit.com/business/@bookingteam.com/what-you-need-to-know-in-the-vacation-rental-industry-07-03-2017">What You Need To Know In The Vacation Rental Industry 07-03-2017</a>
+<code>11</code>|@papa-pepper|<code>465.55</code>|<code>513/125</code>|<a href="https://steemit.com/photography/@papa-pepper/echinacea-a-photo-shoot-with-a-wonderful-wild-flower">ECHINACEA - A PHOTO SHOOT WITH A WONDERFUL WILD FLOWER</a>
+<code>12</code>|@madbitcoins|<code>453.62</code>|<code>178/48</code>|<a href="https://steemit.com/bitcoin/@madbitcoins/today-in-bitcoin-2017-07-03-columbia-goldman-sachs-bullish-and-smart-contracts-icos">Today in Bitcoin (2017-07-03) - Colombia, Goldman Sachs Bullish and Smart Contracts, ICOs</a>
+<code>13</code>|@fathin-shihab|<code>452.71</code>|<code>144/121</code>|<a href="https://steemit.com/steemit/@fathin-shihab/diy-steemit-chocolate-steemit-3d-chocolate-box-tutorial-201773t71549892z">DIY Steemit chocolate+ Steemit 3D chocolate box+ tutorial</a>
+<code>14</code>|@gavvet|<code>451.79</code>|<code>378/69</code>|<a href="https://steemit.com/war/@gavvet/the-piece-of-the-cold-war-nobody-told-you-about-africa-s-forgotten-war-regional-tensions">The piece of the cold war nobody told you about - Africa's forgotten war - Regional Tensions.</a>
+<code>15</code>|@diegotorrescolo|<code>437.05</code>|<code>211/73</code>|<a href="https://steemit.com/travel/@diegotorrescolo/drone-footage-of-the-riviera-maya-playa-del-carmen-xpuha-surprise-location">Drone Footage of the Riviera Maya - Playa del Carmen / Xpuha / Surprise Location</a>
+<code>16</code>|@bitcoiner|<code>429.61</code>|<code>274/133</code>|<a href="https://steemit.com/steem/@bitcoiner/steem-software-is-out-of-beta-now">Steem software is out of beta now?</a>
+<code>17</code>|@firepower|<code>418.87</code>|<code>319/51</code>|<a href="https://steemit.com/bitcoin/@firepower/crypto-current-affairs-south-korea-drafting-bills-to-legalise-bitcoin-and-ethereum">Crypto Current Affairs—South Korea Drafting Bills to Legalise Bitcoin & Ethereum!</a>
+<code>18</code>|@oflyhigh|<code>416.08</code>|<code>125/48</code>|<a href="https://steemit.com/cn/@oflyhigh/341nku">那年夏天</a>
+<code>19</code>|@steemcleaners|<code>412.82</code>|<code>264/33</code>|<a href="https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017-part-2">Steemcleaner Report for July 1, 2017 Part 2</a>
+<code>20</code>|@trilumia|<code>411.50</code>|<code>155/36</code>|<a href="https://steemit.com/openmic/@trilumia/open-mic-week-40-or-steemit-up-trilumia-and-friends-bob-marley">OPEN MIC WEEK 40 &#124; Steemit Up ! 💙  TRILÚMIA & Friends (BOB MARLEY) ✨</a>
+<code>21</code>|@steemcleaners|<code>409.43</code>|<code>252/17</code>|<a href="https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017">Steemcleaner Report for July 1, 2017</a>
+<code>22</code>|@allasyummyfood|<code>390.43</code>|<code>277/92</code>|<a href="https://steemit.com/food/@allasyummyfood/russian-pickles-recipe">RUSSIAN PICKLES RECIPE</a>
+<code>23</code>|@peterchen145|<code>390.33</code>|<code>77/20</code>|<a href="https://steemit.com/eos/@peterchen145/39yu5j-eos">如何生成以及注册eos公钥</a>
+<code>24</code>|@deanliu|<code>389.80</code>|<code>189/45</code>|<a href="https://steemit.com/travel/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui">🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui</a>
+<code>25</code>|@oflyhigh|<code>382.19</code>|<code>138/60</code>|<a href="https://steemit.com/cn/@oflyhigh/75exnc">好人难做、坏人难当，还是当个机器人最简单</a>
+<code>26</code>|@papa-pepper|<code>374.87</code>|<code>471/76</code>|<a href="https://steemit.com/wild-man/@papa-pepper/the-wild-man-s-wild-friends-video-series-episode-20-mississippi-map-turtle">THE WILD-MAN'S WILD FRIENDS VIDEO SERIES - EPISODE 20 - MISSISSIPPI MAP TURTLE</a>
+<code>27</code>|@mdwestlifecrisis|<code>361.49</code>|<code>158/20</code>|<a href="https://steemit.com/funny/@mdwestlifecrisis/the-definitive-guide-to-writing-and-delivering-a-best-man-speech">The Definitive Guide to Writing and Delivering a Best Man Speech</a>
+<code>28</code>|@helene|<code>357.47</code>|<code>175/98</code>|<a href="https://steemit.com/food/@helene/seafood-salad-with-vegetables">Seafood Salad With Vegetables   泰式海鲜蔬菜沙拉</a>
+<code>29</code>|@cryptogee|<code>357.33</code>|<code>152/35</code>|<a href="https://steemit.com/incredibleyou/@cryptogee/incredible-you-move-like-an-animal-with-ido-portal">Incredible You! - Move Like An Animal With Ido Portal</a>
+<code>30</code>|@kyriacos|<code>339.71</code>|<code>377/225</code>|<a href="https://steemit.com/steemit/@kyriacos/misconceptions-about-steemit-and-possible-solutions">Misconceptions About Steemit And Possible Solutions</a>
+<strong><em><code>Notes</code></em></strong>
+<strong><code>Author:</code></strong> <code>Author ID</code>
+<strong><code>Rewards:</code></strong> <code>Rewards (in SBD) of the corresponding post.</code>
+<strong><code>V&amp;R:</code></strong> <code>Total net votes &amp; Total comments(Replies).</code></p>
+<h2 id="post-link-the-post-title-and-its-link"><strong><code>Post Link:</code></strong> <code>The post title and its link.</code></h2>
+<h3 id="x1f3c5-daily-top-30-authors-in-2017-07-03-sorted-by-rewards">&#x1F3C5; Daily top 30 authors in 2017-07-03 (sorted by Rewards)</h3>
+<p><code>Rank.</code>|<code>Author</code>|<code>Rep</code>|<code>Rewards</code>|<code>Posts</code>|<code>Votes</code>|<code>Replies</code>
+----|----|----|----|----|----|----
+<code>1</code>|@dan|<code>67.99</code>|<code>1596.71</code>|<code>1</code>|<code>866</code>|<code>198</code>
+<code>2</code>|@papa-pepper|<code>75.25</code>|<code>1437.07</code>|<code>4</code>|<code>1735</code>|<code>283</code>
+<code>3</code>|@voronoi|<code>68.06</code>|<code>1189.74</code>|<code>1</code>|<code>657</code>|<code>149</code>
+<code>4</code>|@good-karma|<code>73.34</code>|<code>1164.46</code>|<code>1</code>|<code>1128</code>|<code>278</code>
+<code>5</code>|@craig-grant|<code>74.78</code>|<code>1098.99</code>|<code>9</code>|<code>2089</code>|<code>413</code>
+<code>6</code>|@steepshot|<code>61.53</code>|<code>1039.34</code>|<code>1</code>|<code>378</code>|<code>73</code>
+<code>7</code>|@jerrybanfield|<code>64.76</code>|<code>967.28</code>|<code>1</code>|<code>1021</code>|<code>302</code>
+<code>8</code>|@allasyummyfood|<code>69.33</code>|<code>925.62</code>|<code>4</code>|<code>985</code>|<code>292</code>
+<code>9</code>|@heiditravels|<code>71.33</code>|<code>910.66</code>|<code>1</code>|<code>669</code>|<code>233</code>
+<code>10</code>|@kaylinart|<code>73.11</code>|<code>843.33</code>|<code>6</code>|<code>982</code>|<code>409</code>
+<code>11</code>|@knozaki2015|<code>77.19</code>|<code>829.53</code>|<code>3</code>|<code>802</code>|<code>179</code>
+<code>12</code>|@steemcleaners|<code>73.08</code>|<code>822.25</code>|<code>2</code>|<code>516</code>|<code>50</code>
+<code>13</code>|@oflyhigh|<code>70.09</code>|<code>798.26</code>|<code>2</code>|<code>263</code>|<code>108</code>
+<code>14</code>|@kingscrown|<code>73.16</code>|<code>741.87</code>|<code>1</code>|<code>728</code>|<code>120</code>
+<code>15</code>|@rea|<code>67.08</code>|<code>728.92</code>|<code>1</code>|<code>386</code>|<code>133</code>
+<code>16</code>|@kafkanarchy84|<code>71.80</code>|<code>725.48</code>|<code>3</code>|<code>309</code>|<code>81</code>
+<code>17</code>|@officialfuzzy|<code>73.11</code>|<code>699.07</code>|<code>1</code>|<code>437</code>|<code>53</code>
+<code>18</code>|@v4vapid|<code>66.12</code>|<code>601.20</code>|<code>2</code>|<code>150</code>|<code>91</code>
+<code>19</code>|@kyriacos|<code>68.98</code>|<code>591.88</code>|<code>2</code>|<code>611</code>|<code>394</code>
+<code>20</code>|@bookingteam.com|<code>63.64</code>|<code>567.25</code>|<code>1</code>|<code>245</code>|<code>56</code>
+<code>21</code>|@dana-edwards|<code>71.59</code>|<code>540.18</code>|<code>4</code>|<code>358</code>|<code>98</code>
+<code>22</code>|@aggroed|<code>68.44</code>|<code>509.55</code>|<code>3</code>|<code>574</code>|<code>291</code>
+<code>23</code>|@stellabelle|<code>74.90</code>|<code>508.52</code>|<code>2</code>|<code>626</code>|<code>276</code>
+<code>24</code>|@steemsports|<code>77.82</code>|<code>482.33</code>|<code>3</code>|<code>640</code>|<code>44</code>
+<code>25</code>|@calaber24p|<code>73.24</code>|<code>464.90</code>|<code>2</code>|<code>409</code>|<code>53</code>
+<code>26</code>|@madbitcoins|<code>59.27</code>|<code>461.46</code>|<code>2</code>|<code>187</code>|<code>51</code>
+<code>27</code>|@fathin-shihab|<code>56.82</code>|<code>452.71</code>|<code>1</code>|<code>144</code>|<code>121</code>
+<code>28</code>|@gavvet|<code>76.61</code>|<code>451.79</code>|<code>1</code>|<code>378</code>|<code>69</code>
+<code>29</code>|@peterchen145|<code>55.54</code>|<code>439.77</code>|<code>3</code>|<code>98</code>|<code>21</code>
+<code>30</code>|@diegotorrescolo|<code>51.81</code>|<code>437.61</code>|<code>2</code>|<code>215</code>|<code>75</code>
+<strong><em><code>Notes</code></em></strong>
+<strong><code>Author:</code></strong> <code>Author ID</code>
+<strong><code>Rep:</code></strong> <code>Reputation score</code>
+<strong><code>Rewards:</code></strong> <code>Total post rewards (in SBD) the author gotten.</code>
+<strong><code>Posts:</code></strong> <code>Number of posts the author made.</code>
+<strong><code>Votes:</code></strong> <code>Total net votes on the posts mentioned above.</code></p>
+<h2 id="replies-total-comments-replies-on-the-posts-mentioned-above"><strong><code>Replies:</code></strong> <code>Total comments (replies) on the posts mentioned above.</code></h2>
+<h3 id="x1f3c5-top-30-posts-in-the-past-7-days-sorted-by-rewards">&#x1F3C5; Top 30 posts in the past 7 days (sorted by rewards)</h3>
+<p><code>Rank.</code>|<code>Author</code>|<code>Rewards</code>|<code>V&amp;R</code>|<code>Link</code>
+----|----|----|----|----
+<code>1</code>|@dan|<code>2336.85</code>|<code>658/196</code>|<a href="https://steemit.com/eos/@dan/eos-developer-s-log-stardate-20176-30">EOS - Developer’s Log Stardate 20176.30</a>
+<code>2</code>|@jesta|<code>1638.11</code>|<code>837/192</code>|<a href="https://steemit.com/chainbb/@jesta/chainbb-v030-social-feed-following-and-forum-subscriptions">chainBB v0.3.0 - social feed, following, and forum subscriptions</a>
+<code>3</code>|@steemitblog|<code>1628.06</code>|<code>277/93</code>|<a href="https://steemit.com/steemit/@steemitblog/announcing-steemit-s-first-official-crowdsourced-marketing-project">Announcing Steemit's First OFFICIAL Crowdsourced Marketing Project!</a>
+<code>4</code>|@dan|<code>1596.71</code>|<code>866/198</code>|<a href="https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3">EOS - Developer’s Log Stardate 201707.3</a>
+<code>5</code>|@sweetsssj|<code>1462.67</code>|<code>1253/701</code>|<a href="https://steemit.com/cats/@sweetsssj/just-kitty-raising-kittens-from-birth-the-joys-of-being-a-crazy-cat-lady">Just Kitty : Raising kittens from birth - The joys of being a "Crazy Cat Lady"</a>
+<code>6</code>|@sweetsssj|<code>1370.66</code>|<code>1289/671</code>|<a href="https://steemit.com/food/@sweetsssj/miss-delicious-67-visiting-senor-frogs-in-bahamas">Miss. Delicious #67 : Visiting Señor Frogs in Bahamas!</a>
+<code>7</code>|@sweetsssj|<code>1362.05</code>|<code>1566/605</code>|<a href="https://steemit.com/life/@sweetsssj/miss-opinionated-the-woes-of-travel-budget-airlines">Miss. Opinionated : The woes of Travel - Budget Airlines</a>
+<code>8</code>|@jeffberwick|<code>1342.22</code>|<code>1038/295</code>|<a href="https://steemit.com/life/@jeffberwick/why-i-stopped-drinking-alcohol-ii-it-does-absolutely-nothing-good-for-you">Why I Stopped Drinking Alcohol II: It Does Absolutely Nothing Good For You</a>
+<code>9</code>|@dollarvigilante|<code>1298.96</code>|<code>957/151</code>|<a href="https://steemit.com/anarchy/@dollarvigilante/the-dollar-vigilante-invites-you-to-freedomfest-usd100-discount-included">The Dollar Vigilante Invites You To Freedomfest ($100 discount included)!</a>
+<code>10</code>|@belerophon|<code>1278.48</code>|<code>1018/313</code>|<a href="https://steemit.com/eos/@belerophon/coindesk-libels-dan-larimer">Coindesk Libels Dan Larimer</a>
+<code>11</code>|@voronoi|<code>1189.74</code>|<code>657/149</code>|<a href="https://steemit.com/film/@voronoi/steem-park-documentary-film-underway">STEEM PARK : Documentary Film Underway!</a>
+<code>12</code>|@good-karma|<code>1164.46</code>|<code>1128/278</code>|<a href="https://steemit.com/esteem-features/@good-karma/esteem-feature-set-13-voting-slider-pin-code-201773t14135182z">eSteem - Feature Set #13 (Voting slider, PIN code)</a>
+<code>13</code>|@sweetsssj|<code>1148.27</code>|<code>1572/853</code>|<a href="https://steemit.com/travel/@sweetsssj/travel-with-me-72-visiting-major-cay-and-taking-a-swim-with-the-pigs">Travel with me #72 : Visiting Major Cay and taking a swim with the pigs! (photos + video)</a>
+<code>14</code>|@dollarvigilante|<code>1043.55</code>|<code>915/252</code>|<a href="https://steemit.com/yellen/@dollarvigilante/janet-yellen-just-said-the-most-ridiculous-thing-we-ve-heard-all-year">Janet Yellen Just Said The Most Ridiculous Thing We've Heard All Year!</a>
+<code>15</code>|@steepshot|<code>1039.34</code>|<code>378/73</code>|<a href="https://steemit.com/steemit/@steepshot/steepshot-some-stats-and-explanations">Steepshot - Some stats & explanations</a>
+<code>16</code>|@crypt0|<code>975.28</code>|<code>1051/320</code>|<a href="https://steemit.com/crypto-news/@crypt0/bitcoin-could-reach-usd25-000-soon-eos-scam-blockfolio-snooping-portfolios-dash-roadmap-more">Bitcoin Could Reach $25,000 Soon / EOS Scam? / Blockfolio Snooping Portfolios / Dash Roadmap / More!</a>
+<code>17</code>|@jerrybanfield|<code>967.28</code>|<code>1021/302</code>|<a href="https://steemit.com/blocktrades/@jerrybanfield/fast-steem-sbd-exchanges-with-bitcoin-ethereum-and-litecoin-on-blocktrades">Fast Steem + SBD Exchanges with Bitcoin, Ethereum, and Litecoin on Blocktrades!</a>
+<code>18</code>|@jeffberwick|<code>956.62</code>|<code>929/321</code>|<a href="https://steemit.com/life/@jeffberwick/being-happy-is-a-choice-so-why-choose-to-be-unhappy">Being Happy Is A Choice… So Why Choose To Be Unhappy?</a>
+<code>19</code>|@jerrybanfield|<code>933.47</code>|<code>1299/546</code>|<a href="https://steemit.com/poloniex/@jerrybanfield/poloniex-crashing-usd67-877-in-unconfirmed-steem-sbd-deposits">Poloniex Crashing? $67,877+ in Unconfirmed Steem + SBD Deposits!</a>
+<code>20</code>|@crypt0|<code>928.75</code>|<code>661/169</code>|<a href="https://steemit.com/crypto-news/@crypt0/tai-fu-index-icos-crashing-eth-s-price-consensys-diligence-irs-coinbase-and-blockfolio-updates">Tai Fu Index / ICOs Crashing ETH's Price? / Consensys Diligence / IRS Coinbase & Blockfolio Updates</a>
+<code>21</code>|@jerrybanfield|<code>922.39</code>|<code>993/295</code>|<a href="https://steemit.com/steem-help/@jerrybanfield/steemit-updates-summarized-from-launch-to-19-0">Steemit Updates Summarized From Launch to 19.0!</a>
+<code>22</code>|@jerrybanfield|<code>914.67</code>|<code>1236/433</code>|<a href="https://steemit.com/bitcoin/@jerrybanfield/top-10-cryptocurrency-questions-and-answers">Top 10 Cryptocurrency Questions and Answers!</a>
+<code>23</code>|@timsaid|<code>913.00</code>|<code>648/165</code>|<a href="https://steemit.com/photography/@timsaid/mypicturesunday-10-last-day-in-paris-mypictureday-challenge-round-3">MyPictureSunday#10 - Last day in Paris + MyPictureDay Challenge Round #3</a>
+<code>24</code>|@heiditravels|<code>910.66</code>|<code>669/233</code>|<a href="https://steemit.com/cryptocurrency/@heiditravels/gov-t-regulations-vs-crypto-freedom">Gov't Regulations vs Crypto Freedom</a>
+<code>25</code>|@timsaid|<code>902.88</code>|<code>869/271</code>|<a href="https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-cc2k17-6-100-steem-prize">The Steemit Crypto Challenge #16 - CC2k17.6 - 100 STEEM Prize!</a>
+<code>26</code>|@hansikhouse|<code>899.06</code>|<code>428/156</code>|<a href="https://steemit.com/steempark/@hansikhouse/steempark-steemit-inc-crowdsourcing">STEEMPARK // 스팀 여름공원이 Steemit Inc. 의 첫 공식 Crowdsourcing 프로젝트로 채택되었습니다!</a>
+<code>27</code>|@timsaid|<code>886.15</code>|<code>680/124</code>|<a href="https://steemit.com/steemitcryptochallenge/@timsaid/the-steemit-crypto-challenge-16-winner-announcement">The Steemit Crypto Challenge #16 - Winner Announcement</a>
+<code>28</code>|@theshadowbrokers|<code>883.02</code>|<code>439/121</code>|<a href="https://steemit.com/shadowbrokers/@theshadowbrokers/theshadowbrokers-monthly-dump-service-july-2017">TheShadowBrokers Monthly Dump Service - July 2017</a>
+<code>29</code>|@jerrybanfield|<code>880.70</code>|<code>1036/411</code>|<a href="https://steemit.com/steemj/@jerrybanfield/2000-steem-prize-develop-steemj-com-for-steemit-freelancing">2000 Steem Prize! Develop SteemJ.com for Steemit Freelancing!</a>
+<code>30</code>|@curie|<code>861.21</code>|<code>486/43</code>|<a href="https://steemit.com/curation/@curie/curie-weekly-update-26th-june-to-2nd-july-2017">Curie Weekly Update (26th June to 2nd July 2017)</a>
+<strong><em><code>Notes</code></em></strong>
+<strong><code>Author:</code></strong> <code>Author ID</code>
+<strong><code>Rewards:</code></strong> <code>Rewards (in SBD) of the corresponding post.</code>
+<strong><code>V&amp;R:</code></strong> <code>Total net votes &amp; Total comments(Replies).</code></p>
+<h2 id="post-link-the-post-title-and-its-link-1"><strong><code>Post Link:</code></strong> <code>The post title and its link.</code></h2>
+<h3 id="x1f3c5-top-30-authors-in-the-past-7-days-sorted-by-rewards">&#x1F3C5; Top 30 authors in the past 7 days (sorted by Rewards)</h3>
+<p><code>Rank.</code>|<code>Author</code>|<code>Rep</code>|<code>Rewards</code>|<code>Posts</code>|<code>Votes</code>|<code>Replies</code>
+----|----|----|----|----|----|----
+<code>1</code>|@tamim|<code>66.66</code>|<code>7281.68</code>|<code>59</code>|<code>1719</code>|<code>318</code>
+<code>2</code>|@sweetsssj|<code>74.21</code>|<code>7015.59</code>|<code>6</code>|<code>8007</code>|<code>3905</code>
+<code>3</code>|@craig-grant|<code>74.78</code>|<code>6713.12</code>|<code>43</code>|<code>11850</code>|<code>3012</code>
+<code>4</code>|@papa-pepper|<code>75.25</code>|<code>5956.16</code>|<code>25</code>|<code>10725</code>|<code>1845</code>
+<code>5</code>|@oflyhigh|<code>70.09</code>|<code>5323.95</code>|<code>14</code>|<code>1959</code>|<code>534</code>
+<code>6</code>|@jerrybanfield|<code>64.76</code>|<code>5193.81</code>|<code>7</code>|<code>7057</code>|<code>2572</code>
+<code>7</code>|@kingscrown|<code>73.16</code>|<code>4745.57</code>|<code>7</code>|<code>5731</code>|<code>1237</code>
+<code>8</code>|@steemsports|<code>77.82</code>|<code>4281.66</code>|<code>23</code>|<code>5914</code>|<code>538</code>
+<code>9</code>|@allasyummyfood|<code>69.33</code>|<code>4276.52</code>|<code>26</code>|<code>6862</code>|<code>2301</code>
+<code>10</code>|@steemcleaners|<code>73.08</code>|<code>4158.68</code>|<code>11</code>|<code>2845</code>|<code>237</code>
+<code>11</code>|@timsaid|<code>71.10</code>|<code>4106.82</code>|<code>5</code>|<code>3605</code>|<code>853</code>
+<code>12</code>|@jeffberwick|<code>61.33</code>|<code>4074.88</code>|<code>6</code>|<code>4648</code>|<code>1273</code>
+<code>13</code>|@dan|<code>67.99</code>|<code>3933.56</code>|<code>2</code>|<code>1524</code>|<code>394</code>
+<code>14</code>|@dollarvigilante|<code>73.07</code>|<code>3769.19</code>|<code>6</code>|<code>5090</code>|<code>1239</code>
+<code>15</code>|@calaber24p|<code>73.24</code>|<code>3487.41</code>|<code>14</code>|<code>3209</code>|<code>547</code>
+<code>16</code>|@good-karma|<code>73.34</code>|<code>3478.70</code>|<code>4</code>|<code>3496</code>|<code>887</code>
+<code>17</code>|@knozaki2015|<code>77.19</code>|<code>3253.44</code>|<code>18</code>|<code>4525</code>|<code>805</code>
+<code>18</code>|@kaylinart|<code>73.11</code>|<code>3136.74</code>|<code>25</code>|<code>4447</code>|<code>1851</code>
+<code>19</code>|@officialfuzzy|<code>73.11</code>|<code>2992.91</code>|<code>6</code>|<code>2291</code>|<code>272</code>
+<code>20</code>|@firepower|<code>67.07</code>|<code>2753.51</code>|<code>7</code>|<code>2184</code>|<code>964</code>
+<code>21</code>|@b0y2k|<code>70.63</code>|<code>2740.28</code>|<code>9</code>|<code>2119</code>|<code>416</code>
+<code>22</code>|@crypt0|<code>69.15</code>|<code>2682.51</code>|<code>4</code>|<code>2971</code>|<code>859</code>
+<code>23</code>|@aggroed|<code>68.44</code>|<code>2604.80</code>|<code>15</code>|<code>2903</code>|<code>1085</code>
+<code>24</code>|@suesa|<code>59.97</code>|<code>2591.53</code>|<code>9</code>|<code>562</code>|<code>237</code>
+<code>25</code>|@lily-da-vine|<code>71.82</code>|<code>2523.07</code>|<code>30</code>|<code>1845</code>|<code>387</code>
+<code>26</code>|@gavvet|<code>76.61</code>|<code>2502.80</code>|<code>6</code>|<code>2514</code>|<code>452</code>
+<code>27</code>|@andrianna|<code>63.44</code>|<code>2490.49</code>|<code>22</code>|<code>1679</code>|<code>1131</code>
+<code>28</code>|@kyriacos|<code>68.98</code>|<code>2404.97</code>|<code>9</code>|<code>2532</code>|<code>1265</code>
+<code>29</code>|@deanliu|<code>69.90</code>|<code>2402.57</code>|<code>7</code>|<code>1173</code>|<code>354</code>
+<code>30</code>|@slowwalker|<code>68.26</code>|<code>2400.28</code>|<code>9</code>|<code>2217</code>|<code>717</code>
+<strong><em><code>Notes</code></em></strong>
+<strong><code>Author:</code></strong> <code>Author ID</code>
+<strong><code>Rep:</code></strong> <code>Reputation score</code>
+<strong><code>Rewards:</code></strong> <code>Total post rewards (in SBD) the author gotten.</code>
+<strong><code>Posts:</code></strong> <code>Number of posts the author made.</code>
+<strong><code>Votes:</code></strong> <code>Total net votes on the posts mentioned above.</code></p>
+<h2 id="replies-total-comments-replies-on-the-posts-mentioned-above-1"><strong><code>Replies:</code></strong> <code>Total comments (replies) on the posts mentioned above.</code></h2>
+<p>The report will be updated daily
+This is a beta version of the report, and I will continue to improve it.
+If you like it, please upvote it and follow me @chinadaily
+Thank you very much. 😜</p>
+<p>© @chinadaily</p>
+<hr />
+<p><a href="https://steemit.com/@chinadaily"><img src="https://www.steemimg.com/images/2016/08/13/followme1b3cb.th.jpg" alt="follow me" /></a></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/hive-blog/twice-in-7-days-iran-talks-of-oppressed-kashmir-india">← <!-- -->Twice in 7 days, Iran talks of &#x27;oppressed&#x27; Kashmir, India</a></li><li><a rel="next" href="/hive-blog/improve-your-writing-confused-words">Improve your Writing (Confused Words)<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/daily-top-posts-authors-and-stats-in-the-past-7-days-2017-06-27-2017-07-03-1";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

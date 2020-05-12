@@ -1,0 +1,871 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">Bitshares - State of the Network - 11th July 2017 | My Hive Posts</title><meta data-react-helmet="true" name="description" content="![](http://i.imgur.com/dZlNq1S.png)
+**Welcome to the 43rd Bitshares State of the Network (BSotN) report. A weekly report focusing on the changes in the ecosystem and track longer term changes in a effort to identify emerging trends and changes in the Bitshares platform.**
+
+
+## Bitshares - State of the Network - 11th July 2017
+The Bitshares State of the Network Reports seeks to combine raw data from a wide range of metrics and combine them into meaningful information to identify emerging trends and changes in the Bitshares network.  
+
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+
+*This weeks report lacks some details due to Cryptofresh data being re-indexed after the Bitshares patch released the day prior to my data collection. I hope to have a full report as normal next week. Any affected data has been removed and to make up for it i have included a few more pictures and videos.*
+
+## Observation from this week
+This section will highlight any observations made while analysing the data.
+
+* @xeroc has announced the launch of the &#x27;BitShares Blockchain Foundation&#x27;. The foundation is initially focused on providing 3 major services: Public Announcements, Public and Private mailing lists and BitUSD worker escrow management. You can see his announcement [HERE](https://steemit.com/bitshares/@xeroc/bitshares-blockchain-foundation) or visit the foundations webpage at [bitshares.foundation](http://www.bitshares.foundation)
+	
+* This week has seen an incident on the Bitshares network causing block producing witnesses to halt block production. As a result of this incident and patch was released and all full nodes need to update to the latest release. You can find more information about the incident and the upgrade patch [HERE](http://www.bitshares.foundation/announcements/2017-07-11-bitshares-downtime-incident)
+
+* Alfredo (@oxarbitrage) has had his Core Development worker proposal approved by the Bitshares stakeholders and as of today (12th of July) he is formally **employed by the Bitshares Blockchain**. You can find his proposal [HERE](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md)
+
+* A new worker proposal has been proposed by Peter Conrad (aka PC) to develop, integrate and test/support [BSIP-0018](https://github.com/bitshares/bsips/blob/master/bsip-0018.md) titled &quot;Revive BitAsset through buying Settlement Pool&quot;. This worker proposal has been curated and supported by the BitShares Blockchain Foundation and is the first of its kind to be presented on the BitShares Blockchain Foundation&#x27;s website. The pay for this worker is set at 23,000 USD and will use the BitUSD escrow services of the BitShares Blockchain Foundation. Please see the proposal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad). I have also included the header of the proposal in the images below.
+
+* @blockchained who created and bootstrapped the smartcoin &#x27;[RUBLE](http://cryptofresh.com/a/RUBLE)&#x27; has now handed over ownership of the RUBLE smartcoin to the Bitshares committee members. You can find the announcement [HERE](https://bitsharestalk.org/index.php/topic,24004.msg308762.html#msg308762).
+
+* [Investopedia](http://www.investopedia.com/) has released an article related to OCASH Titled &#x27;[OpenLedger Launches Crypto-Ready Payments Card OCASH](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)&#x27;. OCASH is an upcoming (August 2017) VISA debitcard from [OpenLedger](https://openledger.info) allowing token holders to use SmartCoins such as bitUSD, bitEUR, bitGBP and Rubles; as well as other OpenLedger tokens, such as OBITS, BTC, and ETH to purchase items anywhere major debit cards are accepted. You can find the Article [HERE](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)
+
+* @kencode has released a preview of the user interface for the new Smartcoins Wallet v2.0 (codename: Carbon). The white-label wallet has 6 blockchains integrated into an easy to use mobile application. See full details and preview the new interface [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+
+* @officialfuzzy has started the Beyond Bitcoin WhaleTank hangouts. These hangout will occur on Friday at 3pm UTC (1 hour after the Bitshares hangouts) and will focus on Projects and startup in the crypto currency eco-system. There is also incentives for projects to get involved and sharedrops of &#x27;whaleshare&#x27; and &#x27;beyondbit&#x27; tokens to all participants. You can find out more details [HERE](https://steemit.com/beyondbitcoin/@officialfuzzy/whaletank-special-announcement-beyond-bitcoin-hangout-215-7-7-17-with-cheatcodes)
+
+* @kencode has released his weekly update for BlockPay, C-IPFS, Stealth, graphenej and Smartcoins Wallet. This week has seen continued integration of GrapheneJ into the Blockpay application as well and updates for Stealth and the Smartcoins wallet (UI video below). You can see the full update [HERE](https://steemit.com/blockpay/@kencode/blockpay-c-ipfs-stealth-graphenej-smartcoins-wallet-weekly-report) and join them on telegram at [https://t.me/BlockPay](https://t.me/BlockPay)
+
+* @stan has released a post this week on the different risk profiles for people involved in the Billion HERO challenge. You can find out more and determine your risk appetite [HERE](https://steemit.com/hero/@stan/taking-heroic-risks)
+
+* @cm-steem has released two new draft BSIP this week and is asking for community input. This is a great effort from @cm-steem who is proving to be a huge asset to the Bitshares community and a prolific BSIP writer (4 so far). Please use the following links for more information related to [BSIP-0021](https://steemit.com/bitshares/@cm-steem/bsip-0021-draft-introducing-the-coin-age-statistic-to-bitshares-assets-input-would-be-massively-appreciated) Titled: &quot;Introducing the &#x27;Coin-Age&#x27; statistic to Bitshares assets&quot; and [BSIP-0022](https://steemit.com/bitshares/@cm-steem/bsip-0022-draft-introducing-expiring-votes-for-witnesses-committie-members-and-proxies-within-the-bitshares-network-an) &quot;Titled Introducing expiring votes for Witnesses, Committie members &amp; Proxies within the Bitshares network&quot;. 
+
+* @lovejoy has released unseen footage of and interview with Dan Larimer. The footage was acquired during the &#x27;Bitshares Peer To Peer Tour&#x27; which happened back in April 2015. You can see the following posts and view the 3 part series [Part 1](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-1-of-3), [Part 2](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-2-of-3) and [Part 3](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-3-of-3). 
+
+* @ash has released a guide to withdrawing your Open.Muse from Bitshares network to the Muse Blockchain. This process should be completed ASAP. This is required due to an upcoming Snapshot on the Muse network that will be used to as the basis for the genesis block for the new MUSE blockchain. You can see the guide [HERE](https://steemit.com/muse/@ash/how-to-move-open-muse-to-muse-important-needed-for-the-new-blockchain-do-asap)
+
+* [OpenLedger](https://openledger.info) has sharedropped &#x27;[QORA GOLD](http://cryptofresh.com/a/QORA)&#x27; onto all Qbits and Obits holders to celebrate 50,000 unique users signed up via [OpenLedger](https://openledger.info)
+
+* User Tony Peacock has recordered last weeks Billion HERO webinar and released the video to youtube. If you happened to miss the webinar you can view the recording [HERE](https://www.youtube.com/watch?v=VxCn4j2JOtY) 
+
+* @ash has released a PSA relating to password security and methods to ensure that when you need them your passwords are accessible and valid. Please see his post [HERE](https://steemit.com/bitshares/@ash/guys-we-need-to-talk-passwords-again) as he walks through a couple of password managers to help community members retain access to their passwords and as a result Bitshares accounts
+
+* [BikerCoin](http://bikercoin.org/) started as a CryptoNote coin on June 07 2016 and as of July 06 2017 migrated on top of the BitShares blockchain with the token &#x27;[BIKERCOIN](http://cryptofresh.com/a/BIKERCOIN)&#x27;.
+
+* [Peerity](https://www.peerity.io) have launched their token &#x27;[PEERCROWDFUND](https://cryptofresh.com/a/1.3.1475)&#x27; on the Bitshares network. According to their website their fundraiser starts in 84 days. They list Cosmos and Tendermint as their partners.
+
+* A new 3 Letter asset (Premium asset) has hit the market this week: &#x27;[XAS](https://cryptofresh.com/a/1.3.1477)&#x27; registered by &#x27;gw-union&#x27; who also registered [CONSSIN](https://cryptofresh.com/a/1.3.1476) which google translate suggests is related to an outdoor lighting and container door lock company. **XAS** has the following description: &#x27;Asch is designed to make developers&#x27; life much easier: adopting JavaScript as development language, or supporting DBMS to store the transaction data, all of these approaches make DApp development like traditional web application, which must be extremely attractive to developers and SMEs. We believe the ecosystem of the whole platform will not be developed sustainably unless developers productivity could be promoted. Asch is also an open platform whose focus is not limited to a particular area, such as finance, document storage, or copywrite proof, but is on providing a series of underlying and abstract APIs, which can be combined and utilized to realize almost all kinds of applications. In addition Asch system utilized enhenced DPOS agorithm in its consensus mechanism to significantly reduce the probability of block fork and the risk of duplicate payment. Most importantly, Asch&#x27;s sidechain-is-application mode can not only alleviate the blockchain inflation issue, but also make DApp more&#x27;
+
+* @virtualgrowth is doing a weekly market update and token give away; Check out his post and vote on your favorite asset [HERE](https://steemit.com/bitshares/@virtualgrowth/steem-bts-and-asset-market-update-7-12-and-giveaway-for-7-19)
+
+* This weeks Bitshares hangout recording has been published and is available [HERE](https://steemit.com/beyondbitcoin/@africa/bitshares-hangout-2017-07-07-beyond-bitcoin-radioshow-raw-recording-for-impatients)
+
+* Current registered wallets/accounts within the Bitshares network is 369317; an increase of 8011 wallets/accounts since last week
+
+* The last asset registered this week is asset #1498 and it is named &#x27;AVERS&#x27; registered by &#x27;aversis&#x27; with the description &#x27;Settlement unit for Aversis software&#x27; googling leads me to [aversis.net/](https://aversis.net/) this seems like a good fit but may not be the actual projects website. 
+
+
+#### Smartcoin issueance chart showing weekly change since the start of 2017
+![](http://i.imgur.com/qcPLnE2.png)
+
+#### Openledger team
+![](http://i.imgur.com/RtzmwFR.png)
+
+#### Bitshares telegram user Jonas has received some Bitshares Swag (&#x27;BTS HODLER&#x27; Shirt, Hat and phone cover)
+![](http://i.imgur.com/Q05HiWO.png)
+
+#### Worker Proposal presented by the Bitshares Blockchain Foundation. Full worker propsal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+![](http://i.imgur.com/sZYnHaH.png)
+
+#### Smartcoins Wallet v2.0 (codename: Carbon) - Full details [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+https://youtu.be/piGqX-Er_JQ
+
+#### Bitcoin Indonesia has released a short video titled &#x27;What is Bitshares&#x27;
+https://www.youtube.com/watch?v=v1wc1oXkDH0
+
+#### The Billion HERO challenge webinar recording
+https://www.youtube.com/watch?v=VxCn4j2JOtY
+
+#### Google Trends for &#x27;Bitshares&#x27;
+![](http://i.imgur.com/6AKgqJb.png)
+
+#### Alexa Traffic ranking for Bitshares.org
+![](http://i.imgur.com/CFp2J26.png)
+
+#### Bikercoin banner lifted from [bikercoin.org](http://bikercoin.org)
+![](http://bikercoin.org/dvbfg/biker468.png)
+
+
+
+### Profit/Expenses from the Bitshares Reserve Pool
+The chart below show historic profit/expense from the Bitshares Reserve Pool where a positive number represents a W/W profit and a negative number means a W/W expense; Bitshares expenses include witness and worker pay and income includes network fees.
+
+![](http://i.imgur.com/xAAcfP3.png)
+
+
+## BTS Trading
+Looking at the most active trading pairs for Bitshares (BTS). Data displayed is a 24 hour snapshot as taken on the date of this report and not a reflection on the week as a whole.
+
+Market|Last Price|Price USD|24hr Vol BTS|24hr Vol USD|Vol %|Vol % Change W/W
+---|---|---|---|---|---|---
+CNY|0.86|0.13|292,717,265.69|36,908,575.35|72.7%|-65.4%
+BTC|0.00|0.11|109,659,462.39|12,497,259.87|27.3%|-30.7%
+EUR|0.12|0.14|104.00|14.22|0.0%|
+WAVES|0.07|0.40627294|0.00|0.00|0.0%|
+USD|0.293758|0.293758|0.00|0.00|0.0%|
+
+
+![](http://i.imgur.com/nM2XCqf.png)
+
+
+## Worker Proposals
+This section will identify the current approved and pending worker proposals
+![](http://i.imgur.com/cTBzx67.png)
+
+#### Active Worker:
+
+* [Alfredo Garcia - Core Development for Second half of 2017](https://bitsharestalk.org/index.php/topic,23698.0.html)
+* Refund400k
+
+#### Proposed Worker
+
+* [201707-bsip18](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+* [Soledger - Vikram/Agent86 - Project administration &amp; essential maintenance](https://bitsharestalk.org/index.php/topic,23495.0.html)
+* [Fund to pay dividend](https://bitsharestalk.org/index.php/topic,22041.new.html#new)
+
+
+## DEX: Most Active Markets
+This section will show the BTS markets within the DEX and seek to highlight the most active markets.
+![](http://i.imgur.com/k8l4Ll9.png)
+The most active base pair is BTS and the top 3 pairs are BTS, CNY and USD
+
+## Smartcoins
+This sections seeks to analyse the current supply and market capitalisation of the Bitshares Smartcoins. 
+
+Asset|Supply|Price|Market Cap BTS|Market Cap USD| Supply Change W/W
+---|---|---|---|---|---
+BTS|2,596,722,773|0.12278503|2,596,722,773| $318,838,683.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.0063%
+BTS Stealth|270,241|0.12278503|270,241| $33,181.55 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.52%
+Reserve Pool|1,003,848,929|0.12278503|1,003,848,929| $123,257,620.86 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -0.0162%
+Accumulated fees|7,783|0.12278503|7,783| $955.64 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 123.82%
+BitUSD|4,451,009|8.48|37,744,556| $4,451,009.00 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -27.01%
+BitCNY|71,933,379|1.172|84,305,920| $10,351,504.94 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.61%
+BitEUR|102,399|9.67|990,198| $121,581.53 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.61%
+BitBTC|79.5|19,976|1,588,092| $194,993.92 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -14.96%
+BitGold|90.4|10,280|929,312| $114,105.60 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -9.62%
+BitSilver|9,728|131.7|1,281,178| $157,309.43 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -6.48%
+Ruble|1,673,671|0.1378|230,632| $28,318.14 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -18.44%
+HERO|4,771|1,326|6,326,346| $776,780.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 56.94%
+
+
+
+![](http://i.imgur.com/6KlCweN.png)
+
+
+## Committee Members
+This section will track shareholder approval of committee members
+
+Account|Votes (M)| Votes Change (M)
+---|---|---
+ bitcrab|808.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.4
+ abit|789.6| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -52
+ bhuz|761| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.5
+ clayop|680.7| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -32.8
+ xeroc|635.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -17.9
+ chris4210|630.4| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -7.4
+ bunkerchainlabs-com|600| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.5
+ witness.still|597| ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 260.9
+ openledgerdc|447.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.5
+ harvey-xts|431.9| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -37.7
+ ebit|410.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -12.4
+
+
+
+## Active Witnesses
+This section will track top 25 active witnesses and the changes in support
+
+Rank| Witness| Votes|Missed|Missed W/W
+---|---|---|---|---
+1| in.abit 1.6.35|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 865.2|702|391
+2|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) bhuz 1.6.17|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 832.7|1559|457
+3|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) fox 1.6.16|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 830.2|3343|425
+4|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) wackou 1.6.18|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826.3|1779|494
+5|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) verbaltech2 1.6.34|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826|1664|439
+6|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) witness.yao 1.6.71|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 779.6|3536|395
+7|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) xman 1.6.64|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 774.8|1591|421
+8| rnglab 1.6.45|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 771.9|1817|450
+9| witness.still 1.6.69|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.9|8912|522
+10| delegate.baozi 1.6.37|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.1|1430|396
+11| xn-delegate 1.6.59|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 735.6|2746|442
+12| xeldal 1.6.22|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 668|1867|593
+13| roelandp 1.6.74|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 657.3|6|3
+14| openledger-dc 1.6.76|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 645.4|500|451
+15| blckchnd 1.6.75|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 643.1|581|386
+16| abc123 1.6.65|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 588.2|1253|397
+17| sahkan-bitshares 1.6.73|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 576.1|779|616
+18|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) delegate-1.lafona 1.6.28|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 565.8|1319|608
+19|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) delegate.freedom 1.6.63|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 550.1|4436|822
+20|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) elmato 1.6.20|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 545.6|4066|390
+21|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) harvey-xts 1.6.23|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 544.7|5806|625
+22| mr.agsexplorer 1.6.24|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 525.1|4285|659
+23| spartako 1.6.15|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 474.4|1608|572
+24| delegate-clayop 1.6.27|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 466.4|4841|525
+25| delegate.taolje 1.6.38|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 435.8|2228|433
+
+
+
+### Thanks for viewing :)
+
+**I value your feedback.**
+Is there something more you would like me to track in these reports? or do you have some information for the next BSoTN report? please let me know in the comments, on steemit.chat, in the &#x27;BitsharesDEX&#x27; Telegram group or every Friday in the the BeyondBitcoin Hangouts.
+
+I hope you enjoyed this report! :)
+
+[![](https://s21.postimg.org/f0b1fpzdz/steem_Follow_My_Blog_200x60_v1_dark_1.png)](https://steemit.com/@steempower)
+*Image Credit: @cass*
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+#### New to Bitshares? Need an Account?
+Please support my efforts by using the banner below to create your account.
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+Best part is at anytime in the future If you decide to buy an LTM (Lifetime membership - which gives you an 80% reduction in fees and other premium features) i will rebate 10% of your membership costs in BTS.
+* Just use the banner above to create your account
+* Enroll as a Life Time Member
+* Leave your username in the comments on the latest BSotN report or join us on BitsharesDEX telegram chat.
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+### Peerplays holder? Please consider supporting my Peerplays Witness
+![](http://i.imgur.com/cFTcETV.png)
+Witness Proposal: [HERE](https://steemit.com/peerplays/@steempower/jims-steempowered-witness-proposal-for-the-peerplays-network-and-witness-monitoring-script-with-telegram-notifications)"/><meta data-react-helmet="true" property="og:title" content="Bitshares - State of the Network - 11th July 2017"/><meta data-react-helmet="true" property="og:description" content="![](http://i.imgur.com/dZlNq1S.png)
+**Welcome to the 43rd Bitshares State of the Network (BSotN) report. A weekly report focusing on the changes in the ecosystem and track longer term changes in a effort to identify emerging trends and changes in the Bitshares platform.**
+
+
+## Bitshares - State of the Network - 11th July 2017
+The Bitshares State of the Network Reports seeks to combine raw data from a wide range of metrics and combine them into meaningful information to identify emerging trends and changes in the Bitshares network.  
+
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+
+*This weeks report lacks some details due to Cryptofresh data being re-indexed after the Bitshares patch released the day prior to my data collection. I hope to have a full report as normal next week. Any affected data has been removed and to make up for it i have included a few more pictures and videos.*
+
+## Observation from this week
+This section will highlight any observations made while analysing the data.
+
+* @xeroc has announced the launch of the &#x27;BitShares Blockchain Foundation&#x27;. The foundation is initially focused on providing 3 major services: Public Announcements, Public and Private mailing lists and BitUSD worker escrow management. You can see his announcement [HERE](https://steemit.com/bitshares/@xeroc/bitshares-blockchain-foundation) or visit the foundations webpage at [bitshares.foundation](http://www.bitshares.foundation)
+	
+* This week has seen an incident on the Bitshares network causing block producing witnesses to halt block production. As a result of this incident and patch was released and all full nodes need to update to the latest release. You can find more information about the incident and the upgrade patch [HERE](http://www.bitshares.foundation/announcements/2017-07-11-bitshares-downtime-incident)
+
+* Alfredo (@oxarbitrage) has had his Core Development worker proposal approved by the Bitshares stakeholders and as of today (12th of July) he is formally **employed by the Bitshares Blockchain**. You can find his proposal [HERE](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md)
+
+* A new worker proposal has been proposed by Peter Conrad (aka PC) to develop, integrate and test/support [BSIP-0018](https://github.com/bitshares/bsips/blob/master/bsip-0018.md) titled &quot;Revive BitAsset through buying Settlement Pool&quot;. This worker proposal has been curated and supported by the BitShares Blockchain Foundation and is the first of its kind to be presented on the BitShares Blockchain Foundation&#x27;s website. The pay for this worker is set at 23,000 USD and will use the BitUSD escrow services of the BitShares Blockchain Foundation. Please see the proposal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad). I have also included the header of the proposal in the images below.
+
+* @blockchained who created and bootstrapped the smartcoin &#x27;[RUBLE](http://cryptofresh.com/a/RUBLE)&#x27; has now handed over ownership of the RUBLE smartcoin to the Bitshares committee members. You can find the announcement [HERE](https://bitsharestalk.org/index.php/topic,24004.msg308762.html#msg308762).
+
+* [Investopedia](http://www.investopedia.com/) has released an article related to OCASH Titled &#x27;[OpenLedger Launches Crypto-Ready Payments Card OCASH](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)&#x27;. OCASH is an upcoming (August 2017) VISA debitcard from [OpenLedger](https://openledger.info) allowing token holders to use SmartCoins such as bitUSD, bitEUR, bitGBP and Rubles; as well as other OpenLedger tokens, such as OBITS, BTC, and ETH to purchase items anywhere major debit cards are accepted. You can find the Article [HERE](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)
+
+* @kencode has released a preview of the user interface for the new Smartcoins Wallet v2.0 (codename: Carbon). The white-label wallet has 6 blockchains integrated into an easy to use mobile application. See full details and preview the new interface [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+
+* @officialfuzzy has started the Beyond Bitcoin WhaleTank hangouts. These hangout will occur on Friday at 3pm UTC (1 hour after the Bitshares hangouts) and will focus on Projects and startup in the crypto currency eco-system. There is also incentives for projects to get involved and sharedrops of &#x27;whaleshare&#x27; and &#x27;beyondbit&#x27; tokens to all participants. You can find out more details [HERE](https://steemit.com/beyondbitcoin/@officialfuzzy/whaletank-special-announcement-beyond-bitcoin-hangout-215-7-7-17-with-cheatcodes)
+
+* @kencode has released his weekly update for BlockPay, C-IPFS, Stealth, graphenej and Smartcoins Wallet. This week has seen continued integration of GrapheneJ into the Blockpay application as well and updates for Stealth and the Smartcoins wallet (UI video below). You can see the full update [HERE](https://steemit.com/blockpay/@kencode/blockpay-c-ipfs-stealth-graphenej-smartcoins-wallet-weekly-report) and join them on telegram at [https://t.me/BlockPay](https://t.me/BlockPay)
+
+* @stan has released a post this week on the different risk profiles for people involved in the Billion HERO challenge. You can find out more and determine your risk appetite [HERE](https://steemit.com/hero/@stan/taking-heroic-risks)
+
+* @cm-steem has released two new draft BSIP this week and is asking for community input. This is a great effort from @cm-steem who is proving to be a huge asset to the Bitshares community and a prolific BSIP writer (4 so far). Please use the following links for more information related to [BSIP-0021](https://steemit.com/bitshares/@cm-steem/bsip-0021-draft-introducing-the-coin-age-statistic-to-bitshares-assets-input-would-be-massively-appreciated) Titled: &quot;Introducing the &#x27;Coin-Age&#x27; statistic to Bitshares assets&quot; and [BSIP-0022](https://steemit.com/bitshares/@cm-steem/bsip-0022-draft-introducing-expiring-votes-for-witnesses-committie-members-and-proxies-within-the-bitshares-network-an) &quot;Titled Introducing expiring votes for Witnesses, Committie members &amp; Proxies within the Bitshares network&quot;. 
+
+* @lovejoy has released unseen footage of and interview with Dan Larimer. The footage was acquired during the &#x27;Bitshares Peer To Peer Tour&#x27; which happened back in April 2015. You can see the following posts and view the 3 part series [Part 1](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-1-of-3), [Part 2](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-2-of-3) and [Part 3](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-3-of-3). 
+
+* @ash has released a guide to withdrawing your Open.Muse from Bitshares network to the Muse Blockchain. This process should be completed ASAP. This is required due to an upcoming Snapshot on the Muse network that will be used to as the basis for the genesis block for the new MUSE blockchain. You can see the guide [HERE](https://steemit.com/muse/@ash/how-to-move-open-muse-to-muse-important-needed-for-the-new-blockchain-do-asap)
+
+* [OpenLedger](https://openledger.info) has sharedropped &#x27;[QORA GOLD](http://cryptofresh.com/a/QORA)&#x27; onto all Qbits and Obits holders to celebrate 50,000 unique users signed up via [OpenLedger](https://openledger.info)
+
+* User Tony Peacock has recordered last weeks Billion HERO webinar and released the video to youtube. If you happened to miss the webinar you can view the recording [HERE](https://www.youtube.com/watch?v=VxCn4j2JOtY) 
+
+* @ash has released a PSA relating to password security and methods to ensure that when you need them your passwords are accessible and valid. Please see his post [HERE](https://steemit.com/bitshares/@ash/guys-we-need-to-talk-passwords-again) as he walks through a couple of password managers to help community members retain access to their passwords and as a result Bitshares accounts
+
+* [BikerCoin](http://bikercoin.org/) started as a CryptoNote coin on June 07 2016 and as of July 06 2017 migrated on top of the BitShares blockchain with the token &#x27;[BIKERCOIN](http://cryptofresh.com/a/BIKERCOIN)&#x27;.
+
+* [Peerity](https://www.peerity.io) have launched their token &#x27;[PEERCROWDFUND](https://cryptofresh.com/a/1.3.1475)&#x27; on the Bitshares network. According to their website their fundraiser starts in 84 days. They list Cosmos and Tendermint as their partners.
+
+* A new 3 Letter asset (Premium asset) has hit the market this week: &#x27;[XAS](https://cryptofresh.com/a/1.3.1477)&#x27; registered by &#x27;gw-union&#x27; who also registered [CONSSIN](https://cryptofresh.com/a/1.3.1476) which google translate suggests is related to an outdoor lighting and container door lock company. **XAS** has the following description: &#x27;Asch is designed to make developers&#x27; life much easier: adopting JavaScript as development language, or supporting DBMS to store the transaction data, all of these approaches make DApp development like traditional web application, which must be extremely attractive to developers and SMEs. We believe the ecosystem of the whole platform will not be developed sustainably unless developers productivity could be promoted. Asch is also an open platform whose focus is not limited to a particular area, such as finance, document storage, or copywrite proof, but is on providing a series of underlying and abstract APIs, which can be combined and utilized to realize almost all kinds of applications. In addition Asch system utilized enhenced DPOS agorithm in its consensus mechanism to significantly reduce the probability of block fork and the risk of duplicate payment. Most importantly, Asch&#x27;s sidechain-is-application mode can not only alleviate the blockchain inflation issue, but also make DApp more&#x27;
+
+* @virtualgrowth is doing a weekly market update and token give away; Check out his post and vote on your favorite asset [HERE](https://steemit.com/bitshares/@virtualgrowth/steem-bts-and-asset-market-update-7-12-and-giveaway-for-7-19)
+
+* This weeks Bitshares hangout recording has been published and is available [HERE](https://steemit.com/beyondbitcoin/@africa/bitshares-hangout-2017-07-07-beyond-bitcoin-radioshow-raw-recording-for-impatients)
+
+* Current registered wallets/accounts within the Bitshares network is 369317; an increase of 8011 wallets/accounts since last week
+
+* The last asset registered this week is asset #1498 and it is named &#x27;AVERS&#x27; registered by &#x27;aversis&#x27; with the description &#x27;Settlement unit for Aversis software&#x27; googling leads me to [aversis.net/](https://aversis.net/) this seems like a good fit but may not be the actual projects website. 
+
+
+#### Smartcoin issueance chart showing weekly change since the start of 2017
+![](http://i.imgur.com/qcPLnE2.png)
+
+#### Openledger team
+![](http://i.imgur.com/RtzmwFR.png)
+
+#### Bitshares telegram user Jonas has received some Bitshares Swag (&#x27;BTS HODLER&#x27; Shirt, Hat and phone cover)
+![](http://i.imgur.com/Q05HiWO.png)
+
+#### Worker Proposal presented by the Bitshares Blockchain Foundation. Full worker propsal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+![](http://i.imgur.com/sZYnHaH.png)
+
+#### Smartcoins Wallet v2.0 (codename: Carbon) - Full details [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+https://youtu.be/piGqX-Er_JQ
+
+#### Bitcoin Indonesia has released a short video titled &#x27;What is Bitshares&#x27;
+https://www.youtube.com/watch?v=v1wc1oXkDH0
+
+#### The Billion HERO challenge webinar recording
+https://www.youtube.com/watch?v=VxCn4j2JOtY
+
+#### Google Trends for &#x27;Bitshares&#x27;
+![](http://i.imgur.com/6AKgqJb.png)
+
+#### Alexa Traffic ranking for Bitshares.org
+![](http://i.imgur.com/CFp2J26.png)
+
+#### Bikercoin banner lifted from [bikercoin.org](http://bikercoin.org)
+![](http://bikercoin.org/dvbfg/biker468.png)
+
+
+
+### Profit/Expenses from the Bitshares Reserve Pool
+The chart below show historic profit/expense from the Bitshares Reserve Pool where a positive number represents a W/W profit and a negative number means a W/W expense; Bitshares expenses include witness and worker pay and income includes network fees.
+
+![](http://i.imgur.com/xAAcfP3.png)
+
+
+## BTS Trading
+Looking at the most active trading pairs for Bitshares (BTS). Data displayed is a 24 hour snapshot as taken on the date of this report and not a reflection on the week as a whole.
+
+Market|Last Price|Price USD|24hr Vol BTS|24hr Vol USD|Vol %|Vol % Change W/W
+---|---|---|---|---|---|---
+CNY|0.86|0.13|292,717,265.69|36,908,575.35|72.7%|-65.4%
+BTC|0.00|0.11|109,659,462.39|12,497,259.87|27.3%|-30.7%
+EUR|0.12|0.14|104.00|14.22|0.0%|
+WAVES|0.07|0.40627294|0.00|0.00|0.0%|
+USD|0.293758|0.293758|0.00|0.00|0.0%|
+
+
+![](http://i.imgur.com/nM2XCqf.png)
+
+
+## Worker Proposals
+This section will identify the current approved and pending worker proposals
+![](http://i.imgur.com/cTBzx67.png)
+
+#### Active Worker:
+
+* [Alfredo Garcia - Core Development for Second half of 2017](https://bitsharestalk.org/index.php/topic,23698.0.html)
+* Refund400k
+
+#### Proposed Worker
+
+* [201707-bsip18](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+* [Soledger - Vikram/Agent86 - Project administration &amp; essential maintenance](https://bitsharestalk.org/index.php/topic,23495.0.html)
+* [Fund to pay dividend](https://bitsharestalk.org/index.php/topic,22041.new.html#new)
+
+
+## DEX: Most Active Markets
+This section will show the BTS markets within the DEX and seek to highlight the most active markets.
+![](http://i.imgur.com/k8l4Ll9.png)
+The most active base pair is BTS and the top 3 pairs are BTS, CNY and USD
+
+## Smartcoins
+This sections seeks to analyse the current supply and market capitalisation of the Bitshares Smartcoins. 
+
+Asset|Supply|Price|Market Cap BTS|Market Cap USD| Supply Change W/W
+---|---|---|---|---|---
+BTS|2,596,722,773|0.12278503|2,596,722,773| $318,838,683.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.0063%
+BTS Stealth|270,241|0.12278503|270,241| $33,181.55 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.52%
+Reserve Pool|1,003,848,929|0.12278503|1,003,848,929| $123,257,620.86 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -0.0162%
+Accumulated fees|7,783|0.12278503|7,783| $955.64 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 123.82%
+BitUSD|4,451,009|8.48|37,744,556| $4,451,009.00 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -27.01%
+BitCNY|71,933,379|1.172|84,305,920| $10,351,504.94 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.61%
+BitEUR|102,399|9.67|990,198| $121,581.53 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.61%
+BitBTC|79.5|19,976|1,588,092| $194,993.92 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -14.96%
+BitGold|90.4|10,280|929,312| $114,105.60 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -9.62%
+BitSilver|9,728|131.7|1,281,178| $157,309.43 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -6.48%
+Ruble|1,673,671|0.1378|230,632| $28,318.14 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -18.44%
+HERO|4,771|1,326|6,326,346| $776,780.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 56.94%
+
+
+
+![](http://i.imgur.com/6KlCweN.png)
+
+
+## Committee Members
+This section will track shareholder approval of committee members
+
+Account|Votes (M)| Votes Change (M)
+---|---|---
+ bitcrab|808.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.4
+ abit|789.6| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -52
+ bhuz|761| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.5
+ clayop|680.7| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -32.8
+ xeroc|635.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -17.9
+ chris4210|630.4| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -7.4
+ bunkerchainlabs-com|600| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.5
+ witness.still|597| ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 260.9
+ openledgerdc|447.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.5
+ harvey-xts|431.9| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -37.7
+ ebit|410.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -12.4
+
+
+
+## Active Witnesses
+This section will track top 25 active witnesses and the changes in support
+
+Rank| Witness| Votes|Missed|Missed W/W
+---|---|---|---|---
+1| in.abit 1.6.35|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 865.2|702|391
+2|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) bhuz 1.6.17|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 832.7|1559|457
+3|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) fox 1.6.16|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 830.2|3343|425
+4|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) wackou 1.6.18|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826.3|1779|494
+5|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) verbaltech2 1.6.34|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826|1664|439
+6|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) witness.yao 1.6.71|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 779.6|3536|395
+7|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) xman 1.6.64|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 774.8|1591|421
+8| rnglab 1.6.45|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 771.9|1817|450
+9| witness.still 1.6.69|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.9|8912|522
+10| delegate.baozi 1.6.37|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.1|1430|396
+11| xn-delegate 1.6.59|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 735.6|2746|442
+12| xeldal 1.6.22|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 668|1867|593
+13| roelandp 1.6.74|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 657.3|6|3
+14| openledger-dc 1.6.76|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 645.4|500|451
+15| blckchnd 1.6.75|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 643.1|581|386
+16| abc123 1.6.65|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 588.2|1253|397
+17| sahkan-bitshares 1.6.73|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 576.1|779|616
+18|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) delegate-1.lafona 1.6.28|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 565.8|1319|608
+19|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) delegate.freedom 1.6.63|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 550.1|4436|822
+20|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) elmato 1.6.20|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 545.6|4066|390
+21|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) harvey-xts 1.6.23|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 544.7|5806|625
+22| mr.agsexplorer 1.6.24|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 525.1|4285|659
+23| spartako 1.6.15|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 474.4|1608|572
+24| delegate-clayop 1.6.27|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 466.4|4841|525
+25| delegate.taolje 1.6.38|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 435.8|2228|433
+
+
+
+### Thanks for viewing :)
+
+**I value your feedback.**
+Is there something more you would like me to track in these reports? or do you have some information for the next BSoTN report? please let me know in the comments, on steemit.chat, in the &#x27;BitsharesDEX&#x27; Telegram group or every Friday in the the BeyondBitcoin Hangouts.
+
+I hope you enjoyed this report! :)
+
+[![](https://s21.postimg.org/f0b1fpzdz/steem_Follow_My_Blog_200x60_v1_dark_1.png)](https://steemit.com/@steempower)
+*Image Credit: @cass*
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+#### New to Bitshares? Need an Account?
+Please support my efforts by using the banner below to create your account.
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+Best part is at anytime in the future If you decide to buy an LTM (Lifetime membership - which gives you an 80% reduction in fees and other premium features) i will rebate 10% of your membership costs in BTS.
+* Just use the banner above to create your account
+* Enroll as a Life Time Member
+* Leave your username in the comments on the latest BSotN report or join us on BitsharesDEX telegram chat.
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+### Peerplays holder? Please consider supporting my Peerplays Witness
+![](http://i.imgur.com/cFTcETV.png)
+Witness Proposal: [HERE](https://steemit.com/peerplays/@steempower/jims-steempowered-witness-proposal-for-the-peerplays-network-and-witness-monitoring-script-with-telegram-notifications)"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="Bitshares - State of the Network - 11th July 2017"/><meta data-react-helmet="true" name="twitter:description" content="![](http://i.imgur.com/dZlNq1S.png)
+**Welcome to the 43rd Bitshares State of the Network (BSotN) report. A weekly report focusing on the changes in the ecosystem and track longer term changes in a effort to identify emerging trends and changes in the Bitshares platform.**
+
+
+## Bitshares - State of the Network - 11th July 2017
+The Bitshares State of the Network Reports seeks to combine raw data from a wide range of metrics and combine them into meaningful information to identify emerging trends and changes in the Bitshares network.  
+
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+
+*This weeks report lacks some details due to Cryptofresh data being re-indexed after the Bitshares patch released the day prior to my data collection. I hope to have a full report as normal next week. Any affected data has been removed and to make up for it i have included a few more pictures and videos.*
+
+## Observation from this week
+This section will highlight any observations made while analysing the data.
+
+* @xeroc has announced the launch of the &#x27;BitShares Blockchain Foundation&#x27;. The foundation is initially focused on providing 3 major services: Public Announcements, Public and Private mailing lists and BitUSD worker escrow management. You can see his announcement [HERE](https://steemit.com/bitshares/@xeroc/bitshares-blockchain-foundation) or visit the foundations webpage at [bitshares.foundation](http://www.bitshares.foundation)
+	
+* This week has seen an incident on the Bitshares network causing block producing witnesses to halt block production. As a result of this incident and patch was released and all full nodes need to update to the latest release. You can find more information about the incident and the upgrade patch [HERE](http://www.bitshares.foundation/announcements/2017-07-11-bitshares-downtime-incident)
+
+* Alfredo (@oxarbitrage) has had his Core Development worker proposal approved by the Bitshares stakeholders and as of today (12th of July) he is formally **employed by the Bitshares Blockchain**. You can find his proposal [HERE](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md)
+
+* A new worker proposal has been proposed by Peter Conrad (aka PC) to develop, integrate and test/support [BSIP-0018](https://github.com/bitshares/bsips/blob/master/bsip-0018.md) titled &quot;Revive BitAsset through buying Settlement Pool&quot;. This worker proposal has been curated and supported by the BitShares Blockchain Foundation and is the first of its kind to be presented on the BitShares Blockchain Foundation&#x27;s website. The pay for this worker is set at 23,000 USD and will use the BitUSD escrow services of the BitShares Blockchain Foundation. Please see the proposal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad). I have also included the header of the proposal in the images below.
+
+* @blockchained who created and bootstrapped the smartcoin &#x27;[RUBLE](http://cryptofresh.com/a/RUBLE)&#x27; has now handed over ownership of the RUBLE smartcoin to the Bitshares committee members. You can find the announcement [HERE](https://bitsharestalk.org/index.php/topic,24004.msg308762.html#msg308762).
+
+* [Investopedia](http://www.investopedia.com/) has released an article related to OCASH Titled &#x27;[OpenLedger Launches Crypto-Ready Payments Card OCASH](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)&#x27;. OCASH is an upcoming (August 2017) VISA debitcard from [OpenLedger](https://openledger.info) allowing token holders to use SmartCoins such as bitUSD, bitEUR, bitGBP and Rubles; as well as other OpenLedger tokens, such as OBITS, BTC, and ETH to purchase items anywhere major debit cards are accepted. You can find the Article [HERE](http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/)
+
+* @kencode has released a preview of the user interface for the new Smartcoins Wallet v2.0 (codename: Carbon). The white-label wallet has 6 blockchains integrated into an easy to use mobile application. See full details and preview the new interface [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+
+* @officialfuzzy has started the Beyond Bitcoin WhaleTank hangouts. These hangout will occur on Friday at 3pm UTC (1 hour after the Bitshares hangouts) and will focus on Projects and startup in the crypto currency eco-system. There is also incentives for projects to get involved and sharedrops of &#x27;whaleshare&#x27; and &#x27;beyondbit&#x27; tokens to all participants. You can find out more details [HERE](https://steemit.com/beyondbitcoin/@officialfuzzy/whaletank-special-announcement-beyond-bitcoin-hangout-215-7-7-17-with-cheatcodes)
+
+* @kencode has released his weekly update for BlockPay, C-IPFS, Stealth, graphenej and Smartcoins Wallet. This week has seen continued integration of GrapheneJ into the Blockpay application as well and updates for Stealth and the Smartcoins wallet (UI video below). You can see the full update [HERE](https://steemit.com/blockpay/@kencode/blockpay-c-ipfs-stealth-graphenej-smartcoins-wallet-weekly-report) and join them on telegram at [https://t.me/BlockPay](https://t.me/BlockPay)
+
+* @stan has released a post this week on the different risk profiles for people involved in the Billion HERO challenge. You can find out more and determine your risk appetite [HERE](https://steemit.com/hero/@stan/taking-heroic-risks)
+
+* @cm-steem has released two new draft BSIP this week and is asking for community input. This is a great effort from @cm-steem who is proving to be a huge asset to the Bitshares community and a prolific BSIP writer (4 so far). Please use the following links for more information related to [BSIP-0021](https://steemit.com/bitshares/@cm-steem/bsip-0021-draft-introducing-the-coin-age-statistic-to-bitshares-assets-input-would-be-massively-appreciated) Titled: &quot;Introducing the &#x27;Coin-Age&#x27; statistic to Bitshares assets&quot; and [BSIP-0022](https://steemit.com/bitshares/@cm-steem/bsip-0022-draft-introducing-expiring-votes-for-witnesses-committie-members-and-proxies-within-the-bitshares-network-an) &quot;Titled Introducing expiring votes for Witnesses, Committie members &amp; Proxies within the Bitshares network&quot;. 
+
+* @lovejoy has released unseen footage of and interview with Dan Larimer. The footage was acquired during the &#x27;Bitshares Peer To Peer Tour&#x27; which happened back in April 2015. You can see the following posts and view the 3 part series [Part 1](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-1-of-3), [Part 2](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-2-of-3) and [Part 3](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-3-of-3). 
+
+* @ash has released a guide to withdrawing your Open.Muse from Bitshares network to the Muse Blockchain. This process should be completed ASAP. This is required due to an upcoming Snapshot on the Muse network that will be used to as the basis for the genesis block for the new MUSE blockchain. You can see the guide [HERE](https://steemit.com/muse/@ash/how-to-move-open-muse-to-muse-important-needed-for-the-new-blockchain-do-asap)
+
+* [OpenLedger](https://openledger.info) has sharedropped &#x27;[QORA GOLD](http://cryptofresh.com/a/QORA)&#x27; onto all Qbits and Obits holders to celebrate 50,000 unique users signed up via [OpenLedger](https://openledger.info)
+
+* User Tony Peacock has recordered last weeks Billion HERO webinar and released the video to youtube. If you happened to miss the webinar you can view the recording [HERE](https://www.youtube.com/watch?v=VxCn4j2JOtY) 
+
+* @ash has released a PSA relating to password security and methods to ensure that when you need them your passwords are accessible and valid. Please see his post [HERE](https://steemit.com/bitshares/@ash/guys-we-need-to-talk-passwords-again) as he walks through a couple of password managers to help community members retain access to their passwords and as a result Bitshares accounts
+
+* [BikerCoin](http://bikercoin.org/) started as a CryptoNote coin on June 07 2016 and as of July 06 2017 migrated on top of the BitShares blockchain with the token &#x27;[BIKERCOIN](http://cryptofresh.com/a/BIKERCOIN)&#x27;.
+
+* [Peerity](https://www.peerity.io) have launched their token &#x27;[PEERCROWDFUND](https://cryptofresh.com/a/1.3.1475)&#x27; on the Bitshares network. According to their website their fundraiser starts in 84 days. They list Cosmos and Tendermint as their partners.
+
+* A new 3 Letter asset (Premium asset) has hit the market this week: &#x27;[XAS](https://cryptofresh.com/a/1.3.1477)&#x27; registered by &#x27;gw-union&#x27; who also registered [CONSSIN](https://cryptofresh.com/a/1.3.1476) which google translate suggests is related to an outdoor lighting and container door lock company. **XAS** has the following description: &#x27;Asch is designed to make developers&#x27; life much easier: adopting JavaScript as development language, or supporting DBMS to store the transaction data, all of these approaches make DApp development like traditional web application, which must be extremely attractive to developers and SMEs. We believe the ecosystem of the whole platform will not be developed sustainably unless developers productivity could be promoted. Asch is also an open platform whose focus is not limited to a particular area, such as finance, document storage, or copywrite proof, but is on providing a series of underlying and abstract APIs, which can be combined and utilized to realize almost all kinds of applications. In addition Asch system utilized enhenced DPOS agorithm in its consensus mechanism to significantly reduce the probability of block fork and the risk of duplicate payment. Most importantly, Asch&#x27;s sidechain-is-application mode can not only alleviate the blockchain inflation issue, but also make DApp more&#x27;
+
+* @virtualgrowth is doing a weekly market update and token give away; Check out his post and vote on your favorite asset [HERE](https://steemit.com/bitshares/@virtualgrowth/steem-bts-and-asset-market-update-7-12-and-giveaway-for-7-19)
+
+* This weeks Bitshares hangout recording has been published and is available [HERE](https://steemit.com/beyondbitcoin/@africa/bitshares-hangout-2017-07-07-beyond-bitcoin-radioshow-raw-recording-for-impatients)
+
+* Current registered wallets/accounts within the Bitshares network is 369317; an increase of 8011 wallets/accounts since last week
+
+* The last asset registered this week is asset #1498 and it is named &#x27;AVERS&#x27; registered by &#x27;aversis&#x27; with the description &#x27;Settlement unit for Aversis software&#x27; googling leads me to [aversis.net/](https://aversis.net/) this seems like a good fit but may not be the actual projects website. 
+
+
+#### Smartcoin issueance chart showing weekly change since the start of 2017
+![](http://i.imgur.com/qcPLnE2.png)
+
+#### Openledger team
+![](http://i.imgur.com/RtzmwFR.png)
+
+#### Bitshares telegram user Jonas has received some Bitshares Swag (&#x27;BTS HODLER&#x27; Shirt, Hat and phone cover)
+![](http://i.imgur.com/Q05HiWO.png)
+
+#### Worker Proposal presented by the Bitshares Blockchain Foundation. Full worker propsal [HERE](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+![](http://i.imgur.com/sZYnHaH.png)
+
+#### Smartcoins Wallet v2.0 (codename: Carbon) - Full details [HERE](https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains)
+https://youtu.be/piGqX-Er_JQ
+
+#### Bitcoin Indonesia has released a short video titled &#x27;What is Bitshares&#x27;
+https://www.youtube.com/watch?v=v1wc1oXkDH0
+
+#### The Billion HERO challenge webinar recording
+https://www.youtube.com/watch?v=VxCn4j2JOtY
+
+#### Google Trends for &#x27;Bitshares&#x27;
+![](http://i.imgur.com/6AKgqJb.png)
+
+#### Alexa Traffic ranking for Bitshares.org
+![](http://i.imgur.com/CFp2J26.png)
+
+#### Bikercoin banner lifted from [bikercoin.org](http://bikercoin.org)
+![](http://bikercoin.org/dvbfg/biker468.png)
+
+
+
+### Profit/Expenses from the Bitshares Reserve Pool
+The chart below show historic profit/expense from the Bitshares Reserve Pool where a positive number represents a W/W profit and a negative number means a W/W expense; Bitshares expenses include witness and worker pay and income includes network fees.
+
+![](http://i.imgur.com/xAAcfP3.png)
+
+
+## BTS Trading
+Looking at the most active trading pairs for Bitshares (BTS). Data displayed is a 24 hour snapshot as taken on the date of this report and not a reflection on the week as a whole.
+
+Market|Last Price|Price USD|24hr Vol BTS|24hr Vol USD|Vol %|Vol % Change W/W
+---|---|---|---|---|---|---
+CNY|0.86|0.13|292,717,265.69|36,908,575.35|72.7%|-65.4%
+BTC|0.00|0.11|109,659,462.39|12,497,259.87|27.3%|-30.7%
+EUR|0.12|0.14|104.00|14.22|0.0%|
+WAVES|0.07|0.40627294|0.00|0.00|0.0%|
+USD|0.293758|0.293758|0.00|0.00|0.0%|
+
+
+![](http://i.imgur.com/nM2XCqf.png)
+
+
+## Worker Proposals
+This section will identify the current approved and pending worker proposals
+![](http://i.imgur.com/cTBzx67.png)
+
+#### Active Worker:
+
+* [Alfredo Garcia - Core Development for Second half of 2017](https://bitsharestalk.org/index.php/topic,23698.0.html)
+* Refund400k
+
+#### Proposed Worker
+
+* [201707-bsip18](http://www.bitshares.foundation/workers/2017-07-peter-conrad)
+* [Soledger - Vikram/Agent86 - Project administration &amp; essential maintenance](https://bitsharestalk.org/index.php/topic,23495.0.html)
+* [Fund to pay dividend](https://bitsharestalk.org/index.php/topic,22041.new.html#new)
+
+
+## DEX: Most Active Markets
+This section will show the BTS markets within the DEX and seek to highlight the most active markets.
+![](http://i.imgur.com/k8l4Ll9.png)
+The most active base pair is BTS and the top 3 pairs are BTS, CNY and USD
+
+## Smartcoins
+This sections seeks to analyse the current supply and market capitalisation of the Bitshares Smartcoins. 
+
+Asset|Supply|Price|Market Cap BTS|Market Cap USD| Supply Change W/W
+---|---|---|---|---|---
+BTS|2,596,722,773|0.12278503|2,596,722,773| $318,838,683.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.0063%
+BTS Stealth|270,241|0.12278503|270,241| $33,181.55 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 0.52%
+Reserve Pool|1,003,848,929|0.12278503|1,003,848,929| $123,257,620.86 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -0.0162%
+Accumulated fees|7,783|0.12278503|7,783| $955.64 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 123.82%
+BitUSD|4,451,009|8.48|37,744,556| $4,451,009.00 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -27.01%
+BitCNY|71,933,379|1.172|84,305,920| $10,351,504.94 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.61%
+BitEUR|102,399|9.67|990,198| $121,581.53 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.61%
+BitBTC|79.5|19,976|1,588,092| $194,993.92 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -14.96%
+BitGold|90.4|10,280|929,312| $114,105.60 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -9.62%
+BitSilver|9,728|131.7|1,281,178| $157,309.43 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -6.48%
+Ruble|1,673,671|0.1378|230,632| $28,318.14 | ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -18.44%
+HERO|4,771|1,326|6,326,346| $776,780.58 | ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 56.94%
+
+
+
+![](http://i.imgur.com/6KlCweN.png)
+
+
+## Committee Members
+This section will track shareholder approval of committee members
+
+Account|Votes (M)| Votes Change (M)
+---|---|---
+ bitcrab|808.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.4
+ abit|789.6| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -52
+ bhuz|761| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -30.5
+ clayop|680.7| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -32.8
+ xeroc|635.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -17.9
+ chris4210|630.4| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -7.4
+ bunkerchainlabs-com|600| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -13.5
+ witness.still|597| ![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 260.9
+ openledgerdc|447.5| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -10.5
+ harvey-xts|431.9| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -37.7
+ ebit|410.3| ![](https://cdn-payscale.com/images/researchcenter/delta-red.png) -12.4
+
+
+
+## Active Witnesses
+This section will track top 25 active witnesses and the changes in support
+
+Rank| Witness| Votes|Missed|Missed W/W
+---|---|---|---|---
+1| in.abit 1.6.35|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 865.2|702|391
+2|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) bhuz 1.6.17|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 832.7|1559|457
+3|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) fox 1.6.16|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 830.2|3343|425
+4|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) wackou 1.6.18|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826.3|1779|494
+5|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) verbaltech2 1.6.34|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 826|1664|439
+6|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) witness.yao 1.6.71|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 779.6|3536|395
+7|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) xman 1.6.64|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 774.8|1591|421
+8| rnglab 1.6.45|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 771.9|1817|450
+9| witness.still 1.6.69|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.9|8912|522
+10| delegate.baozi 1.6.37|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 760.1|1430|396
+11| xn-delegate 1.6.59|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 735.6|2746|442
+12| xeldal 1.6.22|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 668|1867|593
+13| roelandp 1.6.74|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 657.3|6|3
+14| openledger-dc 1.6.76|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 645.4|500|451
+15| blckchnd 1.6.75|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 643.1|581|386
+16| abc123 1.6.65|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 588.2|1253|397
+17| sahkan-bitshares 1.6.73|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 576.1|779|616
+18|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) delegate-1.lafona 1.6.28|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) 565.8|1319|608
+19|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) delegate.freedom 1.6.63|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 550.1|4436|822
+20|![](https://cdn-payscale.com/images/researchcenter/delta-green.png) elmato 1.6.20|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 545.6|4066|390
+21|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) harvey-xts 1.6.23|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 544.7|5806|625
+22| mr.agsexplorer 1.6.24|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 525.1|4285|659
+23| spartako 1.6.15|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 474.4|1608|572
+24| delegate-clayop 1.6.27|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 466.4|4841|525
+25| delegate.taolje 1.6.38|![](https://cdn-payscale.com/images/researchcenter/delta-red.png) 435.8|2228|433
+
+
+
+### Thanks for viewing :)
+
+**I value your feedback.**
+Is there something more you would like me to track in these reports? or do you have some information for the next BSoTN report? please let me know in the comments, on steemit.chat, in the &#x27;BitsharesDEX&#x27; Telegram group or every Friday in the the BeyondBitcoin Hangouts.
+
+I hope you enjoyed this report! :)
+
+[![](https://s21.postimg.org/f0b1fpzdz/steem_Follow_My_Blog_200x60_v1_dark_1.png)](https://steemit.com/@steempower)
+*Image Credit: @cass*
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+#### New to Bitshares? Need an Account?
+Please support my efforts by using the banner below to create your account.
+[![](http://i.imgur.com/bsZQqTc.png)](https://bit.ly/GetBTS)
+Best part is at anytime in the future If you decide to buy an LTM (Lifetime membership - which gives you an 80% reduction in fees and other premium features) i will rebate 10% of your membership costs in BTS.
+* Just use the banner above to create your account
+* Enroll as a Life Time Member
+* Leave your username in the comments on the latest BSotN report or join us on BitsharesDEX telegram chat.
+
+![](http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png)
+
+### Peerplays holder? Please consider supporting my Peerplays Witness
+![](http://i.imgur.com/cFTcETV.png)
+Witness Proposal: [HERE](https://steemit.com/peerplays/@steempower/jims-steempowered-witness-proposal-for-the-peerplays-network-and-witness-monitoring-script-with-telegram-notifications)"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\bitshares-state-of-the-network-11th-july-2017\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Bitshares - State of the Network - 11th July 2017</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem"></p></header><section><p><img src="http://i.imgur.com/dZlNq1S.png" alt="" />
+<strong>Welcome to the 43rd Bitshares State of the Network (BSotN) report. A weekly report focusing on the changes in the ecosystem and track longer term changes in a effort to identify emerging trends and changes in the Bitshares platform.</strong></p>
+<h2 id="bitshares---state-of-the-network---11th-july-2017">Bitshares - State of the Network - 11th July 2017</h2>
+<p>The Bitshares State of the Network Reports seeks to combine raw data from a wide range of metrics and combine them into meaningful information to identify emerging trends and changes in the Bitshares network.  </p>
+<p><a href="https://bit.ly/GetBTS"><img src="http://i.imgur.com/bsZQqTc.png" alt="" /></a></p>
+<p><em>This weeks report lacks some details due to Cryptofresh data being re-indexed after the Bitshares patch released the day prior to my data collection. I hope to have a full report as normal next week. Any affected data has been removed and to make up for it i have included a few more pictures and videos.</em></p>
+<h2 id="observation-from-this-week">Observation from this week</h2>
+<p>This section will highlight any observations made while analysing the data.</p>
+<ul>
+<li><p>@xeroc has announced the launch of the 'BitShares Blockchain Foundation'. The foundation is initially focused on providing 3 major services: Public Announcements, Public and Private mailing lists and BitUSD worker escrow management. You can see his announcement <a href="https://steemit.com/bitshares/@xeroc/bitshares-blockchain-foundation">HERE</a> or visit the foundations webpage at <a href="http://www.bitshares.foundation">bitshares.foundation</a></p></li>
+<li><p>This week has seen an incident on the Bitshares network causing block producing witnesses to halt block production. As a result of this incident and patch was released and all full nodes need to update to the latest release. You can find more information about the incident and the upgrade patch <a href="http://www.bitshares.foundation/announcements/2017-07-11-bitshares-downtime-incident">HERE</a></p></li>
+<li><p>Alfredo (@oxarbitrage) has had his Core Development worker proposal approved by the Bitshares stakeholders and as of today (12th of July) he is formally <strong>employed by the Bitshares Blockchain</strong>. You can find his proposal <a href="https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2017.md">HERE</a></p></li>
+<li><p>A new worker proposal has been proposed by Peter Conrad (aka PC) to develop, integrate and test/support <a href="https://github.com/bitshares/bsips/blob/master/bsip-0018.md">BSIP-0018</a> titled "Revive BitAsset through buying Settlement Pool". This worker proposal has been curated and supported by the BitShares Blockchain Foundation and is the first of its kind to be presented on the BitShares Blockchain Foundation's website. The pay for this worker is set at 23,000 USD and will use the BitUSD escrow services of the BitShares Blockchain Foundation. Please see the proposal <a href="http://www.bitshares.foundation/workers/2017-07-peter-conrad">HERE</a>. I have also included the header of the proposal in the images below.</p></li>
+<li><p>@blockchained who created and bootstrapped the smartcoin '<a href="http://cryptofresh.com/a/RUBLE">RUBLE</a>' has now handed over ownership of the RUBLE smartcoin to the Bitshares committee members. You can find the announcement <a href="https://bitsharestalk.org/index.php/topic,24004.msg308762.html#msg308762">HERE</a>.</p></li>
+<li><p><a href="http://www.investopedia.com/">Investopedia</a> has released an article related to OCASH Titled '<a href="http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/">OpenLedger Launches Crypto-Ready Payments Card OCASH</a>'. OCASH is an upcoming (August 2017) VISA debitcard from <a href="https://openledger.info">OpenLedger</a> allowing token holders to use SmartCoins such as bitUSD, bitEUR, bitGBP and Rubles; as well as other OpenLedger tokens, such as OBITS, BTC, and ETH to purchase items anywhere major debit cards are accepted. You can find the Article <a href="http://www.investopedia.com/news/openledger-launches-cryptoready-payments-card-ocash/">HERE</a></p></li>
+<li><p>@kencode has released a preview of the user interface for the new Smartcoins Wallet v2.0 (codename: Carbon). The white-label wallet has 6 blockchains integrated into an easy to use mobile application. See full details and preview the new interface <a href="https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains">HERE</a></p></li>
+<li><p>@officialfuzzy has started the Beyond Bitcoin WhaleTank hangouts. These hangout will occur on Friday at 3pm UTC (1 hour after the Bitshares hangouts) and will focus on Projects and startup in the crypto currency eco-system. There is also incentives for projects to get involved and sharedrops of 'whaleshare' and 'beyondbit' tokens to all participants. You can find out more details <a href="https://steemit.com/beyondbitcoin/@officialfuzzy/whaletank-special-announcement-beyond-bitcoin-hangout-215-7-7-17-with-cheatcodes">HERE</a></p></li>
+<li><p>@kencode has released his weekly update for BlockPay, C-IPFS, Stealth, graphenej and Smartcoins Wallet. This week has seen continued integration of GrapheneJ into the Blockpay application as well and updates for Stealth and the Smartcoins wallet (UI video below). You can see the full update <a href="https://steemit.com/blockpay/@kencode/blockpay-c-ipfs-stealth-graphenej-smartcoins-wallet-weekly-report">HERE</a> and join them on telegram at <a href="https://t.me/BlockPay">https://t.me/BlockPay</a></p></li>
+<li><p>@stan has released a post this week on the different risk profiles for people involved in the Billion HERO challenge. You can find out more and determine your risk appetite <a href="https://steemit.com/hero/@stan/taking-heroic-risks">HERE</a></p></li>
+<li><p>@cm-steem has released two new draft BSIP this week and is asking for community input. This is a great effort from @cm-steem who is proving to be a huge asset to the Bitshares community and a prolific BSIP writer (4 so far). Please use the following links for more information related to <a href="https://steemit.com/bitshares/@cm-steem/bsip-0021-draft-introducing-the-coin-age-statistic-to-bitshares-assets-input-would-be-massively-appreciated">BSIP-0021</a> Titled: "Introducing the 'Coin-Age' statistic to Bitshares assets" and <a href="https://steemit.com/bitshares/@cm-steem/bsip-0022-draft-introducing-expiring-votes-for-witnesses-committie-members-and-proxies-within-the-bitshares-network-an">BSIP-0022</a> "Titled Introducing expiring votes for Witnesses, Committie members &amp; Proxies within the Bitshares network". </p></li>
+<li><p>@lovejoy has released unseen footage of and interview with Dan Larimer. The footage was acquired during the 'Bitshares Peer To Peer Tour' which happened back in April 2015. You can see the following posts and view the 3 part series <a href="https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-1-of-3">Part 1</a>, <a href="https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-2-of-3">Part 2</a> and <a href="https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-3-of-3">Part 3</a>. </p></li>
+<li><p>@ash has released a guide to withdrawing your Open.Muse from Bitshares network to the Muse Blockchain. This process should be completed ASAP. This is required due to an upcoming Snapshot on the Muse network that will be used to as the basis for the genesis block for the new MUSE blockchain. You can see the guide <a href="https://steemit.com/muse/@ash/how-to-move-open-muse-to-muse-important-needed-for-the-new-blockchain-do-asap">HERE</a></p></li>
+<li><p><a href="https://openledger.info">OpenLedger</a> has sharedropped '<a href="http://cryptofresh.com/a/QORA">QORA GOLD</a>' onto all Qbits and Obits holders to celebrate 50,000 unique users signed up via <a href="https://openledger.info">OpenLedger</a></p></li>
+<li><p>User Tony Peacock has recordered last weeks Billion HERO webinar and released the video to youtube. If you happened to miss the webinar you can view the recording <a href="https://www.youtube.com/watch?v=VxCn4j2JOtY">HERE</a> </p></li>
+<li><p>@ash has released a PSA relating to password security and methods to ensure that when you need them your passwords are accessible and valid. Please see his post <a href="https://steemit.com/bitshares/@ash/guys-we-need-to-talk-passwords-again">HERE</a> as he walks through a couple of password managers to help community members retain access to their passwords and as a result Bitshares accounts</p></li>
+<li><p><a href="http://bikercoin.org/">BikerCoin</a> started as a CryptoNote coin on June 07 2016 and as of July 06 2017 migrated on top of the BitShares blockchain with the token '<a href="http://cryptofresh.com/a/BIKERCOIN">BIKERCOIN</a>'.</p></li>
+<li><p><a href="https://www.peerity.io">Peerity</a> have launched their token '<a href="https://cryptofresh.com/a/1.3.1475">PEERCROWDFUND</a>' on the Bitshares network. According to their website their fundraiser starts in 84 days. They list Cosmos and Tendermint as their partners.</p></li>
+<li><p>A new 3 Letter asset (Premium asset) has hit the market this week: '<a href="https://cryptofresh.com/a/1.3.1477">XAS</a>' registered by 'gw-union' who also registered <a href="https://cryptofresh.com/a/1.3.1476">CONSSIN</a> which google translate suggests is related to an outdoor lighting and container door lock company. <strong>XAS</strong> has the following description: 'Asch is designed to make developers' life much easier: adopting JavaScript as development language, or supporting DBMS to store the transaction data, all of these approaches make DApp development like traditional web application, which must be extremely attractive to developers and SMEs. We believe the ecosystem of the whole platform will not be developed sustainably unless developers productivity could be promoted. Asch is also an open platform whose focus is not limited to a particular area, such as finance, document storage, or copywrite proof, but is on providing a series of underlying and abstract APIs, which can be combined and utilized to realize almost all kinds of applications. In addition Asch system utilized enhenced DPOS agorithm in its consensus mechanism to significantly reduce the probability of block fork and the risk of duplicate payment. Most importantly, Asch's sidechain-is-application mode can not only alleviate the blockchain inflation issue, but also make DApp more'</p></li>
+<li><p>@virtualgrowth is doing a weekly market update and token give away; Check out his post and vote on your favorite asset <a href="https://steemit.com/bitshares/@virtualgrowth/steem-bts-and-asset-market-update-7-12-and-giveaway-for-7-19">HERE</a></p></li>
+<li><p>This weeks Bitshares hangout recording has been published and is available <a href="https://steemit.com/beyondbitcoin/@africa/bitshares-hangout-2017-07-07-beyond-bitcoin-radioshow-raw-recording-for-impatients">HERE</a></p></li>
+<li><p>Current registered wallets/accounts within the Bitshares network is 369317; an increase of 8011 wallets/accounts since last week</p></li>
+<li><p>The last asset registered this week is asset #1498 and it is named 'AVERS' registered by 'aversis' with the description 'Settlement unit for Aversis software' googling leads me to <a href="https://aversis.net/">aversis.net/</a> this seems like a good fit but may not be the actual projects website. </p></li>
+</ul>
+<h4 id="smartcoin-issueance-chart-showing-weekly-change-since-the-start-of-2017">Smartcoin issueance chart showing weekly change since the start of 2017</h4>
+<p><img src="http://i.imgur.com/qcPLnE2.png" alt="" /></p>
+<h4 id="openledger-team">Openledger team</h4>
+<p><img src="http://i.imgur.com/RtzmwFR.png" alt="" /></p>
+<h4 id="bitshares-telegram-user-jonas-has-received-some-bitshares-swag-bts-hodler-shirt-hat-and-phone-cover">Bitshares telegram user Jonas has received some Bitshares Swag ('BTS HODLER' Shirt, Hat and phone cover)</h4>
+<p><img src="http://i.imgur.com/Q05HiWO.png" alt="" /></p>
+<h4 id="worker-proposal-presented-by-the-bitshares-blockchain-foundation-full-worker-propsal-herehttpwwwbitsharesfoundationworkers2017-07-peter-conrad">Worker Proposal presented by the Bitshares Blockchain Foundation. Full worker propsal <a href="http://www.bitshares.foundation/workers/2017-07-peter-conrad">HERE</a></h4>
+<p><img src="http://i.imgur.com/sZYnHaH.png" alt="" /></p>
+<h4 id="smartcoins-wallet-v20-codename-carbon---full-details-herehttpssteemitcomnewskencodere-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains">Smartcoins Wallet v2.0 (codename: Carbon) - Full details <a href="https://steemit.com/news/@kencode/re-introducing-carbon-the-1st-mobile-wallet-to-support-ereceipts-nfc-loyalty-points-six-chains">HERE</a></h4>
+<p>https://youtu.be/piGqX-Er_JQ</p>
+<h4 id="bitcoin-indonesia-has-released-a-short-video-titled-what-is-bitshares">Bitcoin Indonesia has released a short video titled 'What is Bitshares'</h4>
+<p>https://www.youtube.com/watch?v=v1wc1oXkDH0</p>
+<h4 id="the-billion-hero-challenge-webinar-recording">The Billion HERO challenge webinar recording</h4>
+<p>https://www.youtube.com/watch?v=VxCn4j2JOtY</p>
+<h4 id="google-trends-for-bitshares">Google Trends for 'Bitshares'</h4>
+<p><img src="http://i.imgur.com/6AKgqJb.png" alt="" /></p>
+<h4 id="alexa-traffic-ranking-for-bitsharesorg">Alexa Traffic ranking for Bitshares.org</h4>
+<p><img src="http://i.imgur.com/CFp2J26.png" alt="" /></p>
+<h4 id="bikercoin-banner-lifted-from-bikercoinorghttpbikercoinorg">Bikercoin banner lifted from <a href="http://bikercoin.org">bikercoin.org</a></h4>
+<p><img src="http://bikercoin.org/dvbfg/biker468.png" alt="" /></p>
+<h3 id="profitexpenses-from-the-bitshares-reserve-pool">Profit/Expenses from the Bitshares Reserve Pool</h3>
+<p>The chart below show historic profit/expense from the Bitshares Reserve Pool where a positive number represents a W/W profit and a negative number means a W/W expense; Bitshares expenses include witness and worker pay and income includes network fees.</p>
+<p><img src="http://i.imgur.com/xAAcfP3.png" alt="" /></p>
+<h2 id="bts-trading">BTS Trading</h2>
+<p>Looking at the most active trading pairs for Bitshares (BTS). Data displayed is a 24 hour snapshot as taken on the date of this report and not a reflection on the week as a whole.</p>
+<p>Market|Last Price|Price USD|24hr Vol&nbsp;BTS|24hr Vol USD|Vol %|Vol % Change W/W
+---|---|---|---|---|---|---
+CNY|0.86|0.13|292,717,265.69|36,908,575.35|72.7%|-65.4%
+BTC|0.00|0.11|109,659,462.39|12,497,259.87|27.3%|-30.7%
+EUR|0.12|0.14|104.00|14.22|0.0%|
+WAVES|0.07|0.40627294|0.00|0.00|0.0%|
+USD|0.293758|0.293758|0.00|0.00|0.0%|</p>
+<p><img src="http://i.imgur.com/nM2XCqf.png" alt="" /></p>
+<h2 id="worker-proposals">Worker Proposals</h2>
+<p>This section will identify the current approved and pending worker proposals
+<img src="http://i.imgur.com/cTBzx67.png" alt="" /></p>
+<h4 id="active-worker">Active Worker:</h4>
+<ul>
+<li><a href="https://bitsharestalk.org/index.php/topic,23698.0.html">Alfredo Garcia - Core Development for Second half of 2017</a></li>
+<li>Refund400k</li>
+</ul>
+<h4 id="proposed-worker">Proposed Worker</h4>
+<ul>
+<li><a href="http://www.bitshares.foundation/workers/2017-07-peter-conrad">201707-bsip18</a></li>
+<li><a href="https://bitsharestalk.org/index.php/topic,23495.0.html">Soledger - Vikram/Agent86 - Project administration & essential maintenance</a></li>
+<li><a href="https://bitsharestalk.org/index.php/topic,22041.new.html#new">Fund to pay dividend</a></li>
+</ul>
+<h2 id="dex-most-active-markets">DEX: Most Active Markets</h2>
+<p>This section will show the BTS markets within the DEX and seek to highlight the most active markets.
+<img src="http://i.imgur.com/k8l4Ll9.png" alt="" />
+The most active base pair is BTS and the top 3 pairs are BTS, CNY and USD</p>
+<h2 id="smartcoins">Smartcoins</h2>
+<p>This sections seeks to analyse the current supply and market capitalisation of the Bitshares Smartcoins. </p>
+<p>Asset|Supply|Price|Market Cap BTS|Market Cap USD| Supply Change W/W
+---|---|---|---|---|---
+BTS|2,596,722,773|0.12278503|2,596,722,773| $318,838,683.58 | <img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 0.0063%
+BTS Stealth|270,241|0.12278503|270,241| $33,181.55 | <img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 0.52%
+Reserve Pool|1,003,848,929|0.12278503|1,003,848,929| $123,257,620.86 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -0.0162%
+Accumulated fees|7,783|0.12278503|7,783| $955.64 | <img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 123.82%
+BitUSD|4,451,009|8.48|37,744,556| $4,451,009.00 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -27.01%
+BitCNY|71,933,379|1.172|84,305,920| $10,351,504.94 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -13.61%
+BitEUR|102,399|9.67|990,198| $121,581.53 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -10.61%
+BitBTC|79.5|19,976|1,588,092| $194,993.92 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -14.96%
+BitGold|90.4|10,280|929,312| $114,105.60 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -9.62%
+BitSilver|9,728|131.7|1,281,178| $157,309.43 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -6.48%
+Ruble|1,673,671|0.1378|230,632| $28,318.14 | <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -18.44%
+HERO|4,771|1,326|6,326,346| $776,780.58 | <img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 56.94%</p>
+<p><img src="http://i.imgur.com/6KlCweN.png" alt="" /></p>
+<h2 id="committee-members">Committee Members</h2>
+<p>This section will track shareholder approval of committee members</p>
+<p>Account|Votes (M)| Votes Change (M)
+---|---|---
+&nbsp;bitcrab|808.3| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -30.4
+&nbsp;abit|789.6| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -52
+&nbsp;bhuz|761| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -30.5
+&nbsp;clayop|680.7| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -32.8
+&nbsp;xeroc|635.5| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -17.9
+&nbsp;chris4210|630.4| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -7.4
+&nbsp;bunkerchainlabs-com|600| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -13.5
+&nbsp;witness.still|597| <img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 260.9
+&nbsp;openledgerdc|447.5| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -10.5
+&nbsp;harvey-xts|431.9| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -37.7
+&nbsp;ebit|410.3| <img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> -12.4</p>
+<h2 id="active-witnesses">Active Witnesses</h2>
+<p>This section will track top 25 active witnesses and the changes in support</p>
+<p>Rank| Witness| Votes|Missed|Missed W/W
+---|---|---|---|---
+1| in.abit&nbsp;1.6.35|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 865.2|702|391
+2|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> bhuz&nbsp;1.6.17|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 832.7|1559|457
+3|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> fox&nbsp;1.6.16|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 830.2|3343|425
+4|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> wackou&nbsp;1.6.18|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 826.3|1779|494
+5|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> verbaltech2&nbsp;1.6.34|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 826|1664|439
+6|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> witness.yao&nbsp;1.6.71|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 779.6|3536|395
+7|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> xman&nbsp;1.6.64|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 774.8|1591|421
+8| rnglab&nbsp;1.6.45|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 771.9|1817|450
+9| witness.still&nbsp;1.6.69|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 760.9|8912|522
+10| delegate.baozi&nbsp;1.6.37|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 760.1|1430|396
+11| xn-delegate&nbsp;1.6.59|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 735.6|2746|442
+12| xeldal&nbsp;1.6.22|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 668|1867|593
+13| roelandp&nbsp;1.6.74|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 657.3|6|3
+14| openledger-dc&nbsp;1.6.76|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 645.4|500|451
+15| blckchnd&nbsp;1.6.75|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 643.1|581|386
+16| abc123&nbsp;1.6.65|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 588.2|1253|397
+17| sahkan-bitshares&nbsp;1.6.73|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 576.1|779|616
+18|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> delegate-1.lafona&nbsp;1.6.28|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> 565.8|1319|608
+19|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> delegate.freedom&nbsp;1.6.63|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 550.1|4436|822
+20|<img src="https://cdn-payscale.com/images/researchcenter/delta-green.png" alt="" /> elmato&nbsp;1.6.20|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 545.6|4066|390
+21|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> harvey-xts&nbsp;1.6.23|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 544.7|5806|625
+22| mr.agsexplorer&nbsp;1.6.24|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 525.1|4285|659
+23| spartako&nbsp;1.6.15|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 474.4|1608|572
+24| delegate-clayop&nbsp;1.6.27|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 466.4|4841|525
+25| delegate.taolje&nbsp;1.6.38|<img src="https://cdn-payscale.com/images/researchcenter/delta-red.png" alt="" /> 435.8|2228|433</p>
+<h3 id="thanks-for-viewing-">Thanks for viewing :)</h3>
+<p><strong>I value your feedback.</strong>
+Is there something more you would like me to track in these reports? or do you have some information for the next BSoTN report? please let me know in the comments, on steemit.chat, in the 'BitsharesDEX' Telegram group or every Friday in the the BeyondBitcoin Hangouts.</p>
+<p>I hope you enjoyed this report! :)</p>
+<p><a href="https://steemit.com/@steempower"><img src="https://s21.postimg.org/f0b1fpzdz/steem_Follow_My_Blog_200x60_v1_dark_1.png" alt="" /></a>
+<em>Image Credit: @cass</em></p>
+<p><img src="http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png" alt="" /></p>
+<h4 id="new-to-bitshares-need-an-account">New to Bitshares? Need an Account?</h4>
+<p>Please support my efforts by using the banner below to create your account.
+<a href="https://bit.ly/GetBTS"><img src="http://i.imgur.com/bsZQqTc.png" alt="" /></a>
+Best part is at anytime in the future If you decide to buy an LTM (Lifetime membership - which gives you an 80% reduction in fees and other premium features) i will rebate 10% of your membership costs in BTS.</p>
+<ul>
+<li>Just use the banner above to create your account</li>
+<li>Enroll as a Life Time Member</li>
+<li>Leave your username in the comments on the latest BSotN report or join us on BitsharesDEX telegram chat.</li>
+</ul>
+<p><img src="http://xtremefitnessdesigns.com/wp-content/uploads/2016/08/horizontal-rule-2.png" alt="" /></p>
+<h3 id="peerplays-holder-please-consider-supporting-my-peerplays-witness">Peerplays holder? Please consider supporting my Peerplays Witness</h3>
+<p><img src="http://i.imgur.com/cFTcETV.png" alt="" />
+Witness Proposal: <a href="https://steemit.com/peerplays/@steempower/jims-steempowered-witness-proposal-for-the-peerplays-network-and-witness-monitoring-script-with-telegram-notifications">HERE</a></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/hive-blog/this-is-why-people-don-t-trust-ads">← <!-- -->This is why people don&#x27;t trust Ads</a></li><li><a rel="next" href="/hive-blog/miss-delicious-71-murray-s-deli-at-atlantis-the-1950-s-style-new-york-style-restaurant">Miss. Delicious #71 : Murray&#x27;s Deli at Atlantis, the 1950&#x27;s style New York-style restaurant!<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/bitshares-state-of-the-network-11th-july-2017";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

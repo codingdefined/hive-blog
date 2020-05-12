@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\6\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/in-house-photos-of-deo-bottle">In House Photos of Deo Bottle</a></h3><small>October 20, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/QmTVh2yY8cgDbLVAYpsAZhB9wVhSQumvptC9RzqfwZ7BnN" alt="in-house-photos-of-deo-bottle"/><p class="hive-body">A lazy Sunday has got better of me, I wanted to go out today for a trek but did not wake up in time. So done some productive work like cleaning the house, preparing food rather than ordering and then some in-house photography of the Deo bottles. All the photos are taken on my new Canon Lens 24mm, f2.8. Its been a week and I am already loving it. This being my first prime lens, and it was totally worth it. 
+
+![IMG_1983.jpg](https://ipfs.busy.org/ipfs/QmTVh2yY8cgDbLVAYpsAZhB9wVhSQumvptC9RzqfwZ7BnN)
+
+<hr>
+
+![IMG_1979.jpg](https://ipfs.busy.org/ipfs/QmNNCRDrgNQ5nphVi2QfPiceaQMcZJKavEP3rHujUM3wLZ)
+
+<hr>
+
+![IMG_1986.jpg](https://ipfs.busy.org/ipfs/QmV5TT8nje5CCm3k7cFZmf3nLTKDqAPMXZRHj2f9ThVpwW)
+
+<hr>
+
+![IMG_1987.jpg](https://ipfs.busy.org/ipfs/QmYT3rzqvpw7wGvSJ9s1L2uVQ3cH2DUhUeTXCa6Qj6CZjZ)
+
+<hr>
+
+![IMG_1991.jpg](https://ipfs.busy.org/ipfs/QmPpfRdd4uJzxWuxPmDxmtyKYsSSRvprtPCR9PQ8PGURun)
+
+<hr>
+
+![IMG_1996.jpg](https://ipfs.busy.org/ipfs/QmRvTxzRCRF43MzEsieS7jZz1gEVhfe2wuKJxCom7ssjdB)
+
+<hr>
+
+![IMG_1998.jpg](https://ipfs.busy.org/ipfs/QmVtCkQdXR6DkErakhqkJNSwiwARrHL4efNzmCvU7TMCSB)
+
+<hr>
+
+
+
+
+</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/paper-books-replacement">Paper Books replacement</a></h3><small>October 16, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/QmPT3yU7DQkBiysmGXQN9GUFhwcuudSTgJSY6bPdEyC4Gz" alt="paper-books-replacement"/><p class="hive-body">I will not say myself old but as a 30-year old I have seen a lot of changes happened to like the technology advancement, you know longer have to wait for movies to watch at the television which you can just download it from torrent, everything you need is just at your fingertip using your smartphone, get updates real-time across the world. 
+
+Now why am I saying this because in our time we used to do it, I remember we as a family watch movies on Fridays and Saturdays and we wait the whole week to see which new movie is getting telecasted. I remember going through the channel list in the newspaper to know the timings of my favorite cartoons. I remember we hardly go out to a fancy restaurant if we need something to eat we usually prepare at home. I remember we wait for our turn to read the newspaper being in a big family.
+
+Now with the technology advancement as well as everything online, we hardly do anything outside of it. Just to give you an example, I wanted to read a book called "**Stay Hungry Stay Foolish**" written by Rashmi Bansal which is about the stories of 25 marketing graduates who left their job to pursue entrepreneurship. I was actually searching for this book for quite some time (I know, I know, I can get it on Amazon.in but who will pay that much delivery charge for a single book), but could not find it offline. 
+
+<center>![image.png](https://ipfs.busy.org/ipfs/QmPT3yU7DQkBiysmGXQN9GUFhwcuudSTgJSY6bPdEyC4Gz)</center>
+<center>PC: https:booksforthewise.com</center>
+
+My friend suggested to read an Audio version of it or try reading it as an ebook. I tried both but to be honest reading a paper book has its own advantage. I am not a big fan of reading books online or listening to it. I could not get a feel, might be an older version of me has a greater role in it. But whatever it is, I don't think that Audio version of a book or a kindle book can ever replace a paper copy of a book. If I am reading a story, I can still consider Audiobooks as it can prove a good bedtime time pass but reading something to gain the knowledge I cannot imagine listening to Audiobooks.
+
+What do you think?
+
+</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/aren-t-we-too-tied-with-technology">Aren&#x27;t we too tied with Technology</a></h3><small>October 14, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/Qmb26piJfN7naewEsboq5g2xX8qYxa1ZfydSSf8yJNiNqA" alt="aren-t-we-too-tied-with-technology"/><p class="hive-body">Computers and Smartphones have made our life super easy, now we do not have to take notes, remember contacts or remember anything for that matter because Google is there. They are making our life super easy, so-called hundreds of Apps help us do so many things with a single click. We can contact and get an answer from any part of the world or help anyone even if we have not met that person.
+
+For me the best part is Google Maps, I can take my motorbike and go to many places without having to worry about the path because hey Google has an outstanding map. Now in previous days, we used to remember each and every path we used to take so that we will not forget the route while coming back but that is not the case anymore because we have google to remember it for us. 
+
+Now because of this great technology advancement, our life became a hell lot easier, we do not have to ask for routes anymore, we do not have to remember/write down contacts, taking notes became easier, easier to find places, etc. But along with that, there are a lot of disadvantages too, like now the human face to face interaction became nil, too many online frauds, a lot of time is getting wasted online by so-called social sites, etc.
+
+Now the question is aren't we too tied with Technology. On Saturday, I went to a meetup which is around 20 km from my place, even though I know the route I still have started Google Maps. Now suddenly Google Maps started behaving weird and giving all sorts of the wrong direction. Mind it, I had good internet connectivity on phone and I had used Google Maps in the past too.
+
+<center>![image.png](https://ipfs.busy.org/ipfs/Qmb26piJfN7naewEsboq5g2xX8qYxa1ZfydSSf8yJNiNqA)</center>
+
+
+See in the above photo, the circle is where I am because since I know that route I have taken it. But egoistic Google Maps is still showing its old map. Now as a newbie who might not know the route can be easily lost because of this. Though it happened with me couple of times. So now what I usually do, is just confirm with someone that am I going in a correct path or not.
+
+Now you might be asking how come, looking at the Google Maps will make us tied to technology, then think about people going out some 10 years back. They did not had Google Maps as such still they used to reach their destination. In my opinion, what I feel is that we should not fully rely on the technology information provided by these apps fully.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/costly-dental-clinic">Costly Dental Clinic</a></h3><small>October 11, 2019</small></header><section><img class="img-body" srcSet="https://img.esteem.ws/61yk79svw8.jpg" alt="costly-dental-clinic"/><p class="hive-body">In India it's very unusual, mostly as far as I know, that you charge too much for your dental problems or I might not know the reality. But whatever I came to my senses or say that I came to know that your dental problems can be costly.
+
+So, I was suffering from bleeding gums. It was not happening regularly but whenever my brush completes the 2 months mark, my gums bleed. I always try to change my brush every 3 months. Bleeding gums being a common problem happens for a lot of reason.
+
+So to know the reason and the remedy I visited the dental hospital. The clinic was really great means the interior. I was actually amazed to see the interiors as well as how well maintained it was.
+
+![61yk79svw8.jpg](https://img.esteem.ws/61yk79svw8.jpg)
+
+<hr />
+
+![vem9s354yg.jpg](https://img.esteem.ws/vem9s354yg.jpg)
+
+The doctor suggested me to with gum therapy and that will cost me around $150/ Rs 10000. So that was costly for me, I thought it would be something around 30$ / Rs 2000 but I was wrong, bangalore is really costly. So I dropped the plan to get for gum therapy in Bangalore, and will go for the therapy in Kolkata which is somewhat less costlier than Bangalore.
+
+ </p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/hacktoberfest-have-you-signed-up">Hacktoberfest - Have you signed up?</a></h3><small>October 10, 2019</small></header><section><img class="img-body" srcSet="https://cdn.steemitimages.com/DQmVqaaDiyHDr97MHoUMBTMZhxmpQPYV4hHhsWfV4VQq9nj/image.png" alt="hacktoberfest-have-you-signed-up"/><p class="hive-body">Hacktoberfest happening in the month of October is a  celebration where it encourages people to work on open-source projects run by DigitalOcean in partnership with DEV.
+
+According to their [website]( https://hacktoberfest.digitalocean.com/)
+
+>Hacktoberfest is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or the company of any size, you can help drive the growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
+
+The rules are simple, you just need to create 4 PRs (Pull Request) in any of the open-source repo and thus you are entitled to receive limited edition Hacktoberfest t-shirt. Do note that only the first 50,000 participants who successfully complete the challenge will get a t-shirt.
+
+Once you complete 4 PRs, you need to wait for another 7 days for the review period. Once the review period is over you will be officially complete the challenge to get a t-shirt and swag.
+
+![](https://cdn.steemitimages.com/DQmVqaaDiyHDr97MHoUMBTMZhxmpQPYV4hHhsWfV4VQq9nj/image.png)
+
+Many companies joined the celebration by rewarding their contributors with even more swag which can be viewed [here](https://github.com/benbarth/hacktoberfest-swag/blob/master/README.md).
+
+Now the question arises why you should contribute, it's not only for the t-shirt you will earn. We use a lot of open-source software in our daily life (steem being one), by contributing we are just giving back to the community. 
+
+If you want to start and looking for a project, do let me know. I will help you find a project.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/a-day-trip-to-shravanabelagola">A Day trip to Shravanabelagola</a></h3><small>October 08, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/QmQxRZPkyjdggw5SfnfUFXcVLeuZ7zXMD2BL1kgfZ2snpT" alt="a-day-trip-to-shravanabelagola"/><p class="hive-body">Shravanabelagola is one of the many day trips and the Gomateshwara statues situated here it is one of the pilgrimage destinations for Jainism. It is a small town of Hassan District located at a distance of around 150 km from Bangalore. The main attractions in Sharavanabelagola are two small hills namely Chandragiri and Vindyagiri. Vindyagiri is where the famous Gomateshwara statue is present.
+
+We have started our journey from Bangalore around 6:00 AM in the morning and have taken SUR HASAN EXP (11311) to reach Shravanabelagola from Bangalore. As I have mentioned earlier train being the cheapest mode of travel, we usually take train and avoid getting our vehicle. The train started at 6:40 AM and we reached Shravanabelagola at 10:00 AM in the morning. From the station, we have taken Tuk-Tuk which took us to Vindyagiri Hill.
+
+<hr>
+
+![IMG_1912_01.jpg](https://ipfs.busy.org/ipfs/QmQxRZPkyjdggw5SfnfUFXcVLeuZ7zXMD2BL1kgfZ2snpT)
+
+<hr>
+
+![IMG_1911.jpg](https://ipfs.busy.org/ipfs/QmQS5AQHkRNPVrz3YowHyUrQHxZWxUjVoJp3PiY7PoroeT)
+
+<hr>
+
+You need to climb around 600 odd steps and thus in summer it is recommended to wear socks as they don't allow you to wear your shoes. Since it is a steep climb we need to be extra cautious, though there are railings installed which will make it easier to climb.
+
+<hr>
+
+![IMG_1812.jpg](https://ipfs.busy.org/ipfs/QmTYc9A4vAsPvJKSZZT7yXacY1yRvh1Zqq19fKsu5Pka1P)
+
+<hr>
+
+You will love the surrounding view from the halfway of the hill, especially the view of pond and Chandragiri hills. Few glimpses of the view :
+
+<hr>
+
+![IMG_1819.jpg](https://ipfs.busy.org/ipfs/QmQgoZVsCdr2NHawtjQZ9eEV8BWq4D3wJntGeTgiLkNWZC)
+
+<hr>
+
+![IMG_1910.jpg](https://ipfs.busy.org/ipfs/QmZJqWbaxtS1YCCxvr6ubyJRFDAzt9wqFMY6pdJpLjhk3r)
+
+<hr>
+
+![IMG_1909.jpg](https://ipfs.busy.org/ipfs/QmW9wwSbeX8WfEqtpF8DnV2G4PQSsfyXMzPDQ1PtYEVTn6)
+
+<hr>
+
+![IMG_1877.jpg](https://ipfs.busy.org/ipfs/QmVZMmzbycMJts3613eFKpQQaJefxc42JfbydjgNjwuAPC)
+
+<hr>
+
+![IMG_1826.jpg](https://ipfs.busy.org/ipfs/QmPqTgRWSFLaGBKdmqyTssk3KFQpxjVwQSsS4Km7tF1QQJ)
+
+<hr>
+
+After climbing around 400 steps we saw the first temple, it was dark inside so could not get the shot from inside though
+
+<hr>
+
+![IMG_1820.jpg](https://ipfs.busy.org/ipfs/QmQGLMQsNDWcZzXaNHLbLESHWhgtbmB5ttop54tnBDp1PN)
+
+<hr>
+
+We reached the top in like 45 minutes. We at first taken a walk around the temple before going inside the temple
+
+<hr>
+
+![IMG_1881.jpg](https://ipfs.busy.org/ipfs/QmX1sYYsbqtkWq3JMzLAjcckGLrGmPPgPfiF2jTii8WmVu)
+
+<hr>
+
+![IMG_1879_01.jpg](https://ipfs.busy.org/ipfs/QmdGrtaxrDMYdkytqRWvt7RqMySGtm1S9JYo2VYXM1joeq)
+
+<hr>
+
+Gomateswara statue being 58 feet is the largest monolithic statue in the world. 
+
+<hr>
+
+![IMG_1854.jpg](https://ipfs.busy.org/ipfs/QmXsxrnU4UMLNkmLydTaaY1VHk7Yz3hzqmVjEyYYUg32CC)
+
+<hr>
+
+![IMG_1852.jpg](https://ipfs.busy.org/ipfs/QmRpbtEAfWAcfqtGv4Hb9zxexetdFa2BvYCHU6SrkhX8Qw)
+
+<hr>
+
+Along with the main statue, we also saw a few more beautiful sculptures depicting ancient beauty.
+
+<hr>
+
+![IMG_1869.jpg](https://ipfs.busy.org/ipfs/QmVkSf82eCKZZUEAswdEf6ZZV1kddnyxcsEPvXDvTaaEEg)
+
+<hr>
+
+![IMG_1848.jpg](https://ipfs.busy.org/ipfs/QmdnBEqryNVsurfHsnZ4rdMq7ZDZhAVyzs8hSb4Aq4gs69)
+
+<hr>
+
+We sat there for around 30 minutes and then we started to climb down. Since it was 1:30 PM we went to a nearby restaurant and had our lunch. After having lunch, we have started for Chandragiri Hill. Chandragiri hill does not get too much of a visitor because either people are not aware of it or they simply decide to skip it, but if you are in Sharavanabelagola it is worth to visit the hill. It has fewer steps than Vindyagiri, and we just have to climb around 270 steps to reach the top of the hill. Climbing the hill is relatively easy than Vindyagiri because it does not have steep stairs.
+
+If you have to do photoshoot I would highly recommend this hill, it has everything which you need to cozy photoshoot.
+
+<hr>
+
+![IMG_1935.jpg](https://ipfs.busy.org/ipfs/QmUTg2Ck3GXizpU9J4Tz6Z359t5q2rFEuho75aNxXhprkb)
+
+<hr>
+
+![IMG_1936.jpg](https://ipfs.busy.org/ipfs/Qmbpuut1yPqc9yqj3tPcrU2iKX2bef2YkCxsY1S12tYWVz)
+
+<hr>
+
+Out of the 106 memorials in Sharavanabelagola, 92 are located in Chandragiri hill. Photos from inside the temple complex :
+
+<hr>
+
+![IMG_1937.jpg](https://ipfs.busy.org/ipfs/QmWmYa4Smps2Q2CzmWVzMqzBPASkjzNSNcN5zPADHbqusa)
+
+<hr>
+
+![IMG_1938.jpg](https://ipfs.busy.org/ipfs/QmS6wWaJ5KKXixLwZNsAMoqa7JfVETsckvLj2QT9TAGVys)
+
+<hr>
+
+![IMG_1941.jpg](https://ipfs.busy.org/ipfs/QmU4sPQa6HuNuGVMgDqNgrPYUgHDChwKwDhkUMcay41BB1)
+
+<hr>
+
+![IMG_1943.jpg](https://ipfs.busy.org/ipfs/QmYTCwfGq1MyfPdqMUaFess95AMLP8NXyawhvxgGdBeW54)
+
+<hr>
+
+![IMG_1944.jpg](https://ipfs.busy.org/ipfs/QmTTe7giZt7GZw1hbEnjkPfUxL7JpNjn8owoj2ECrqCUa5)
+
+<hr>
+
+![IMG_1946.jpg](https://ipfs.busy.org/ipfs/QmcKBBKRskPSVmrw2zqc8FJPxEstsHEz7GFKAZQxBAQAps)
+
+<hr>
+
+![IMG_1947.jpg](https://ipfs.busy.org/ipfs/QmaZWyPqvnPJkfm25zCZEZNyxnriYVjPRqm3swG1FKLymw)
+
+<hr>
+
+![IMG_1948.jpg](https://ipfs.busy.org/ipfs/QmNVEKJwNU5WjKrva7quPoaftqt2Rakm7rG2ykdRWkgX96)
+
+<hr>
+
+![IMG_1950.jpg](https://ipfs.busy.org/ipfs/QmRtqczNb59g4KUY1eiJgx6ywS4UrTKTMWeEiAtuUpwse7)
+
+<hr>
+
+![IMG_1961.jpg](https://ipfs.busy.org/ipfs/QmaK5D4stFn6UaM8QgtS8a9HRk5wLqRJBRQzHXwiuMbtJf)
+
+<hr>
+
+![IMG_1964.jpg](https://ipfs.busy.org/ipfs/QmXFie6Bm9Hnf1YaZenqMvtVf3cdbuTUAUoHHc7M2u5Eyg)
+
+<hr>
+
+Again after staying there for 30 minutes we decided to climb down. From there we have again taken a tuk-tuk to reach the railway station. Our train SOLAPUR EXP(11312) was at 4:45 PM and thus we need to wait for around 30 minutes on the railway station. By looking at the railway station I must say, it is one of the cleanest railway stations, it might be because of a few people visiting it. Our train was on time and we reached Bangalore by 8 PM. 
+
+Though the trip was tiring as we have to climb two hills, but it was worth it. 
+</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/being-absent-minded">Being Absent Minded</a></h3><small>October 06, 2019</small></header><section><img class="img-body" srcSet="https://img.esteem.ws/is6paqnaun.jpg" alt="being-absent-minded"/><p class="hive-body">What everyone says is that being absent minded is form of a disease but I don't think so. Whenever you search for absent mindness on Google you get tons of articles claiming that you have this or that but that's not correct.
+
+![is6paqnaun.jpg](https://img.esteem.ws/is6paqnaun.jpg)
+
+PC: iStockPhoto
+
+So the question I would like to ask today is that are you absent minded?, Means you often forget where you have kept your bike keys or your phone or you constantly think that you have closed your door or not.
+
+If you do any of the above things I would say that you are extra cautious or you are absent minded. It's not a disease though and you can overcome it very well. Just that you need to be more attentive and be less absent minded. 
+
+Though people try to think that being absent minded is forgetfulness but that is not the case always, it can also be a case that you might be preoccupied with something and you became less attentive at that moment. That simply means you are distracted with external thoughts which might have caused you to become absent minded. It can be also because of tiredness and exhaustion after a day’s work or if you are in a hurry in the morning. It's not that people are absent minded all the times, you can be absent minded in certain situations.
+
+If I take my example I always think while riding that if I have closed the door or not in the morning before going to office. This is because I am always in a hurry in the morning and have not fully focus at that very moment. Also today instead of booking a ticket for 10th Jan, I have booked a ticket on 17th Jan by being absent minded. Now if I have to give excuse I would say that I have to book around 4-5 tickets and because if that I lacked focus. 
+
+Now you can't give excuse everyone because that will cost you money. I have lost around 10$ just by booking the ticket on the wrong date by being absent minded. Later I was thinking what was going on my mind, how can I lose focus as I always remain extra cautions while dealing with money. Though there are numerous reason, but today we will see how we can be extra focus while doing things so that we can become less absent minded.
+
+Few things which I have to follow, you can also follow if you are also absent minded just like me.
+
+1. Be attentive - While our mind is always think of one or the other thing but of we are doing something which needs our focus then we need to be more attentive at that very moment.
+
+2. Avoiding multitasking - This happened to me since I was busy playing with my kid and booking ticket I lost focus and thus done a mistake. So if you can you should do one thing at a time and then do other things.
+
+3. Have a sound sleep - If you don't sleep well at night, there is high chance that you will lose focus.
+
+4. Avoid being worry at all times because that will not free up your mind to do focus one other things, thus if you are doing something try to thing about that only.
+
+5. Last but not the least try to write down every important things you would like to do in a day so that you will not forget those and will finish it on time.
+
+Are you absent minded?
+</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/my-2-day-budget-trip-to-mysore-from-bangalore">My 2-Day Budget Trip to Mysore from Bangalore</a></h3><small>October 03, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/QmeKPiVCzZUkH6iPu4VEZYAfQEwhosmHPgDBGdg7h9Nbkj" alt="my-2-day-budget-trip-to-mysore-from-bangalore"/><p class="hive-body">Though Mysore is just 150 KMs away from Bangalore but it can become expensive if you are travelling with a toddler. There are quite a number of buses operate between Mysore and Bangalore which will charge you around 600 INR / 7$ for a one day trip to Mysore. But the problem with this type of trip operators is that they will give you limited time to explore the places and also they will take you to predefined places. 
+
+Though if you are a budget traveller you can actually use these types of buses to visit important places in Mysore, but if you are travelling with a toddler it's better to keep some time in hand and explore the places at your own pace. This is what I have done. To keep my schedule less hectic I have taken a train to and from Bangalore to Mysore which comes 250 INR / 4$ to and fro. Since all the hotels have check-in at 12 PM, I have taken a train at 08:45 AM (MYSURU EXPRESS - 16316) which takes around 2 and a half hours from Bangalore. I have also pre-booked my hotel which came around 650 INR / 10$ since the discount was going on.
+
+I have started around 7:30 AM from my home, boarded the train and reached Mysore at 11:40 AM. You will get a lot of Tuk-Tuk from the railway station which will charge around 30-50 INR / less than 1$ to take you to the city centre. Since my hotel is very near to the Mysore Bus Stand, I paid the tuk-tuk guy around 50 Rs and he dropped me directly to the hotel. While my wife and kid were relaxing at the hotel, I have hired a Scooty from Bounce, which cost me around 500 INR + 200 INR for fuel / 10$, thus I don't have to pay those hefty amounts to tuk-tuk or taxis. 
+
+We have started around 12:15 PM from our hotel and reached [Mysore palace](https://steemit.com/india/@codingdefined/photoristic-travel-to-mysore-palace). It took us close to 2 hours to complete the whole tour. As I have mentioned earlier that tour guys will give you only 1 hour to come back from Mysore Palace. So if you would like to explore, do take your time to view the artistic beauty of Mysore palace.  
+
+![image.png](https://ipfs.busy.org/ipfs/QmeKPiVCzZUkH6iPu4VEZYAfQEwhosmHPgDBGdg7h9Nbkj)
+
+
+At 2:30 PM we had our lunch at the Veg Restaurant and then we went back to our hotel as my kid falls asleep. We again started from the hotel at around 5 PM to visit the Brindavan Gardens, we choose night time because there used to be a water fountain show at night. 
+
+![IMG_1511.jpg](https://ipfs.busy.org/ipfs/QmcfZ4sGSbTaNpYNRgYZJURkEgdCjMa82NP8sEZ3yEp4AL)
+
+![IMG_1528.jpg](https://ipfs.busy.org/ipfs/Qmb2gTv2MMHpPa31qiE9sGRunabgRaUM5BiLNSgkwsykSp)
+
+Not only that you will also to do boating around the lake. Please be informed that Brindavan Gardens also are known as KRSDAM or Krishnarajasagara Dam and very few people know it by Brindavan gardens. Also if you are using Google Map, it will take you to the back gate of Brindavan Gardens which remains closed so you need to ask people about the direction when you are around 2-3 KMs away from the Garden. At around 8 PM we have returned from Brindavan gardens and it took us around 40 minutes to reach Mysore, we had our dinner and we called it a day.
+
+We have started Day 2 thinking where to visit first - Zoo or Chamundi Hills. We have settled it with Zoo because being a Sunday, Zoo might get crowded in the noon. The Zoo opens at 8:30 AM and we reached there by around 9:00 AM.
+
+![IMG_1643.jpg](https://ipfs.busy.org/ipfs/QmYHmZakQpHXtahEKovoso8C12s2UVEnqehpHAQpJNzQea)
+
+You will see a lot of animals and it is one of the best Zoo I have visited, I can say it is much much better than Bannergatta National Park, Bangalore. My Kid enjoyed it and if you have a kid with you this is a must-visit. Also, note that the tour guys will not take you to the Zoo. 
+
+![IMG_1566.jpg](https://ipfs.busy.org/ipfs/QmdXkjRE9kGYt8qSooer8gnKMzB7NzLPS21Q3FcT7ryzzQ)
+
+<hr>
+
+![IMG_1577.jpg](https://ipfs.busy.org/ipfs/QmfQyec5tGTQBx5ayNp3wBQmo2RhumKTSu1zUBumBxvSaC)
+
+<hr>
+
+![IMG_1580.jpg](https://ipfs.busy.org/ipfs/QmPgbqwYejQh7SkburBFs7qVWdbWhGXPY1QHZrmQ5eczHG)
+
+<hr>
+
+![IMG_1591.jpg](https://ipfs.busy.org/ipfs/QmPt1TLU3MkYv1z2PwQSmhnckoyn47Sg6CXdC2YExHyheh)
+
+<hr>
+
+![IMG_1595.jpg](https://ipfs.busy.org/ipfs/QmUrbTe1EuTzCiBfK15RY5M942opqMF4BXx6ZHZDdd7JBL)
+
+<hr>
+
+![IMG_1608.jpg](https://ipfs.busy.org/ipfs/QmPwsBgMg7PqkRh3f3Y3rRseD8FaoL2VsxL8C9wt1H2u8F)
+
+<hr>
+
+![IMG_1633.jpg](https://ipfs.busy.org/ipfs/QmXUkhLNWeYUDQRKjp9CjvpR9X7XTaynSMQHDaqfWHifxb)
+
+<hr>
+
+It took us around 3 hours to visit the whole Zoo and I must say we were tired like hell. We then went to Chamundi hills to visit the Chamundeshwari temple which is located at the top of the Chamundi Hills. Since there were too many people we have taken a ticket to get entry fast, I know its unethical but since we were having less time we need to take this route. You will love the greenery while going to the top of the hill and also you can view the whole of Mysore from the top. After reaching Mysore again we had our lunch, got our luggage and then dropped the vehicle and reached Mysore Railway Station. Our train was at 5 PM from Mysore and reached Bangalore around 8 PM.
+
+So the cost involved are 
+
+1. Travelling to and fro from Bangalore: 250 INR X 2
+2. Tuk-Tuk from Railway Station to Hotel - 50 INR
+3. Hotel - 650 INR
+4. Scooty - 700 INR
+5. Mysore palace Entry - 40 INR X 2
+6. Brindavan Gardens Entry - 15 INR X 2
+7. Mysore Zoo Entry - 60 INR X 2
+8. Chamundi Hills Ticket - 100 INR X 2
+9. Tuk-Tuk from Hotel to Railway Station - 50 INR
+10. Food - 1500 INR
+
+Total - Around 4000 INR or 56 $. You can actually cut your cost more, like on food or Chamundi hills ticket. But for 2 people for 2-day travel to Mysore Rs. 4000 is OK.</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/photoristic-travel-to-mysore-palace">Photoristic Travel to Mysore Palace</a></h3><small>October 01, 2019</small></header><section><img class="img-body" srcSet="https://ipfs.busy.org/ipfs/QmVQvVmz5B3victeWM4A9UgkmBaUmhSxCzEbKTuqyCEEjE" alt="photoristic-travel-to-mysore-palace"/><p class="hive-body">I might have shared a few photos of Mysore palace, but today lets go inside the Mysore Palace and see how beautiful it is from Inside as well as from outside.  So since Mysore Palace is #1 attraction in Mysore,  a lot of people tend to visit it and thus it remains crowded most of the time. If you want to take photos or do photoshoots inside you need to literally wait. 
+
+![IMG_1434_01.jpg](https://ipfs.busy.org/ipfs/QmVQvVmz5B3victeWM4A9UgkmBaUmhSxCzEbKTuqyCEEjE)
+
+It is just 2.5 km from the railway station, so you can reach Mysore palace from Railway Station by Auto, Car or even you can hire a bicycle.  Also, Mysore Palace is the venue for famous Mysore Dasara where you can see a large possession happening at this time of the year.
+
+The architecture of the palace is a mix of Hindu, Muslim and Rajput styles which states that it is built on Unity between all the religions in India. The palace is also surrounded by a large garden thus you will find greenery too if you are planning to do photoshoot out there. The palace is also known as Amba Vilas Palace.
+
+The palace can be reached from Four Arched Gates. The palace is made up of stone granite, pink marble and the main building of the palace is three stories. The general entry of the palace is from the South Gate. 
+
+![IMG_1447.jpg](https://ipfs.busy.org/ipfs/QmaM44g5gVXnGYRJpLFcoZGDSBGNBQghik9SM6YxRwmig2)
+
+This is known as the Kalyana Mantapa or Marriage Hall which is one of the first hall you sill see and I am sure it will surely leave you speechless. 
+
+![IMG_1448.jpg](https://ipfs.busy.org/ipfs/QmPYEFQPVQAWNhj5cbqUMk1cUFJq7fmXU524xiZi4AZnst)
+
+![IMG_1451.jpg](https://ipfs.busy.org/ipfs/QmR6ZNP5bdG2YqRRHCtuujGdPWrFNCcL9rje2tYSSMXNq4)
+
+A Gate, though nothing to talk about it much we were not allowed to go inside of it.
+
+![IMG_1453.jpg](https://ipfs.busy.org/ipfs/QmRZCKGyddmAmKxwnnmrKUjLacwWoMATL2CJ4mgbzAj4on)
+
+This is the area for a commonplace inside the Palace, which we can say a Private Darbaar of the King where he will do a recreational activity.
+
+![IMG_1460.jpg](https://ipfs.busy.org/ipfs/QmfEnCbZ8v6qUKLqsorwM4FgDDQFci6wwbTmfN7jaYtDoz)
+
+Few more photos of Inside and Outside of Mysore Palace. 
+
+![IMG_1465.jpg](https://ipfs.busy.org/ipfs/QmQBm9zgKVmS2Q6fBDzQwEeiuaztxxV7aUpeozgFv4e39d)
+
+![IMG_1470.jpg](https://ipfs.busy.org/ipfs/QmdTcE3SSuuCHeoXhZu2GWNTSFVs7QU69eQQtqqwmVCGzs)
+
+![IMG_1476.jpg](https://ipfs.busy.org/ipfs/QmVTprEecJ1VS79jmt4kcgEnPD1A5h3tWH8wCon4KrkUVA)
+
+![IMG_1485.jpg](https://ipfs.busy.org/ipfs/Qmb3XWeMpeuPdjjDHdgQy4EjkHUNbp2EeDS1Vs5HBcCnue)
+
+![IMG_1489.jpg](https://ipfs.busy.org/ipfs/QmR7pWdPFRVdY7JzeyPD6CDaZeAwRY4HbS2KrPMZL6Bohq)
+
+![IMG_1500_01.jpg](https://ipfs.busy.org/ipfs/Qmcz8o52zyKnAT9MoAeqcGa742LKhnozUF5Vet8teBcpAU)
+</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/do-you-abandon-your-old-dog">Do you abandon your old dog?</a></h3><small>September 28, 2019</small></header><section><img class="img-body" srcSet="https://img.esteem.ws/qpdwcxyrx0.jpg" alt="do-you-abandon-your-old-dog"/><p class="hive-body">In India, we value our relationship too much be it blood relation or heart relation and it's very rare scenario that we abandon any one. But yesterday I got a query from my friend and does arise the question that do you abandon your old dog. 
+
+![qpdwcxyrx0.jpg](https://img.esteem.ws/qpdwcxyrx0.jpg)
+PC: Today Show
+
+Yesterday I had a discussion with my friend who is very frustated with his old dog as he has to take him to doctor every other day. He was thinking of abandoning the dog and asking me if I know any fog shelter. I asked him simple question will he abandon his parents if they gets old. He said no, because they are his blood relation.
+
+Which made me think that does people value relationship only if they have blood relation. I think that heart relation should be valued more than blood relation. And our relation with the dog just like any other heart relation or I think it's better than any other because they are totally dependent on us.
+
+Coincidentally I have seen today morning that an owner taking his old dog for a walk. The dog was not able to walk properly even though the owner patiently walking with him. I could not get a picture otherwise I would have sent it to my friend telling that this is how you should take care of your dog rather than abondoning it. 
+
+Dog are the most loyal pet, they will love you unconditionally and it return they just want a little love. My parents don't like dog so because of that I cannot keep a dog at home but I make sure I feed some dog in the street. I get love from them too and thus I don't have to keep pet at home because they all are my pet.
+
+What's your thought?</p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/5">← Previous Page</a><li style="margin:0">6</li><a rel="next" href="/hive-blog/7">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/6";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

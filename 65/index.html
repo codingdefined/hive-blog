@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\65\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/steem-pocalypse-survival-game-season-4-recap-game-overview-and-new-rules-for-season-5">STEEM-POCALYPSE SURVIVAL GAME SEASON 4 RECAP + GAME OVERVIEW &amp; NEW RULES FOR SEASON 5</a></h3><small>July 10, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/fS6c6wr.jpg" alt="steem-pocalypse-survival-game-season-4-recap-game-overview-and-new-rules-for-season-5"/><p class="hive-body">http://i.imgur.com/fS6c6wr.jpg
+
+## <center>This has been an incredible adventure!</center>
+
+---------
+Creating, running, and improving the STEEM-Pocalypse Survival Game Contest has been amazing. First of all, I think that it gives some users a great reason to check in here on steemit *every* day. But even more than that, it inspires some users to interact in a way that they normally may not, which not only builds new friendships, but the community as well. Often in this game steemians who were previously strangers get thrown together into scenarios where they must work together in order to survive, and they have a lot of fun doing it. Of course the opportunity to win hundreds of dollars worth of SBD also has its own appeal.
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## <center>SEASON 4 RECAP</center>
+
+----------
+Each season has its own special place in my life. For Season 4, it was a great opportunity for the largest participation so far. There is no way that I want to limit or restrict participation, so I will do my best to always keep this contest open to all. Because of that, I am presuming that more and more steemians will participate in each new season, so Season 5 may have *hundreds* of people signing up initially. Since it is an elimination game, most will eventually have to die, but at least whoever wants to join in can at least give themselves the opportunity to win.
+
+In Season 4, I implemented a *solo play* to begin with. Individual steemians had to consistently check in on a daily basis to prove their availability and commitment.  This was to help streamline the gameplay and make sure that people playing were actually going to be playing the game. I know that situations arise where not everyone can be available each day, but to move the gameplay forward I need participants to be committed to check in and make decisions once every 24 hour period.
+
+Another change for Season 4 is that during the beginning solo play, players got the opportunity to collect resources which would come in handy later. Then, when some of them teamed up, they had more to work with. I think that this added an interesting variable to the gameplay and worked well.
+
+https://steemitimages.com/0x0/http://i.imgur.com/YUOX7hw.png
+
+As will potentially happen with more participants, Season 4 lasted the longest of any season so far too. Since the prize pool increases on a daily basis, this meant the largest prize pool so far too! The winner, @jznsamuel, took home 825 SBD out of the total prize pool of 1100 SBD. It is crazy to think that someone could make so much money just by playing a game for a few minutes online each day, but that is the opportunity that the STEEM-Pocalypse Survival Game Contest can offer now because of steemit!
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## <center>GAME OVERVIEW</center>
+
+----------
+
+For those of you who are new to this game or unfamiliar with how it works. here is a simple overview of the general concept to help you understand.
+
+Basically, this game is a "choose your own adventure" style story game. In each round, I come up with different scenarios in which the players must choose an option. Each option has a predetermined outcome, and some will eventually lead to death. As players die, the remaining ones continue playing until the last players die or only one player/team is left alive.
+
+Different variable and scenarios come up each round, some of which are based on reality and are more educational and others are just random scenarios that I come up with. By using their knowledge, researching skills, or maybe just guessing the players attempt to pass each round. Situations like avoiding starvation and staying hydrated are mixed in with various perils and dangerous scenarios. I try to keep it fun, yet challenging.
+
+Each player has the responsibility to reply to each new post within 24 hours with their decision based on the options given. Simply put, if you are capable of accessing your steemit account, reading my latest STEEM-Pocalypse post, and replying with the number of the option that you are choosing, you will be able to play.
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## <center>THOSE RANDOM GEMS</center>
+
+----------
+In each season, there seem to be some players that rise above the rest and make the game much more entertaining to watch and follow. Whether it is former strangers like @bilbop & @clayboyn teaming up and having some excellent team discussions in the comment section of each post or a talented writing like @trevor.george posting his own original story based on the decisions that his team made in the game, this game can get pretty entertaining. 
+
+In the previous two seasons, @gregory-f and @provider managed to team up and this last season they almost won it, but finished in third place after some wild dogs ate them. Their interaction as "**The Dukes of Hazzards**" has been fun to read for these last few seasons.
+
+The star player of last season was @keepdoodling, who replied with a doodle for each round as well as their decision. After losing their original partner, they got a new teammate, @bycz, and finished in second place, each taking home 137.5 SBD. Check out these incredible drawings from last season!
+
+<center>http://i.imgur.com/m7Tfg84.png</center>
+
+They even had some fun with @papa-pepper last season too! In one round, the players had to choose how to proceed after encountering this situation.
+
+https://steemitimages.com/0x0/http://i.imgur.com/s20myoO.jpg
+
+A man was lying on the ground, and the players did not know if he was in need of help or if it was a trap. @Keepdoodling took a guess at what the situation was.
+
+----------
+> ###  I'm pretty sure that I figured out what is going on there. It's obviously that we see how @papa-pepper is having a nice chat with his wild friend about things they are exited about:
+
+<center>https://steemitimages.com/0x0/https://image.ibb.co/douvsv/postgame17.png</center>
+
+---------------
+After my recent post about one of my wild friends, it was a very timely guess as to why I would be lying on the ground like that.
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/http://i.imgur.com/tISa7J9.jpg
+
+
+Their doodles went even further that round with this gem.
+
+-------------
+> ### Of course I wanna help to papa-pepper if he needs it (he needs some shoes I guess), but not sure it's polite to interfere right know. I'll go with any option except shooting at papa-pepper - it would be totally rude :)
+
+<center>https://steemitimages.com/0x0/https://image.ibb.co/dEhVcv/postgame18.png</center>
+
+--------------
+Personally, I thought that was a hilarious and very intelligent set of doodles, and it really impressed me. Of course not everyone has to embellish the gameplay or story-line in any way, simply replying with the number of their choice is all that is required. It is interesting to see how *some* players take things to a whole different level though. It makes it a lot more entertaining to follow the contest. 
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+http://i.imgur.com/eDZh2yV.png
+
+## <center>SEASON 5 RULES</center>
+
+----------
+
+In many ways, Season 5 will run a lot like Season 4. Individual players will have to make it past the beginning days in order to proceed. Players who do not reply within the 24 hour response period for each round will be eliminated. Players who make it past the initial rounds will be provided with opportunities to team up.
+
+I will post the Season 5 Sign-up Post sometime tomorrow. **ONLY PLAYERS WHO SIGN UP BY REPLYING TO THAT POST WILL BE ALLOWED TO PARTICIPATE.** Unlike previous seasons, I will allow for a few days of sign up time instead of only a 24 hour window. This will help allow any interested steemians time to join in. To help make sure that people do not miss it, I will request that anyone who wants to help out wait a day or two and then resteem that sign up post. This will help with visibility.
+
+In the previous seasons, I have done almost all the tracking of player choices and inventory documentation manually. This means that I go through the previous post, check *every* reply, copy the usernames into groups, and then post that information in the comment section. Some days, this takes hours of work for me to finish, especially early on in the season when there are so many players. Again, I do not want to restrict the number of players who can join in, so I am going to put more responsibility on the players this season.
+
+In Season 5, each player with have to keep track of their own inventory, at least at first. If your player finds a pistol with two rounds of ammunition and a firestarter, then your replies should look something like this:
+
+> I choose Option 2 today. I have a pistol with two bullets and a firestarter.
+
+----------
+
+It will be a lot easier for me to be able to focus on running the game if I do not have to keep track of every item that hundreds of players have every choice that they make. Also, when you have the chance to win hundreds of dollars worth of SBD, I do not think that it is too much for me to ask of you. Thank you in advance for your help.
+
+Since individual players will be keeping track of their own moves and inventory, the potential for players to be dishonest will arise. A player who makes a decision that gets them nothing in a round may be tempted to claim that they found a pistol. Please do not lie to me. Each decision will be documented on the blockchain, so you will be found out. Also, I will ban you from participation in any of my contest for a time. I do believe in forgiveness, so I will not permanently ban you, but you will have to sit out for a few seasons. I wish that I did not have to say things like this, but since I am giving more responsibility to the players, I felt that I should cover my bases. Please do not let your greed ruin my generosity. 
+
+***Also, I've teamed up with @liberty-minded to provide something special and new for Season 5. For now it is a secret, but you will all see it soon enough. Stay tuned!***
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+# <center>I'll do the signup post tomorrow! See you then!</center> 
+
+---------
+-------
+#### <center>Until next time…</center>
+## <center>Don’t waste your time online, *invest* it with steemit.com</center>
+
+
+-------------
+https://steemitimages.com/0x0/https://steemitimages.com/DQmWJLBUEQKrsCFYNSpzTSiRPbR8AT45ZpwbjgCX5ucQaDN/image.png
+### <center>[TO TRANSLATE POSTS VIA OPERATION TRANSLATION CLICK HERE](https://steemit.com/translation/@papa-pepper/operation-translation-now-under-construction-what-it-is-and-how-you-can-help)</center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/questions-21---30-1499636180-435761">Questions 21 - 30</a></h3><small>July 10, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmTLPbZ1sdLfnDMYz5P8e58V628yLd3EYQLJEYxHzdwbTg/questions%2021%20-%2030.png" alt="questions-21---30-1499636180-435761"/><p class="hive-body">![questions 21 - 30.png](https://steemitimages.com/DQmTLPbZ1sdLfnDMYz5P8e58V628yLd3EYQLJEYxHzdwbTg/questions%2021%20-%2030.png)
+
+21. Am I really working on raising consciousness or am I just a slave teaching the best ways to stay enslaved to this world online?  I am not sure.
+22. Do we already have eternal life right this moment without the need to do anything or have done anything to earn it?  That feels like the truth to me.
+23. How do we know if we are truly helping and being of service today?  Are upvotes and comments the best way to tell?  How about views?
+24. Is the purpose of life to learn how to love?  Those with Near Death Experiences or NDEs seem to consistently agree on this point.  It feels true to me.
+25. What do I need to do today to love unconditionally in each situation?  Keep writing this post or do something else?
+26. Why do we accomplish so much during the day and then go to bed at night feeling like we did not do enough?  Still trying to work this one out.
+27. When is it time to stop hustling, end fantasy, and enjoy the future which is today that we worked so hard for yesterday?  Am I doing that now or is this just more hustling?  At what point is the bank account big enough to just take a day off and not think about it?
+28. Would anyone still follow me if they saw me picking my nose and eating the booger which I could not even spell without spellcheck?  After our almost two year old daughter had finished picking a booger and was about to eat it, my wife started to explain about how dirty it was and why she should not eat it.  I did not say anything because it seems I am just too lazy to go to the bathroom and try to throw it down the sick and wash my hands.  I mean it was in my nose how dirty can it be?
+29. Is it courageous or disgusting to share intimate body details like above?  Maybe a bit of both?
+30. Why does the idea of posting naked pictures of myself feel so vulnerable when my body is my most beautiful creation which I have been working on for nearly 34 years?  If my friends did it, I probably would too.  The world would probably be a happier place if we all felt comfortable being naked.  That would be a lot of motivation to make a diet one enjoyed and stick to it.  Maybe I should try a nudist colony.
+
+Thank you for reading the next ten questions I have asked in my new series where I share ten questions I think about each day because I hope this helps with feeling connected and raising our collective consciousness to see the big beautiful world we live in!  If you would like me to do more of these, would you please upvote this post because I decide what to keep doing based on what you upvote the most?
+
+Love,
+Jerry Banfield</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/my-private-kitchen-green-healthy-food-small-tofu">My private kitchen - Green healthy food small tofu   我的私人小厨—绿色健康美食小豆腐</a></h3><small>July 10, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmRnk6eXeTcN1GsAQz95zBSu7FA7QrihXuRoLLhmQFLUq7/%E4%B8%A4%E6%A0%B7%E5%8E%9F%E6%96%99.jpg" alt="my-private-kitchen-green-healthy-food-small-tofu"/><p class="hive-body">### When I went to the market yesterday morning, I finally found my favorite radish leaf. I haven’t  seen it for a long time . Why do I  say so? Because now it is a hot summer, the radish has grown up  and this kind of green radish leaves are very rare.  I usually cook it with soybean , that is the best group.  the children born after 80 and 90 may not have eaten this Dongdong, those born after 60, 70 may know this my favorite dish - that is, radish small tofu. As long as I see this dish, I can’t wait to eat it without other dishes . It can make me happy when I am full . it is  really a delicious and nutritious food which I am always eager to eat. So ,you will ask “ on earth , what is it ? how can I do it ? Can you tell me what to do?”  Well,  now let me explain this simple, delicious and nutritious food . It is not only good for the ladies but also for the men . a professor in the US said : “ Men who can eat soybeans can be the trun man”.  Ok , so don’t miss it , see how I can cook this easy but delicious food . 
+
+### Material : radish leaves, soak soy beans (6-12 hours), oil, salt, monosodium glutamate
+
+
+![两样原料.jpg](https://steemitimages.com/DQmRnk6eXeTcN1GsAQz95zBSu7FA7QrihXuRoLLhmQFLUq7/%E4%B8%A4%E6%A0%B7%E5%8E%9F%E6%96%99.jpg)
+
+### Methods: 
+
+### 1. Wash radish leaves, boiled with water short time and pull out . Then put them in the cold water, chopped, spare . 
+
+
+![洗净的萝卜缨.jpg](https://steemitimages.com/DQmb7JwBMnNzJ8mVAE6Rg6X57joR4XBGZUDruJNQJvsVJfh/%E6%B4%97%E5%87%80%E7%9A%84%E8%90%9D%E5%8D%9C%E7%BC%A8.jpg)
+
+
+![料好的萝卜缨.jpg](https://steemitimages.com/DQmRQcF7k9r2yoMc4j9kuEZP94LG7sbJEQJGaxxsFYpCvby/%E6%96%99%E5%A5%BD%E7%9A%84%E8%90%9D%E5%8D%9C%E7%BC%A8.jpg)
+
+
+
+### 2. soak the soybean, crush with crusher
+
+![豆浆机榨.jpg](https://steemitimages.com/DQmYuhkA4EoEzsdf9tw5ds4erywu4KSLGY1Fhfo13uxUuiJ/%E8%B1%86%E6%B5%86%E6%9C%BA%E6%A6%A8.jpg)
+
+
+
+### 3. Fill the pot with soybean oil. less than usual, because the beans themselves are very fragrant.
+
+![炒小豆腐1.jpg](https://steemitimages.com/DQmdqPZ9TchzsemgzMagcKXcxmmk1fvTJmBiBdChRDysNJR/%E7%82%92%E5%B0%8F%E8%B1%86%E8%85%901.jpg)
+
+
+### 4. Chopped green onion ,  fry the secnt,  put crushed soybean.
+
+
+
+![QQ图片20170710120955.jpg](https://steemitimages.com/DQmZ7J1cpGkhdLfQPvrrVMVJxHeuqCRQ9sgcw49bV8DNa1K/QQ%E5%9B%BE%E7%89%8720170710120955.jpg)
+
+
+
+
+![炒.jpg](https://steemitimages.com/DQmf1CgpCdEH6kgyB1cz4jeBNYuJriQ8gZHY6sn61TGns9S/%E7%82%92.jpg)
+
+
+
+### 5. Place chopped radish leaves and stir fry. Fill in the water and cook it with little fire. Because big fire can make it burnt easily . 
+
+### 6. At this time, you must see the pot and pay attention whether it is burnt or not . Cooked in about 10 minutes.
+### 7. Put some salt , monosodium glutamate , taste it whether it is cooked well . Put them in a bowl or a plate . It’s finished . 
+
+
+![小盘.jpg](https://steemitimages.com/DQmP9nKewD7SH5cbL6ZUbHhKpjVHUbiVUjmpjw8nFX2tUSd/%E5%B0%8F%E7%9B%98.jpg)
+
+
+
+![QQ图片20170710121242.jpg](https://steemitimages.com/DQmY1EXcRxt2wFirbCWmjDY22mJSgWBpPaKD9YTnWobyfgm/QQ%E5%9B%BE%E7%89%8720170710121242.jpg)
+
+
+
+### Would you like to try this radish small tofu? Easy to do and easy to eat , especially to those people whose teeth are not good . it is nutritious and healthy . what are you waiting for? In Spring , you can do it with pickpurse, that is called “pickpurse small tofu” . You can also cook it with seaweed , that is seaweed small tofu . but to me , I still prefer pickpurse and radish.
+### Enjoy my post ? do not forget to upvote me! Stay here and leave a message. Welcome !
+
+
+
+
+
+  昨天早上去市场的时候， 终于发现了我好久都没见到的最爱-萝卜缨，哈哈，为啥这么说呢？ 因为现在是炎热的夏天嘛， 小萝卜缨早都没了，即使是这种长大点的绿色的萝卜缨也很少见， 那么我把它跟谁匹配才能发挥它最好的效果呢？ 没错， 那就是黄豆啦。 80后， 90后的孩子们可能没吃过这个东东，60后，70后的哥哥姐妹们也许知道这个我最喜欢的菜- 那就是萝卜缨小豆腐。 我见了这道菜，简直命都可以不要， 而且有了它，我再也不眷顾别的菜品了， 捧着一个碗就可以吃个肚儿圆， 对我来说那真叫一个美味， 更何况又营养丰富呢！说道这，有人可能说了，你扯了半天， 倒底是什么嘛？ 能不能说说咋做的呢？那好吧， 卖了这么大一通的关子， 让我来详解这道简单易学，好吃又营养的最爱吧，尤其是女士哦，那可是美容养颜，富含卵磷脂滴！男士也不要错过哦， 因为有美国教授说过：“真正的男人从吃大豆开始”。 哈哈， 先上个成品图，可能卖相不够， 但是价值肯定是杠杠的！因为都是纯天然，绿色食品哦。
+
+
+  原料： 萝卜缨 泡好的黄豆（6-12小时）油 盐 味精 
+  过程：
+1.	洗好萝卜缨， 用开水过一下，捞出，凉水投凉 ，切碎，备用。 
+2.	泡好的黄豆用粉碎机 粉碎 
+3.	锅里填点豆油，可以比平时做菜少放点， 因为黄豆本身就很香。
+4.	葱花爆锅，炒出香味，放粉碎好的黄豆。
+5.	放入切碎的萝卜缨，翻炒。填水， 小火慢炖。 火大了易糊锅底。 
+6.	这时候也要不停的看有没有糊锅底。大约 10分钟左右熟了。 
+7.	将炒好的小豆腐，放盐， 味素调味，可以出炉了！
+这款萝卜缨小豆腐你是不是可以尝试一下呢？ 做起来简单， 吃起来也省事，不像吃黄豆， 牙口不好的嚼起来费劲， 这个好啊， 基本连蔬菜加饭都有了， 营养又健康， 你还等什么呢？ 春天可以用荠菜做，就是荠菜小豆腐，格外的一种味道。 跟海菜放一起就海菜小豆腐，但个人觉得还是荠菜和萝卜缨好吃。 
+喜欢我的帖子， 别忘了点赞哦！光顾的留个脚印吧， 欢迎留言！</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/an-afternoon-in-chapel-bridge-lucerne-or-switzerland-travel-2">An afternoon in Chapel bridge, Lucerne</a></h3><small>July 10, 2017</small></header><section><img class="img-body" srcSet="https://s1.postimg.org/6rn17ulfz/IMG_9341.jpg" alt="an-afternoon-in-chapel-bridge-lucerne-or-switzerland-travel-2"/><p class="hive-body">Dear Steemians,
+
+
+https://s1.postimg.org/6rn17ulfz/IMG_9341.jpg
+
+**Since many of you have enjoyed the first article from swiss travel series, I am going to share more. If you haven’t read the first article , it’s about  the most beautiful train rides across the country. Scroll down on the feed to read more.**
+
+
+https://s15.postimg.org/b1g1tm40b/Capture.jpg
+
+**We arrived to luzerne from Interlaken , and we just had a day in the city. The accommodation in luzerne was rather expensive, we stayed at the  korean hostel a few minutes bus ride from the city.  Since we did not have a lot of  time to explore the city, we just decided to get a stroll around the famous chapel bridge .**
+
+**Luzern is a German speaking town in central Switzerland and it’s one of the top 10 most beautiful small cities in the world by Buzzfeed. It was okay for us , probably because we loved the Swiss country side more.**
+
+https://s1.postimg.org/is3vuu3gv/IMG_9336.jpg
+It is  is the oldest wooden covered bridge in Europe.
+
+https://s1.postimg.org/n6gykf3f3/IMG_9314.jpg
+
+It is a lovely place, there are some flowers along the bridge. Water has a beautiful shade of turquoise.Very crowded with tourists though.
+ 
+https://s1.postimg.org/rxc8op6vj/Full_Size_Render.jpg
+There are also very beautiful old building along the river 
+
+https://s1.postimg.org/7r8qptb7z/Full_Size_Render_1.jpg
+Me looking super unhappy , but I can assure you I was having a good time despite the weather becoming gloomy and cloudy..
+
+https://s1.postimg.org/wbpbea6tr/IMG_9319.jpg
+
+
+https://s1.postimg.org/jll316yvj/Full_Size_Render_2.jpg
+Zoom up a pretty picture from far away, anyone knows about this building?
+
+***Thank you for reading..Hope you enjoy going through this place , remember to up-vote if you like it and leave a comment of what you think.***
+
+**Follow me @aburmeseabroad**</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/livin-the-steem-how-2-anarchists-defected-from-the-ussa-to-mexico-on-only-usd50-a-hope-and-a-steem">Livin&#x27; The Steem: How 2 Anarchists Defected From the USSA to Mexico On Only $50, A Hope &amp; A Steem</a></h3><small>July 10, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/2oxHoEr.jpg" alt="livin-the-steem-how-2-anarchists-defected-from-the-ussa-to-mexico-on-only-usd50-a-hope-and-a-steem"/><p class="hive-body"><center>http://i.imgur.com/2oxHoEr.jpg</center>
+
+I had the opportunity to interview one of the most popular writers on Steemit this week, @lily-da-vine.
+
+As you'll see, @lily-da-vine is actually both John and Lily.
+
+But, far more interesting than the fortunes they have been making on Steemit is their story.
+
+They fled the US because the government wanted to kidnap them and put them in a cage for 25 years for trying to help sick people by supplying cannabis which cured their issues.
+
+They had only $50 in their pocket and no passports but managed to make it all the way down to <a href="http://anarchapulco.com">Anarchapulco</a> and since have started numerous new businesses and are currently making a fortune writing on Steemit!
+
+The story is incredible and amazing and gives a lot of hope for many out there who don't have much money but want to live a freer, better life.
+
+You can see it here:
+
+<center>https://youtu.be/TwlKePRuwk0</center>
+
+If you aren't already you can follow Lily and John at @lily-da-vine .  And, of course, you can follow me @jeffberwick for more interesting stories like these always posted first to Steemit!
+
+<center>https://img1.steemit.com/0x0/https://www.dollarvigilante.com/wp-content/uploads/2016/08/Jeff-Berwick-The-Dollar-Vigilante-Steemit-Bio-1024x221.jpg</center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/icos-are-so-popular-they-got-a-100-dedicated-magazine-now">ICOs are so popular.. They Got a 100% Dedicated Magazine Now!</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://image.isu.pub/170704210803-a8d172f92273039cda0af86defc5dcac/jpg/page_1.jpg" alt="icos-are-so-popular-they-got-a-100-dedicated-magazine-now"/><p class="hive-body">If we aint in mainstream now then i dont know what mainsteam can be.
+
+Currently in kiosks you can buy magazine dedicated to explain what are ICOs, check interviews with current CEOs and such.
+The ETH craze made it to the media.
+
+For starters - no this is not a joke.. its real.
+
+# Meet ICOCROWD
+
+## Here is the cover.
+https://image.isu.pub/170704210803-a8d172f92273039cda0af86defc5dcac/jpg/page_1.jpg
+
+## Here is the portal.
+http://i.imgur.com/dLU2BiN.jpg
+
+## And a Video
+https://www.youtube.com/watch?v=Mkz9smXDLUk
+
+Not enough?
+
+Im sure you want to read it all ;)
+http://i.imgur.com/0C0DVit.png
+You can and legally - https://issuu.com/icocrowd/docs/ico_crowd_-_issuu
+
+Write in comments what do you think of this idea or what interested you most from reading the magazine.
+
+<table>
+  <tr>
+    <th><h1> Follow, Resteem and VOTE UP <a href="/@kingscrown">@kingscrown</a> creator of <a href="http://fuk.io" rel="noopener">http://fuk.io</a> blog for 0day cryptocurrency news and tips!</h1></th>
+    <th><img src="https://steemitimages.com/0x0/https://media.giphy.com/media/3ohzdPbKlUFVsmGpq0/giphy.gif" /></th>
+  </tr>
+</table></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/2-000-followers-thanks-for-all-the-love-thank-you-also-to-steemit-love-it">2,000 Followers /// Thanks for ALL the LOVE /// Thank you also to STEEMIT !  LOVE IT !!!</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmP9F8GqgFod3nUeTjkUCzQvgas2ph2noS7APj2VD3zQAB/fire%202000.jpg" alt="2-000-followers-thanks-for-all-the-love-thank-you-also-to-steemit-love-it"/><p class="hive-body">My time in Steemit has truly been an adventure.  Thank you to my subscribers for making my 2,000 mark a reality.   I look forward to reading your posts and commenting when I can.  I truly appreciate everyone of you for reading my blog and commenting.  For those that are just beginning Steemit don't give up.  Keep posting and commenting.  You will be very surprised just how fast you begin to level up and grow a real following.  Take care, be inspired, and know that you have a friend here on Steemit.   Cheers. 
+Time to go listen to some music...  I'm thinking some REO Speedwagon.  
+ 
+
+![fire 2000.jpg](https://steemitimages.com/DQmP9F8GqgFod3nUeTjkUCzQvgas2ph2noS7APj2VD3zQAB/fire%202000.jpg)
+(image by Taryn Simon)  I added the 2,000..</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/mypicturesunday-11-g20-summit-no-comment-part-2">MyPictureSunday #11 - G20 Summit (no comment) Part 2</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmZD9BYcJahXPy3GpG1CMh5EhW3G2MBA9w3vdACU7AveDM/DSC_4997.jpg" alt="mypicturesunday-11-g20-summit-no-comment-part-2"/><p class="hive-body"><center>_Dear Steemians, welcome to a special episode of MyPictureSunday_</center>
+
+As some of you already know I was in Hamburg to capture the G20. This post is the second part and shows the day after the first riots. Riots happened again at the second day and I had to leave the area since I was in the middle of the clashes and it was too precarious.  The photographs are uncommented. Make your own conclusions.
+
+_All photographs taken with a Nikon D750 and AF-S NIKKOR 24–85 mm 1:3,5–4,5G ED VR_
+_The winners of the MyPictureDay contest will be announced tomorrow in a separate post_
+
+<center>_A Steemit exclusive photographic documentary. On the blockchain!_</center>
+
+<hr> 
+
+<center>https://steemitimages.com/DQmZD9BYcJahXPy3GpG1CMh5EhW3G2MBA9w3vdACU7AveDM/DSC_4997.jpg</center>
+<center>https://steemitimages.com/DQmSuougvJTGBxEdczjLodJ5yT6q8huTLsVd3U85PgoGURd/DSC_5001.jpg</center>
+<center>https://steemitimages.com/DQmQ3LxyMiWVQE1zxgR7f4ikLTEHqpUvCCKbgnavTHA7NK4/DSC_5009.jpg</center>
+<center>https://steemitimages.com/DQmc3bxinUg3kbNb57Fp8bp2iH3JcLnoXBAzPkWU9XucLBK/DSC_5012.jpg</center>
+<center>https://steemitimages.com/DQmTr7am6qv91StgCRuXc2qvWw7Uja4mR674v9HmtUTVdwx/DSC_5015.jpg</center>
+<center>https://steemitimages.com/DQmUe5UucLNHng9hf55jx5xQqtoqPVVzZ3soK1RDw2fyvwL/DSC_5020.jpg</center>
+<center>https://steemitimages.com/DQmQHrsTzegc2n9d94CXVVRyZjy5KUAfQXqjMZGghe4S5Gs/DSC_5021.jpg</center>
+<center>https://steemitimages.com/DQmcdiBkn8vutb372V5MfVw9Yn4jExB38S6wXpsKfMEK8qw/DSC_5024.jpg</center>
+<center>https://steemitimages.com/DQmfX3MA1dYEZsRNtVM2WLTDae8Yi41EK5thfAsCnwJxGoh/DSC_5029.jpg</center>
+<center>https://steemitimages.com/DQmcSvw6R6VzxKXH4r3VB16HsvunMRo6DrSDAWnMzh2mzBH/DSC_5032.jpg</center>
+<center>https://steemitimages.com/DQmSpEcXao6svZKcUBmFFQUmgTnepQDVc7eYXAFFqcJCPVf/DSC_5033.jpg</center>
+<center>https://steemitimages.com/DQmYztYcKttpPrMtGHPnKpRuyA1dGujQ9FisMgsXoEgMakZ/DSC_5034.jpg</center>
+<center>https://steemitimages.com/DQmSTk8ooFaKs2HSiizAqzxrnyVLXN5tNvA5DbD12uce9sp/DSC_5035.jpg</center>
+<center>https://steemitimages.com/DQmU69WDzLGusrEQ3sgb6b2H4NccGsXNrX6uTgZM26YNc8r/DSC_5037.jpg</center>
+<center>https://steemitimages.com/DQmcHJobNmGN6sQbEWFkETweCK5oVL9v5ufkMpALncPzpwP/DSC_5045.jpg</center>
+<center>https://steemitimages.com/DQmQsqug4CTokN146CPwVALsinRax7oEzHB6Rgd9MmdDGoQ/DSC_5047.jpg</center>
+<center>https://steemitimages.com/DQmb7xsjW15TmZAm9BiB6hEfmdnLnTqcfQMjUkqqbu9rCQY/DSC_5049.jpg</center>
+<center>https://steemitimages.com/DQmeJseZkYCEK2vMGEEpjY7LYW6tnbP6SNhvRx2eVLS4oU2/DSC_5058.jpg</center>
+<center>https://steemitimages.com/DQmWTzycJ7xWRDrCZXcm7A4UJLqu64fJ1SFrVhoDZtRSeXg/DSC_5070.jpg</center>
+<center>https://steemitimages.com/DQmdTg7FQVzTv4Jj9ydEDS6LFXRUYQuopKad6qgTdPLv6Jf/DSC_5109.jpg</center>
+<center>https://steemitimages.com/DQmUrM4WQjF9ZLarbEMPEQ49cFtx1FXC8Mbe9ihqSSySc24/DSC_5116.jpg</center>
+<center>https://steemitimages.com/DQmPUZ1hiuRmmRMhGDVHbxfSFpcUhM19BzBgJjLjKEuzPLF/DSC_5121.jpg</center>
+<center>https://steemitimages.com/DQmcuZadF3JmJeq6UCRJvUrawGoq8E3wjofHDBVJ5Hg7tXJ/DSC_5130.jpg</center>
+<center>https://steemitimages.com/DQmXKbHWGPcxkfKyMsFq3xTDRDH4uCgx5LQRwZXRVwoMpCp/DSC_5140.jpg</center>
+<center>https://steemitimages.com/DQmZccBQ47pbH6v9yeeSWvAAkSonown94vk7qMqME8vZks7/DSC_5162.jpg</center>
+<center>https://steemitimages.com/DQmVStA4pJGqtLyxw5TtYnzVPoCtji6LMnRQUko6V1TTuCE/DSC_5170.jpg</center>
+<center>https://steemitimages.com/DQmY1sxFnrqx816kFcBwaGFFJkvmdArx1DCbiBquurc7zQ9/DSC_5185.jpg</center>
+<center>https://steemitimages.com/DQmekQaiSR65HRS1ZtZ3bxLXpEtiaJG3TJk8zV1ZjiKwT2z/DSC_5191.jpg</center>
+<center>https://steemitimages.com/DQmTeV6fUzGb6NipFCXMnp6ofVJ4P8eWXHfTyZDP6bfs42w/DSC_5200.jpg</center>
+<center>https://steemitimages.com/DQmXdRiBCXYPup8TbC3YQPQVuGrxDcxQpAYerUkUMeB9Geu/DSC_5203.jpg</center>
+<center>https://steemitimages.com/DQmVRLcGna49jGgmy3p6BDPoyEFhaKH94F9DqGa6f6D4wg9/DSC_5210.jpg</center>
+<center>https://steemitimages.com/DQmSsBzG7tmVoNNNmL8qoS1GTBL2dezSWBi3iRs9J27v9bc/DSC_5214.jpg</center>
+<center>https://steemitimages.com/DQmdnDNqYnPfGGTJNmD6QLqqPA1JLhM66CEYuxpnpqnKfDQ/DSC_5223.jpg</center>
+<center>https://steemitimages.com/DQmXY1h1A1N57fmPkv4QMAUCxDDHruFb2LwZhREkd8fUs5t/DSC_5227.jpg</center>
+<center>https://steemitimages.com/DQmRK7PAmvz5Zw83JDGu7RGnvfxyVF87usgbbqKcZk6cMuF/DSC_5234.jpg</center>
+<center>https://steemitimages.com/DQmT17bwfQv8UeDcecNcctDdH4myspb9qW6VevYuFZmk7BP/DSC_5254.jpg</center>
+<center>https://steemitimages.com/DQmaQUvobeBRsjAnjDWyaztb5767NayK7Muk1VMQp4dQjQB/DSC_5278.jpg</center>
+<center>https://steemitimages.com/DQmY5FTEBKy7fkQ7zVG1ZdVQxeunnjbQNofw2qPekKB1wzk/DSC_5299.jpg</center>
+<center>https://steemitimages.com/DQmQr7J4sDo5zrxVmXPEsZs4y44hTYGWw2v4mg27zqZn7x2/DSC_5308.jpg</center>
+<center>https://steemitimages.com/DQmNifQHia5JZEKApkw4As6uTLdWmSA8N6KcVttPnDMDm47/DSC_5315.jpg</center>
+<center>https://steemitimages.com/DQmaLzzrd4oDbkvEAXG5nwDNovqQvcFms7eh4GTVumY3Ysa/DSC_5341.jpg</center>
+<center>https://steemitimages.com/DQmb9ktggZgBmuhHFzjarmSBMQc8Zo3gU3LDQPVBdCUCokb/DSC_5344.jpg</center>
+<center>https://steemitimages.com/DQmYc95JzQGGBqSNW4e3zmFJ9gGDr7C1gGXd5fUcHTWeJLp/DSC_5351.jpg</center>
+<center>https://steemitimages.com/DQmYj7FtopbS2dGMYymNjv7gEJwda8NEGf2CBgwQbogyPRR/DSC_5359.jpg</center>
+<center>https://steemitimages.com/DQmUmc5uyfugcCrdHEmxb9mbwoQDBxRBNfvnwonyGq38JU4/DSC_5368.jpg</center>
+<center>https://steemitimages.com/DQmNbKQxXz5UMSyByV4GHn76rJM5ZZjhV1DxwhSVnpBFq1E/DSC_5376.jpg</center>
+<center>https://steemitimages.com/DQmbpKoUddMRQnUMh1BFSj8yixixS6kwemyhqoVdbSzukw3/DSC_5382.jpg</center>
+<center>https://steemitimages.com/DQmWCYvxZoBpduGGGPDR88DCmCQwtm5ULhy5hBmydTZCSMn/DSC_5386.jpg</center>
+<center>https://steemitimages.com/DQmWi2HTjLWRHKLYcuKVqWejH9F2aGxs3jHhtUykDmXWwf6/DSC_5389.jpg</center>
+<center>https://steemitimages.com/DQmSFA4rsXEUCVVhx4rBq19WMeRaErhsbNmyCGnAj5yQ3Nx/DSC_5403.jpg</center>
+<center>https://steemitimages.com/DQmYp2i9R1qeUd5sMXZFceEFpDJR7biVY4c3GWnzow4UTTV/DSC_5404.jpg</center>
+<center>https://steemitimages.com/DQmPugzsxQVbtBPkhcEFrjNdN5qgorGw8xUKVMzrcMCsdZR/DSC_5409.jpg</center>
+<center>https://steemitimages.com/DQmRLDKjbG8PL8r5UgrdfMyLGNdQMBigKC5vzeEX6SKU4Ud/DSC_5411.jpg</center>
+<center>https://steemitimages.com/DQmfVQB6uNQM1AnYyXQn7Ay9nWTcqgFRwPJymN1W5AJSte5/DSC_5417.jpg</center>
+
+<hr>
+
+_P.s.: Pepper spray hurts_</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/the-tallest-moving-observation-tower-in-the-world">The Tallest Moving Observation Tower in the World / 世界上最高的移动观光塔</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmUoddB1mmuFa4SUjGD8efJzk2tSTwzmNXxoxj2F4Qjz1P/2017-07-08%2015.10.24.jpg" alt="the-tallest-moving-observation-tower-in-the-world"/><p class="hive-body">I have no idea how this happened but the weather is the UK has transformed into a tropical heatwave! Maybe I managed to bring a slice of it back home with me when leaving *Crete*. Who knows? Lol. 
+
+My parents are visiting for a few weeks and they were actually staying home in London while I was on holiday. Now I'm back and welcomed by this "roasting humidity", I thought why not take everyone on a trip to the seaside. The closest one to me being *Brighton* beach! Another reason for visiting there was to check out the *British Airways i360*. 
+
+**The tallest moving observation tower in the world!** 
+
+I am so glad I did as the views of *Brighton* from above were incredible and breath-taking. Clear blue skies with not a cloud in sight, the calm sea water below and picturesque green, rolling hills in the distance. **Awe-inspiring stuff, I tell you!** 
+
+![2017-07-08 15.10.24.jpg](https://steemitimages.com/DQmUoddB1mmuFa4SUjGD8efJzk2tSTwzmNXxoxj2F4Qjz1P/2017-07-08%2015.10.24.jpg)
+
+Located at the end of the West Pier, the *British Airways i360* is a colossal 162 meters tall situated next to the seafront of Brighton. It was designed by architectural company *Marks Barfiedl*, who also created the London Eye. To see it before your very eyes allows you to realise just how much planning and effort must have gone into creating this grand structure.
+
+![2017-07-08 15.13.23.jpg](https://steemitimages.com/DQmUZCVvgY8Ab87A8LRU6JyW2smjhGkPrR7jBFmmRCuVfcZ/2017-07-08%2015.13.23.jpg)
+
+![2017-07-08 15.01.20.jpg](https://steemitimages.com/DQmPzBuCnqhnMTvvcZAJUqoqPqzGzz5GYbTpE27qtgPJkwV/2017-07-08%2015.01.20.jpg)
+
+![2017-07-08 15.01.38.jpg](https://steemitimages.com/DQmSC7uzgwMve25jiF4si1ospM4k44d25PED6rAr7qsLAdr/2017-07-08%2015.01.38.jpg)
+
+![2017-07-08 15.50.27.jpg](https://steemitimages.com/DQmQR9fxLmaSL2ptjK1UTDPukZqok7dj2Zmp7zmJQTFz5WX/2017-07-08%2015.50.27.jpg)
+
+This attraction is a relatively new addition to Brighton's entertainment venues with the tower opened only in August last year. It has regular “flight” times every **30 minutes**. The ticket prices are £16 per adult *(£14.50 if booked online)*. 
+
+The whole operation is run by *British Airways*. The staff were all sporting the official attire of stewards and stewardess's who all displayed their usual helpful and friendly manner. From the entrance onward, you are treated as if boarding a real airliner. I had to go through the routine checking procedures such as bag searches and a full body scan. I suppose is all adds to the authentic experience they were trying to provide us with.
+
+![2017-07-08 15.48.19.jpg](https://steemitimages.com/DQmZsNLYEr9Pb8z6VcdB9danyynXwSXgtMuiA3qhQYxgwn7/2017-07-08%2015.48.19.jpg)
+
+Next up was the “departure lounge”. A small cordoned off section comprising of a ringside view of the tower itself and a few deck chairs facing the seafront for more serene relaxation. 
+
+![2017-07-08 15.23.16.jpg](https://steemitimages.com/DQmRUcF9pK5HQHrJEbVm5YZhyrfhyChx8vRHLNb3jTAJHP7/2017-07-08%2015.23.16.jpg)
+
+Once in the pod, the glass fibre doors shut and we began ascending. The movement was so smooth, it was hardly noticeable at first, lol. Thank god for that as I've always been a little scared of the heights. 
+
+But this was just perfect. :) 
+
+![2017-07-08 15.23.39.jpg](https://steemitimages.com/DQmfPMjbdNVNLBgaaYvsTeC7zF2Rh2nTJHZ2x7vd63t3HZQ/2017-07-08%2015.23.39.jpg)
+
+![2017-07-08 15.54.12.jpg](https://steemitimages.com/DQmRa4EmtMsguRa4NMxc8EFssYBUCiTw4fe24MRSBv8tacQ/2017-07-08%2015.54.12.jpg)
+
+![2017-07-08 15.12.17.jpg](https://steemitimages.com/DQmNw7sbxXsqr76XJ9FZCPE8Jw43cSEYx4Nt8KcxQdzCEaQ/2017-07-08%2015.12.17.jpg)
+
+The viewing area was very impressive indeed, with the pod protecting us all in a strong steel and glass encasing. There was plenty of room to walk around and take in  the **360** degree spectacle showcasing *all* of Brighton. I was told that on the clearest of days, you could see all the way across to the Isle of Wight in the west! I looked out of it but got too distracted with the other unbelievable sights all around me, lol! 
+
+![2017-07-08 15.43.03.jpg](https://steemitimages.com/DQmUU5vax6t6hmzxsat7hH9MuG2YF3oiNBTj6M8YeCrqkyd/2017-07-08%2015.43.03.jpg)
+
+![2017-07-08 15.44.34.jpg](https://steemitimages.com/DQmXwWp2WcR2m6P2EriGdnEVqTeLC3W3zbjeSNb7NN2vxfU/2017-07-08%2015.44.34.jpg)
+
+![2017-07-08 15.43.53.jpg](https://steemitimages.com/DQmWVK1Q8RnxY7y8LEq7Qc9DdV2bgVDTftX1QHJmScDNW4d/2017-07-08%2015.43.53.jpg)
+
+![2017-07-09 01.21.50.jpg](https://steemitimages.com/DQmSKkebUNE883gAQjJq2wrSrWz5w45mhDp8fFrbk8oQkzK/2017-07-09%2001.21.50.jpg)
+
+![2017-07-08 15.41.23.jpg](https://steemitimages.com/DQmPPkdmmj4pbJ26xfskJHCmHPRHZZLiVu53tcXyrDtPAJS/2017-07-08%2015.41.23.jpg)
+
+![2017-07-08 15.40.42.jpg](https://steemitimages.com/DQmdSP6L6N9PqJAwy1VQf6PknL63yYXoL64uz1k2cBBW9tX/2017-07-08%2015.40.42.jpg)
+
+Comfortable seating arrangements were provided around the central core for those who cannot bear to look down, lol. Glad I wasn't one of them and bravery managed to get the best of me. :)
+
+![2017-07-08 15.42.18.jpg](https://steemitimages.com/DQmUEU2mvbuvYDEfY33SQtneoYPJVZanqhax47Z9jAaeKZn/2017-07-08%2015.42.18.jpg)
+
+On board, there was also the *Nyetimber Sky Bar* serving a range of fine drinks for all the passengers. With English “champagne” at £10 a glass, it was a little expensive I feel. But that's the image they were trying to portray. *A life of luxury and freedom, high up in the clouds above.* 
+
+![2017-07-09 01.11.08.jpg](https://steemitimages.com/DQmUPasZeNU18KzCt5mfiQ12Bcq83cVzW2AMyiDzwZ3vrGB/2017-07-09%2001.11.08.jpg)
+
+**I can't express how truly stunning the view from the top was!** I've been to Brighton quite a number of times in the past but never thought I'd ever view it in such glorious detail. The *South Coast* being a particularly beautiful sight! However, as you can see, my photographic shots were somewhat hampered by the reflective glass panelling. 
+
+**I do apologise for that but there didn't seem to be a way round it.** :(
+
+The whole process was ultra slick and expertly delivered. My only mild suggestion would be to say that it could have been more interactive. They did have television screens advertising the different countries *British Airways* travel to in the pod, but I thought it would have been nice to have some featured points of interest so people could look out for them. 
+
+The “flight” was over after twenty-five minutes. The pod came back down *(several minutes duration in each direction)* and the passengers exited via another glass door into a small exhibition centre and souvenir shop. 
+
+The exhibition boosted photographs and historical videos explaining how the *British Airways i360* was built, which I found very interesting. Not only did it take 200 tonnes of reinforced steel bars to make it's solid foundation, but this tower was also assembled in a very innovative way – **from the top down!** 
+
+**What a nice little touch to end with!**
+
+![2017-07-08 15.46.11.jpg](https://steemitimages.com/DQmcoRGJ7yjjiASdUeVUVgL3RGqCy9TZm21tV9KNXXpFyFF/2017-07-08%2015.46.11.jpg)
+
+![2017-07-08 15.48.36.jpg](https://steemitimages.com/DQmd9i9B9No81uSQdkTadiPLvm4GveQFsD4rRyJVzu4UCCD/2017-07-08%2015.48.36.jpg)
+
+![2017-07-08 15.47.59.jpg](https://steemitimages.com/DQmZZYLvqciyBjtVVAvHZTwZSKvoAqZ6cjQbrez1WxmnVJx/2017-07-08%2015.47.59.jpg)
+
+The ride was memorable and the views utterly fantastic and not for the faint of heart. An overall fantastic experience that I would recommend to anyone visiting good old *Brighton* seaside! 
+
+![2017-07-09 01.15.19.jpg](https://steemitimages.com/DQmaXhNKd5WuydmRvT9TAwJvwjnnFqvh1bBfZto6y4xfLj3/2017-07-09%2001.15.19.jpg)
+
+<hr>
+
+这阵子英国的天气异常炎热，或许是我把希腊岛的热天气给带回家了，哈哈。
+
+父母正好来伦敦探望我几周，我决定带他们到海边玩玩。离伦敦最近的海滩就是布莱顿海滩，我们也顺便参观一下这里的新景点“英航i360 ”- 世界上最高的移动观光塔！
+
+事实证明这个决定是正确的，观光塔上的风景美得让人难以置信，头上蓝天白云，脚下平静蔚蓝的海水，密密麻麻的城市建筑，还有远处绵延起伏的山丘，真是风景如画!
+
+英航i360位于布莱顿西码头的末端，距离布莱顿海滨仅有一公里。观光塔高162米，是由建造伦敦眼的同家建筑公司Marks Barfiedl设计的。亲眼看到这么壮观的建筑，我也可以想象得出多少规划和努力才能创造出这么宏伟的结构！
+
+塔楼仅在去年8月才开放，算是布莱顿的一个新景点。每30分钟一次“航班”，成人票价为16英镑（如果在线预订，则为14.50英镑）。
+
+整个观光塔都由英国航空公司运作，包括穿着正式服装的空姐以及他们彬彬有礼的服务态度。从入口开始，我就被视为登上真正客机的乘客，必须通过例行检查程序，包含随身物品搜查及全身扫描。我想这些额外的细节都为大家提供了更真实的乘机体验，也增添了不少乐趣，呵呵。
+
+接下来我进入了“出发休息室”。一个小小的平台，就在观光塔的入口旁边。这儿提供了不少躺椅供大家在静待“航班 ”出发的同时，休闲欣赏海边美景！
+
+进入观光塔后，玻璃门关上，我们就开始缓慢上升了。整个过程还挺顺利，我几乎感觉不到它的移动，真是谢天谢地，因为我还是有点儿畏高的，呵呵。
+
+在塔上观光的确令人印象深刻。观光塔外型有如甜甜圈，整个外壳是由坚硬的钢化玻璃制作，非常安全。塔里面有充足的走动空间，大家可以360度地自由观赏布莱顿的全景，最远的甚至能看到西部的怀特岛呢！
+
+塔中央的位置还为有需要的人提供了舒适的座位。
+
+这里面有一个名叫Nyetimber Sky的酒吧，为乘客提供一系列精致的饮品。英国的香槟酒10英镑一杯，我感觉有点儿贵。这也许是英航试图为大家描绘的他们的品牌形象：高高在上穿梭于云层中，提供豪华自由的生活方式。
+
+我以前来过布莱顿几次，但从未如此清晰细致地俯视它。南海岸的美丽景色，简直是言语都难以表达的美！可是正如你们所见，我拍的不少照片都因为反光玻璃导致部分不清晰，在此抱歉啦！
+
+整个“飞行”过程非常顺利，我唯一的建议是增加互动性。塔上的电视屏幕只是宣传乘坐英航到不同国家旅游，我想如果能在屏幕上展示布莱顿不同方位的景点，提醒初到布莱顿游客注意观看，那就更完美了。
+
+二十五分钟后，整个“飞行”过程结束了，乘客通过另一个玻璃门退出到一个小型展览厅和纪念品商店。
+
+展览厅里的照片和视频，为大家介绍了英航i360观光塔是如何建造的。原来它不仅需要200吨强化钢筋以作为其坚实的基础，而且这座塔也是以非常创新的“自上往下”的方式组装！我对这些额外的信息特别感兴趣。
+
+这次布莱顿英航观光塔一游很令人难忘，犹如梦幻般的飞行体验，风景更是美丽如画！强烈推荐给所有来布莱顿观光的朋友们，呵呵。</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/interview-dan-larimer-a-prescient-retrospective-part-1-of-3">[Interview] Dan Larimer - A Prescient Retrospective - Part 1 of 3</a></h3><small>July 09, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmSF4TfJNt7ky1Y1Ye6GYVJCZdy2DpFkpaXfeibRy1q6HD/larimer-transmission1.jpg" alt="interview-dan-larimer-a-prescient-retrospective-part-1-of-3"/><p class="hive-body">![larimer-transmission1.jpg](https://steemitimages.com/DQmSF4TfJNt7ky1Y1Ye6GYVJCZdy2DpFkpaXfeibRy1q6HD/larimer-transmission1.jpg)
+
+## On April 3rd, 2015, Cryptofresh Pictures had the chance to interview Dan Larimer at the Bitshares headquarters in Blacksburg, Virginia.
+
+`While some of the footage from that interview was included in the original Bitshares Peer To Peer Tour Video, the rest has not been seen, until now.`
+
+---------
+> In a wide-ranging and forward-thinking interview, Dan Larimer gives us some insight into his personal philosophy, as well as his perspectives on the many issues, possibilities, and opportunities confronting those within the cryptocurrency space, and the whole of society.
+-----------------------------------------------
+### In Part 1 - @dantheman answers these questions:
+- `Why now?`
+- `What gives you hope?`
+- `How do cryptocurrencies like Bitshares help solve some of the issues that stem from deregulated financial industries?`
+**-and-**
+- `What do you see as the ideal form of human organization?` 
+
+---------------------
+
+### To many on Steemit, @dan, or @dantheman, needs no [**introduction**](https://steemit.com/introduceyourself/@dantheman/daniel-larimer--co-founder-of-bitshares-steemit).
+
+Dan Larimer is the co-founder, and lead developer of several second generation cryptocurrencies including Bitshares, Steem, and is currently leading the development of the EOS blockchain as CTO of BlockOne.
+
+----------------------
+https://youtu.be/8ZeZnCE9Y3g
+
+
+##### Video Produced By **Cryptofresh Pictures**
+*During the Bitshares Peer To Peer Tour*
+With @lovejoy & @roadscape.
+April 03, 2015
+
+
+
+---------------------
+
+In my estimation, Dan's words are still just as relevant as ever, and amazingly so considering they were recorded over 2 years ago!  Dan Larimer answered all our questions with only a cursory awareness of what we were about to ask him.  I hope you all enjoy the video and hopefully, the interview will spark some interesting discussion here.
+
+Best wishes,
+@lovejoy
+
+--------------------
+
+## Watch Part 2 Here:
+[Dan Larimer - A Prescient Retrospective - Part 2 of 3](https://steemit.com/interview/@lovejoy/interview-dan-larimer-a-prescient-retrospective-part-2-of-3)
+
+----------------------
+
+https://s20.postimg.org/txr1230a5/brando-santacruz3.jpg</p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/64">← Previous Page</a><li style="margin:0">65</li><a rel="next" href="/hive-blog/66">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/65";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

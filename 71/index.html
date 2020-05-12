@@ -1,0 +1,704 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">My Hive Posts | My Hive Posts</title><meta data-react-helmet="true" name="description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:title" content="My Hive Posts"/><meta data-react-helmet="true" property="og:description" content="A blog which shows all my posts on hive"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="My Hive Posts"/><meta data-react-helmet="true" name="twitter:description" content="A blog which shows all my posts on hive"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\71\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/central-market-hall-budapest-myeuropaplog-series">🍞 Central Market Hall Budapest 🍞 布達佩斯中央市場 🍞  #myeuropaplog series  歐洲行旅照片記錄系列</a></h3><small>July 05, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmSCCzP6GUYoQYwJHybeXZwMTY6P89r5Sc4jgtMeshryJa/DSC_1550.JPG" alt="central-market-hall-budapest-myeuropaplog-series"/><p class="hive-body"><html>
+<p>https://steemitimages.com/DQmSCCzP6GUYoQYwJHybeXZwMTY6P89r5Sc4jgtMeshryJa/DSC_1550.JPG</p>
+<p>The <strong>Great Market Hall</strong> or Central Market Hall (Hungarian "Nagyvásárcsarnok") is the largest and oldest indoor market in Budapest, Hungary.<a href=""> </a>&nbsp;The market offers a huge variety of stalls. As tourists, it seems inevitable to pay this place a visit. So we did. But.... probably won't in the future... you will see in a bit. Still, I will recommend you to come here and have a look. Just don't.... :)</p>
+<p>布達佩斯中央市場歷史悠久... 幾乎所有旅遊書都會寫到它。我們原本時間不多，但離飯店近，還是來看看，順便想買買紀念品。雖然，去過之後，結論是以後不再來了(詳後)，但如果你來這裡，我覺得還是可以來看看，只是要注意不要.... :)</p>
+<p>https://steemitimages.com/DQmecf9r48T2PDXy2xNax7JvfqPHmLsxoPwbSq77oUNLJUe/DSC_1548.JPG</p>
+<p>https://steemitimages.com/DQmNzHa6i4jkX2Xks1JQaqzLe5w5rMaNBLoBjcAXErK2LsD/DSC_1523.JPG</p>
+<p>Look around, it is very interesting to see what those stalls are selling... yes, from these stalls you can get some clue about how the lives here are like. I've always love browsing markets.&nbsp;</p>
+<p>四處看看，什麼都有，市場嘛，就是當地人生活的縮影。蔬菜、水果、魚跟肉、起司麵包，辣椒（對！匈牙利到處是紅辣椒，是名產，但不太辣的）與各種用品等... 生意蠻好的....&nbsp;</p>
+<p>https://steemitimages.com/DQmS12reagmydaES7toU6Sh4N5AQ4DESaXGhwginvMQ1iGj/DSC_1540.JPG</p>
+<p>https://steemitimages.com/DQmSxNNyGfBCQcJxQLFNwrRCMGstxAmkg7iPDXgkV9qixvK/1DSC_1521.JPG</p>
+<p>https://steemitimages.com/DQmd5nqv3HtiMCWkXk8umFzYyugsLp4WbiWMghGM6xVPVm3/1DSC_1524.JPG</p>
+<p>https://steemitimages.com/DQmU9UMRWSJB5uR6ihorrrAC1QuSbMmjh1nbjf34zjxeP39/1DSC_1529.JPG</p>
+<p>https://steemitimages.com/DQmdrwgMx5YipT1gxHy7tsUhfwMFQxFY68vkrpsEyga88eH/1DSC_1525.JPG</p>
+<p>https://steemitimages.com/DQmVNNJKQ8KiPmBnLN5vhkqL9ZWbzGfMhwXobJKCTXE188s/1DSC_1522.JPG</p>
+<p>Famous Hungarian Pepper - <strong>Paprika</strong>!! </p>
+<p>這就是匈牙利辣椒專賣店了，紅椒粉 Paprika 是名產，但不太辣的</p>
+<p>https://steemitimages.com/DQmYxxsGdVm3GwR4jjosV5twDBG49LFVBoJ27oLGWpW2SSY/1DSC_1528.JPG</p>
+<p>https://steemitimages.com/DQmZD2qEt17byE1YjQkg7kK23eBv99ALuyV299BKHPLohg3/1DSC_1534.JPG</p>
+<p>https://steemitimages.com/DQmVwtPfkVNiL62jK4G7JT3MS4CytomDqW2EVEW2nuMexZ6/1DSC_1535.JPG</p>
+<p>https://steemitimages.com/DQmYSWPm79jXaNAH5A67RocKGEuZrVMKEWTc5xPtp1DQzFc/1DSC_1530.JPG</p>
+<p>https://steemitimages.com/DQmQVxvZfEnJxViDuJEKd614oczRLF8ar1bUkBnxHHqJFoR/DSC_1531.JPG</p>
+<p>https://steemitimages.com/DQmbMUvA6bUdnikBioZRK94Nxn2bxaPaCJ4APMwWvZGxFpD/DSC_1527.JPG</p>
+<p>Hungarian Wine is famous. It sells not only Tokaji here...&nbsp;</p>
+<p>匈牙利一個超有名的產品就是甜白酒 (Tokaji) ，可以買來送人。但我不太喝甜的酒就是了...</p>
+<p>https://steemitimages.com/DQmexUFnoVkjxDEaARQAkMfL1cyqWeiXSGiGJk5STrj7iw9/1DSC_1537.JPG</p>
+<p>https://steemitimages.com/DQme9z9ohCvRXK9ruggcoc3rrPrU2GBNKA26qmmh3TB6KHq/DSC_1538.JPG</p>
+<p>Some handmade wood utensils. Pretty good. We bought some too! :)&nbsp;</p>
+<p>這些木製品很精緻，價錢也合理。我們也買了一些。</p>
+<p>https://steemitimages.com/DQmU3rY9JBr2rhasPEuUTjgmb2Ka999JxDD6YkBNShkeQwK/DSC_1526.JPG</p>
+<p>https://steemitimages.com/DQmRHVpSxvNE57zcawR33xJxvTeeB2L8spFBfo7GJ9wdssG/DSC_1532.JPG</p>
+<p>It has 2nd floor, selling some souvenirs, clothes and there are also some local food stalls... Let's have a look.&nbsp;</p>
+<p>二樓賣些紀念品、衣服以及當地的小吃店與酒吧等，上樓看看吧！視野很好。</p>
+<p>https://steemitimages.com/DQmXabJ5EMAABMEmqQmZHDKSBdegkU1MpHFgHDvbuY6aoQw/DSC_1541.JPG</p>
+<p>https://steemitimages.com/DQmNSv7EcLAUwvkyrH1hAPnNVJt8ZY3bFsd1nizr4bQ7nLT/DSC_1546.JPG</p>
+<p>https://steemitimages.com/DQmeDgvoDVfy3mMHKKsHjrHQGTx9GDQsVVzRAdtsofWPtPq/DSC_1542.JPG</p>
+<table><tr>
+<td><p>https://steemitimages.com/DQmS5otuo6WoaPRW4C5o758dr5FQcgHvnJcE7G6GMhMX2md/DSC_1547.JPG</p></td>
+<td><p>https://steemitimages.com/DQmSf2fwGkbBk1BZSEmcvrkQ1Hj8JKLLk4GSUmiYk7AarY1/DSC_1536.JPG</p></td>
+</tr></table>
+<p>We had a bite at the 2nd floor and picked a stall that had empty seats and seemed alright serving local cuisines. </p><p>我們在二樓看到不少當地小吃，看得餓了，找了一家看似當地料理的店，剛好也有位置。亂點了一把。</p>
+<p>https://steemitimages.com/DQmNojk2t7wQDGtR3fpu2EbUJPRVJ1E9VD7HqpkkoCN4iMS/DSC_1544.JPG</p>
+<table><tr>
+<td><p>https://steemitimages.com/DQmUn9DYeBrKnmx4v56hh3JbkM9YBdJMgbqoxWpv6b48uHk/DSC_1545.JPG</p></td>
+<td><p>https://steemitimages.com/DQmPG4JoxWXpVvMQzgK6htqhu3twHWun67yW9Ckh7Ejjgcf/DSC_1543.JPG</p></td>
+</tr></table>
+<p>Turns out ... WE GOT RIPPED OFF!! Food was lousy and extremely expensive! Of course there was no prices shown!! As we were eating their food, we looked at the owner and "the gang" walking around smiling like saying "It's not my fault ... you come here means you want to be ripped off!".... Pissed!! This is the worse place in Budapest. Other places are lovely...</p>
+<p>結果... 是個騙觀光客的爛店！忘記花了多少錢了，總之很貴！東西也難吃。布達佩斯其實不是很貴的地方，所以我們一吃那食物品質，以及算清楚花多少錢後，馬上知道被敲竹槓了！很後悔沒去另一家生意爆好但幾乎沒有位子的店。吃著這些東西，看著老闆跟"黨羽們"四處走來走去還帶著笑容，臉上似乎在說"你們來就是想被敲啊，這可不能怪我...哈哈哈~~~~" 氣死我們了！這是布達佩斯最讓我們厭惡的地方，以後不來中央市場了，根本都是騙觀光客的... 其他地方還是很棒的....</p>
+<p>https://steemitimages.com/DQmXanSXc6CiDEckXsMfUheDtVogeF6RhGu14G4wUs5EiaX/DSC_1549.JPG</p>
+<p>https://steemitimages.com/DQmdErf22ah1HqRRFFFf6n2BV2RFtxuzb8rcvkdVMBE8ZnM/DSC_1517.JPG</p>
+<hr><center>
+<p><em>-------- &nbsp;Equipment used - Sony Xperia UA1 Smartphone ----------</em></p>
+<hr>
+<p>https://steemitimages.com/DQmS5cT4bLQFfaFAgrSnjg6hPv2LEp3zsWnN5L82Hbxy4NU/image.png</p>
+<hr>
+<p>Good bye central market! Probably won't see you again!&nbsp;</p>
+<p>再見了中央市場，下次我再來布達佩斯，多半不會來看你了。好好做人啊！</p>
+<hr>
+<h3><strong>You may check #myeuropaplog for previous posts about my European trip. Thanks!</strong></h3>
+</center></html></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/factory-steemit-hits-1097-followers-all-post-sbd-giveaway-wo0ho0">Factory Steemit hits 1097 Followers!! ALL POST SBD Giveaway!! wo0ho0!!</a></h3><small>July 05, 2017</small></header><section><img class="img-body" srcSet="https://s6.postimg.org/611ijlr75/followers.jpg" alt="factory-steemit-hits-1097-followers-all-post-sbd-giveaway-wo0ho0"/><p class="hive-body">https://s6.postimg.org/611ijlr75/followers.jpg
+
+Wow! So i logged in this morning and was checking my posts, replying to everyone here and then it hit me!! 1097 Followers!! Holy Moly! 
+
+The support from every single one of you guys has been amazing. When i started this project my main aim was to promote steemit and share my passions with the people here. i have been blown away by the amount of support and also the amount of people telling me that they are now getting into motocross just because of my posts, that's amazing!
+
+So far in my time here i have sponsored other people, given away shirts i have had designed, sponsored the ENTIRE team of kids and adults at my local motocross club (36 riders and kits!) and also run some competitions where i designed, printed and sent out custom shirts. I did this all because of your support! :)
+
+[Custom #factorysteemit Shirts](https://steemit.com/motocross/@b0y2k/steemit-factory-racing-custom-shirts-have-arrived)
+[Sponsoring team kit for my local club](https://steemit.com/motocross/@b0y2k/factory-steemit-pics-from-the-compass-cup)
+[Sponsoring Team rider Brad Clements](https://steemit.com/supercross/@b0y2k/factory-steemit-round-6-iden-adult-a-mx1-photos)
+[Sponsoring Ssekulji Rally car](https://steemit.com/factorysteemit/@b0y2k/factory-steemit-sponsor-ssekulji-for-his-rally-season)
+
+I cannot thank you all enough for backing me with your votes and confidence, you have all allowed me to follow some of my dreams and i continue to do so everyday.
+
+So to say a little thank you i wish to run a little fun giveaway which hopefully will make a big impact with some of my followers. What better way than a nice Steem dollar giveaway :)
+
+All comments on this post by the end of the 7 day posting period  will be entered into the competition and all the SBD will be split amongst the three winning people.
+
+# I will split the coins as follows:
+ | Place | Prize |
+ | ---- | ---- |
+ | 1st | 60% |
+ | 2nd | 25% |
+ | 3rd | 15% |
+
+I will use randompicker to generate the results and they will be public and 100% fair.
+https://www.randompicker.com/
+
+The winners can power up, buy themselves something nice or just go out and have a good time :)
+
+Thank you again #steemit for all your support! Love you all and good luck!
+
+----------------------------------
+# Follow me for #factorysteemit and motocross news!
+![https://steemit.com/@b0y2k](https://s6.postimg.org/ah5zitomp/steemit-sponsor.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/miss-delicious-68-poseidon-s-table-a-restaurant-worthy-of-gods">Miss. Delicious #68 : Poseidon&#x27;s Table - A restaurant worthy of Gods!</a></h3><small>July 05, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmWAwH9LhV7ZbpHUqjoi4Ef1PxZefGFpHheWcSaxrpja4x/IMG_9772.jpg" alt="miss-delicious-68-poseidon-s-table-a-restaurant-worthy-of-gods"/><p class="hive-body">## Dear Steemit friends :
+
+![IMG_9772.jpg](https://steemitimages.com/DQmWAwH9LhV7ZbpHUqjoi4Ef1PxZefGFpHheWcSaxrpja4x/IMG_9772.jpg)
+
+The Atlantis resort in Bahamas has surely drawn the attention of many travellers who seek their own answers to the mystery of the ancient lost city. After thousands of years submerged under the sea, curious explorers now have the chance to make their own pilgrimage to this Utopian relic.
+
+Our adventures thus far have taken us to [The Dig](https://steemit.com/travel/@sweetsssj/travel-with-me-70-the-dig-at-the-lost-city-of-atlantis) where partial ruins of the ancient city have now become the permanent home of a thriving marine ecosystem, buzzing with life.  
+
+Since the 19th  century, historians have renewed their interest in origins of Atlantis, looking for clues as to where the advanced kingdom sank in just one day and one night. Whispers of the Greek island, Santorini remain a subtle yet plausible theory.  My own adventures exploring [Santorini and it's magical sea](https://steemit.com/life/@sweetsssj/kissing-santorini-s-magical-blue-sea) served only as a cathartic  temporary release of my curiosity, ultimately leading my travels to Bahamas for further affirmation. 
+
+The [Big Chair](https://steemit.com/travel/@sweetsssj/travel-with-me-73-a-look-at-the-atlantis-casino-from-a-non-gambler) belonging to Poseidon, gave us a glimpse to where the mighty Olympian once sat as he ruled his Kingdom. Though indeed a God, Poseidon and the other Olympians walked among the realm of the mortals, ruling undetected as they presided over their areas of control.
+
+<center>
+![poseidon.png](https://steemitimages.com/DQmUMHjq7YUNVpEK5g58cHikBcJuZoGBa32xyCe4fw7t5SG/poseidon.png)
+</center>
+
+
+
+<div class=pull-right>
+http://www.poseidonspantry.com/wp-content/uploads/2015/05/poseidon-blank-worn1.png
+</div>
+
+### Poseidon 
+
+***Poseidon*** was of course, the Greek god of the sea. After defeating the Titans, the world was divided into three. Poseidon drew the Sea straw and hence forth became the protector of all waters as well as all those who depended on them for safe passage.
+
+He wields a three-pronged spear also called a ***Trident*** allowing him to strike the ground producing an earthquake. For this reason, Poseidon was also known as ***"The Earth Shaker"***.  
+
+Known for being arrogant, moody, and always flaunting his masculinity, Poseidon no doubt commanded a God worthy appetite. 
+
+My expeditions as ***Miss. Delicious*** takes us deep into his place of banquet.  ***Poseidon's Table***, a place that delivers both the quantity and quality of food, only worthy of a powerful deity. Dining here is a privilege, one bestowed upon us by right of abode in the heart of Atlantis. 
+
+What food, fit for a God and his Godly appetite can we expect? 
+
+Join me in the feast and let's find out!
+
+<hr>
+
+
+http://image.ibb.co/c5mOfF/DSC00219.jpg
+
+Just a minutes walk away from Poseidon's Big Chair. We see the marvellous entrance to ***Poseidon's Table***. His Trident piercing through the name as a reminder of his unwieldy power.
+
+http://image.ibb.co/hE2w0F/DSC00822.jpg
+
+Entering the main court, we begin to see a style of decor that mimics the unwavering motions of the sea. A wall with a myriad of bubble like holes echoing Poseidon's position as God of the Sea.
+
+http://image.ibb.co/b60G0F/DSC00880.jpg
+
+Enormous bottles frame the upper portion of the walls. Their size, a reminder of the unearthly size of the Gods. 
+
+![DSC00934.JPG](https://steemitimages.com/DQmcTSAZET3FF3T864LoByxg8tt3v6p1yyf1WxXxWNvVRWz/DSC00934.JPG)
+
+http://image.ibb.co/k6MZnv/DSC00932.jpg
+
+Behind the wall, the food awaits. Section by section, row by row, food of all sorts await our picking. Let's go through and have a look.
+
+http://image.ibb.co/d4294a/IMG_7827.jpg
+
+***Roasted Vegetables***
+
+http://image.ibb.co/hc1OfF/DSC00882.jpg
+
+***Fruits***
+
+http://image.ibb.co/fNFG0F/DSC00883.jpg
+
+***Salads***
+
+http://image.ibb.co/eqR0Sv/DSC00884.jpg
+
+Lots of different Cheeses and cured ham / meat.
+
+http://image.ibb.co/dpUb0F/DSC00887.jpg
+
+http://image.ibb.co/m9grHv/IMG_7837.jpg
+
+http://image.ibb.co/gTp0AF/IMG_7836.jpg
+
+Even more pre-prepared salads with Olives, Beans, Beetroot etc.
+
+http://image.ibb.co/cgZWZa/DSC00888.jpg
+
+This is the Teppanyaki stir fry section where you can choose your own ingredients and the chef will stir fry it for you!
+
+http://image.ibb.co/jjorZa/DSC00922.jpg
+
+***Seasoned Vegetables and Kimchi***
+
+http://image.ibb.co/cPvkcv/IMG_7832.jpg
+
+***Freshly roasted meat!***
+
+http://image.ibb.co/hfAkcv/IMG_7835.jpg
+
+***Sushi Bar***. The Sushi bar was surprisingly varied. There was all sorts of sushi rolls, nigiri's and even sashimi's.
+
+http://image.ibb.co/gj5JVF/IMG_9775.jpg
+
+![IMG_7833.jpg](https://steemitimages.com/DQmUHCokvGroV5vG3Lrb5xNFKCgCgY91J9U9edBE6MnKPYZ/IMG_7833.jpg)
+
+http://image.ibb.co/kpSXqF/IMG_9773.jpg
+
+***Pizza and make your own pizza***
+
+http://image.ibb.co/mkn77v/DSC00891.jpg
+
+http://image.ibb.co/mP8Env/DSC00892.jpg
+
+http://image.ibb.co/mY9vcv/IMG_7865.jpg
+
+http://image.ibb.co/nf6acv/IMG_7864.jpg
+
+http://image.ibb.co/fwTz4a/IMG_7863.jpg
+
+***Hot Food section with various curry's, meat stews, vegetable stews etc.***
+
+http://image.ibb.co/d3RZnv/DSC00893.jpg
+
+http://image.ibb.co/iTHJEa/DSC00894.jpg
+
+***Boiled Broccoli, Jamaican Rice, Mediterranean Rice***
+
+http://image.ibb.co/iqUn7v/DSC00895.jpg
+
+***Crab Salad, Conch Salad, Shrimps Calamari Vinaigrette, Fish Cerviche***
+
+http://image.ibb.co/hM9WZa/DSC00897.jpg
+
+This looks like some sort of curry and Baked Pastry.
+
+http://image.ibb.co/i0R0Sv/DSC00889.jpg
+
+Meat lovers will love this section with ***Sausages, Grilled Chicken Breast, Grilled Steaks and Grilled Salmon***.
+
+http://image.ibb.co/eAZLSv/DSC00903.jpg
+
+The seafood section is perhaps my favourite, it has ***Pealed Shrimps, Smoked Salmon and Mussels***.
+
+http://image.ibb.co/dek5ua/DSC00919.jpg
+
+Mediterranean foods have a very  good representation. 
+
+http://image.ibb.co/dGnJEa/DSC00901.jpg
+
+http://image.ibb.co/i73AAF/IMG_7862.jpg
+
+http://image.ibb.co/mbuiVF/IMG_7860.jpg
+
+http://image.ibb.co/jNuvcv/IMG_7861.jpg
+
+http://image.ibb.co/kPKHqF/IMG_7857.jpg
+
+http://image.ibb.co/frzHqF/IMG_7856.jpg
+
+***Make your own Tortilla!***
+
+http://image.ibb.co/muCw0F/DSC00921.jpg
+
+Bread lovers will have no problem finding one that suits their taste.
+
+http://image.ibb.co/gx3Env/DSC00898.jpg
+
+#### Desserts!
+
+Perhaps the most comprehensive section of all, the cakes and desserts!
+
+
+http://image.ibb.co/iqYQua/DSC00927.jpg
+
+http://image.ibb.co/c46OfF/DSC00928.jpg
+
+http://image.ibb.co/my3Qua/DSC00929.jpg
+
+http://image.ibb.co/bRRfAF/IMG_7854.jpg
+
+![IMG_7847.jpg](https://steemitimages.com/DQmYbNyWfdJjCXsEqv4YBaW7yNrZ3gzF6F4MvkbQT6CBZQU/IMG_7847.jpg)
+
+http://image.ibb.co/daQ1Hv/IMG_7869.jpg
+
+http://image.ibb.co/iADz4a/IMG_7868.jpg
+
+http://image.ibb.co/dNPTxv/IMG_7867.jpg
+
+http://image.ibb.co/knf1Hv/IMG_7866.jpg
+
+http://image.ibb.co/hyqwja/IMG_7829.jpg
+
+http://image.ibb.co/nqGDVF/IMG_7828.jpg
+
+##
+
+
+http://image.ibb.co/cL4iVF/IMG_7875.jpg
+
+
+***Ben & Jerry's*** has their own stand here! I of course obliged.
+
+
+![IMG_9780.jpg](https://steemitimages.com/DQmShmGSGs7YYHMtCqtJbaFBNhY7QZVic1gRdGgB9w1pRGV/IMG_9780.jpg)
+
+To celebrate a true banquet, a surprise mini ***Junkanoo*** sprung out of no where. All the restaurant staff and waiters started dancing and playing on the drums as they paraded around the eating area. 
+
+Check out the video below and see for yourself!
+
+https://youtu.be/aHE3dWAx86c
+
+<hr>
+
+Poseidon's table is an eatery of epic proportions. There is very little chance that you will not find something you enjoy eating at this place. More likely, you will find it hard to choose what delights to eat and end up missing out on many delicious foods by the time you are full.
+
+My visit entitled me to but a taste of the food from Poseidon's very ample table and has left me in awe of the food the Atlantians are able to enjoy.
+
+I would recommend fasting an entire day before attempting to conquer this restaurant. Even then, you will likely be defeated by the onslaught of food. At least you will walk away with a personal victory! (And a very big belly!)
+
+If you liked this post, please support with an upvote, follow me for more exciting and mouth watering blogs, and leave a comment to let me know what you think!
+
+<hr>
+
+今天我想带大家去探索一下亚特兰蒂斯酒店里的自助餐，经过我这几天在酒店里逛，[探索失落国度的废墟遗址](https://steemit.com/travel/@sweetsssj/travel-with-me-70-the-dig-at-the-lost-city-of-atlantis),[领略了巴哈马最大赌场的风光](https://steemit.com/travel/@sweetsssj/travel-with-me-73-a-look-at-the-atlantis-casino-from-a-non-gambler)，我发现这家叫做波塞冬的餐桌的自助餐厅，应该是整个酒店里最有意思，并且吃的菜式种类最丰富的餐厅了，今天我们就选定这家自助餐厅，一起来品尝美味吧。
+
+这家餐厅的名字最先吸引了我，波塞冬是希腊神话中的海神，宙斯的哥哥，黑帝斯的弟弟。他的坐骑则是白马驾驶的黄金战车。三叉戟是波塞冬的武器。当初宙斯三兄弟通过抽签均分了势力范围，宙斯抽中天空，黑帝斯抽中冥界，波塞冬则成为了大海和湖泊的君主。关于波塞冬还有这样一个传说，在一个小岛上，有位少女父母双亡。海神波塞冬娶了这个少女还生了5对双胞胎。后来波塞冬把整个岛划分成0个区，让10个儿子来统治。长子则是最高统治者，因为长子名叫“亚特拉斯”，所以他统治的国家叫“亚特兰蒂斯”。虽然听说，根据专家分析，这个消失的帝国最有可能存在于希腊的圣托里尼，虽然我去过那里，但是当时不知道自己与这个神秘帝国那么的接近。好在这次来到曾经是海盗天堂的天堂岛上，也有这么一座充满神话气息的亚特兰蒂斯酒店，可以让我好好感受下这一段文化和传说。所以说这家餐厅的名字波塞冬，原来与亚特兰蒂斯在传说中有这样深远的关系，确实应了亚特兰蒂斯失落帝国主题酒店的概念。
+
+走进这家餐厅，生意非常火爆，还等了一小会位置。先看看餐厅的装修，以现代化抽象派的元素为主，墙上大大小小的圆组成了一面墙和一块块玻璃。打着蓝黄相间的光。我非常喜欢屋顶的吊顶的大玻璃，白天透光性一定非常好。更有趣的是，吊顶下面的镂空墙里放着一排排蓝色的酒瓶作为装饰，真的非常独特。现在赶快跟着我去看看吃的吧。放眼望去，满眼都是鲜艳红黄蓝绿色的新鲜蔬菜，水果和沙拉，真的太健康了，尤其在热带的地方，这些属于必需品了。各种奶酪，火腿惹人馋。还有现烤出来的猪肉。我首先奔着寿司去了，岛上能做出这么多新鲜的寿司，还真让我惊讶。也许是托了酒店里另一家餐厅在全球都是高人气的日料店***Nobu***的福。一个个已经做好，就差进烤箱的皮萨也非常诱人。关于热食好像也有不少新鲜的菜式，各种青椒包着的海鲜，各种烤虾，烤鱼。最后是一大片甜品区，真是满足了大家的胃口。除了各种小面包，制作精美的蛋糕摆满了整个桌子，我站在那纠结了好久，都不知道要先尝哪一块蛋糕。下面是我丰盛的晚餐了，各种烧烤蔬菜，鸡肉和鱼，还有新鲜的贝壳类海鲜满足了我在海边度假的最大夙愿，当然还有我自制的可丽饼和班杰利的冰激凌。最惊喜的是餐厅里的员工们极具音乐天赋，拿着各种盆子碗道具，表演起了当地的民族音乐和舞蹈。希望大家喜欢今天的自助餐之旅，之后还有更多好吃的加勒比美事要分享给大家。</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-4">Beautiful India #4</a></h3><small>July 05, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmZfEc4zNxLJEnWfVxvLepxMhNY7fnYhYSa1grEWBJeTtd/IMG_20170302_102846408.jpg" alt="beautiful-india-4"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get updates.
+
+![IMG_20170302_102846408.jpg](https://steemitimages.com/DQmZfEc4zNxLJEnWfVxvLepxMhNY7fnYhYSa1grEWBJeTtd/IMG_20170302_102846408.jpg)</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/myth-or-fact-31-the-great-wall-of-china-can-be-seen-from-the-moon">Myth or Fact? #31 – The great Wall of China can be seen from the Moon</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmbtKu6EZgb9FHFtyoab9NNGBDbFFSobi3gTSukP5GrVxR/china-2091360_1920.jpg" alt="myth-or-fact-31-the-great-wall-of-china-can-be-seen-from-the-moon"/><p class="hive-body"><center>https://steemitimages.com/DQmbtKu6EZgb9FHFtyoab9NNGBDbFFSobi3gTSukP5GrVxR/china-2091360_1920.jpg</center>
+<center>_Welcome my dear Steemian friends to a new episode of **Myth or Fact!** A series in which we will show that some common believes are myths while others turn out to be true._</center>
+
+_“...3, 2 ,1, Lift off!”_. Being pressed hard against your seat the rocket takes off. You feel the adrenaline rushing through every single cell of your body. With an insane speed you are on your way towards moon! _Don't forget to take Steem with you._
+
+The lunar distance is approximately 385,000 km and it would take you around 3 days to get there. Finally you reached your destination and placed your foot on the surface of the moon. You look towards earth and see the perfect blue marble. What a beautiful view that only very few people in the history of humanity were granted to see live. 
+
+And there you see it, China! You know it's China since you can see _The great Wall of China._ With 6350 km length it's the largest building on earth. 
+
+But let's slow down for a second. Can we humans really see buildings from the moon? What's your guess? Today we will discover the truth behind this myth.
+
+<center>https://steemitimages.com/DQmZ852ebAgrHwsFnbxwcfJbvwTWWXGXZCLZypq8M3kpkrt/world-549425_640.jpg</center>
+
+_Let's go!_
+
+<h3><center>Human eyesight</center></h3>
+
+We will talk about the resolution of the human eye and and in short how eyesight works. If you want to know more about the sensation of sight I recommend you to read my post [Life Explorers - The Human Senses Part I: Sight](https://steemit.com/science/@timsaid/steemit-explorers-the-human-senses-part-i-sight). 
+
+Our retina has approximately 6 million cones and 120 million rods. When the reflected light hits our retina these cells become active. We have three different type of cone cells, S(-hort), M-(medium) and L-(ong) cones. Short, medium and long refer to the wavelength the cell is responding to. The rods however can work with different wavelengths and thus do not matter when it comes to color. They are responsible for brightness and become active when there is less light. While the cones are active and working we speak of photopic vision, responsible for color sight. Scotopic vision is the terminus for sight in low light and only seeing in shades of gray.   
+<center><img src="https://steemitimages.com/0x0/https://s18.postimg.org/vi5wzz509/retina.jpg" /></center><center><em>Fig. 1 Eye and retinal profile. Source: </em><a href="http://cdn.kevinmd.com/blog/wp-content/uploads/retina.jpg" rel="noopener"><em>Kevinmd</em></a></center>
+<p>As described the human retina has three kinds of cones. Each sensitive to a different wavelength. The following illustrations depicts the relation of wavelength and cones. These three cones together make it possible that we see colors. By combining cones we are able to see over 200 million different colors.  </p>
+<center><img src="https://steemitimages.com/0x0/https://s17.postimg.org/jxtaq6apr/conesrods.jpg" /></center><center><em>Fig. 2 Spectral sensitivity of the receptor (rods and cones). Source: </em><a href="https://en.wikibooks.org/wiki/Sensory_Systems/Visual_System" rel="noopener"><em>Wikibooks; Sensory Systems</em></a><em> </em></center><br>
+
+What really matters it the resolution of the human eye, the distinguishability of very fine structures and the visual acuity. If you have been to a eye doctor you might know this chart with letters. They become smaller and smaller and you will notice it becomes harder and harder to identify the letters. This has something to do with your acuity. 
+<center>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Snellen_chart.svg/385px-Snellen_chart.svg.png<br>Fig. 3 Snellen chart [Source](https://en.wikipedia.org/wiki/File:Snellen_chart.svg)</center>
+
+Acuity is a property of our cones. The area on the retina with the highest density of cones is called fovea and is in the center of the retina. This is the spot where we have the highest acuity and see the sharpest. The acuity drops radically from there.  
+<center>https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AcuityHumanEye.svg/318px-AcuityHumanEye.svg.png<br>Fig. 4 Acuity of human eye [Source](https://commons.wikimedia.org/wiki/File:AcuityHumanEye.svg)</center>
+To keep it simple: It's is **not** possible to see any buildings on earth. The limiting factor is the resolution of the human eye. In Fact you won't even be able to see specific countries. From a distance of over 380,000 km all you can see is blue and white. The clouds would make it more or less impossible to see the buildings, besides they are too small to be seen. 
+
+Charles M. Duke (Apollo 16) and Eugene A. Cernan (Apollo 17) both confirmed they were not able to see any structures from the moon. 
+<hr> 
+
+<p><a href="https://steemit.com/science/@timsaid/myth-or-fact-30-your-tongue-is-mapped-into-different-areas-of-taste">Myth or Fact? #30 - Your tongue is mapped into different areas of taste</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-29-chicken-or-egg-what-came-first">Myth or Fact? #29 - Chicken or Egg, what came first?</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-27-can-jellyfish-kill-people">Myth or Fact? #28 - Can jellyfish kill people?</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-27-drinking-alcohol-makes-you-warm">Myth or Fact? #27 - Drinking alcohol makes you warm</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-26-lightning-can-strike-from-ground-upwards">Myth or Fact? #26 - Lightning can strike from ground upwards</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-25-bats-are-blind">Myth or Fact? #25 - Bats are blind</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-24-watermelon-seeds-will-grow-inside-your-stomach">Myth or Fact? #24 – Watermelon Seeds will grow inside your Stomach</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-23-tea-has-theine-and-coffee-has-caffeine">Myth or Fact? #23 – Tea has Theine and Coffee has Caffeine</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-22-you-have-to-wait-an-hour-to-swim-after-eating">Myth or Fact? #22 - You have to wait an hour to swim after eating</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-20-stretching-before-exercise-is-dangerous">Myth or Fact? #21 - Stretching before exercise is dangerous</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-20-a-penny-dropped-off-the-empire-state-building-kills-you">Myth or Fact? #20 – A Penny dropped off the Empire State Building kills you</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-19-cold-weather-makes-you-catch-a-cold">Myth or Fact? #19 – Cold weather makes you catch a cold</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-18-hair-and-nails-keep-growing-after-death">Myth or Fact? #18 – Hair and nails keep growing after death</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-17-cockroaches-can-survive-a-nuclear-catastrophe">Myth or Fact? #17 – Cockroaches can survive a nuclear catastrophe</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-16-skin-on-heated-milk-is-dangerous">Myth or Fact? #16 – Skin on heated milk is dangerous</a><br>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-15-survive-a-falling-elevator-by-jumping-up-as-it-hits-the-floor">Myth or Fact? #15 - Survive a falling elevator by jumping up as it hits the floor</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-12-mosquitoes-prefer-people-with-sweet-blood">Myth or Fact? #14 - Mosquitoes prefer people with sweet blood</a><br />
+<a href="https://steemit.com/christmas/@timsaid/myth-or-fact-13-does-santa-claus-exist">Myth or Fact? #13 - Does Santa Claus exist? 🎅</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-12-acid-and-base-saves-life">Myth or Fact? #12 - Acid and Base saves Life</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-11-glass-is-a-liquid">Myth or Fact? #11 – Glass is a liquid</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-10-during-summer-the-eiffel-tower-is-taller">Myth or Fact? #10 – During summer the Eiffel Tower is taller</a><br/>
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-9-hot-water-freezes-faster-than-cold-water">Myth or Fact? #9 - Hot water freezes faster than cold water</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-8-oxygen-runs-out-in-overfilled-rooms">Myth or Fact? #8 - Oxygen runs out in overfilled rooms</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-7-does-a-mirror-swap-left-and-right">Myth or Fact? #7 – Does a mirror swap left and right?</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-6-radioactive-contaminated-waste-glows-green">Myth or Fact? #6 – Radioactive contaminated waste glows green</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-5-does-drinking-distilled-water-kill-you">Myth or Fact? #5 – Does drinking distilled water kill you?</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-4-we-only-use-10-of-our-brain">Myth or Fact? #4 - We only use 10% of our Brain</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-3-is-it-colder-during-winter-because-the-sun-is-further">Myth or Fact? #3 - Is it colder during Winter because the Sun is further?</a><br />
+<a href="https://steemit.com/science/@timsaid/myth-or-fact-2-the-world-s-most-famous-equation-e-mc">Myth or Fact? #2- The world's most famous equation: E=mc²</a><br /><a href="https://steemit.com/food/@timsaid/myth-or-fact-1-the-five-second-rule">Myth or Fact? #1 - The Five Second Rule</a></p>
+<hr />
+
+<center>_Thanks for reading this episode of Myth or Fact! If you enjoyed it feel free to resteem and leave a comment! I would love to know what you think about todays episode!_</center>
+
+Do you love photography? Then I hope you didn't miss my recent MyPictureSunday Episode where I went to Paris. You can see it here [MyPictureSunday#10 - Last day in Paris + MyPictureDay Challenge Round #3](https://steemit.com/photography/@timsaid/mypicturesunday-10-last-day-in-paris-mypictureday-challenge-round-3). You should participate in the contest and win some Steem Power!
+<center>Yours,
+_Tim_</center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/steemcleaner-report-for-july-2-2017-part-2">Steemcleaner Report for July 2, 2017 Part 2</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="https://www.dropbox.com/s/ais9gztb3rivoh6/steemcleanerslogo.png?dl=1" alt="steemcleaner-report-for-july-2-2017-part-2"/><p class="hive-body"><center>![](https://www.dropbox.com/s/ais9gztb3rivoh6/steemcleanerslogo.png?dl=1)
+</center>
+
+
+-----
+
+Continued from [Steemcleaner Report for July 2, 2017](https://steemit.com/steemcleaners/@steemcleaners/steemcleaner-report-for-july-1-2017)
+
+
+-----
+# Report
+
+|     Link     |     Account Age     |     Abuse Category     |     Action
+|     -----     |     -----     |     -----     |     -----
+|     [Link](https://steemit.com/photography/@jan-bensky/astronomy-picture-of-the-day-2nd-july-2017-mountains-of-dust-in-the-carina-nebula)     |     1-6 days     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/photography/@ahtishamakmal123/in-muree-pakistan)     |     1-6 days     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/photography/@ahtishamakmal123/best-resturant-in-islmabad-pakistan-osamm-place)     |     1-6 days     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@celestialme/finally-one-of-my-post-reached-valuable-money-time-for-happiness)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/steem/@celestialme/i-came-up-with-idea-how-to-write-in-different-colors-check-this-out)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/art/@witooosik/4uc6g1-my-new-artwork)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/business/@witooosik/we-need-a-strong-economy-why)     |     1-6 days     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/culture/@reviews-feedback/culture-clips-2-god-i-hate-it-when-they-send-the-wrong-puppy-cushions)     |     less than 1 day     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/culture/@reviews-feedback/culture-clips-1-the-blow-out-those-virtual-candles-edition)     |     less than 1 day     |     Unverified Identity     |     Commented
+|     [Link](https://steemit.com/music/@instrumentals/100-original-music-instrumentals-for-sale-or-steemit-instrumental-auctions)     |     less than 1 day     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@thewolfofcrypto/who-to-follow-on-steemit-3-or-finding-great-content-in-a-sea-of-posts)     |     3 or more weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/fitness/@stefen/my-friend-nicole-her-fitness)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/money/@stefen/make-money-online-have-a-look-at-my-payment-proof)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/travel/@thelit/culture-and-travel-1-travel-with-me-whats-japan-like-fasinating-loved)     |     1 week     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@abegail/introduction-2-i-just-love-the-beach)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/religion/@fredinjapan64/45jrmb-biblical-tithe)     |     2 weeks     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/technology/@daniel82/enspirobot)     |     3 or more weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/life/@daniel82/the-venus-project)     |     3 or more weeks     |     Copy/Paste     |     Commented
+|     [Link](https://steemit.com/colorchallenge/@styxer/5pkjiv-thursdaygreen-colorchallenge)     |     3 or more weeks     |     Photo Plagiarism     |     NM, Commented
+|     [Link](https://steemit.com/colorchallenge/@styxer/saturdayindigo-2-colorchallenge)     |     3 or more weeks     |     Photo Plagiarism     |     NM, Commented, Flagged
+|     [Link](https://steemit.com/technology/@zeroshiki/harvard-researchers-succeed-in-creating-telepathic-gateway-between-human-and-rat-brain)     |     3 or more weeks     |    Copy/Paste      |     Commented
+|     [Link](https://steemit.com/nsfw/@ravegirl/smallest-mini-skirt-wins-steeming-hot-nsfw-warning)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/@hamzaoui/comments)     |     3 or more weeks     |     Comment Spam     |     Commented
+|     [Link](https://steemit.com/nature/@zubair20/beautiful-butterfly-on-leaf)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/nature/@zubair20/amazing-picture-focus)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/food/@vanessa11val/some-ideas-watermelon-art-for-summer-cooking)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/aceh/@memeddewi/object-tour-brayeun-201772t155525381z)     |     1 week     |     Copy/Paste     |     Commented
+|     [Link](https://steemit.com/fauna/@ifulmirwanda/birds-of-heaven-201772t12029491z)     |     3 or more weeks     |     Copy/Paste     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@chanya/5lsxwp-hello-world-steemit)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/travel/@chanya/steemir-steemit)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@celinee/2lk2cg-hello-world-steemit)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/music/@angelaliu/4egntj-this-is-one-of-my-guitar-hobbies)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@angelaliu/hi-i-am-angelaliu-from-china-pos-in-english-china-and-korea)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@angelaliu/hi-steemians-world-steemit)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@angelaliu/3nfq5l-hi-i-am-angelaliu-from-china-pos-in-english-china-and-korea)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/travel/@fonfon/5iywc2-hallo-best-friend-steemit)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/steemit/@fonfon/24fnid-thanks-steemit-i-love-steemit-and-i-like-posting-papa-pepper-which-is-very-much-steem-dollar)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/introduceyourself/@fonfon/hello-steemit-introduce-myself)     |     1 week     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/bitcoin/@nandslabs/whats-holding-bitcoin-from-becoming-a-universal-currency)     |     1-6 days     |     Plagiarism     |     Commented, Flagged
+|     [Link](https://steemit.com/blog/@nazmul/upcoming-or-or-crisis-2017628t11041970z)     |     2 weeks     |     Plagiarism     |     Flagged
+|     [Link](https://steemit.com/tramp/@nazmul/tramp-or-or-arms-deal-or-or-usd1-4-bn-or-or-taiwan-or-or-risks-angering-china-or-or-global-risk-or-or-alarm-of-3rd-world-war-or-2017630t2032998z)     |     2 weeks     |     Plagiarism     |     Commented, Flagged
+|     [Link](https://steemit.com/tramp/@nazmul/president-or-or-donald-tramp-or-or-another-success-or-or-big-deal-or-or-with-south-korea-or-or-and-declaration-or-or-patience-is-201771t211444632z)     |     2 weeks     |     Plagiarism     |     Commented, Flagged
+|     [Link](https://steemit.com/photography/@sweetgirl/album-01-welcome-to-my-world-photos)     |     1-6 days     |     ID Theft     |     asked for verification, Commented
+|     [Link](https://steemit.com/the/@thehiddenpic/the-hidden-camel-lllusion-201772t135859350z)     |   1-6 days       |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/@rohitrajput/comments)     |     2 weeks     |     Comment Spam     |     Commented
+|     [Link](https://steemit.com/japanesse/@muhammadsafri/sifat-wanita-jepang-the-nature-of-japanese-women-201772t152819634z)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/photography/@forjayfortune/best-butt-you-say-lol)     |     3 or more weeks     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/photography/@prodmaschine/david-bowie-and-mick-jagger)     |     2 weeks     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/@djmalith/comments)     |     1-6 days     |     Comment Spam     |     Commented
+|     [Link](https://steemit.com/photography/@ahtishamakmal123/water-place-is-the-best-place-in-the-world)     |     1-6 days     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/photography/@ahtishamakmal123/cloude-with-green-velly-lovly-movmnt-keep-support-me-geys)     |     1-6 days     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/photography/@samfate25/pure-love)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/christianity/@pilgrimtraveler/psalm-23-1-the-lord-is-my-shepherd-i-shall-not-want-http-www-pilgrimtraveler-com)     |     3 or more weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/money/@flesruoyllik/dumb)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/photography/@mythras/cats-of-steemit-62)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/@mohsen/comments)     |     1 week     |     Comment Spam     |     Commented
+|     [Link](https://steemit.com/photography/@jimbojones/very-funny-dogs-in-costumes)     |     1 week     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/funny/@top-one/a-second-before-the-inevitable)     |     3 or more weeks     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/life/@johnanbarasan/apple-will-launch-its-own-self-driving-car-and-could-partner-with-rental-firms-to-take-on-uber-and-google)     |     3 or more weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/photography/@yuvi/sadhu-smoking-chillum-photo-from-north-india)     |     2 weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/photography/@igor.peresunko/dubai)     |     2 weeks     |     Photo Plagiarism     |     Commented
+|     [Link](https://steemit.com/cn/@zeryius/comment-choisir-son-velo-201772t175312560z)     |     3 or more weeks     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/kuliner/@muhammadsafri/brewing-delicious-coffee-typical-of-aceh-membuat-kopi-aceh-201771t23565061z)     |     1 week     |     Plagiarism     |     Commented, Flagged
+|     [Link](https://steemit.com/wanita/@muhammadsafri/karakter-wanita-indonesia-201772t155123884z)     |     1 week     |     Plagiarism     |     Commented, Flagged
+|     [Link](https://steemit.com/kerjasama/@muhammadsafri/budaya-indonesia-yang-bikin-orang-barat-tercengang-201773t03314406z)     |     1 week     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/tr/@furkankorkmz/toprak-kirliligi-201772t233646183z)     |     2 weeks     |     Plagiarism     |     Commented
+|     [Link](https://steemit.com/suicidegirls/@pornomaria/tastyezombie-suicide-girl)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/weed/@pornomaria/weed-girls-scandalous-stella)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/gideonwealth/@gideonwealth/poloniex-auto-trading)     |     1-6 days     |     Spam     |     Commented
+|     [Link](https://steemit.com/health/@dape/the-importance-of-magnesium-and-iron-201772t175337217z)     |     1-6 days     |     Tag Spam     |     Commented
+|     [Link](https://steemit.com/steemit/@cryptofrance/basic-attention-english-201773t1124343z)     |     2 weeks     |     Plagiarism     |     Commented</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/incredible-mail-from-an-amazing-community-you-ve-gotta-see-this">INCREDIBLE MAIL FROM AN AMAZING COMMUNITY - YOU&#x27;VE GOTTA SEE THIS!</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="http://i.imgur.com/HGoKK5s.jpg" alt="incredible-mail-from-an-amazing-community-you-ve-gotta-see-this"/><p class="hive-body">http://i.imgur.com/HGoKK5s.jpg
+
+## <center>Steemians never cease to amaze me!</center>
+
+-----------
+I let my mail build up a little bit to make this video, but I think that it was worth the hard time I had waiting!
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+## <center>VIDEO - PAPA OPENS THE MAIL!</center>
+
+https://youtu.be/i-Y1WNLfRp8
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+### <center>For those of you who don't watch the videos, I'll give you a quick rundown of what I received.</center>
+
+-----------
+## <center>@liberty-minded</center>
+
+http://i.imgur.com/JStSRRN.jpg
+
+This guy knew that I like hot sauce, so he spent over $20 just on shipping to send me a bottle of his favorite kind! Please join me in thanking @liberty-minded for his generous gift! Thanks man!
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## <center>@jonny-clearwater</center>
+
+http://i.imgur.com/FlBXJO5.jpg
+
+http://i.imgur.com/2num6ax.jpg
+
+This incredible t-shirt was sent as a trade that we worked out. I sent him one of my handmade "DON'T POST FOR FREE - steemit.com" shirts and he mailed me one of these that he designed! Very cool stuff and an excellent trade. Check out @jonny-clearwater and/or his wife @flowerpowerart if you have not already done so. Thanks! I'll be wearing it!
+
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## <center>@louiscpt</center>
+
+http://i.imgur.com/DGikP3A.jpg
+
+http://i.imgur.com/EbQx5AN.jpg
+
+A huge pile of gifts came to me all the way from South Africa. Check out the personalized envelope, and the interesting stamps. If that wasn't enough, you'll have to look at what was inside!
+
+--------------
+http://i.imgur.com/II02R73.jpg
+
+http://i.imgur.com/Moh5Nrm.jpg
+
+First off, I received this incredible, personalized, embroidered long-sleeve STEEM-POCALYPSE shirt! This was huge! What a gift!
+
+-----------------
+http://i.imgur.com/UIbFzLL.jpg
+
+Then, there was this amazing STEEM-POCALYPSE hat that not only featured my favorite color (camouflage) but it also actually fit on my giant head! Super cool.
+
+--------------
+http://i.imgur.com/McxJy6n.jpg
+
+http://i.imgur.com/gwfG0la.jpg
+
+And.... if that wasn't enough (and it was) I also found this fantastic t-shirt inside. Another personalized shirt featuring the STEEM-POCALYPSE logo, the @papa-pepper logo, *and* a photo of me holding one of my Wild Friends, the Pygmy Rattlesnake! This was mind-blowing! What a great set of gifts! You guys should definitely check out what else @louiscpt has been up to on his blog page.
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+## <center>PAPA LOVES THIS STUFF!</center>
+
+I know that even though I've been on steemit for almost a year now I am still a newcomer to online interaction and social media. I also know that many may consider giving out mailing addresses and meeting people from the internet in person to be some big "no-nos." However, I'm still new at all of this, and so far the steemit community has seriously impressed me.
+
+These gifts are just one small example of how steemit has taken things to an entirely different level that what so many other online platforms have achieved. Honestly, I am so blessed to be a part of this steemit community and you guys mean a lot to me. Steem on my friends, steem on!
+
+https://img1.steemit.com/0x0/http://i.imgur.com/uVNBbyL.jpg
+
+## As always, I'm @papa-pepper and here's the proof:
+http://i.imgur.com/JBFNKlm.jpg
+proof-of-some-of-the-best-mail-ever
+
+--------------
+----------
+#### <center>Until next time…</center>
+## <center>Don’t waste your time online, *invest* it with steemit.com</center>
+
+https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://steemitimages.com/0x0/http://gifmaker.me/files/download/home/20170610/12/5DTW6RM44sGCW1GzoIqDK7/output_J9du6L.gif
+
+-------------
+https://steemitimages.com/0x0/https://steemitimages.com/DQmWJLBUEQKrsCFYNSpzTSiRPbR8AT45ZpwbjgCX5ucQaDN/image.png
+### <center>[TO TRANSLATE POSTS VIA OPERATION TRANSLATION CLICK HERE](https://steemit.com/translation/@papa-pepper/operation-translation-now-under-construction-what-it-is-and-how-you-can-help)</center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/best-time-to-buy-eos-or-any-new-cryptocurrency">Best Time to Buy EOS or Any New Cryptocurrency?</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmQKafPsuQaHpXbFJrf6bJiwRBBx7wX71iiqFsjqWZmct7/best%20time%20to%20buy%20into%20new%20cryptocurrency%20like%20eos%20iota%20zcash%20steem.png" alt="best-time-to-buy-eos-or-any-new-cryptocurrency"/><p class="hive-body">![best time to buy into new cryptocurrency like eos iota zcash steem.png](https://steemitimages.com/DQmQKafPsuQaHpXbFJrf6bJiwRBBx7wX71iiqFsjqWZmct7/best%20time%20to%20buy%20into%20new%20cryptocurrency%20like%20eos%20iota%20zcash%20steem.png)
+
+When to invest in EOS or IOTA or any ICO?  Let's look at the story of Steem and Zcash for guidance.  More than a year after release, Steem is a proven investment with low risk and high reward today because of the odds of a price increase and the ability to participate on Steemit which has hundreds of thousands of users and makes thousands in payments to authors every day.
+
+**When was the best time to buy into Steem?**  A year ago Steem had potential but no proven results.  Today buying Steem is much safer especially for the casual buyer because the odds of a reward just from holding Steem are higher and the risks of a price drop are lower given the data presented later.  For the enthusiastic all in buyer, investing steadily over the last year would have been ideal and also would leave little time or energy to invest in anything else!  It also might have been tempting during the down times to sell out and jump in with something else only to miss out on the biggest opportunities for growth!
+
+**How did Zcash perform after a huge initial release the first year?**  Zcash came out with a huge initial price spike followed by an epic drop from $4239 for 1 Zcash to as low as under $30 within a year.  What a wild ride that would not be fun if the only goal was to make money!
+
+**How are Steem and Zcash a mirror for EOS, IOTA, and most any initial coin offering?**  What journey can a buyer of EOS or IOTA expected based on what those buying Steem and Zcash faced during the first year?  Would we take a look together either by continuing to read or watching the video below because it might save us a lot of time and money?
+
+https://www.youtube.com/watch?v=pZtkHZj-7gY
+
+**Located in the USA?**  EOS does not make the tokens available for sale to buyers in the United States because of the following legal terms listed at https://eos.io/faq.html.
+
+"17. **Why can’t U.S. citizens, residents or entities purchase EOS Tokens?**  It was decided that U.S. citizens, residents and entities should be excluded from purchasing EOS Tokens in the token distribution because of some of the logistical challenges associated with differing regulations in the many states of the United States of America. block.one does not believe that the distribution of EOS Tokens or the EOS Tokens themselves are securities, commodities, swaps on either securities or commodities, or similar financial instruments. The EOS Tokens are not designed for investment or speculative purposes and should not be considered as a type of investment. Nevertheless, U.S. citizens, residents and entities should not purchase or attempt to purchase EOS Tokens."
+
+Seeing that EOS was not available in the USA unless I bought on Bitfinex or another exchange made **deciding not to invest in EOS** simple for me and motivated further research into why I already have been avoiding buying into new cryptocurrency ICOs?
+
+First, will we **look at risk** because famous investor *Warren Buffett's number one rule of investing is "Never lose money"*? Does buying into an ICO or a cryptocurrency at least one year after release provide a much lower risk?  Yes because with over a year of data on a proven currency, we can easily look back to get an idea of whether the price today is low, high, or about right.  When a new digital currency is launched, we have no reference point to see how low the price was when no one wanted to buy and how high it got when the excitement was maximum.  Clearly buying in during the initial coin offering is a huge risk because how can we determine if the value is accurate on a cryptocurrency that just launched?
+
+Second, will we look at a comparison with investing in startups because initial coin offerings are a very close comparison to angel investing or venture capital investments in a new startup company?  When funding startups with capital, the loss rate is huge with investors expecting to make a profit on small percentage of total investments which hopefully will cover losses.  Venture capital firms often are lucky to pick 1 out of 4 winners with 75% companies they invest in not even providing the initial investment back and only maybe 1 out of 200 being a really high return.  With initial coin offerings, the rate of success is likely to be similar because like a startup company just beginning to get to work, there is a lot of hope and promise of changing the world with few proven results.  In talking to most people, it is easy to see how almost everyone has amazing ideas that change the world while very few of those ideas are actually executed with most failing fast.
+
+Third, will we review the data for our own community here in Steem because the trajectory for EOS is likely to be the same?  Here is the first month or so of the price of Steem a year ago now.  Naturally if we have just bought Steem the entire time from release until launch and participated in the community the whole way, we might have a fortune by now.  If we are so excited about a new cryptocurrency we are ready to commit everything to it right away, then yes buying some to begin with and every day going forward might make sense.  However, is this honestly the approach we are looking to take on most ICOs or are we really hoping to use them to make money?
+
+![Steem Release to July 2016.jpg](https://steemitimages.com/DQmVg1omJs1ucMzAN6HzbYizmPCXy1qwiNtYEdSi47o3a5r/Steem%20Release%20to%20July%202016.jpg)
+
+If we were hoping just to make some money on the Steem ICO we might have bought in within the first day or so of release according to CoinMarketCap.com at around $0.89.  Over the next month we might have been a bit disappointed at the price consistently dropping and landing at around $0.20 which would have been about a 75% loss depending on exactly when buying and then selling.  Many investors at this point would have sold and considered it a loss because we are programmed to buy high when everyone is excited and sell low when fear takes over.  What happened next?
+
+![Steem Price April 2016 to July 2017.jpg](https://steemitimages.com/DQmXPziaN8Zfc9aZVs7pxqnc9R92nyHsGAtPLpDpCXJMVPj/Steem%20Price%20April%202016%20to%20July%202017.jpg)
+
+Who would have believed then in July 2016 the Steem price would take off to as much as $4 for one Steem?  If we had bought in at the very first opportunity and sold at the height of excitement, we might have make 4x our money if we were just purely looking to use Steem to get a return on investment and if we had made it through the price drop of the month before.  At the same time, why sell at 4x when it might go to 10x or 20x or 100x?  How many of us really would have sold at $4 after seeing the price go up so fast?  Wouldn't we have held on for even greater profits?
+
+![Steem all time to July 2017.jpg](https://steemitimages.com/DQmaQiU5hnkyk2eVkPcP9gf1hGvMYYf3QPWM5wq5ipRK24W/Steem%20all%20time%20to%20July%202017.jpg)
+
+After hitting $4, the Steem price still a year later has not returned to $4.  Now how much fun does it sound to invest in an ICO where the price of Steem today has been a roller coaster since it was first available?  If we signed up FOR THE RIDE, we would have had a blast!  Here is a review of the Steem ride.  At launch the price was close to $1 and over a year later now up about 50% with the high never more than 4 times the initial investment and the low down as much as 90%!  That's a ride we might get sick on if signing up just for a nice profit!  If we bought in when the hype was the greatest at over $2, our investment still would not even be in the positive yet a year later and would have at one point been nearly a total loss.
+
+The point is that now Steem is an outstanding investment because it has proven itself in good times and bad.  Now the risk is much lower to buy some Steem today because we can see that today with the price being $1.80 it is probably a good buy given that it was over $4 at one point, albeit with a lot less Steem available, and with a year of growth since the highest price the true value is likely much higher than ever before.  While the price could go down some or even a lot as a part of a bigger market catastrophe, we know here that we have real value because of how much we have contributed in posts and relationships which are visible to everyone.  Steem is no longer a startup but rather a self-sustaining business.  Most startups never make it to this phase which is why self-sustaining businesses tend to draw the greatest investments.
+
+After considering Steem, how about EOS?  So far EOS according to their website has only released about 20% of the supply they are planning to within the next year.  That means for every one EOS token available today there will be 4 more given out within the next year which is likely to mean a big price decline.  Within the first month of release might be the very worst time to buy in especially on an exchange which is how the prices are determined and where likely a relatively small amount of EOS is available relative to the total.  The actual price most have paid for EOS is likely a fraction of what the exchanges say meaning the market cap is almost completely imaginary without actual figures of ETH received by EOS.
+
+What makes buying in worse is that how much given to the buyer each day is relative to how much ETH is sent in.  Some days a lot of Ethereum being sent in might mean buying at above market price while on a few days of low demand a great deal might be possible.  If we are set on buying EOS, buying in every day is likely to produce the best result because the distributions are based on demand and low demand days make great payouts.  The problem is that every day more tokens are given out likely means more sellers trying to cash out on exchanges.  Buying on exchange now is almost certain to end up in a loss as the greater profits made initially the more users will try to put more for sale which will drive the price down as the initial euphoria of release wears off and gives way to being one of 500+ cryptocurrencies which needs a lot of contributions to be meaningful.
+
+On top of these existing issues, if the Ethereum price takes a dive, it also will be cheaper to buy more ETH and change it to EOS.  Naturally the opposite is true if it goes up although this is likely to be balanced by how much ETH is sent each day to the initial distribution.  While today it seems like the safest and smartest option to wait until EOS has delivered proven value to hundreds of thousands of users over the next year, what about other initial coin offerings?
+
+**When we review the Zcash ICO, this will get even better!**
+
+![zcash release price chat.jpg](https://steemitimages.com/DQmWwJMZjehvAVnCVyJNfNY6rzgMZXSwkQiZD4drjpsmvMN/zcash%20release%20price%20chat.jpg)
+
+Yes the number is displaying correctly on the chart above!  The initial price for 1 Zcash was $4239 at release with speculative markets pricing at over 2,000 in BTC for 1 Zcash or ZEC.  The ZEC market cap at the time was over 1 billion dollars which is more than double what it is today despite many more Zcash available.  All of the hype over how amazing EOS is reminds me of the same with Zcash which was supposed to be replacing Bitcoin a year ago.  On July 4, 2017 the price for that same exact Zcash less than a year later is $295 even after a recent huge growth in price.  At the lowest, ZEC went below $30 just a few months ago.  Again, buying in at the beginning would have resulted within a year in a nearly total loss.  A year after release Zcash is number 12 on the market capitalization charts and seems unlikely to compete with Ethereum or replace Bitcoin in the foreseeable future.  That said, Zcash is in a great position to continue making a meaningful contribution to our financial revolution online going forward and we are grateful it exists!
+
+**Our problem tends to be thinking we are smarter than other people.**  We think we invest better than others.  We think we make better love than others.  We think we are better bosses and employees than others.  We think we lead better lives than others.  The truth is that we are all so similar we are practically clones of each other with a few basic different models having small differences similar to Battlestar Galactica.  We are all so much smarter than each other we predictably get lured into the same traps over and over again only to be complaining to our same friends over and over again about how the same thing happened to us again and we cannot believe we forgot and it will never happen again.
+
+**Initial Coin Offerings are usually a trap** like Leia tried to warn Luke Skywalker about in The Empire Strikes back which despite being the second star wars movie released is Episode V.  Like Luke, we might lose our right hand financially as the dark lord of the currency reveals himself to be our father.  While some humor is attempted here, the message is clear.  **It is better to wait and let every new cryptocurrency prove itself before making a significant investment.**
+
+**What about having an ICO like EOS as part of a sexy term like diversified portfolio?**  One author yesterday explained that not having a diversified portfolio was insane because we could lose everything if that one investment falls through.  While this is certainly true, maybe just having one partner and one job is insane also because if we get fired or our partner leaves us, we lose everything for the moment.  Then in the next moment we have the opportunity to begin fresh with a new job, partner, or investment.
+
+**What experience do I have with buying in early?**
+
+I bought into Steem as part of a diversified portfolio on Poloniex for about 0.1 BTC which was around $100 at the top of the hype along with 20 or 30 other altcoins.  Over the next several months while many of my altcoin investments went up, Steem took a big dive.  When my 0.1 Bitcoin of Steem became worth 0.01 Bitcoin, I bought another 0.1 BTC of Steem figuring it would have to go back up at some point right?  When it kept dropping along with the rest of the altcoin market in December 2016, I sold it all and left thinking "Steem is worthless" because for me it had been the way I used it.  I then bet everything on Dash based on a lot of hype from my friend @aarellanes when he was working with @robertgenito after I heard about masternodes and Wall of Coins putting Dash as the second currency on their website after Bitcoin.  After contributing a massive amount of hype to Dash, I then sold out 4 months after buying in and now here I am all in on Steem so far 2 months in!
+
+After months of passively trading on Poloniex up until December 2016, I discovered the great joy of actually getting something out of my investment in the form of being a member of a community.  Up until then, I had simply thought that the point of investing was to use money to make more money.  I completely missed out on the point of investing being to do some good in the world by combining the contribution of money with service in the form of participation.  Fortunately for Steem, the Dash community was like a pair of underwear that were too tight for me which cut off circulation to things important for me being able to reproduce.  Sure it would keep me warm but at what cost?
+
+When I invested in Steem, it was a fairly safe investment because with a year since the initial release, it was easy to see the value of the existing community and to make an assessment of the true price of Steem relative to the actual price.  I calculated Steem was undervalued as much as 10 times relative to other currencies and that my service within the Steemit community would be valued above most other places I could go.
+
+Investing in Steem posed little risk because after a year of ups and downs, a lot of real improvement took place while the total value of the combined Steem tokens was lower than it had been before.  All of the Steem today a year after the initial hype in July 2016 is worth about the same as it was then.  Therefore, this makes for a great investment because the true value of Steem is was higher than it was a year ago because of all the participation and improvements.
+
+Being a courageous soldier willing to run up to the front lines and risk everything looks great in movies and is great if we are willing to contribute that much to our cause.  Buying into an ICO without completely participating in the investment by making a significant contribution on an ongoing basis is just like going into a casino and throwing some money down and hoping to win.  I have done that enough times to hopefully have learned my lesson that I have no business going into a casino unless I am hoping to give them my money.  I even invested as much as $1,000 in a presale once and have no plans to do that again either because I only have so much time and energy to contribute.
+
+**An ideal investing experience includes the opportunity to exert some influence on the return of the investment which is why I love Steem**.  Here each of us can personally make a contribution to the ongoing value of our investment by posting, upvoting, commenting, and sharing Steemit with friends and family.  When I read Money Master The Game by Tony Robbins, the one key investing strategy I noticed that Warren Buffet and other top investors in the world seem to do is to invest where they personally can make a difference.  If we can personally make a difference in an ICO, then by all means invest and get to work!
+
+The reality is most of us have very limited time and energy while trying to prove to the world the opposite is true by showing how much we can do and telling everyone how busy we are.  I have time to do a really good job contributing to one cryptocurrency just as I have time to do what I hope is a really good job of contributing to one family with one wife.  While it might put me less at risk of losing everything to find a few more cryptocurrencies to invest in and a few more wives to raise families with, the reality is the more diversified I am, the less I do well.
+
+In dating this was very obvious as I could barely keep the names of the girls I dated straight when it got to more than three at once.  After an initial euphoria of feeling like I was a god for having two girls over in one night, the uncomfortable reality set in of confusing who said what and trying to keep everyone happen.  Fairly quickly all the girls would find a guy that would give them a better answer for "Where is this going?" than answering their question with another question like "Where is what going?"
+
+For cryptocurrencies this took much longer to learn because I did not ask any of them to marry me.  Why not trade 50 different currencies?  Would I have bought Steem in the beginning if I knew more about it?  Probably not because just to hold it on an exchange was an awful idea before the December 2016 change reducing inflation.  *Today I am grateful I learned enough to be here and to finally settle down into being of service consistently in one place instead of trying to hop each day from one exciting new crypto partner to another the next day.*
+
+*Thank you very much for reading all the way to the end of this post** which took me two hours to type this morning after I woke up at 5:30 am and felt compelled to write about this to help us avoid both the losses and the fear of missing out!  I write these in depth posts because this gives us the best chance to build a deeper relationship and because this format provides the very best opportunity to rank high in Google.  Organic search traffic from Google gives this post the chance to reach the most people that need this exact information.  More Google visitors to Steemit means more readers for all of us here which means a higher return on our investments in Steem which means more to give back to others.
+
+If you read all the way to the end of this post or scrolled down here to view the comments, **would you please upvote this post because that will tell me to keep writing for us here on Steemit each day?**
+
+Love,
+Jerry Banfield</p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/esteem-android-stats-07-2017-201774t104040642z">eSteem - Android stats 07.2017</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="https://img.esteem.ws//r55k2v4dwu.png" alt="esteem-android-stats-07-2017-201774t104040642z"/><p class="hive-body">Hello everyone,
+
+In this post, decided to share growth stats to all our supporters so they can have an idea about how project is expanding and evolving....
+
+
+<center>**We have reached milestone of over 10000+ downloads on Google PlayStore!** 🎉🎉🎉</center>
+
+
+Below stats are from Google Play and just for the Android users, iOS stats will follow within few days after our release of 1.4.6 is pushed to the AppStore market.
+
+## What's eSteem
+
+If you are seeing eSteem related post for the first time and don't know what it is, please check out my blog posts to learn more. In short, **eSteem** - mobile and desktop application, offering some of the unique features to your Steem mobile experience.
+
+
+## Active users growth
+
+Day by day, active user base is growing, exciting to see many encouraging posts, short notes and photo moments being shared via eSteem.
+
+<center>https://img.esteem.ws//r55k2v4dwu.png</center>
+
+## Daily engagement
+
+Engagement is great, many using eSteem for quickly engage with their followers, respond to comments, follow up with new follower, etc.
+
+<center>https://img.esteem.ws//rhxd0d6b4i.png</center>
+
+## Demographics
+
+Recent growth in Korean and Indonesian community can be seen here as well. We believe growth will continue to go exponential in developing countries because not every user in those countries can afford personal computer. But most have Android devices, you can see the proof of that in below charts...
+
+<center>https://img.esteem.ws//pa96mqtkay.png</center>
+
+## Map view
+
+Map view basically shows where are the most active users of eSteem. Indonesian, Korean and Central Europe, followed by US.
+
+<center>https://img.esteem.ws//jlppirb2g7.png</center>
+
+<hr>
+
+<center>***Please leave a review on Google PlayStore, it helps community to grow even faster!***</center>
+
+eSteem users are earning some extra rewards by doing/joining different voluntary activities.
+
+[Translation contribution and reward giveaway](https://steemit.com/esteem/@good-karma/esteem-calling-for-volunteer-translators-14-get-reward-201764t151212538z) is growing quite fast and we have over 170 contributors and 44 languages are ready. You all are awesome! Come join team if you would like to improve/add your native language, invite friends, grow your community, just like awesome Indonesian, Korean and many other communities are doing, together we will grow...
+
+[Feedback loop and reward encouragement](https://steemit.com/esteem/@good-karma/hf19-and-esteem-feedback-encouragement-experiment-changes-2017620t184336401z) is going great! Thank you for everyone for giving valuable feedbacks and issue reports, couldn’t have done it without you! Intentional abusers will be added to ignore list. Please continue to give your feedbacks and valuable suggestions, I do read them all, even though sometimes I won't get chance to respond.
+ 
+Finally, another way for you to earn extra reward while enjoying your mobile experience is [eSteem spotlight series](https://steemit.com/esteem/@good-karma/esteem-spotlight-top-users-and-giveaway-2-2017623t85513623z) where you will get chance to be highlighted as top users of a month on eSteem.
+
+<hr>
+
+<table><tbody>
+<tr><td><code>info@esteem.ws</code></td><td><a href="https://esteem.ws">Website</a></td><td><a href="https://steemit.chat/channel/esteem">Steemit.chat</a></td><td><a href="https://github.com/esteemapp/esteem/issues">Github</a></td></tr>
+</tbody></table>
+ 
+<center>Thank you for your support!</center>
+ 
+<hr>
+ 
+<center><h5>vote, reblog, follow, [vote witness](https://steemit.com/~witnesses) <code>good-karma</code> </h5></center></p></section></article><article><header><h3 style="margin-bottom:0.4375rem"><a style="box-shadow:none" href="/hive-blog/beautiful-india-3">Beautiful India #3</a></h3><small>July 04, 2017</small></header><section><img class="img-body" srcSet="https://steemitimages.com/DQmX8thKM1moD3brBisS3KsJtFWuTU3aDgxKkQ9wTqpfUdp/IMG_20170301_182555888.jpg" alt="beautiful-india-3"/><p class="hive-body">I will be adding a lot of Images of Beautiful Indian Places. Follow me to get updates.
+![IMG_20170301_182555888.jpg](https://steemitimages.com/DQmX8thKM1moD3brBisS3KsJtFWuTU3aDgxKkQ9wTqpfUdp/IMG_20170301_182555888.jpg)</p></section></article><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0"><a rel="prev" href="/hive-blog/70">← Previous Page</a><li style="margin:0">71</li><a rel="next" href="/hive-blog/72">Next Page →</a></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/71";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-list-js-1af1632b4493347fce8c.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>

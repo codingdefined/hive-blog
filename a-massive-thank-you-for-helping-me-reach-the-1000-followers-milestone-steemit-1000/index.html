@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/hive-blog/styles.c9b11a25fe61d94b5136.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/hive-blog/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/hive-blog/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/hive-blog/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/hive-blog/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/hive-blog/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/hive-blog/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/hive-blog/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/hive-blog/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/hive-blog/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/hive-blog/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/hive-blog/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/hive-blog/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/hive-blog/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/hive-blog/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/hive-blog/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/hive-blog/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/hive-blog/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/hive-blog/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/hive-blog/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/hive-blog/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/hive-blog/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/hive-blog/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/hive-blog/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/hive-blog/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/hive-blog/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/hive-blog/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/hive-blog/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/hive-blog/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{--lh:1.4rem;line-height:var(--lh)}.hive-body{--max-lines:3;position:relative;max-height:calc(var(--lh)*var(--max-lines));overflow:hidden;padding-right:1rem}.hive-body:before{content:"...";inset-block-end:0}.hive-body:after,.hive-body:before{position:absolute;inset-inline-end:0}.hive-body:after{content:"";width:1rem;height:1rem;background:#fff}.img-body{height:300px;display:block;margin-left:auto;margin-right:auto;margin-top:20px}</style><meta name="generator" content="Gatsby 2.21.0"/><link rel="icon" href="/hive-blog/favicon-32x32.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="manifest" href="/hive-blog/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/hive-blog/icons/icon-48x48.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="72x72" href="/hive-blog/icons/icon-72x72.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="96x96" href="/hive-blog/icons/icon-96x96.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="144x144" href="/hive-blog/icons/icon-144x144.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="192x192" href="/hive-blog/icons/icon-192x192.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="256x256" href="/hive-blog/icons/icon-256x256.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="384x384" href="/hive-blog/icons/icon-384x384.png?v=528fcc6e2510ae04b38207412e818aba"/><link rel="apple-touch-icon" sizes="512x512" href="/hive-blog/icons/icon-512x512.png?v=528fcc6e2510ae04b38207412e818aba"/><title data-react-helmet="true">A Massive Thank You for Helping Me Reach the &quot;1000 Followers&quot; Milestone / 我的Steemit历程 | My Hive Posts</title><meta data-react-helmet="true" name="description" content="&lt;h2&gt;Woohoo!&lt;/h2&gt; 
+
+I’m so excited and totally over the moon about reaching this significant milestone of over *1000* followers! It’s coming up to a year since my husband first told me about Steemit and curiosity got the better of me. Up until that point, I had barely heard of **Bitcoin** and the word **“crypto”** may as well have been something in another language. But Steemit was the catalyst to me discovering one of the best things I’ve ever come across in my life.
+
+Within that short period of time *(coming up to exactly one year now)*, I can honestly say that this incredible website has changed me as a person. Brought out aspects of my personality I didn’t know existed before. I would never have considered myself an extrovert. Quite the opposite, in fact. But the confidence and drive this great platform has produced in me is nothing short of a modern-day marvel.
+
+The people I’ve connected with during my time on Steemit has been a wonderous experience. More so even via Steemfest was such a magnificent event. I’m sure the next one will somehow prove to be even better. Catching up with established friends as well as creating new ones. *Can’t wait!*
+
+I find it almost impossible to believe it has only been one year since I joined this amazing platform. It feels like it’s been a part of my life for as long as I can remember, lol. So, anyways, I thought what better way to celebrate then share with you some of my most unforgettable times on Steemit and reminisce the mind-blowing journey I’ve had on the Steemit platform.
+
+*Here are some of my Steemit Hightlights:*
+&lt;hr&gt;
+
+[&lt;h2&gt;&lt;center&gt;&quot;Introducing Steemit Into The World Of Hollywood&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/introducing-steemit-into-the-world-of-hollywood)
+
+It’s amazing how long ago it feels but the post was actually created round about this time last year. *And a little fun fact for anyone new to the platform now is that the “big earning” posters at the time were all about promoting Steemit and getting the word out.* One girl setting off loads of balloons with “Steemit” written on them, billboards displaying the Steemit logo, interviews on the street and, of course, that famous **“Make-Up”** tutorial.
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmYEGoUDvWCcN6HCWYHx4eZPf6hUno4SUfGxPx1kz48uFz/2017-07-05%2009.25.34.jpg
+&lt;/div&gt;
+
+So, I thought I’d have a go since I was a big television and comic book steemian fan who happened to have tickets for the [LFCC](http://www.londonfilmandcomiccon.com) that month! To prepare, I got myself a pair of “Steemit” t-shirts *(a big deal at the time)* down at a shop called Snappy Snaps and attended the event the following day. Now, while hardly anyone there was actually willing to listen about what Steemit was *(a lot has changed since then, lol!)*, my goal was to photobomb as many celebs as I could, bearing my “Steemit” logo. I think I did alright considering how crowded the venue was and the amount of queuing involved. 
+
+I met a few “Game of Thrones” stars as well as **Jon Heder** from **Napoleon Dynamite** and **Blades of Glory** *(God, I love that movie!)*. But the cream of the crop was going to be **Jeremy Renner** from **Marvel’s The Avengers**! But unfortunately, they didn’t allow any publisizing of any kind *(including logos on shirts)*, so they just snapped us with together from just above our necks and cropped the rest out! I was so disappointed, I can’t tell you how much! But all’s well that end’s well and after numerous posts of mine that didn’t really get much attention, this was the first to garner proper recognition. *It was an amazing feeling and one I hope everyone on Steemit gets to experience!*&lt;hr&gt;    
+
+[&lt;h2&gt;&lt;center&gt;&quot;How Steemit Has Introduced Me Into the World of Crypto&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/how-steemit-has-introduced-me-into-the-world-of-crypto-steemit)
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmULiNNhPaHjqAiMNpfBriSayKYPrhXgPHAv7kvgyNwQgM/2017-07-05%2009.26.59.jpg
+&lt;/div&gt;
+
+I’m sure many of you on Steemit can completely relate to this particular one! Because this was exactly just the fact of the matter. *I knew next to NOTHING about anything crypto, period!* My husband mentioned Bitcoin a few times before but I’d just switch off and go do something else which I thought actually “mattered.” 
+
+**Boy, how Steemit changed all that.**
+
+In the article I posted, it summed up my transformation from being a total cynic to now talking about pretty much nothing else, lol! **How I’ve changed over the last year!** One of the key aspects at the time was Steemit’s bridging of the two mega powerhouses. *Crypto and social media.* All done by adding that well-established “$” sign to every post, thereby giving the platform value that anybody could instantly relate to. *A stroke of genius if you ask me, lol!*
+
+I chronicled my journey up until where I was at the time and highlighted that “Matrix “ moment I had experienced. Because of Steemit, I actually started using Bitcoin. *I mean, shouldn’t that have been the other way around?* But yes, I was having such an awesome time and on such a high that I had to let the world know how “great” I was feeling. So I wrote a post about it. And the best thing is because it’s transformed so many other steemian’s lives from that point on until now, many more people can understand and embrace that same “high” that I was on too!&lt;hr&gt;     
+
+[&lt;h2&gt;&lt;center&gt;&quot;The First Steemit USB Giveaway at the EGX 2016&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/the-first-steemit-usb-giveaway-at-the-egx-2016)
+
+This one was more of a personal project than anything else and I worked quite hard on it! In regards to promoting Steemit, I figured instead of simply getting people’s pictures taken or handing out leaflets, I’d attempt to spread the word using something that has an actual **“real world use”** and would likely be kept with that individual because of it. *After all, familiarity creates brand awareness, right?* So, I  came up with an idea. Imprint the “Steemit” logo onto a set of portable USB sticks and hand them out in exchange for the individuals e-mail and personal details. *Didn’t seem a bad idea at all!*
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmX7YbUHYSzjzWtsuyjrzPneG7CUSvJFwGq1q2oJo72uUT/2017-07-05%2009.25.46.jpg
+&lt;/div&gt;
+
+But, I did have something of a **wake-up** call. I actually didn’t mention this in the post itself, but my initial strategy was to carry out my plan in London’s **China Town!** Not only that, but also try to get people to sign up there and then via their Facebook account! Needless to say, that ended up a disaster, lol. The people just weren’t interested with only one couple at least listening to my sales pitch before saying goodbye!
+
+Well, as luck would have it, my husband was going to the **EGX 2016** *(A games and tech show featuring all the latest gadgets and software launches.)* **This seemed the perfect opportunity!** So, yes, I went there albeit with a slightly different strategy this time around. *Handing out the USB’s in exchange for their name and e-mail address.* And I did just that, with the blog I created afterwards chronicling the whole thing.
+
+Well, sadly only a handful of them got back to me. But now looking back, that was only to be expected. The whole *“crypto”* and *“blockchain”* thing wasn’t nearly as exposed as it is now. Had it been this year’s event, the end result may have been very different indeed. However, the core idea of a tangible, useful item baring the “Steemit” logo being dispersed to a number of potential steemians was completed. *I just hope they remember where they got it from when Steemit goes to the moon!*
+
+&lt;hr&gt;  
+
+[&lt;h2&gt;&lt;center&gt;&quot;Steemfest I&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemfest/@rea/uniting-steemians-through-the-delight-of-the-steemfest)
+
+
+**Ah! The very first Steemfest!** 
+
+If ever there was a time I can look back with the fondest of memories, it’s that incredible event. I know for a fact it still astounds those that attended at how awesome and well-organised the whole experience was. **From the speakers to the structured city-based activities to the delicious food provided.** *It was unbelievable from start to finish*. @roelandp achieved legendary status on Steemit after that and rightly so!
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmdMFDZcpVoAZHXXEKnSy2wKDTx1dPAiFxzbufqPDFbuCV/2017-07-05%2009.25.22.jpg
+&lt;/div&gt;
+
+As for the fest itself, it’s something you had to have been there to fully comprehend. All these steemians wearing small tags around their neck displaying what their **“username”** is. All those articles I read and enjoyed, now knowing who the faces were behind the blog *(This was before user profiles were introduced)*. It was as surreal as you could get. A completely unforgettable time that I still spend thinking about many times over.
+
+Which leads us to **Steemfest II**. I remember clearly how everybody at the end of the first Steemfest told @roelandp. *“Take a good rest”, “Put your feet up”!* **I mean, nobody expected him to organise another one!** But lo and behold, that is exactly what he has done. **What an amazing guy!** And if the last fest was anything to go by, everyone who attends will be in for the time of their lives. 
+
+&lt;center&gt;**I absolutely cannot wait. Roll on, November 1st!**&lt;/center&gt;
+
+&lt;center&gt;
+![ScreenShot2016-11-15at10.23.52AMb0955.png](https://steemitimages.com/DQmUrN31BpxXefy34a2mNc9z9Sdm7HaKWzJPgmbnH7kXLWc/ScreenShot2016-11-15at10.23.52AMb0955.png)
+&lt;/center&gt;&lt;hr&gt;
+
+&lt;h1&gt;&lt;center&gt;And A Big Thank You To…&lt;/center&gt;&lt;/h1&gt;
+
+Everyone who I’ve come into contact with on Steemit has been such a jpy and pleasure. When people say there’s a community within the Steemit eco-verse, they’re not wrong at all. The friendly comments, the great posts and the overall experience of being a steemian is something I cherish and hold very dear to my heart. 
+
+I signed up and started blogging back in June 2016. Way less users back then but through the **“tagging”** system, you could easily find the content you wanted to view. That’s when I came across the **“CN”** tag. A small group of Chinese steemians had managed to set up a tiny group within the small community itself. Headed up by the great **@abit**, he was the first one who gave me a warm welcome on my **“Introduction”** post I created under the tag. He’s been supporting me ever since and for that, I’m eternally grateful. 
+
+Other fantastic members within the **“CN”** tag at that time included *@oflyhigh, @ace108, @deanliu, @myfirst, @chinadaily and @lemooljiang.* We were minute but powerful force to be reckoned with and I thank you all from the bottom of my heart for everything we’ve shared together. I consider you all my friends and may there be many more memories to be made in the future!
+
+**So, a big “thank you” to every one of my awesome steemians who’ve helped in bringing me to *1000+ followers*. I’ve had an amazing journey so far and can’t wait to see what lies in store for us all next.** 
+
+&lt;h1&gt;&lt;center&gt;A Big Thank You To Everyone! &lt;/center&gt;&lt;/h1&gt;
+
+&lt;center&gt;
+![2017-07-05 09.57.56.jpg](https://steemitimages.com/DQmc4tjLiVkWkcGxEvgCKWTRsuX1VXThoWqDBTcdgMmbd4v/2017-07-05%2009.57.56.jpg)
+&lt;/center&gt;
+
+&lt;hr&gt;
+ 
+哇塞，我终于在Steemit平台上拥有超过1000名追随者，兴奋的心情真是难以言喻！自从先生第一次告诉我这个平台到现在已有一年时间，那时的我甚至连比特币或“数字货币” 都没有听说过。Steemit是我所碰到的最美好的事情之一！非常感谢大家!
+
+在加入这个平台的短短一年时间里，我可以坦诚地说这个令人难以置信的媒体平台完全改变了我，让我看到自己的另一面。我永远也不会认为自己是外向型的，但是Steemit给予了我神奇的力量，让我充满了自信。
+
+在Steemit上结交新朋友是最让我高兴的事，而参加第一届在阿姆斯特丹举办的Steemfest更让人难以忘怀。我非常期待能与旧友重逢，并结交更多的新朋友。相信即将来临在里斯本举办的Steemfest II 聚会将办得更加成功，更加完美！
+
+真不敢相信我加入这个平台已有一年的时间，感觉它就像是生活的一部分，呵呵。在这里，我希望能与你们一起分享一些我最难忘的Steemit 时刻，一起回顾我在这个美好平台上梦幻般的旅程。
+
+以下是我在Steemit上的一些亮点 ：
+
+
+&lt;hr&gt;
+
+1 /把Steemit带进好莱坞的世界
+
+说来有点儿凑巧，刚好是一年前的这个时间，感觉很遥远的样子，呵呵。当时大家都争先恐后地推广Steemit, 有在街上帖大广告牌的，有个女孩子在海边派发写有Steemit标志的100个氢气球，不少在街上采访路人的，当然还有我们最有名的化妆教程（“Make-Up” tutorial）.
+
+而我呢，是个动漫粉丝也刚好购买了当月伦敦电影动漫节（LFCC）的入场券，也蠢蠢欲试。我专门到店里印了一件有Steemit 标志的恤衫，并在第二天参加了动漫盛会。当时会场内没有多少人愿意听Steemit的推广，我的目标是在挤挤人群里，要让在场的众多明星们看到我恤衫上Steemit字样。
+
+到场的有几位来自“权力游戏”（Game of Thrones）的明星以及在 “Napoleon Dynamite” 和“Blades of Glory” （好喜欢那部电影哦）里的男主角Jon Heder。 而最有名气的要数上演复仇者（The Avengers）系列的Jeremy Renner！ 我与明星们互动，自拍。只可惜最后与Jeremy Renner拍照时，他们不允许照片里的任何商业广告性质的物品（包括衬衫上的徽标），所以Steemit字样没出现在我们的合照里，好失望哦！电影动漫节之行回来， 我发表了一篇文章，这是我在Steemit平台上第一次受到如此多成员的关注与认可。那种感觉非常美妙，我希望每个Steemit的成员都能体验！
+
+
+&lt;hr&gt;
+
+2 / Steemit是如何带我进入数字货币的世界
+
+我相信你们中的许多人都会与我有同感。我对因为数字货币简直是一无所知！先生有几次提到比特币，但我只是不加理会或是去干别的看似“更重要”的事情。然而Steemit改变了这一切。
+
+这篇文章里总结了我的转变过程。我认为在Steemit里最关键的部分是它连接了数字货币与社交媒体，并在每个帖子上添加了“$”美金符号，给予了平台所有人都能看到的价值。Steemit平台的创建者简直是天才！
+
+通过Steemit，我开始使用比特币。其实不是应该反过来才对吗？呵呵。我想大声告诉全世界这是一个超棒的体验，不仅仅是我，这个平台也改变了像我一样许许多多成员的生活！
+
+
+&lt;hr&gt;
+
+3/在欧洲游戏博览会上派发Steemit的 USB赠品
+
+与其他事情相比，这明显更具挑战性！我想，简单地发发Steemit传单很快就会被扔掉或遗忘，作用不大。如果能派发一些有实际用途，大家都愿意保留的产品，宣传Steemit的成效会更大！于是我想出了将Steemit标志印在一组携带方便的USB棒上，免费赠与参观者，宣传Steemit的同时换取个人电子邮箱资料。主意不错吧，呵呵。
+
+但是，我也有过失败的经历，不过我没有在这个帖子上提到。其实我最初的策略是在伦敦的中国城进行Steemit的推广活动，还试图让人们即时通过他们的Facebook帐户注册。不用说你也猜到，这并没有进行得太顺利。大半天的时间，真正有兴趣的就只有一对年轻夫妇，至少他们是听完我对Steemit的介绍才客气地说拜拜！
+
+幸运的是，先生要去伯明翰举办的欧洲游戏博览会（EGX 2016），一个展示所有最新的游戏和技术软件，这看起来是一个非常适合推广Steemit的机会。于是我去了。而这次，我使用了略为不同的策略。我向参观者简单介绍Steemit并赠与精美小巧的USB，以此交换他们的姓名与电子邮件地址。在我发表的帖子里，记载了这整个过程。
+
+有点儿可悲的是，只有少数人回复我的邮件，不过这也是预料之中，因为当时数字货币和区块链很少人知道。但如果是今年的话，最终的结果可能会非常不同。所有的Steemit USB 派发完了，我只希望将来某一天当Steemit真正强大起来的时候，他们会记得当年是如何得到这个Steemit 的USB，呵呵！
+
+
+&lt;hr&gt;
+
+4/参加第一届 Steemfest 聚会
+
+去年在阿姆施特丹举办的Steemfest 确实搞得不错，让我印象深刻。我至今仍然感叹这是一个超级棒的盛会，从整个策划，会场布置，组织演讲者和景点游览，以及提供美食，从头到尾每个步骤都完美得令人难以置信。自此以后，聚会的组织者@roelandp在Steemit平台上稳坐传奇人物之位，呵呵。
+
+至于这个聚会，你得要亲自到场才能完全体演到。所有Steemit成员都在脖子上佩带着显示他们用户名的小标签，大家终于有机会见到自己平日喜爱阅读文章的作者本人，呵呵。可以与网上作者见面聊天，一切都那么真实，我在那儿度过了一个令人难忘的时光。
+
+我还清楚地记得，在Steemfest I 结束的时候，每个人都告诉@roelandp “保重”，“好好休息”，因为大家都期望他来组织下一届的Steemfest！他的确是尽心尽力，功不可没！大家都迫不及待地等着将于11月在里斯本举行的Steemfest II，千万不要错过哦！
+
+&lt;hr&gt;
+
+5/最后要特别感谢中文区的朋友们
+
+我在Steemit上接触过的每个成员都很友善和积极，友好的评论，高质量的帖子，身为这个平台上的一员我感到非常荣幸和自豪。
+
+我是在2016年6月开始写作发帖子，当时整个网站上的用户数量还是不多的， 所以要想查看分类作品还是相对容易的。我当时偶尔发现了CN区，也就是一部分中国人在平台上建立的一个小群体，由伟大的@abit带领着。他是第一个热情欢迎我加入中文区的，并自此一直支持我的帖子，为此我心存感激！
+
+最初的中文区还有其他活跃的成员，包括 @oflyhigh，@ace108，@deanliu， @myfirst， @chinadaily 和 @lemooljiang 等。虽然当时大家都是小鱼，但我们所有人都一起努力写文章，互相支持！在我心里，非常感谢并珍惜与大家在平台上共同分享的一切，希望将来也一起创造出更美好的回忆！
+
+最后，衷心感谢我的1000名追随者，陪伴我在Steemit 这个平台上度过了整整一年的时间，希望我们一起看到Steemit 更辉煌的未来。
+
+感谢大家！"/><meta data-react-helmet="true" property="og:title" content="A Massive Thank You for Helping Me Reach the &quot;1000 Followers&quot; Milestone / 我的Steemit历程"/><meta data-react-helmet="true" property="og:description" content="&lt;h2&gt;Woohoo!&lt;/h2&gt; 
+
+I’m so excited and totally over the moon about reaching this significant milestone of over *1000* followers! It’s coming up to a year since my husband first told me about Steemit and curiosity got the better of me. Up until that point, I had barely heard of **Bitcoin** and the word **“crypto”** may as well have been something in another language. But Steemit was the catalyst to me discovering one of the best things I’ve ever come across in my life.
+
+Within that short period of time *(coming up to exactly one year now)*, I can honestly say that this incredible website has changed me as a person. Brought out aspects of my personality I didn’t know existed before. I would never have considered myself an extrovert. Quite the opposite, in fact. But the confidence and drive this great platform has produced in me is nothing short of a modern-day marvel.
+
+The people I’ve connected with during my time on Steemit has been a wonderous experience. More so even via Steemfest was such a magnificent event. I’m sure the next one will somehow prove to be even better. Catching up with established friends as well as creating new ones. *Can’t wait!*
+
+I find it almost impossible to believe it has only been one year since I joined this amazing platform. It feels like it’s been a part of my life for as long as I can remember, lol. So, anyways, I thought what better way to celebrate then share with you some of my most unforgettable times on Steemit and reminisce the mind-blowing journey I’ve had on the Steemit platform.
+
+*Here are some of my Steemit Hightlights:*
+&lt;hr&gt;
+
+[&lt;h2&gt;&lt;center&gt;&quot;Introducing Steemit Into The World Of Hollywood&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/introducing-steemit-into-the-world-of-hollywood)
+
+It’s amazing how long ago it feels but the post was actually created round about this time last year. *And a little fun fact for anyone new to the platform now is that the “big earning” posters at the time were all about promoting Steemit and getting the word out.* One girl setting off loads of balloons with “Steemit” written on them, billboards displaying the Steemit logo, interviews on the street and, of course, that famous **“Make-Up”** tutorial.
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmYEGoUDvWCcN6HCWYHx4eZPf6hUno4SUfGxPx1kz48uFz/2017-07-05%2009.25.34.jpg
+&lt;/div&gt;
+
+So, I thought I’d have a go since I was a big television and comic book steemian fan who happened to have tickets for the [LFCC](http://www.londonfilmandcomiccon.com) that month! To prepare, I got myself a pair of “Steemit” t-shirts *(a big deal at the time)* down at a shop called Snappy Snaps and attended the event the following day. Now, while hardly anyone there was actually willing to listen about what Steemit was *(a lot has changed since then, lol!)*, my goal was to photobomb as many celebs as I could, bearing my “Steemit” logo. I think I did alright considering how crowded the venue was and the amount of queuing involved. 
+
+I met a few “Game of Thrones” stars as well as **Jon Heder** from **Napoleon Dynamite** and **Blades of Glory** *(God, I love that movie!)*. But the cream of the crop was going to be **Jeremy Renner** from **Marvel’s The Avengers**! But unfortunately, they didn’t allow any publisizing of any kind *(including logos on shirts)*, so they just snapped us with together from just above our necks and cropped the rest out! I was so disappointed, I can’t tell you how much! But all’s well that end’s well and after numerous posts of mine that didn’t really get much attention, this was the first to garner proper recognition. *It was an amazing feeling and one I hope everyone on Steemit gets to experience!*&lt;hr&gt;    
+
+[&lt;h2&gt;&lt;center&gt;&quot;How Steemit Has Introduced Me Into the World of Crypto&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/how-steemit-has-introduced-me-into-the-world-of-crypto-steemit)
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmULiNNhPaHjqAiMNpfBriSayKYPrhXgPHAv7kvgyNwQgM/2017-07-05%2009.26.59.jpg
+&lt;/div&gt;
+
+I’m sure many of you on Steemit can completely relate to this particular one! Because this was exactly just the fact of the matter. *I knew next to NOTHING about anything crypto, period!* My husband mentioned Bitcoin a few times before but I’d just switch off and go do something else which I thought actually “mattered.” 
+
+**Boy, how Steemit changed all that.**
+
+In the article I posted, it summed up my transformation from being a total cynic to now talking about pretty much nothing else, lol! **How I’ve changed over the last year!** One of the key aspects at the time was Steemit’s bridging of the two mega powerhouses. *Crypto and social media.* All done by adding that well-established “$” sign to every post, thereby giving the platform value that anybody could instantly relate to. *A stroke of genius if you ask me, lol!*
+
+I chronicled my journey up until where I was at the time and highlighted that “Matrix “ moment I had experienced. Because of Steemit, I actually started using Bitcoin. *I mean, shouldn’t that have been the other way around?* But yes, I was having such an awesome time and on such a high that I had to let the world know how “great” I was feeling. So I wrote a post about it. And the best thing is because it’s transformed so many other steemian’s lives from that point on until now, many more people can understand and embrace that same “high” that I was on too!&lt;hr&gt;     
+
+[&lt;h2&gt;&lt;center&gt;&quot;The First Steemit USB Giveaway at the EGX 2016&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/the-first-steemit-usb-giveaway-at-the-egx-2016)
+
+This one was more of a personal project than anything else and I worked quite hard on it! In regards to promoting Steemit, I figured instead of simply getting people’s pictures taken or handing out leaflets, I’d attempt to spread the word using something that has an actual **“real world use”** and would likely be kept with that individual because of it. *After all, familiarity creates brand awareness, right?* So, I  came up with an idea. Imprint the “Steemit” logo onto a set of portable USB sticks and hand them out in exchange for the individuals e-mail and personal details. *Didn’t seem a bad idea at all!*
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmX7YbUHYSzjzWtsuyjrzPneG7CUSvJFwGq1q2oJo72uUT/2017-07-05%2009.25.46.jpg
+&lt;/div&gt;
+
+But, I did have something of a **wake-up** call. I actually didn’t mention this in the post itself, but my initial strategy was to carry out my plan in London’s **China Town!** Not only that, but also try to get people to sign up there and then via their Facebook account! Needless to say, that ended up a disaster, lol. The people just weren’t interested with only one couple at least listening to my sales pitch before saying goodbye!
+
+Well, as luck would have it, my husband was going to the **EGX 2016** *(A games and tech show featuring all the latest gadgets and software launches.)* **This seemed the perfect opportunity!** So, yes, I went there albeit with a slightly different strategy this time around. *Handing out the USB’s in exchange for their name and e-mail address.* And I did just that, with the blog I created afterwards chronicling the whole thing.
+
+Well, sadly only a handful of them got back to me. But now looking back, that was only to be expected. The whole *“crypto”* and *“blockchain”* thing wasn’t nearly as exposed as it is now. Had it been this year’s event, the end result may have been very different indeed. However, the core idea of a tangible, useful item baring the “Steemit” logo being dispersed to a number of potential steemians was completed. *I just hope they remember where they got it from when Steemit goes to the moon!*
+
+&lt;hr&gt;  
+
+[&lt;h2&gt;&lt;center&gt;&quot;Steemfest I&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemfest/@rea/uniting-steemians-through-the-delight-of-the-steemfest)
+
+
+**Ah! The very first Steemfest!** 
+
+If ever there was a time I can look back with the fondest of memories, it’s that incredible event. I know for a fact it still astounds those that attended at how awesome and well-organised the whole experience was. **From the speakers to the structured city-based activities to the delicious food provided.** *It was unbelievable from start to finish*. @roelandp achieved legendary status on Steemit after that and rightly so!
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmdMFDZcpVoAZHXXEKnSy2wKDTx1dPAiFxzbufqPDFbuCV/2017-07-05%2009.25.22.jpg
+&lt;/div&gt;
+
+As for the fest itself, it’s something you had to have been there to fully comprehend. All these steemians wearing small tags around their neck displaying what their **“username”** is. All those articles I read and enjoyed, now knowing who the faces were behind the blog *(This was before user profiles were introduced)*. It was as surreal as you could get. A completely unforgettable time that I still spend thinking about many times over.
+
+Which leads us to **Steemfest II**. I remember clearly how everybody at the end of the first Steemfest told @roelandp. *“Take a good rest”, “Put your feet up”!* **I mean, nobody expected him to organise another one!** But lo and behold, that is exactly what he has done. **What an amazing guy!** And if the last fest was anything to go by, everyone who attends will be in for the time of their lives. 
+
+&lt;center&gt;**I absolutely cannot wait. Roll on, November 1st!**&lt;/center&gt;
+
+&lt;center&gt;
+![ScreenShot2016-11-15at10.23.52AMb0955.png](https://steemitimages.com/DQmUrN31BpxXefy34a2mNc9z9Sdm7HaKWzJPgmbnH7kXLWc/ScreenShot2016-11-15at10.23.52AMb0955.png)
+&lt;/center&gt;&lt;hr&gt;
+
+&lt;h1&gt;&lt;center&gt;And A Big Thank You To…&lt;/center&gt;&lt;/h1&gt;
+
+Everyone who I’ve come into contact with on Steemit has been such a jpy and pleasure. When people say there’s a community within the Steemit eco-verse, they’re not wrong at all. The friendly comments, the great posts and the overall experience of being a steemian is something I cherish and hold very dear to my heart. 
+
+I signed up and started blogging back in June 2016. Way less users back then but through the **“tagging”** system, you could easily find the content you wanted to view. That’s when I came across the **“CN”** tag. A small group of Chinese steemians had managed to set up a tiny group within the small community itself. Headed up by the great **@abit**, he was the first one who gave me a warm welcome on my **“Introduction”** post I created under the tag. He’s been supporting me ever since and for that, I’m eternally grateful. 
+
+Other fantastic members within the **“CN”** tag at that time included *@oflyhigh, @ace108, @deanliu, @myfirst, @chinadaily and @lemooljiang.* We were minute but powerful force to be reckoned with and I thank you all from the bottom of my heart for everything we’ve shared together. I consider you all my friends and may there be many more memories to be made in the future!
+
+**So, a big “thank you” to every one of my awesome steemians who’ve helped in bringing me to *1000+ followers*. I’ve had an amazing journey so far and can’t wait to see what lies in store for us all next.** 
+
+&lt;h1&gt;&lt;center&gt;A Big Thank You To Everyone! &lt;/center&gt;&lt;/h1&gt;
+
+&lt;center&gt;
+![2017-07-05 09.57.56.jpg](https://steemitimages.com/DQmc4tjLiVkWkcGxEvgCKWTRsuX1VXThoWqDBTcdgMmbd4v/2017-07-05%2009.57.56.jpg)
+&lt;/center&gt;
+
+&lt;hr&gt;
+ 
+哇塞，我终于在Steemit平台上拥有超过1000名追随者，兴奋的心情真是难以言喻！自从先生第一次告诉我这个平台到现在已有一年时间，那时的我甚至连比特币或“数字货币” 都没有听说过。Steemit是我所碰到的最美好的事情之一！非常感谢大家!
+
+在加入这个平台的短短一年时间里，我可以坦诚地说这个令人难以置信的媒体平台完全改变了我，让我看到自己的另一面。我永远也不会认为自己是外向型的，但是Steemit给予了我神奇的力量，让我充满了自信。
+
+在Steemit上结交新朋友是最让我高兴的事，而参加第一届在阿姆斯特丹举办的Steemfest更让人难以忘怀。我非常期待能与旧友重逢，并结交更多的新朋友。相信即将来临在里斯本举办的Steemfest II 聚会将办得更加成功，更加完美！
+
+真不敢相信我加入这个平台已有一年的时间，感觉它就像是生活的一部分，呵呵。在这里，我希望能与你们一起分享一些我最难忘的Steemit 时刻，一起回顾我在这个美好平台上梦幻般的旅程。
+
+以下是我在Steemit上的一些亮点 ：
+
+
+&lt;hr&gt;
+
+1 /把Steemit带进好莱坞的世界
+
+说来有点儿凑巧，刚好是一年前的这个时间，感觉很遥远的样子，呵呵。当时大家都争先恐后地推广Steemit, 有在街上帖大广告牌的，有个女孩子在海边派发写有Steemit标志的100个氢气球，不少在街上采访路人的，当然还有我们最有名的化妆教程（“Make-Up” tutorial）.
+
+而我呢，是个动漫粉丝也刚好购买了当月伦敦电影动漫节（LFCC）的入场券，也蠢蠢欲试。我专门到店里印了一件有Steemit 标志的恤衫，并在第二天参加了动漫盛会。当时会场内没有多少人愿意听Steemit的推广，我的目标是在挤挤人群里，要让在场的众多明星们看到我恤衫上Steemit字样。
+
+到场的有几位来自“权力游戏”（Game of Thrones）的明星以及在 “Napoleon Dynamite” 和“Blades of Glory” （好喜欢那部电影哦）里的男主角Jon Heder。 而最有名气的要数上演复仇者（The Avengers）系列的Jeremy Renner！ 我与明星们互动，自拍。只可惜最后与Jeremy Renner拍照时，他们不允许照片里的任何商业广告性质的物品（包括衬衫上的徽标），所以Steemit字样没出现在我们的合照里，好失望哦！电影动漫节之行回来， 我发表了一篇文章，这是我在Steemit平台上第一次受到如此多成员的关注与认可。那种感觉非常美妙，我希望每个Steemit的成员都能体验！
+
+
+&lt;hr&gt;
+
+2 / Steemit是如何带我进入数字货币的世界
+
+我相信你们中的许多人都会与我有同感。我对因为数字货币简直是一无所知！先生有几次提到比特币，但我只是不加理会或是去干别的看似“更重要”的事情。然而Steemit改变了这一切。
+
+这篇文章里总结了我的转变过程。我认为在Steemit里最关键的部分是它连接了数字货币与社交媒体，并在每个帖子上添加了“$”美金符号，给予了平台所有人都能看到的价值。Steemit平台的创建者简直是天才！
+
+通过Steemit，我开始使用比特币。其实不是应该反过来才对吗？呵呵。我想大声告诉全世界这是一个超棒的体验，不仅仅是我，这个平台也改变了像我一样许许多多成员的生活！
+
+
+&lt;hr&gt;
+
+3/在欧洲游戏博览会上派发Steemit的 USB赠品
+
+与其他事情相比，这明显更具挑战性！我想，简单地发发Steemit传单很快就会被扔掉或遗忘，作用不大。如果能派发一些有实际用途，大家都愿意保留的产品，宣传Steemit的成效会更大！于是我想出了将Steemit标志印在一组携带方便的USB棒上，免费赠与参观者，宣传Steemit的同时换取个人电子邮箱资料。主意不错吧，呵呵。
+
+但是，我也有过失败的经历，不过我没有在这个帖子上提到。其实我最初的策略是在伦敦的中国城进行Steemit的推广活动，还试图让人们即时通过他们的Facebook帐户注册。不用说你也猜到，这并没有进行得太顺利。大半天的时间，真正有兴趣的就只有一对年轻夫妇，至少他们是听完我对Steemit的介绍才客气地说拜拜！
+
+幸运的是，先生要去伯明翰举办的欧洲游戏博览会（EGX 2016），一个展示所有最新的游戏和技术软件，这看起来是一个非常适合推广Steemit的机会。于是我去了。而这次，我使用了略为不同的策略。我向参观者简单介绍Steemit并赠与精美小巧的USB，以此交换他们的姓名与电子邮件地址。在我发表的帖子里，记载了这整个过程。
+
+有点儿可悲的是，只有少数人回复我的邮件，不过这也是预料之中，因为当时数字货币和区块链很少人知道。但如果是今年的话，最终的结果可能会非常不同。所有的Steemit USB 派发完了，我只希望将来某一天当Steemit真正强大起来的时候，他们会记得当年是如何得到这个Steemit 的USB，呵呵！
+
+
+&lt;hr&gt;
+
+4/参加第一届 Steemfest 聚会
+
+去年在阿姆施特丹举办的Steemfest 确实搞得不错，让我印象深刻。我至今仍然感叹这是一个超级棒的盛会，从整个策划，会场布置，组织演讲者和景点游览，以及提供美食，从头到尾每个步骤都完美得令人难以置信。自此以后，聚会的组织者@roelandp在Steemit平台上稳坐传奇人物之位，呵呵。
+
+至于这个聚会，你得要亲自到场才能完全体演到。所有Steemit成员都在脖子上佩带着显示他们用户名的小标签，大家终于有机会见到自己平日喜爱阅读文章的作者本人，呵呵。可以与网上作者见面聊天，一切都那么真实，我在那儿度过了一个令人难忘的时光。
+
+我还清楚地记得，在Steemfest I 结束的时候，每个人都告诉@roelandp “保重”，“好好休息”，因为大家都期望他来组织下一届的Steemfest！他的确是尽心尽力，功不可没！大家都迫不及待地等着将于11月在里斯本举行的Steemfest II，千万不要错过哦！
+
+&lt;hr&gt;
+
+5/最后要特别感谢中文区的朋友们
+
+我在Steemit上接触过的每个成员都很友善和积极，友好的评论，高质量的帖子，身为这个平台上的一员我感到非常荣幸和自豪。
+
+我是在2016年6月开始写作发帖子，当时整个网站上的用户数量还是不多的， 所以要想查看分类作品还是相对容易的。我当时偶尔发现了CN区，也就是一部分中国人在平台上建立的一个小群体，由伟大的@abit带领着。他是第一个热情欢迎我加入中文区的，并自此一直支持我的帖子，为此我心存感激！
+
+最初的中文区还有其他活跃的成员，包括 @oflyhigh，@ace108，@deanliu， @myfirst， @chinadaily 和 @lemooljiang 等。虽然当时大家都是小鱼，但我们所有人都一起努力写文章，互相支持！在我心里，非常感谢并珍惜与大家在平台上共同分享的一切，希望将来也一起创造出更美好的回忆！
+
+最后，衷心感谢我的1000名追随者，陪伴我在Steemit 这个平台上度过了整整一年的时间，希望我们一起看到Steemit 更辉煌的未来。
+
+感谢大家！"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="codingdefined"/><meta data-react-helmet="true" name="twitter:title" content="A Massive Thank You for Helping Me Reach the &quot;1000 Followers&quot; Milestone / 我的Steemit历程"/><meta data-react-helmet="true" name="twitter:description" content="&lt;h2&gt;Woohoo!&lt;/h2&gt; 
+
+I’m so excited and totally over the moon about reaching this significant milestone of over *1000* followers! It’s coming up to a year since my husband first told me about Steemit and curiosity got the better of me. Up until that point, I had barely heard of **Bitcoin** and the word **“crypto”** may as well have been something in another language. But Steemit was the catalyst to me discovering one of the best things I’ve ever come across in my life.
+
+Within that short period of time *(coming up to exactly one year now)*, I can honestly say that this incredible website has changed me as a person. Brought out aspects of my personality I didn’t know existed before. I would never have considered myself an extrovert. Quite the opposite, in fact. But the confidence and drive this great platform has produced in me is nothing short of a modern-day marvel.
+
+The people I’ve connected with during my time on Steemit has been a wonderous experience. More so even via Steemfest was such a magnificent event. I’m sure the next one will somehow prove to be even better. Catching up with established friends as well as creating new ones. *Can’t wait!*
+
+I find it almost impossible to believe it has only been one year since I joined this amazing platform. It feels like it’s been a part of my life for as long as I can remember, lol. So, anyways, I thought what better way to celebrate then share with you some of my most unforgettable times on Steemit and reminisce the mind-blowing journey I’ve had on the Steemit platform.
+
+*Here are some of my Steemit Hightlights:*
+&lt;hr&gt;
+
+[&lt;h2&gt;&lt;center&gt;&quot;Introducing Steemit Into The World Of Hollywood&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/introducing-steemit-into-the-world-of-hollywood)
+
+It’s amazing how long ago it feels but the post was actually created round about this time last year. *And a little fun fact for anyone new to the platform now is that the “big earning” posters at the time were all about promoting Steemit and getting the word out.* One girl setting off loads of balloons with “Steemit” written on them, billboards displaying the Steemit logo, interviews on the street and, of course, that famous **“Make-Up”** tutorial.
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmYEGoUDvWCcN6HCWYHx4eZPf6hUno4SUfGxPx1kz48uFz/2017-07-05%2009.25.34.jpg
+&lt;/div&gt;
+
+So, I thought I’d have a go since I was a big television and comic book steemian fan who happened to have tickets for the [LFCC](http://www.londonfilmandcomiccon.com) that month! To prepare, I got myself a pair of “Steemit” t-shirts *(a big deal at the time)* down at a shop called Snappy Snaps and attended the event the following day. Now, while hardly anyone there was actually willing to listen about what Steemit was *(a lot has changed since then, lol!)*, my goal was to photobomb as many celebs as I could, bearing my “Steemit” logo. I think I did alright considering how crowded the venue was and the amount of queuing involved. 
+
+I met a few “Game of Thrones” stars as well as **Jon Heder** from **Napoleon Dynamite** and **Blades of Glory** *(God, I love that movie!)*. But the cream of the crop was going to be **Jeremy Renner** from **Marvel’s The Avengers**! But unfortunately, they didn’t allow any publisizing of any kind *(including logos on shirts)*, so they just snapped us with together from just above our necks and cropped the rest out! I was so disappointed, I can’t tell you how much! But all’s well that end’s well and after numerous posts of mine that didn’t really get much attention, this was the first to garner proper recognition. *It was an amazing feeling and one I hope everyone on Steemit gets to experience!*&lt;hr&gt;    
+
+[&lt;h2&gt;&lt;center&gt;&quot;How Steemit Has Introduced Me Into the World of Crypto&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/how-steemit-has-introduced-me-into-the-world-of-crypto-steemit)
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmULiNNhPaHjqAiMNpfBriSayKYPrhXgPHAv7kvgyNwQgM/2017-07-05%2009.26.59.jpg
+&lt;/div&gt;
+
+I’m sure many of you on Steemit can completely relate to this particular one! Because this was exactly just the fact of the matter. *I knew next to NOTHING about anything crypto, period!* My husband mentioned Bitcoin a few times before but I’d just switch off and go do something else which I thought actually “mattered.” 
+
+**Boy, how Steemit changed all that.**
+
+In the article I posted, it summed up my transformation from being a total cynic to now talking about pretty much nothing else, lol! **How I’ve changed over the last year!** One of the key aspects at the time was Steemit’s bridging of the two mega powerhouses. *Crypto and social media.* All done by adding that well-established “$” sign to every post, thereby giving the platform value that anybody could instantly relate to. *A stroke of genius if you ask me, lol!*
+
+I chronicled my journey up until where I was at the time and highlighted that “Matrix “ moment I had experienced. Because of Steemit, I actually started using Bitcoin. *I mean, shouldn’t that have been the other way around?* But yes, I was having such an awesome time and on such a high that I had to let the world know how “great” I was feeling. So I wrote a post about it. And the best thing is because it’s transformed so many other steemian’s lives from that point on until now, many more people can understand and embrace that same “high” that I was on too!&lt;hr&gt;     
+
+[&lt;h2&gt;&lt;center&gt;&quot;The First Steemit USB Giveaway at the EGX 2016&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemit/@rea/the-first-steemit-usb-giveaway-at-the-egx-2016)
+
+This one was more of a personal project than anything else and I worked quite hard on it! In regards to promoting Steemit, I figured instead of simply getting people’s pictures taken or handing out leaflets, I’d attempt to spread the word using something that has an actual **“real world use”** and would likely be kept with that individual because of it. *After all, familiarity creates brand awareness, right?* So, I  came up with an idea. Imprint the “Steemit” logo onto a set of portable USB sticks and hand them out in exchange for the individuals e-mail and personal details. *Didn’t seem a bad idea at all!*
+
+&lt;div class=&quot;pull-right&quot;&gt;
+https://steemitimages.com/DQmX7YbUHYSzjzWtsuyjrzPneG7CUSvJFwGq1q2oJo72uUT/2017-07-05%2009.25.46.jpg
+&lt;/div&gt;
+
+But, I did have something of a **wake-up** call. I actually didn’t mention this in the post itself, but my initial strategy was to carry out my plan in London’s **China Town!** Not only that, but also try to get people to sign up there and then via their Facebook account! Needless to say, that ended up a disaster, lol. The people just weren’t interested with only one couple at least listening to my sales pitch before saying goodbye!
+
+Well, as luck would have it, my husband was going to the **EGX 2016** *(A games and tech show featuring all the latest gadgets and software launches.)* **This seemed the perfect opportunity!** So, yes, I went there albeit with a slightly different strategy this time around. *Handing out the USB’s in exchange for their name and e-mail address.* And I did just that, with the blog I created afterwards chronicling the whole thing.
+
+Well, sadly only a handful of them got back to me. But now looking back, that was only to be expected. The whole *“crypto”* and *“blockchain”* thing wasn’t nearly as exposed as it is now. Had it been this year’s event, the end result may have been very different indeed. However, the core idea of a tangible, useful item baring the “Steemit” logo being dispersed to a number of potential steemians was completed. *I just hope they remember where they got it from when Steemit goes to the moon!*
+
+&lt;hr&gt;  
+
+[&lt;h2&gt;&lt;center&gt;&quot;Steemfest I&quot;&lt;/center&gt;&lt;/h2&gt;](https://steemit.com/steemfest/@rea/uniting-steemians-through-the-delight-of-the-steemfest)
+
+
+**Ah! The very first Steemfest!** 
+
+If ever there was a time I can look back with the fondest of memories, it’s that incredible event. I know for a fact it still astounds those that attended at how awesome and well-organised the whole experience was. **From the speakers to the structured city-based activities to the delicious food provided.** *It was unbelievable from start to finish*. @roelandp achieved legendary status on Steemit after that and rightly so!
+
+&lt;div class=&quot;pull-left&quot;&gt;
+https://steemitimages.com/DQmdMFDZcpVoAZHXXEKnSy2wKDTx1dPAiFxzbufqPDFbuCV/2017-07-05%2009.25.22.jpg
+&lt;/div&gt;
+
+As for the fest itself, it’s something you had to have been there to fully comprehend. All these steemians wearing small tags around their neck displaying what their **“username”** is. All those articles I read and enjoyed, now knowing who the faces were behind the blog *(This was before user profiles were introduced)*. It was as surreal as you could get. A completely unforgettable time that I still spend thinking about many times over.
+
+Which leads us to **Steemfest II**. I remember clearly how everybody at the end of the first Steemfest told @roelandp. *“Take a good rest”, “Put your feet up”!* **I mean, nobody expected him to organise another one!** But lo and behold, that is exactly what he has done. **What an amazing guy!** And if the last fest was anything to go by, everyone who attends will be in for the time of their lives. 
+
+&lt;center&gt;**I absolutely cannot wait. Roll on, November 1st!**&lt;/center&gt;
+
+&lt;center&gt;
+![ScreenShot2016-11-15at10.23.52AMb0955.png](https://steemitimages.com/DQmUrN31BpxXefy34a2mNc9z9Sdm7HaKWzJPgmbnH7kXLWc/ScreenShot2016-11-15at10.23.52AMb0955.png)
+&lt;/center&gt;&lt;hr&gt;
+
+&lt;h1&gt;&lt;center&gt;And A Big Thank You To…&lt;/center&gt;&lt;/h1&gt;
+
+Everyone who I’ve come into contact with on Steemit has been such a jpy and pleasure. When people say there’s a community within the Steemit eco-verse, they’re not wrong at all. The friendly comments, the great posts and the overall experience of being a steemian is something I cherish and hold very dear to my heart. 
+
+I signed up and started blogging back in June 2016. Way less users back then but through the **“tagging”** system, you could easily find the content you wanted to view. That’s when I came across the **“CN”** tag. A small group of Chinese steemians had managed to set up a tiny group within the small community itself. Headed up by the great **@abit**, he was the first one who gave me a warm welcome on my **“Introduction”** post I created under the tag. He’s been supporting me ever since and for that, I’m eternally grateful. 
+
+Other fantastic members within the **“CN”** tag at that time included *@oflyhigh, @ace108, @deanliu, @myfirst, @chinadaily and @lemooljiang.* We were minute but powerful force to be reckoned with and I thank you all from the bottom of my heart for everything we’ve shared together. I consider you all my friends and may there be many more memories to be made in the future!
+
+**So, a big “thank you” to every one of my awesome steemians who’ve helped in bringing me to *1000+ followers*. I’ve had an amazing journey so far and can’t wait to see what lies in store for us all next.** 
+
+&lt;h1&gt;&lt;center&gt;A Big Thank You To Everyone! &lt;/center&gt;&lt;/h1&gt;
+
+&lt;center&gt;
+![2017-07-05 09.57.56.jpg](https://steemitimages.com/DQmc4tjLiVkWkcGxEvgCKWTRsuX1VXThoWqDBTcdgMmbd4v/2017-07-05%2009.57.56.jpg)
+&lt;/center&gt;
+
+&lt;hr&gt;
+ 
+哇塞，我终于在Steemit平台上拥有超过1000名追随者，兴奋的心情真是难以言喻！自从先生第一次告诉我这个平台到现在已有一年时间，那时的我甚至连比特币或“数字货币” 都没有听说过。Steemit是我所碰到的最美好的事情之一！非常感谢大家!
+
+在加入这个平台的短短一年时间里，我可以坦诚地说这个令人难以置信的媒体平台完全改变了我，让我看到自己的另一面。我永远也不会认为自己是外向型的，但是Steemit给予了我神奇的力量，让我充满了自信。
+
+在Steemit上结交新朋友是最让我高兴的事，而参加第一届在阿姆斯特丹举办的Steemfest更让人难以忘怀。我非常期待能与旧友重逢，并结交更多的新朋友。相信即将来临在里斯本举办的Steemfest II 聚会将办得更加成功，更加完美！
+
+真不敢相信我加入这个平台已有一年的时间，感觉它就像是生活的一部分，呵呵。在这里，我希望能与你们一起分享一些我最难忘的Steemit 时刻，一起回顾我在这个美好平台上梦幻般的旅程。
+
+以下是我在Steemit上的一些亮点 ：
+
+
+&lt;hr&gt;
+
+1 /把Steemit带进好莱坞的世界
+
+说来有点儿凑巧，刚好是一年前的这个时间，感觉很遥远的样子，呵呵。当时大家都争先恐后地推广Steemit, 有在街上帖大广告牌的，有个女孩子在海边派发写有Steemit标志的100个氢气球，不少在街上采访路人的，当然还有我们最有名的化妆教程（“Make-Up” tutorial）.
+
+而我呢，是个动漫粉丝也刚好购买了当月伦敦电影动漫节（LFCC）的入场券，也蠢蠢欲试。我专门到店里印了一件有Steemit 标志的恤衫，并在第二天参加了动漫盛会。当时会场内没有多少人愿意听Steemit的推广，我的目标是在挤挤人群里，要让在场的众多明星们看到我恤衫上Steemit字样。
+
+到场的有几位来自“权力游戏”（Game of Thrones）的明星以及在 “Napoleon Dynamite” 和“Blades of Glory” （好喜欢那部电影哦）里的男主角Jon Heder。 而最有名气的要数上演复仇者（The Avengers）系列的Jeremy Renner！ 我与明星们互动，自拍。只可惜最后与Jeremy Renner拍照时，他们不允许照片里的任何商业广告性质的物品（包括衬衫上的徽标），所以Steemit字样没出现在我们的合照里，好失望哦！电影动漫节之行回来， 我发表了一篇文章，这是我在Steemit平台上第一次受到如此多成员的关注与认可。那种感觉非常美妙，我希望每个Steemit的成员都能体验！
+
+
+&lt;hr&gt;
+
+2 / Steemit是如何带我进入数字货币的世界
+
+我相信你们中的许多人都会与我有同感。我对因为数字货币简直是一无所知！先生有几次提到比特币，但我只是不加理会或是去干别的看似“更重要”的事情。然而Steemit改变了这一切。
+
+这篇文章里总结了我的转变过程。我认为在Steemit里最关键的部分是它连接了数字货币与社交媒体，并在每个帖子上添加了“$”美金符号，给予了平台所有人都能看到的价值。Steemit平台的创建者简直是天才！
+
+通过Steemit，我开始使用比特币。其实不是应该反过来才对吗？呵呵。我想大声告诉全世界这是一个超棒的体验，不仅仅是我，这个平台也改变了像我一样许许多多成员的生活！
+
+
+&lt;hr&gt;
+
+3/在欧洲游戏博览会上派发Steemit的 USB赠品
+
+与其他事情相比，这明显更具挑战性！我想，简单地发发Steemit传单很快就会被扔掉或遗忘，作用不大。如果能派发一些有实际用途，大家都愿意保留的产品，宣传Steemit的成效会更大！于是我想出了将Steemit标志印在一组携带方便的USB棒上，免费赠与参观者，宣传Steemit的同时换取个人电子邮箱资料。主意不错吧，呵呵。
+
+但是，我也有过失败的经历，不过我没有在这个帖子上提到。其实我最初的策略是在伦敦的中国城进行Steemit的推广活动，还试图让人们即时通过他们的Facebook帐户注册。不用说你也猜到，这并没有进行得太顺利。大半天的时间，真正有兴趣的就只有一对年轻夫妇，至少他们是听完我对Steemit的介绍才客气地说拜拜！
+
+幸运的是，先生要去伯明翰举办的欧洲游戏博览会（EGX 2016），一个展示所有最新的游戏和技术软件，这看起来是一个非常适合推广Steemit的机会。于是我去了。而这次，我使用了略为不同的策略。我向参观者简单介绍Steemit并赠与精美小巧的USB，以此交换他们的姓名与电子邮件地址。在我发表的帖子里，记载了这整个过程。
+
+有点儿可悲的是，只有少数人回复我的邮件，不过这也是预料之中，因为当时数字货币和区块链很少人知道。但如果是今年的话，最终的结果可能会非常不同。所有的Steemit USB 派发完了，我只希望将来某一天当Steemit真正强大起来的时候，他们会记得当年是如何得到这个Steemit 的USB，呵呵！
+
+
+&lt;hr&gt;
+
+4/参加第一届 Steemfest 聚会
+
+去年在阿姆施特丹举办的Steemfest 确实搞得不错，让我印象深刻。我至今仍然感叹这是一个超级棒的盛会，从整个策划，会场布置，组织演讲者和景点游览，以及提供美食，从头到尾每个步骤都完美得令人难以置信。自此以后，聚会的组织者@roelandp在Steemit平台上稳坐传奇人物之位，呵呵。
+
+至于这个聚会，你得要亲自到场才能完全体演到。所有Steemit成员都在脖子上佩带着显示他们用户名的小标签，大家终于有机会见到自己平日喜爱阅读文章的作者本人，呵呵。可以与网上作者见面聊天，一切都那么真实，我在那儿度过了一个令人难忘的时光。
+
+我还清楚地记得，在Steemfest I 结束的时候，每个人都告诉@roelandp “保重”，“好好休息”，因为大家都期望他来组织下一届的Steemfest！他的确是尽心尽力，功不可没！大家都迫不及待地等着将于11月在里斯本举行的Steemfest II，千万不要错过哦！
+
+&lt;hr&gt;
+
+5/最后要特别感谢中文区的朋友们
+
+我在Steemit上接触过的每个成员都很友善和积极，友好的评论，高质量的帖子，身为这个平台上的一员我感到非常荣幸和自豪。
+
+我是在2016年6月开始写作发帖子，当时整个网站上的用户数量还是不多的， 所以要想查看分类作品还是相对容易的。我当时偶尔发现了CN区，也就是一部分中国人在平台上建立的一个小群体，由伟大的@abit带领着。他是第一个热情欢迎我加入中文区的，并自此一直支持我的帖子，为此我心存感激！
+
+最初的中文区还有其他活跃的成员，包括 @oflyhigh，@ace108，@deanliu， @myfirst， @chinadaily 和 @lemooljiang 等。虽然当时大家都是小鱼，但我们所有人都一起努力写文章，互相支持！在我心里，非常感谢并珍惜与大家在平台上共同分享的一切，希望将来也一起创造出更美好的回忆！
+
+最后，衷心感谢我的1000名追随者，陪伴我在Steemit 这个平台上度过了整整一年的时间，希望我们一起看到Steemit 更辉煌的未来。
+
+感谢大家！"/><link as="script" rel="preload" href="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js"/><link as="script" rel="preload" href="/hive-blog/framework-972833c791692296cdd7.js"/><link as="script" rel="preload" href="/hive-blog/styles-2220f06e9922732c3dfb.js"/><link as="script" rel="preload" href="/hive-blog/app-4ba0cd539c0b1449c06b.js"/><link as="script" rel="preload" href="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js"/><link as="script" rel="preload" href="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js"/><link as="script" rel="preload" href="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js"/><link as="script" rel="preload" href="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js"/><link as="fetch" rel="preload" href="/hive-blog/page-data\a-massive-thank-you-for-helping-me-reach-the-1000-followers-milestone-steemit-1000\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/hive-blog/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/hive-blog/">My Hive Posts</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">A Massive Thank You for Helping Me Reach the &quot;1000 Followers&quot; Milestone / 我的Steemit历程</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem"></p></header><section><h2>Woohoo!</h2>
+<p>I’m so excited and totally over the moon about reaching this significant milestone of over <em>1000</em> followers! It’s coming up to a year since my husband first told me about Steemit and curiosity got the better of me. Up until that point, I had barely heard of <strong>Bitcoin</strong> and the word <strong>“crypto”</strong> may as well have been something in another language. But Steemit was the catalyst to me discovering one of the best things I’ve ever come across in my life.</p>
+<p>Within that short period of time <em>(coming up to exactly one year now)</em>, I can honestly say that this incredible website has changed me as a person. Brought out aspects of my personality I didn’t know existed before. I would never have considered myself an extrovert. Quite the opposite, in fact. But the confidence and drive this great platform has produced in me is nothing short of a modern-day marvel.</p>
+<p>The people I’ve connected with during my time on Steemit has been a wonderous experience. More so even via Steemfest was such a magnificent event. I’m sure the next one will somehow prove to be even better. Catching up with established friends as well as creating new ones. <em>Can’t wait!</em></p>
+<p>I find it almost impossible to believe it has only been one year since I joined this amazing platform. It feels like it’s been a part of my life for as long as I can remember, lol. So, anyways, I thought what better way to celebrate then share with you some of my most unforgettable times on Steemit and reminisce the mind-blowing journey I’ve had on the Steemit platform.</p>
+<p><em>Here are some of my Steemit Hightlights:</em></p>
+<hr>
+<p><a href="https://steemit.com/steemit/@rea/introducing-steemit-into-the-world-of-hollywood"><h2><center>"Introducing Steemit Into The World Of Hollywood"</center></h2></a></p>
+<p>It’s amazing how long ago it feels but the post was actually created round about this time last year. <em>And a little fun fact for anyone new to the platform now is that the “big earning” posters at the time were all about promoting Steemit and getting the word out.</em> One girl setting off loads of balloons with “Steemit” written on them, billboards displaying the Steemit logo, interviews on the street and, of course, that famous <strong>“Make-Up”</strong> tutorial.</p>
+<div class="pull-right">
+https://steemitimages.com/DQmYEGoUDvWCcN6HCWYHx4eZPf6hUno4SUfGxPx1kz48uFz/2017-07-05%2009.25.34.jpg
+</div>
+<p>So, I thought I’d have a go since I was a big television and comic book steemian fan who happened to have tickets for the <a href="http://www.londonfilmandcomiccon.com">LFCC</a> that month! To prepare, I got myself a pair of “Steemit” t-shirts <em>(a big deal at the time)</em> down at a shop called Snappy Snaps and attended the event the following day. Now, while hardly anyone there was actually willing to listen about what Steemit was <em>(a lot has changed since then, lol!)</em>, my goal was to photobomb as many celebs as I could, bearing my “Steemit” logo. I think I did alright considering how crowded the venue was and the amount of queuing involved. </p>
+<p>I met a few “Game of Thrones” stars as well as <strong>Jon Heder</strong> from <strong>Napoleon Dynamite</strong> and <strong>Blades of Glory</strong> <em>(God, I love that movie!)</em>. But the cream of the crop was going to be <strong>Jeremy Renner</strong> from <strong>Marvel’s The Avengers</strong>! But unfortunately, they didn’t allow any publisizing of any kind <em>(including logos on shirts)</em>, so they just snapped us with together from just above our necks and cropped the rest out! I was so disappointed, I can’t tell you how much! But all’s well that end’s well and after numerous posts of mine that didn’t really get much attention, this was the first to garner proper recognition. <em>It was an amazing feeling and one I hope everyone on Steemit gets to experience!</em><hr>    </p>
+<p><a href="https://steemit.com/steemit/@rea/how-steemit-has-introduced-me-into-the-world-of-crypto-steemit"><h2><center>"How Steemit Has Introduced Me Into the World of Crypto"</center></h2></a></p>
+<div class="pull-left">
+https://steemitimages.com/DQmULiNNhPaHjqAiMNpfBriSayKYPrhXgPHAv7kvgyNwQgM/2017-07-05%2009.26.59.jpg
+</div>
+<p>I’m sure many of you on Steemit can completely relate to this particular one! Because this was exactly just the fact of the matter. <em>I knew next to NOTHING about anything crypto, period!</em> My husband mentioned Bitcoin a few times before but I’d just switch off and go do something else which I thought actually “mattered.” </p>
+<p><strong>Boy, how Steemit changed all that.</strong></p>
+<p>In the article I posted, it summed up my transformation from being a total cynic to now talking about pretty much nothing else, lol! <strong>How I’ve changed over the last year!</strong> One of the key aspects at the time was Steemit’s bridging of the two mega powerhouses. <em>Crypto and social media.</em> All done by adding that well-established “$” sign to every post, thereby giving the platform value that anybody could instantly relate to. <em>A stroke of genius if you ask me, lol!</em></p>
+<p>I chronicled my journey up until where I was at the time and highlighted that “Matrix “ moment I had experienced. Because of Steemit, I actually started using Bitcoin. <em>I mean, shouldn’t that have been the other way around?</em> But yes, I was having such an awesome time and on such a high that I had to let the world know how “great” I was feeling. So I wrote a post about it. And the best thing is because it’s transformed so many other steemian’s lives from that point on until now, many more people can understand and embrace that same “high” that I was on too!<hr>     </p>
+<p><a href="https://steemit.com/steemit/@rea/the-first-steemit-usb-giveaway-at-the-egx-2016"><h2><center>"The First Steemit USB Giveaway at the EGX 2016"</center></h2></a></p>
+<p>This one was more of a personal project than anything else and I worked quite hard on it! In regards to promoting Steemit, I figured instead of simply getting people’s pictures taken or handing out leaflets, I’d attempt to spread the word using something that has an actual <strong>“real world use”</strong> and would likely be kept with that individual because of it. <em>After all, familiarity creates brand awareness, right?</em> So, I  came up with an idea. Imprint the “Steemit” logo onto a set of portable USB sticks and hand them out in exchange for the individuals e-mail and personal details. <em>Didn’t seem a bad idea at all!</em></p>
+<div class="pull-right">
+https://steemitimages.com/DQmX7YbUHYSzjzWtsuyjrzPneG7CUSvJFwGq1q2oJo72uUT/2017-07-05%2009.25.46.jpg
+</div>
+<p>But, I did have something of a <strong>wake-up</strong> call. I actually didn’t mention this in the post itself, but my initial strategy was to carry out my plan in London’s <strong>China Town!</strong> Not only that, but also try to get people to sign up there and then via their Facebook account! Needless to say, that ended up a disaster, lol. The people just weren’t interested with only one couple at least listening to my sales pitch before saying goodbye!</p>
+<p>Well, as luck would have it, my husband was going to the <strong>EGX 2016</strong> <em>(A games and tech show featuring all the latest gadgets and software launches.)</em> <strong>This seemed the perfect opportunity!</strong> So, yes, I went there albeit with a slightly different strategy this time around. <em>Handing out the USB’s in exchange for their name and e-mail address.</em> And I did just that, with the blog I created afterwards chronicling the whole thing.</p>
+<p>Well, sadly only a handful of them got back to me. But now looking back, that was only to be expected. The whole <em>“crypto”</em> and <em>“blockchain”</em> thing wasn’t nearly as exposed as it is now. Had it been this year’s event, the end result may have been very different indeed. However, the core idea of a tangible, useful item baring the “Steemit” logo being dispersed to a number of potential steemians was completed. <em>I just hope they remember where they got it from when Steemit goes to the moon!</em></p>
+<hr>  
+<p><a href="https://steemit.com/steemfest/@rea/uniting-steemians-through-the-delight-of-the-steemfest"><h2><center>"Steemfest I"</center></h2></a></p>
+<p><strong>Ah! The very first Steemfest!</strong> </p>
+<p>If ever there was a time I can look back with the fondest of memories, it’s that incredible event. I know for a fact it still astounds those that attended at how awesome and well-organised the whole experience was. <strong>From the speakers to the structured city-based activities to the delicious food provided.</strong> <em>It was unbelievable from start to finish</em>. @roelandp achieved legendary status on Steemit after that and rightly so!</p>
+<div class="pull-left">
+https://steemitimages.com/DQmdMFDZcpVoAZHXXEKnSy2wKDTx1dPAiFxzbufqPDFbuCV/2017-07-05%2009.25.22.jpg
+</div>
+<p>As for the fest itself, it’s something you had to have been there to fully comprehend. All these steemians wearing small tags around their neck displaying what their <strong>“username”</strong> is. All those articles I read and enjoyed, now knowing who the faces were behind the blog <em>(This was before user profiles were introduced)</em>. It was as surreal as you could get. A completely unforgettable time that I still spend thinking about many times over.</p>
+<p>Which leads us to <strong>Steemfest II</strong>. I remember clearly how everybody at the end of the first Steemfest told @roelandp. <em>“Take a good rest”, “Put your feet up”!</em> <strong>I mean, nobody expected him to organise another one!</strong> But lo and behold, that is exactly what he has done. <strong>What an amazing guy!</strong> And if the last fest was anything to go by, everyone who attends will be in for the time of their lives. </p>
+<p><center><strong>I absolutely cannot wait. Roll on, November 1st!</strong></center></p>
+<p><center>
+<img src="https://steemitimages.com/DQmUrN31BpxXefy34a2mNc9z9Sdm7HaKWzJPgmbnH7kXLWc/ScreenShot2016-11-15at10.23.52AMb0955.png" alt="ScreenShot2016-11-15at10.23.52AMb0955.png" />
+</center><hr></p>
+<h1><center>And A Big Thank You To…</center></h1>
+<p>Everyone who I’ve come into contact with on Steemit has been such a jpy and pleasure. When people say there’s a community within the Steemit eco-verse, they’re not wrong at all. The friendly comments, the great posts and the overall experience of being a steemian is something I cherish and hold very dear to my heart. </p>
+<p>I signed up and started blogging back in June 2016. Way less users back then but through the <strong>“tagging”</strong> system, you could easily find the content you wanted to view. That’s when I came across the <strong>“CN”</strong> tag. A small group of Chinese steemians had managed to set up a tiny group within the small community itself. Headed up by the great <strong>@abit</strong>, he was the first one who gave me a warm welcome on my <strong>“Introduction”</strong> post I created under the tag. He’s been supporting me ever since and for that, I’m eternally grateful. </p>
+<p>Other fantastic members within the <strong>“CN”</strong> tag at that time included <em>@oflyhigh, @ace108, @deanliu, @myfirst, @chinadaily and @lemooljiang.</em> We were minute but powerful force to be reckoned with and I thank you all from the bottom of my heart for everything we’ve shared together. I consider you all my friends and may there be many more memories to be made in the future!</p>
+<p><strong>So, a big “thank you” to every one of my awesome steemians who’ve helped in bringing me to <em>1000+ followers</em>. I’ve had an amazing journey so far and can’t wait to see what lies in store for us all next.</strong> </p>
+<h1><center>A Big Thank You To Everyone! </center></h1>
+<p><center>
+<img src="https://steemitimages.com/DQmc4tjLiVkWkcGxEvgCKWTRsuX1VXThoWqDBTcdgMmbd4v/2017-07-05%2009.57.56.jpg" alt="2017-07-05 09.57.56.jpg" />
+</center></p>
+<hr>
+<p>哇塞，我终于在Steemit平台上拥有超过1000名追随者，兴奋的心情真是难以言喻！自从先生第一次告诉我这个平台到现在已有一年时间，那时的我甚至连比特币或“数字货币” 都没有听说过。Steemit是我所碰到的最美好的事情之一！非常感谢大家!</p>
+<p>在加入这个平台的短短一年时间里，我可以坦诚地说这个令人难以置信的媒体平台完全改变了我，让我看到自己的另一面。我永远也不会认为自己是外向型的，但是Steemit给予了我神奇的力量，让我充满了自信。</p>
+<p>在Steemit上结交新朋友是最让我高兴的事，而参加第一届在阿姆斯特丹举办的Steemfest更让人难以忘怀。我非常期待能与旧友重逢，并结交更多的新朋友。相信即将来临在里斯本举办的Steemfest II 聚会将办得更加成功，更加完美！</p>
+<p>真不敢相信我加入这个平台已有一年的时间，感觉它就像是生活的一部分，呵呵。在这里，我希望能与你们一起分享一些我最难忘的Steemit 时刻，一起回顾我在这个美好平台上梦幻般的旅程。</p>
+<p>以下是我在Steemit上的一些亮点 ：</p>
+<hr>
+<p>1 /把Steemit带进好莱坞的世界</p>
+<p>说来有点儿凑巧，刚好是一年前的这个时间，感觉很遥远的样子，呵呵。当时大家都争先恐后地推广Steemit, 有在街上帖大广告牌的，有个女孩子在海边派发写有Steemit标志的100个氢气球，不少在街上采访路人的，当然还有我们最有名的化妆教程（“Make-Up” tutorial）.</p>
+<p>而我呢，是个动漫粉丝也刚好购买了当月伦敦电影动漫节（LFCC）的入场券，也蠢蠢欲试。我专门到店里印了一件有Steemit 标志的恤衫，并在第二天参加了动漫盛会。当时会场内没有多少人愿意听Steemit的推广，我的目标是在挤挤人群里，要让在场的众多明星们看到我恤衫上Steemit字样。</p>
+<p>到场的有几位来自“权力游戏”（Game of Thrones）的明星以及在 “Napoleon Dynamite” 和“Blades of Glory” （好喜欢那部电影哦）里的男主角Jon Heder。 而最有名气的要数上演复仇者（The Avengers）系列的Jeremy Renner！ 我与明星们互动，自拍。只可惜最后与Jeremy Renner拍照时，他们不允许照片里的任何商业广告性质的物品（包括衬衫上的徽标），所以Steemit字样没出现在我们的合照里，好失望哦！电影动漫节之行回来， 我发表了一篇文章，这是我在Steemit平台上第一次受到如此多成员的关注与认可。那种感觉非常美妙，我希望每个Steemit的成员都能体验！</p>
+<hr>
+<p>2 / Steemit是如何带我进入数字货币的世界</p>
+<p>我相信你们中的许多人都会与我有同感。我对因为数字货币简直是一无所知！先生有几次提到比特币，但我只是不加理会或是去干别的看似“更重要”的事情。然而Steemit改变了这一切。</p>
+<p>这篇文章里总结了我的转变过程。我认为在Steemit里最关键的部分是它连接了数字货币与社交媒体，并在每个帖子上添加了“$”美金符号，给予了平台所有人都能看到的价值。Steemit平台的创建者简直是天才！</p>
+<p>通过Steemit，我开始使用比特币。其实不是应该反过来才对吗？呵呵。我想大声告诉全世界这是一个超棒的体验，不仅仅是我，这个平台也改变了像我一样许许多多成员的生活！</p>
+<hr>
+<p>3/在欧洲游戏博览会上派发Steemit的 USB赠品</p>
+<p>与其他事情相比，这明显更具挑战性！我想，简单地发发Steemit传单很快就会被扔掉或遗忘，作用不大。如果能派发一些有实际用途，大家都愿意保留的产品，宣传Steemit的成效会更大！于是我想出了将Steemit标志印在一组携带方便的USB棒上，免费赠与参观者，宣传Steemit的同时换取个人电子邮箱资料。主意不错吧，呵呵。</p>
+<p>但是，我也有过失败的经历，不过我没有在这个帖子上提到。其实我最初的策略是在伦敦的中国城进行Steemit的推广活动，还试图让人们即时通过他们的Facebook帐户注册。不用说你也猜到，这并没有进行得太顺利。大半天的时间，真正有兴趣的就只有一对年轻夫妇，至少他们是听完我对Steemit的介绍才客气地说拜拜！</p>
+<p>幸运的是，先生要去伯明翰举办的欧洲游戏博览会（EGX 2016），一个展示所有最新的游戏和技术软件，这看起来是一个非常适合推广Steemit的机会。于是我去了。而这次，我使用了略为不同的策略。我向参观者简单介绍Steemit并赠与精美小巧的USB，以此交换他们的姓名与电子邮件地址。在我发表的帖子里，记载了这整个过程。</p>
+<p>有点儿可悲的是，只有少数人回复我的邮件，不过这也是预料之中，因为当时数字货币和区块链很少人知道。但如果是今年的话，最终的结果可能会非常不同。所有的Steemit USB 派发完了，我只希望将来某一天当Steemit真正强大起来的时候，他们会记得当年是如何得到这个Steemit 的USB，呵呵！</p>
+<hr>
+<p>4/参加第一届 Steemfest 聚会</p>
+<p>去年在阿姆施特丹举办的Steemfest 确实搞得不错，让我印象深刻。我至今仍然感叹这是一个超级棒的盛会，从整个策划，会场布置，组织演讲者和景点游览，以及提供美食，从头到尾每个步骤都完美得令人难以置信。自此以后，聚会的组织者@roelandp在Steemit平台上稳坐传奇人物之位，呵呵。</p>
+<p>至于这个聚会，你得要亲自到场才能完全体演到。所有Steemit成员都在脖子上佩带着显示他们用户名的小标签，大家终于有机会见到自己平日喜爱阅读文章的作者本人，呵呵。可以与网上作者见面聊天，一切都那么真实，我在那儿度过了一个令人难忘的时光。</p>
+<p>我还清楚地记得，在Steemfest I 结束的时候，每个人都告诉@roelandp “保重”，“好好休息”，因为大家都期望他来组织下一届的Steemfest！他的确是尽心尽力，功不可没！大家都迫不及待地等着将于11月在里斯本举行的Steemfest II，千万不要错过哦！</p>
+<hr>
+<p>5/最后要特别感谢中文区的朋友们</p>
+<p>我在Steemit上接触过的每个成员都很友善和积极，友好的评论，高质量的帖子，身为这个平台上的一员我感到非常荣幸和自豪。</p>
+<p>我是在2016年6月开始写作发帖子，当时整个网站上的用户数量还是不多的， 所以要想查看分类作品还是相对容易的。我当时偶尔发现了CN区，也就是一部分中国人在平台上建立的一个小群体，由伟大的@abit带领着。他是第一个热情欢迎我加入中文区的，并自此一直支持我的帖子，为此我心存感激！</p>
+<p>最初的中文区还有其他活跃的成员，包括 @oflyhigh，@ace108，@deanliu， @myfirst， @chinadaily 和 @lemooljiang 等。虽然当时大家都是小鱼，但我们所有人都一起努力写文章，互相支持！在我心里，非常感谢并珍惜与大家在平台上共同分享的一切，希望将来也一起创造出更美好的回忆！</p>
+<p>最后，衷心感谢我的1000名追随者，陪伴我在Steemit 这个平台上度过了整整一年的时间，希望我们一起看到Steemit 更辉煌的未来。</p>
+<p>感谢大家！</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAEEAgMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB6WVWC61C0AD/xAAZEAEBAQADAAAAAAAAAAAAAAACAQMQERP/2gAIAQEAAQUCW5Kusiy0moHeLVXtgKZz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRABIDEyAxQf/aAAgBAQAGPwJKZV7r5hGlUsrNo5yDCTtKxDIz61IFNZLYraS+H//EAB0QAQEAAgEFAAAAAAAAAAAAAAERADEhIEFRcYH/2gAIAQEAAT8hIKjZ36zXBAWmBbR7OzFs32rnPoBvkXwYpgovvo//2gAMAwEAAgADAAAAEDs//v/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExUWEg8f/aAAgBAQABPxCk+TEfSm/CuDxCMIjc3kFTI6EORO8KIJBynC8Ce4AoUEgD2IfmFqYFsIljLr4//9k=" alt="Coding Defined" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg 1x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/aba1d/profile-pic.jpg 1.5x,
+/hive-blog/static/19177487dd357813a1af0faf562d7ae8/b315d/profile-pic.jpg 2x" src="/hive-blog/static/19177487dd357813a1af0faf562d7ae8/99438/profile-pic.jpg" alt="Coding Defined" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Coding Defined</strong> <!-- -->who lives and works in India building useful things.<!-- --> <a href="https://twitter.com/codingdefined">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/hive-blog/beautiful-india-5-mount-everest">← <!-- -->Beautiful India #5 - Mount Everest</a></li><li><a rel="next" href="/hive-blog/steemit-it-is-what-we-make-it-so-what-in-the-world-are-we-making-it">STEEMIT - IT IS WHAT WE MAKE IT - So What In The World Are We Making It?<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/a-massive-thank-you-for-helping-me-reach-the-1000-followers-milestone-steemit-1000";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4ba0cd539c0b1449c06b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b1a5a3eb51f56bf97fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-97180bb2389bd7dfb0b3.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-1af1632b4493347fce8c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-930e32a97192772af47a.js"]};/*]]>*/</script><script src="/hive-blog/component---src-templates-blog-post-js-930e32a97192772af47a.js" async=""></script><script src="/hive-blog/505b62317f0ce1886a0f4b7cd0ebf6019d251f61-29751227bf5f88a24c2b.js" async=""></script><script src="/hive-blog/f3816973199c012e27989b9a598b99c17169a26b-7045b3f99c31a70f519b.js" async=""></script><script src="/hive-blog/a22cbe4e-c51068b1cda4ea552020.js" async=""></script><script src="/hive-blog/app-4ba0cd539c0b1449c06b.js" async=""></script><script src="/hive-blog/styles-2220f06e9922732c3dfb.js" async=""></script><script src="/hive-blog/framework-972833c791692296cdd7.js" async=""></script><script src="/hive-blog/webpack-runtime-f68bcf4dc2772edf1618.js" async=""></script></body></html>
