@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Header from "./header"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -57,6 +58,7 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <header>{header}</header>
+      <Header siteTitle={title} />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

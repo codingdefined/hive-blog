@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: "UA-52168355-2",
       },
     },
     {
@@ -71,6 +71,18 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-hive`,
+    },
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        fields: [`title`],
+        resolvers: {
+          HiveArticle: {
+            title: node => node.title,
+            path: node => node.permlink,
+          },
+        },
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
